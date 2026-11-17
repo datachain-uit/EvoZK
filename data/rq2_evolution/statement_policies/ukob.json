@@ -1,0 +1,24 @@
+{
+ "fields": [
+  {
+   "name": "Amount.Amount",
+   "path": "Amount.Amount"
+  },
+  {
+   "name": "Amount.Currency",
+   "path": "Amount.Currency"
+  },
+  {
+   "name": "CreditDebitIndicator",
+   "path": "CreditDebitIndicator"
+  },
+  {
+   "name": "BookingDateTime",
+   "path": "BookingDateTime"
+  },
+  {
+   "name": "Status",
+   "path": "Status"
+  }
+ ]
+}

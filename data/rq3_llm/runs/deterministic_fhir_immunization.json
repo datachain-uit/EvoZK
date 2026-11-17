@@ -1,0 +1,649 @@
+{
+ "n_call_records": 1200,
+ "rescore_mismatches": 0,
+ "groups": {
+  "deterministic-adapter|deterministic|fhir_imm|v1": {
+   "first_pass": {
+    "n": 600,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 600,
+     "OK_carrier_error": 0,
+     "E4_statement_wrong": 0
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "accepted": {
+     "k": 600,
+     "n": 600,
+     "rate": 1.0,
+     "ci95": [
+      0.9936,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 600,
+     "n": 600,
+     "rate": 1.0,
+     "ci95": [
+      0.9936,
+      1.0
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "carrier_only_error": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "field_accuracy_accepted": 1.0,
+    "statement_field_accuracy_accepted": 1.0,
+    "carrier_field_accuracy_accepted": 1.0,
+    "top_field_errors": [],
+    "latency_s": {
+     "median": 0.0001,
+     "p90": 0.0001,
+     "sum": 0.033
+    },
+    "tokens_out_median": null,
+    "tokens_in_median": null,
+    "out_tokens_per_s_end_to_end_median": null,
+    "peak_gpu_mem_used_mib": null,
+    "peak_engine_rss_bytes": null,
+    "peak_sys_mem_used_bytes": null,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "deterministic-adapter|deterministic|fhir_imm|v2": {
+   "first_pass": {
+    "n": 600,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 600,
+     "OK_carrier_error": 0,
+     "E4_statement_wrong": 0
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "accepted": {
+     "k": 600,
+     "n": 600,
+     "rate": 1.0,
+     "ci95": [
+      0.9936,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 600,
+     "n": 600,
+     "rate": 1.0,
+     "ci95": [
+      0.9936,
+      1.0
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "carrier_only_error": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0064
+     ]
+    },
+    "field_accuracy_accepted": 1.0,
+    "statement_field_accuracy_accepted": 1.0,
+    "carrier_field_accuracy_accepted": 1.0,
+    "top_field_errors": [],
+    "latency_s": {
+     "median": 0.0001,
+     "p90": 0.0001,
+     "sum": 0.0312
+    },
+    "tokens_out_median": null,
+    "tokens_in_median": null,
+    "out_tokens_per_s_end_to_end_median": null,
+    "peak_gpu_mem_used_mib": null,
+    "peak_engine_rss_bytes": null,
+    "peak_sys_mem_used_bytes": null,
+    "http_errors": 0,
+    "simulated": false
+   }
+  }
+ },
+ "pooled": {
+  "deterministic-adapter|deterministic": {
+   "first_pass": {
+    "n": 1200,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 1200,
+     "OK_carrier_error": 0,
+     "E4_statement_wrong": 0
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "accepted": {
+     "k": 1200,
+     "n": 1200,
+     "rate": 1.0,
+     "ci95": [
+      0.9968,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 1200,
+     "n": 1200,
+     "rate": 1.0,
+     "ci95": [
+      0.9968,
+      1.0
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "carrier_only_error": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1200,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0032
+     ]
+    },
+    "field_accuracy_accepted": 1.0,
+    "statement_field_accuracy_accepted": 1.0,
+    "carrier_field_accuracy_accepted": 1.0,
+    "top_field_errors": [],
+    "latency_s": {
+     "median": 0.0001,
+     "p90": 0.0001,
+     "sum": 0.0642
+    },
+    "tokens_out_median": null,
+    "tokens_in_median": null,
+    "out_tokens_per_s_end_to_end_median": null,
+    "peak_gpu_mem_used_mib": null,
+    "peak_engine_rss_bytes": null,
+    "peak_sys_mem_used_bytes": null,
+    "http_errors": 0,
+    "simulated": false
+   }
+  }
+ },
+ "stability": {
+  "deterministic-adapter|deterministic|fhir_imm|v1": {
+   "runs": 1,
+   "docs": 0,
+   "raw_identical": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "same_landing": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "all_runs_accepted": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "stable_commitment_all_runs": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "stable_and_correct": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "distinct_commitments_hist": {}
+  },
+  "deterministic-adapter|deterministic|fhir_imm|v2": {
+   "runs": 1,
+   "docs": 0,
+   "raw_identical": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "same_landing": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "all_runs_accepted": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "stable_commitment_all_runs": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "stable_and_correct": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "distinct_commitments_hist": {}
+  }
+ },
+ "latency_pairs": {
+  "deterministic-adapter": {
+   "pairs": 0,
+   "median_latency_ratio_constrained_over_unconstrained": null,
+   "p10": null,
+   "p90": null,
+   "median_tokens_out_diff": null
+  }
+ },
+ "repair": {
+  "deterministic-adapter|deterministic": {
+   "repair_calls": 0,
+   "repair_success": 0
+  }
+ },
+ "stability_pooled": {
+  "deterministic-adapter|deterministic": {
+   "raw_identical": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "stable_commitment_all_runs": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "stable_and_correct": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci95": null
+   }
+  }
+ },
+ "maintenance": {
+  "ob3": {
+   "deterministic_mapping_loc_v1": 9,
+   "deterministic_mapping_loc_v2": 11,
+   "deterministic_mapping_lines_changed": 14,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [
+    "results[*].result_type",
+    "results[*].value",
+    "valid_from",
+    "valid_until"
+   ],
+   "schema_paths_removed": [
+    "expiration_date",
+    "issuance_date",
+    "result.grade",
+    "result.score_percent"
+   ],
+   "schema_paths_retyped": []
+  },
+  "fhir_imm": {
+   "deterministic_mapping_loc_v1": 8,
+   "deterministic_mapping_loc_v2": 8,
+   "deterministic_mapping_lines_changed": 10,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [
+    "reason[*].concept.code",
+    "reason[*].concept.system"
+   ],
+   "schema_paths_removed": [
+    "reason_code"
+   ],
+   "schema_paths_retyped": [
+    "protocol_applied.dose_number",
+    "protocol_applied.series_doses"
+   ]
+  },
+  "ukob_txn": {
+   "deterministic_mapping_loc_v1": 7,
+   "deterministic_mapping_loc_v2": 7,
+   "deterministic_mapping_lines_changed": 8,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [],
+   "schema_paths_removed": [],
+   "schema_paths_retyped": []
+  }
+ },
+ "planning": {}
+}

@@ -1,0 +1,522 @@
+[
+ {
+  "id": "dc-xsd-4.4-inc-contributorType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-contributorType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-contributorType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "71f6bf321730fe0db67a52a86419941b79a382d522a34aedfadb6ff63c0765f1"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-dateType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-dateType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-dateType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "ff536358f247b6e03486aa3f25283f8abb2e04803115cc151c24a7b7351f2ccb"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-descriptionType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-descriptionType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-descriptionType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "b69733e1cffe134eada14d604db17dcf913c21bc8552f6b7debcd3ce04eba3e9"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-funderIdentifierType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-funderIdentifierType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-funderIdentifierType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "eab86e3c6fb0d24d3508559e667641862838b988fe14147dc187ebd79c9bcfe8"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-nameType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-nameType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-nameType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "a841e852c1cf00e6301f489ce6b85d94017b6cffbdce991d2b7a5e7e27921e5a"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-numberType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-numberType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-numberType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "e9f9e3c66b34a4476bab683058734f22922d167f76e642db0c05a50842b94241"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-relatedIdentifierType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-relatedIdentifierType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-relatedIdentifierType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "8defb58eed2b6d79544f1d1991bb8ba149593399c291215f4be849cc3b8afab8"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-relationType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-relationType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-relationType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "6fe731b6143e08f3ea0ca1d6eb38ad8232857aad4b6972577627a095d40c2926"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-resourceType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-resourceType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-resourceType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "e6ddf45397e91b0bb5c676f9e056a96694660828e348663708cf421578e3b300"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-titleType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/datacite-titleType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/datacite-titleType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "8be9425ee1e07bf5f727cadeba90978498d14d99ac98a2720971355fd70b1f7a"
+ },
+ {
+  "id": "dc-xsd-4.4-inc-xml",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/include/xml.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: include/xml.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "cc701736c42cc64126fad063bb95f94484b5de3b5f808a86ea098b0957aff829"
+ },
+ {
+  "id": "dc-xsd-4.4",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.4/metadata.xsd",
+  "title": "DataCite Metadata Schema 4.4 XSD: metadata.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "machine-readable schema",
+  "sha256": "732a651b383e6adefaee47aac8eec24d5f484b33fb2484b0590e61301b95fd21"
+ },
+ {
+  "id": "dc-doc-4.4",
+  "url": "https://schema.datacite.org/meta/kernel-4.4/",
+  "title": "DataCite Metadata Schema 4.4 (kernel page; documentation DOI https://doi.org/10.14454/3w3z-sa82, schema DOI https://doi.org/10.14454/fxws-0523)",
+  "publisher": "DataCite e.V.",
+  "version": "4.4",
+  "date": "2021-03-30",
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "dc-xsd-4.5-inc-contributorType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-contributorType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-contributorType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "71f6bf321730fe0db67a52a86419941b79a382d522a34aedfadb6ff63c0765f1"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-dateType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-dateType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-dateType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "ff536358f247b6e03486aa3f25283f8abb2e04803115cc151c24a7b7351f2ccb"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-descriptionType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-descriptionType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-descriptionType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "b69733e1cffe134eada14d604db17dcf913c21bc8552f6b7debcd3ce04eba3e9"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-funderIdentifierType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-funderIdentifierType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-funderIdentifierType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "eab86e3c6fb0d24d3508559e667641862838b988fe14147dc187ebd79c9bcfe8"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-nameType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-nameType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-nameType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "a841e852c1cf00e6301f489ce6b85d94017b6cffbdce991d2b7a5e7e27921e5a"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-numberType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-numberType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-numberType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "e9f9e3c66b34a4476bab683058734f22922d167f76e642db0c05a50842b94241"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-relatedIdentifierType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-relatedIdentifierType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-relatedIdentifierType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "8defb58eed2b6d79544f1d1991bb8ba149593399c291215f4be849cc3b8afab8"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-relationType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-relationType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-relationType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "e2aed4c4b666281be55239e9d36fb9f1c0830f9c2fa524f91236ea8fac357c73"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-resourceType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-resourceType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-resourceType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "c6b521096f9474ab9a41ca0768dd7f299b167fc40660a7e91a757bf0ff6d50a1"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-titleType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/datacite-titleType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/datacite-titleType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "8be9425ee1e07bf5f727cadeba90978498d14d99ac98a2720971355fd70b1f7a"
+ },
+ {
+  "id": "dc-xsd-4.5-inc-xml",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/include/xml.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: include/xml.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "cc701736c42cc64126fad063bb95f94484b5de3b5f808a86ea098b0957aff829"
+ },
+ {
+  "id": "dc-xsd-4.5",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.5/metadata.xsd",
+  "title": "DataCite Metadata Schema 4.5 XSD: metadata.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "machine-readable schema",
+  "sha256": "e37de897a5bfc51ffe4aa04930c68b607ff4b12ed68a32286920d08d93f713ee"
+ },
+ {
+  "id": "dc-doc-4.5",
+  "url": "https://schema.datacite.org/meta/kernel-4.5/",
+  "title": "DataCite Metadata Schema 4.5 (kernel page; documentation DOI https://doi.org/10.14454/g8e5-6293, schema DOI https://doi.org/10.14454/znvd-6q68)",
+  "publisher": "DataCite e.V.",
+  "version": "4.5",
+  "date": "2024-01-22",
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "dc-xsd-4.6-inc-contributorType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-contributorType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-contributorType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "bf70f146ac4b1874877b8248b3f4cb2e1ba676ac90c52a8b862639cc7b2c8afa"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-dateType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-dateType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-dateType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "d6bf5a93077dccfb53aa73929e41c3d16d0b95920c64e76e655240367dc48812"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-descriptionType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-descriptionType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-descriptionType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "b69733e1cffe134eada14d604db17dcf913c21bc8552f6b7debcd3ce04eba3e9"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-funderIdentifierType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-funderIdentifierType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-funderIdentifierType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "eab86e3c6fb0d24d3508559e667641862838b988fe14147dc187ebd79c9bcfe8"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-nameType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-nameType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-nameType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "a841e852c1cf00e6301f489ce6b85d94017b6cffbdce991d2b7a5e7e27921e5a"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-numberType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-numberType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-numberType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "e9f9e3c66b34a4476bab683058734f22922d167f76e642db0c05a50842b94241"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-relatedIdentifierType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-relatedIdentifierType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-relatedIdentifierType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "d6515b2b990814f8d907cc9a4c8fbd33b419927f6b30c98fd4e511a5e947c2b4"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-relationType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-relationType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-relationType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "d281da6d2bee4347595e1969ffef34839e1ab663e08beb21cee8ac9967114c2c"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-resourceType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-resourceType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-resourceType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "0a0e3a5299ee4824f431a8c5167c897c5958b72a260dd6a22b13cb3f39af86bb"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-titleType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/datacite-titleType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/datacite-titleType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "03b4eb8c8b71ca2ef95b6a921be654f0dd18b4d89616a12708198d67f6fa463a"
+ },
+ {
+  "id": "dc-xsd-4.6-inc-xml",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/include/xml.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: include/xml.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "cc701736c42cc64126fad063bb95f94484b5de3b5f808a86ea098b0957aff829"
+ },
+ {
+  "id": "dc-xsd-4.6",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.6/metadata.xsd",
+  "title": "DataCite Metadata Schema 4.6 XSD: metadata.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "machine-readable schema",
+  "sha256": "11341a599b41edd0f92145df8863d43e9067c6aea9ed6fcd549d1340ace0c522"
+ },
+ {
+  "id": "dc-doc-4.6",
+  "url": "https://schema.datacite.org/meta/kernel-4.6/",
+  "title": "DataCite Metadata Schema 4.6 (kernel page; documentation DOI https://doi.org/10.14454/mzv1-5b55, schema DOI https://doi.org/10.14454/csba-e454)",
+  "publisher": "DataCite e.V.",
+  "version": "4.6",
+  "date": "2024-12-05",
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "dc-xsd-4.7-inc-contributorType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-contributorType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-contributorType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "bf70f146ac4b1874877b8248b3f4cb2e1ba676ac90c52a8b862639cc7b2c8afa"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-dateType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-dateType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-dateType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "d6bf5a93077dccfb53aa73929e41c3d16d0b95920c64e76e655240367dc48812"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-descriptionType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-descriptionType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-descriptionType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "b69733e1cffe134eada14d604db17dcf913c21bc8552f6b7debcd3ce04eba3e9"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-funderIdentifierType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-funderIdentifierType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-funderIdentifierType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "eab86e3c6fb0d24d3508559e667641862838b988fe14147dc187ebd79c9bcfe8"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-nameType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-nameType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-nameType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "a841e852c1cf00e6301f489ce6b85d94017b6cffbdce991d2b7a5e7e27921e5a"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-numberType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-numberType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-numberType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "e9f9e3c66b34a4476bab683058734f22922d167f76e642db0c05a50842b94241"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-relatedIdentifierType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-relatedIdentifierType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-relatedIdentifierType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "1f838e3bc6a92e6f7fb419335664c258ee1864822e2af40fae5e4a65545079ad"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-relationType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-relationType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-relationType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "248255d472bdb792065520d79f966c6d55d0997cf709877b3b8ebbf634e0d3d9"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-resourceType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-resourceType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-resourceType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "57098b3aac1af97ddc0dce5b33a3b1db9fa8e45f84fbcaa8cf7598dd1f08787a"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-titleType",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/datacite-titleType-v4.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/datacite-titleType-v4.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "03b4eb8c8b71ca2ef95b6a921be654f0dd18b4d89616a12708198d67f6fa463a"
+ },
+ {
+  "id": "dc-xsd-4.7-inc-xml",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/include/xml.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: include/xml.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "cc701736c42cc64126fad063bb95f94484b5de3b5f808a86ea098b0957aff829"
+ },
+ {
+  "id": "dc-xsd-4.7",
+  "url": "https://raw.githubusercontent.com/datacite/schema/591a9cc86eb7989782dde1b49bbc6f5531b71f34/source/meta/kernel-4.7/metadata.xsd",
+  "title": "DataCite Metadata Schema 4.7 XSD: metadata.xsd",
+  "publisher": "DataCite e.V. (datacite/schema official GitHub repository, master @ tag 4.7.4)",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "machine-readable schema",
+  "sha256": "be878f9afddeb677ec4cd274233de0c328246748305d9f58ee78352714412522"
+ },
+ {
+  "id": "dc-doc-4.7",
+  "url": "https://schema.datacite.org/meta/kernel-4.7/",
+  "title": "DataCite Metadata Schema 4.7 (kernel page; documentation DOI https://doi.org/10.14454/qdd3-ps68, schema DOI https://doi.org/10.14454/28a4-kd32)",
+  "publisher": "DataCite e.V.",
+  "version": "4.7",
+  "date": "2026-03-03",
+  "kind": "release notes",
+  "sha256": null
+ }
+]

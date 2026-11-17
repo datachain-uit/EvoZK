@@ -1,0 +1,12 @@
+{
+ "fields": [
+  {
+   "name": "publicationYear",
+   "path": "publicationYear"
+  },
+  {
+   "name": "resourceTypeGeneral",
+   "path": "resourceType.@resourceTypeGeneral"
+  }
+ ]
+}

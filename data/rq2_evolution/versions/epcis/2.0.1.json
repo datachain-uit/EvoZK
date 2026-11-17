@@ -1,0 +1,744 @@
+{
+ "domain": "epcis",
+ "record_type": "ObjectEvent",
+ "version": "2.0.1",
+ "release_date": "2025-07-01",
+ "status": "normative",
+ "source_ids": [
+  "epcis-2.0.1-xsd-official",
+  "epcis-2.0.1-artefacts",
+  "epcis-2.0-xsd-github",
+  "epcis-archive"
+ ],
+ "root": "ObjectEvent (XML binding, complexType ObjectEventType)",
+ "paths": [
+  {
+   "path": "eventTime",
+   "type": "datetime",
+   "xsd_type": "epcis:DateTimeStamp (base xsd:dateTime)",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "eventTime 1..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd complexType[EPCISEventType] -> EPCglobal-epcis-2_0.xsd element[eventTime]",
+   "constraints": {
+    "pattern": "([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(\\.[0-9]+)?(Z|(([+]|[-])((0[0-9]|1[0-3]):([0-5][0-9])|14:00)))"
+   }
+  },
+  {
+   "path": "recordTime",
+   "type": "datetime",
+   "xsd_type": "epcis:DateTimeStamp (base xsd:dateTime)",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "recordTime 0..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd complexType[EPCISEventType] -> EPCglobal-epcis-2_0.xsd element[recordTime]",
+   "constraints": {
+    "pattern": "([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(\\.[0-9]+)?(Z|(([+]|[-])((0[0-9]|1[0-3]):([0-5][0-9])|14:00)))"
+   }
+  },
+  {
+   "path": "eventTimeZoneOffset",
+   "type": "string",
+   "xsd_type": "xsd:string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "eventTimeZoneOffset 1..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd complexType[EPCISEventType] -> EPCglobal-epcis-2_0.xsd element[eventTimeZoneOffset]"
+  },
+  {
+   "path": "eventID",
+   "type": "uri",
+   "xsd_type": "epcis:EventIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "eventID 0..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd complexType[EPCISEventType] -> EPCglobal-epcis-2_0.xsd element[eventID]"
+  },
+  {
+   "path": "errorDeclaration.declarationTime",
+   "type": "datetime",
+   "xsd_type": "epcis:DateTimeStamp (base xsd:dateTime)",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "errorDeclaration 0..1 / declarationTime 1..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd complexType[EPCISEventType] -> EPCglobal-epcis-2_0.xsd element[errorDeclaration] -> EPCglobal-epcis-2_0.xsd complexType[ErrorDeclarationType] -> EPCglobal-epcis-2_0.xsd element[declarationTime]",
+   "constraints": {
+    "pattern": "([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(\\.[0-9]+)?(Z|(([+]|[-])((0[0-9]|1[0-3]):([0-5][0-9])|14:00)))"
+   }
+  },
+  {
+   "path": "errorDeclaration.reason",
+   "type": "uri",
+   "xsd_type": "epcis:ErrorReasonIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "errorDeclaration 0..1 / reason 0..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd complexType[EPCISEventType] -> EPCglobal-epcis-2_0.xsd element[errorDeclaration] -> EPCglobal-epcis-2_0.xsd complexType[ErrorDeclarationType] -> EPCglobal-epcis-2_0.xsd element[reason]"
+  },
+  {
+   "path": "errorDeclaration.correctiveEventIDs.correctiveEventID[]",
+   "type": "uri",
+   "xsd_type": "epcis:EventIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "errorDeclaration 0..1 / correctiveEventIDs 0..1 / correctiveEventID 0..*",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd complexType[EPCISEventType] -> EPCglobal-epcis-2_0.xsd element[errorDeclaration] -> EPCglobal-epcis-2_0.xsd complexType[ErrorDeclarationType] -> EPCglobal-epcis-2_0.xsd element[correctiveEventIDs] -> EPCglobal-epcis-2_0.xsd complexType[CorrectiveEventIDsType] -> EPCglobal-epcis-2_0.xsd element[correctiveEventID]"
+  },
+  {
+   "path": "certificationInfo",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "certificationInfo 0..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd complexType[EPCISEventType] -> EPCglobal-epcis-2_0.xsd element[certificationInfo]"
+  },
+  {
+   "path": "epcList.epc[]",
+   "type": "string",
+   "xsd_type": "xsd:string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "epcList 0..1 / epc 0..*",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[epcList] -> EPCglobal-epcis-2_0.xsd complexType[EPCListType] -> EPCglobal-epcis-2_0.xsd element[epc] -> EPCglobal-2_0.xsd complexType[EPC]"
+  },
+  {
+   "path": "action",
+   "type": "code",
+   "xsd_type": "epcis:ActionType (base xsd:string)",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "action 1..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[action]",
+   "constraints": {
+    "enum": [
+     "ADD",
+     "OBSERVE",
+     "DELETE"
+    ]
+   }
+  },
+  {
+   "path": "bizStep",
+   "type": "uri",
+   "xsd_type": "epcis:BusinessStepIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "bizStep 0..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[bizStep]"
+  },
+  {
+   "path": "disposition",
+   "type": "uri",
+   "xsd_type": "epcis:DispositionIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "disposition 0..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[disposition]"
+  },
+  {
+   "path": "readPoint.id",
+   "type": "uri",
+   "xsd_type": "epcis:ReadPointIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "readPoint 0..1 / id 1..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[readPoint] -> EPCglobal-epcis-2_0.xsd complexType[ReadPointType] -> EPCglobal-epcis-2_0.xsd element[id]"
+  },
+  {
+   "path": "bizLocation.id",
+   "type": "uri",
+   "xsd_type": "epcis:BusinessLocationIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "bizLocation 0..1 / id 1..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[bizLocation] -> EPCglobal-epcis-2_0.xsd complexType[BusinessLocationType] -> EPCglobal-epcis-2_0.xsd element[id]"
+  },
+  {
+   "path": "bizTransactionList.bizTransaction[].#value",
+   "type": "uri",
+   "xsd_type": "epcis:BusinessTransactionIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "bizTransactionList 0..1 / bizTransaction 1..*",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[bizTransactionList] -> EPCglobal-epcis-2_0.xsd complexType[BusinessTransactionListType] -> EPCglobal-epcis-2_0.xsd element[bizTransaction] -> EPCglobal-epcis-2_0.xsd complexType[BusinessTransactionType]"
+  },
+  {
+   "path": "bizTransactionList.bizTransaction[].@type",
+   "type": "uri",
+   "xsd_type": "epcis:BusinessTransactionTypeIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "bizTransactionList 0..1 / bizTransaction 1..* / @type optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[bizTransactionList] -> EPCglobal-epcis-2_0.xsd complexType[BusinessTransactionListType] -> EPCglobal-epcis-2_0.xsd element[bizTransaction] -> EPCglobal-epcis-2_0.xsd complexType[BusinessTransactionType] -> attribute[type]"
+  },
+  {
+   "path": "quantityList.quantityElement[].epcClass",
+   "type": "uri",
+   "xsd_type": "epcis:EPCClassType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "quantityList 0..1 / quantityElement 0..* / epcClass 1..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[quantityList] -> EPCglobal-epcis-2_0.xsd complexType[QuantityListType] -> EPCglobal-epcis-2_0.xsd element[quantityElement] -> EPCglobal-epcis-2_0.xsd complexType[QuantityElementType] -> EPCglobal-epcis-2_0.xsd element[epcClass]"
+  },
+  {
+   "path": "quantityList.quantityElement[].quantity",
+   "type": "number",
+   "xsd_type": "xsd:double",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "quantityList 0..1 / quantityElement 0..* / quantity 1..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[quantityList] -> EPCglobal-epcis-2_0.xsd complexType[QuantityListType] -> EPCglobal-epcis-2_0.xsd element[quantityElement] -> EPCglobal-epcis-2_0.xsd complexType[QuantityElementType] -> EPCglobal-epcis-2_0.xsd element[quantity]"
+  },
+  {
+   "path": "quantityList.quantityElement[].uom",
+   "type": "string",
+   "xsd_type": "epcis:UOMType (base xsd:string)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "quantityList 0..1 / quantityElement 0..* / uom 0..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[quantityList] -> EPCglobal-epcis-2_0.xsd complexType[QuantityListType] -> EPCglobal-epcis-2_0.xsd element[quantityElement] -> EPCglobal-epcis-2_0.xsd complexType[QuantityElementType] -> EPCglobal-epcis-2_0.xsd element[uom]"
+  },
+  {
+   "path": "sourceList.source[].#value",
+   "type": "uri",
+   "xsd_type": "epcis:SourceDestIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sourceList 0..1 / source 1..*",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sourceList] -> EPCglobal-epcis-2_0.xsd complexType[SourceListType] -> EPCglobal-epcis-2_0.xsd element[source] -> EPCglobal-epcis-2_0.xsd complexType[SourceDestType]"
+  },
+  {
+   "path": "sourceList.source[].@type",
+   "type": "uri",
+   "xsd_type": "epcis:SourceDestTypeIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sourceList 0..1 / source 1..* / @type optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sourceList] -> EPCglobal-epcis-2_0.xsd complexType[SourceListType] -> EPCglobal-epcis-2_0.xsd element[source] -> EPCglobal-epcis-2_0.xsd complexType[SourceDestType] -> attribute[type]"
+  },
+  {
+   "path": "destinationList.destination[].#value",
+   "type": "uri",
+   "xsd_type": "epcis:SourceDestIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "destinationList 0..1 / destination 1..*",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[destinationList] -> EPCglobal-epcis-2_0.xsd complexType[DestinationListType] -> EPCglobal-epcis-2_0.xsd element[destination] -> EPCglobal-epcis-2_0.xsd complexType[SourceDestType]"
+  },
+  {
+   "path": "destinationList.destination[].@type",
+   "type": "uri",
+   "xsd_type": "epcis:SourceDestTypeIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "destinationList 0..1 / destination 1..* / @type optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[destinationList] -> EPCglobal-epcis-2_0.xsd complexType[DestinationListType] -> EPCglobal-epcis-2_0.xsd element[destination] -> EPCglobal-epcis-2_0.xsd complexType[SourceDestType] -> attribute[type]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.#value",
+   "type": "string",
+   "xsd_type": "xsd:string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.@time",
+   "type": "datetime",
+   "xsd_type": "epcis:DateTimeStamp (base xsd:dateTime)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1 / @time optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType] -> attribute[time]",
+   "constraints": {
+    "pattern": "([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(\\.[0-9]+)?(Z|(([+]|[-])((0[0-9]|1[0-3]):([0-5][0-9])|14:00)))"
+   }
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.@deviceID",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1 / @deviceID optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType] -> attribute[deviceID]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.@deviceMetadata",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1 / @deviceMetadata optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType] -> attribute[deviceMetadata]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.@rawData",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1 / @rawData optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType] -> attribute[rawData]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.@startTime",
+   "type": "datetime",
+   "xsd_type": "epcis:DateTimeStamp (base xsd:dateTime)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1 / @startTime optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType] -> attribute[startTime]",
+   "constraints": {
+    "pattern": "([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(\\.[0-9]+)?(Z|(([+]|[-])((0[0-9]|1[0-3]):([0-5][0-9])|14:00)))"
+   }
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.@endTime",
+   "type": "datetime",
+   "xsd_type": "epcis:DateTimeStamp (base xsd:dateTime)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1 / @endTime optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType] -> attribute[endTime]",
+   "constraints": {
+    "pattern": "([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(\\.[0-9]+)?(Z|(([+]|[-])((0[0-9]|1[0-3]):([0-5][0-9])|14:00)))"
+   }
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.@bizRules",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1 / @bizRules optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType] -> attribute[bizRules]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorMetadata.@dataProcessingMethod",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorMetadata 0..1 / @dataProcessingMethod optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorMetadata] -> EPCglobal-epcis-2_0.xsd complexType[SensorMetadataType] -> attribute[dataProcessingMethod]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].#value",
+   "type": "string",
+   "xsd_type": "xsd:string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..*",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@type",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @type optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[type]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@value",
+   "type": "number",
+   "xsd_type": "xsd:double",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @value optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[value]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@component",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @component optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[component]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@stringValue",
+   "type": "string",
+   "xsd_type": "xsd:string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @stringValue optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[stringValue]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@booleanValue",
+   "type": "boolean",
+   "xsd_type": "xsd:boolean",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @booleanValue optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[booleanValue]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@hexBinaryValue",
+   "type": "binary",
+   "xsd_type": "xsd:hexBinary",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @hexBinaryValue optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[hexBinaryValue]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@uriValue",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @uriValue optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[uriValue]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@uom",
+   "type": "string",
+   "xsd_type": "xsd:string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @uom optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[uom]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@minValue",
+   "type": "number",
+   "xsd_type": "xsd:double",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @minValue optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[minValue]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@maxValue",
+   "type": "number",
+   "xsd_type": "xsd:double",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @maxValue optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[maxValue]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@sDev",
+   "type": "number",
+   "xsd_type": "xsd:double",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @sDev optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[sDev]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@chemicalSubstance",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @chemicalSubstance optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[chemicalSubstance]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@microorganism",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @microorganism optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[microorganism]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@deviceID",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @deviceID optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[deviceID]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@deviceMetadata",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @deviceMetadata optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[deviceMetadata]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@rawData",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @rawData optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[rawData]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@time",
+   "type": "datetime",
+   "xsd_type": "epcis:DateTimeStamp (base xsd:dateTime)",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @time optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[time]",
+   "constraints": {
+    "pattern": "([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(\\.[0-9]+)?(Z|(([+]|[-])((0[0-9]|1[0-3]):([0-5][0-9])|14:00)))"
+   }
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@meanValue",
+   "type": "number",
+   "xsd_type": "xsd:double",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @meanValue optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[meanValue]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@percRank",
+   "type": "number",
+   "xsd_type": "xsd:double",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @percRank optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[percRank]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@percValue",
+   "type": "number",
+   "xsd_type": "xsd:double",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @percValue optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[percValue]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@dataProcessingMethod",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @dataProcessingMethod optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[dataProcessingMethod]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@coordinateReferenceSystem",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @coordinateReferenceSystem optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[coordinateReferenceSystem]"
+  },
+  {
+   "path": "sensorElementList.sensorElement[].sensorReport[].@exception",
+   "type": "uri",
+   "xsd_type": "xsd:anyURI",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "sensorElementList 0..1 / sensorElement 1..* / sensorReport 1..* / @exception optional",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[sensorElementList] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementListType] -> EPCglobal-epcis-2_0.xsd element[sensorElement] -> EPCglobal-epcis-2_0.xsd complexType[SensorElementType] -> EPCglobal-epcis-2_0.xsd element[sensorReport] -> EPCglobal-epcis-2_0.xsd complexType[SensorReportType] -> attribute[exception]"
+  },
+  {
+   "path": "persistentDisposition.unset[]",
+   "type": "uri",
+   "xsd_type": "epcis:DispositionIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "persistentDisposition 0..1 / unset 0..*",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[persistentDisposition] -> EPCglobal-epcis-2_0.xsd complexType[PersistentDispositionType] -> EPCglobal-epcis-2_0.xsd element[unset]"
+  },
+  {
+   "path": "persistentDisposition.set[]",
+   "type": "uri",
+   "xsd_type": "epcis:DispositionIDType (base xsd:anyURI)",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "persistentDisposition 0..1 / set 0..*",
+   "source_id": "epcis-2.0-xsd-github",
+   "locator": "EPCglobal-epcis-2_0.xsd complexType[ObjectEventType] -> EPCglobal-epcis-2_0.xsd element[persistentDisposition] -> EPCglobal-epcis-2_0.xsd complexType[PersistentDispositionType] -> EPCglobal-epcis-2_0.xsd element[set]"
+  }
+ ],
+ "statement_paths": [
+  "eventTime",
+  "bizStep"
+ ]
+}

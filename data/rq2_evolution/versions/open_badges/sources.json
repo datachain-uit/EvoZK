@@ -1,0 +1,82 @@
+[
+ {
+  "id": "ob-v2p0-text",
+  "url": "https://raw.githubusercontent.com/1EdTech/openbadges-specification/c8e7efbde77ebd5d744ab57ebc0505ebb593e9de/ob_v2p0/index.md",
+  "title": "Open Badges v2.0 specification (IMS Final Release, Date Issued 12 April 2018; text revision 21 May 2021, git tag v2.0-errata.01); published at https://www.imsglobal.org/spec/ob/v2p0/",
+  "publisher": "IMS Global / 1EdTech (official openbadges-specification GitHub repository)",
+  "version": "2.0",
+  "date": "2018-04-12",
+  "kind": "normative text",
+  "sha256": "f36598e47a972eeed4a05b528e846c2706a1dee5395ab391e5f73c353ec4b354"
+ },
+ {
+  "id": "ob-v2p0-context",
+  "url": "https://raw.githubusercontent.com/1EdTech/openbadges-specification/c8e7efbde77ebd5d744ab57ebc0505ebb593e9de/ob_v2p0/v2/context.json",
+  "title": "Open Badges v2 JSON-LD context (https://w3id.org/openbadges/v2), used only to cross-check transcribed term names",
+  "publisher": "IMS Global / 1EdTech (official repository)",
+  "version": "2.0",
+  "date": "2018-04-12",
+  "kind": "machine-readable schema",
+  "sha256": "3c0c25a0e581c64cbe632197377c4f334c6c0b95f0d90e3b74449781612b153d"
+ },
+ {
+  "id": "ob-v3p0-schema-cfp",
+  "url": "https://raw.githubusercontent.com/1EdTech/openbadges-specification/8a41b9ab12d0634ae335b80bf13f92c4482e9b7b/docs/schema/achievementcredential.json",
+  "title": "OB 3.0 AchievementCredential JSON Schema, official automated build 2023-02-09 (gh-pages commit 8a41b9a; $id https://purl.imsglobal.org/spec/ob/v3p0/schema/json/achievementcredentialv3p0.schema.json), Candidate Public Final (VCDM 1.1)",
+  "publisher": "1EdTech (official openbadges-specification GitHub repository, gh-pages branch)",
+  "version": "3.0 Candidate Public Final (doc 1.0.1)",
+  "date": "2023-02-09",
+  "kind": "machine-readable schema",
+  "sha256": "1414beac1bb6cd8a937df7fa58076033347cb7dfcd038fee9dc296a924fff740"
+ },
+ {
+  "id": "ob-v3p0-schema-final",
+  "url": "https://raw.githubusercontent.com/1EdTech/openbadges-specification/c73e9663afcdbe009a224f7be061ac895168a5b8/docs/schema/achievementcredential.json",
+  "title": "OB 3.0 AchievementCredential JSON Schema, Final Release (gh-pages commit c73e966 of 2024-07-30, identical to gh-pages HEAD f69bf45; $id https://purl.imsglobal.org/spec/ob/v3p0/schema/json/ob_v3p0_achievementcredential-jsonschema1.json), VCDM 2.0",
+  "publisher": "1EdTech (official openbadges-specification GitHub repository, gh-pages branch)",
+  "version": "3.0 Final (doc 1.1)",
+  "date": "2024-07-26",
+  "kind": "machine-readable schema",
+  "sha256": "5753fb3ecf7d024ed273dd364bd683f483eb47257e718e6618832cf89eb2083a"
+ },
+ {
+  "id": "ob-v3p0-spec",
+  "url": "https://raw.githubusercontent.com/1EdTech/openbadges-specification/fab22928e02ad8a35b1627667bc8594c01feb8f3/ob_v3p0/ob_v3p0.html",
+  "title": "Open Badges Specification 3.0 (Final Release, doc 1.2, Dec 23 2024) source incl. Revision History (Candidate Final 2022-07-14; Candidate Public Final 2023-02-09; Final 2024-05-27; 1.1 2024-07-26; 1.2 2024-12-23); published at https://www.imsglobal.org/spec/ob/v3p0/",
+  "publisher": "1EdTech (official repository, main branch)",
+  "version": "3.0",
+  "date": "2024-12-23",
+  "kind": "release notes",
+  "sha256": "5c5c73248656863bc218ef76ec9ee9b021eafb3d18cc2cc872785091b7b66866"
+ },
+ {
+  "id": "ob-v3p0-intro",
+  "url": "https://raw.githubusercontent.com/1EdTech/openbadges-specification/fab22928e02ad8a35b1627667bc8594c01feb8f3/ob_v3p0/introduction.md",
+  "title": "OB 3.0 document set listing: VCDM 2.0 schemas plus 'Verifiable Credential Data Model v1.1 compatible' anyachievementcredential schema",
+  "publisher": "1EdTech (official repository, main branch)",
+  "version": "3.0",
+  "date": "2024-12-23",
+  "kind": "normative text",
+  "sha256": "edb8dfe41d827d99e902941016ce2163f295993c338e2133895edac397da4d00"
+ },
+ {
+  "id": "ob-v3p0-purl-final",
+  "url": "https://purl.imsglobal.org/spec/ob/v3p0/schema/json/ob_v3p0_achievementcredential_schema.json",
+  "title": "OB 3.0 AchievementCredential schema as served at purl (JSON-LD adaptation); read to confirm the property set and the required list",
+  "publisher": "1EdTech",
+  "version": "3.0 Final",
+  "date": null,
+  "kind": "machine-readable schema",
+  "sha256": null
+ },
+ {
+  "id": "ob-v3p0-purl-any",
+  "url": "https://purl.imsglobal.org/spec/ob/v3p0/schema/json/ob_v3p0_anyachievementcredential_schema.json",
+  "title": "OB 3.0 AnyAchievementCredential schema (VCDM 1.1-compatible verification schema, anyOf VCDM1.1|VCDM2.0); not used for paths",
+  "publisher": "1EdTech",
+  "version": "3.0 Final",
+  "date": null,
+  "kind": "machine-readable schema",
+  "sha256": null
+ }
+]

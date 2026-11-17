@@ -1,0 +1,110 @@
+{
+ "domain": "xbrl",
+ "record_type": "xBRL-JSON fact object (simple fact; core structure + open taxonomy-defined dimensions)",
+ "version": "PR-2021-08-04",
+ "release_date": "2021-08-04",
+ "status": "candidate",
+ "source_ids": [
+  "xbrljson-PR-2021-08-04",
+  "xbrljson-history"
+ ],
+ "root": "fact object (member of Report.facts)",
+ "paths": [
+  {
+   "path": "decimals",
+   "type": "integer",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (JSON number, text: 'An integer'; absent if infinitely precise / n.a.)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.1 JSON Object: Fact"
+  },
+  {
+   "path": "dimensions.concept",
+   "type": "code",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "1..1 (QName)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.2 JSON Object: Dimensions (concept core dimension)"
+  },
+  {
+   "path": "dimensions.entity",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (SQName scheme:identifier)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.2 JSON Object: Dimensions (entity core dimension)"
+  },
+  {
+   "path": "dimensions.language",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (xs:language)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.2 JSON Object: Dimensions (language core dimension)",
+   "constraints": {
+    "lowercase": true
+   }
+  },
+  {
+   "path": "dimensions.noteId",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (xs:NCName)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.2 JSON Object: Dimensions (note ID core dimension)"
+  },
+  {
+   "path": "dimensions.period",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (period string: instant or start/end interval)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.2 JSON Object: Dimensions (period core dimension)"
+  },
+  {
+   "path": "dimensions.taxonomyDefined[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "0..n QName-named properties, one per taxonomy-defined dimension (open-ended; explicit -> QName value, typed -> lexical or null)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.2 JSON Object: Dimensions (Taxonomy-defined dimensions)"
+  },
+  {
+   "path": "dimensions.unit",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (unit string representation)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.2 JSON Object: Dimensions (unit core dimension)"
+  },
+  {
+   "path": "value",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "1..1 (string or null; JSON null for nil)",
+   "source_id": "xbrljson-PR-2021-08-04",
+   "locator": "§5.1 JSON Object: Fact",
+   "constraints": {
+    "nullable": true,
+    "table_type": "string or null"
+   }
+  }
+ ],
+ "statement_paths": [
+  "dimensions.concept",
+  "value",
+  "dimensions.period",
+  "dimensions.unit"
+ ]
+}

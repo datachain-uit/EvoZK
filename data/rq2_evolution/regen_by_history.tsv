@@ -1,0 +1,10 @@
+group	role	n_transitions	n_d_sigma_nonzero	n_statement_changed_W6	n_W6x_only	n_major	n_minor	n_patch	n_variant	n_non-SemVer	regen_A0_tight	regen_A0_pad_TR	regen_A0_pad_SS	regen_PX	regen_PX_strict	regen_MR	regen_A1	n_e_statement_encoding	regen_contract_A0_pad_TR	regen_contract_A0_pad_SS
+open_badges	primary	2	2	2	0	1	0	0	1	0	2	2	1	2	2	0	0	0	2	1
+fhir	primary	2	2	0	0	2	0	0	0	0	2	0	0	0	0	0	0	0	0	0
+epcis	primary	2	1	1	0	1	0	1	0	0	1	1	1	1	1	0	0	1	1	1
+ukob	primary	12	3	2	2	1	0	11	0	0	3	3	2	2	4	0	0	2	2	1
+xbrl	primary	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+datacite	negative-control	3	2	0	3	0	3	0	0	0	2	0	0	0	3	0	0	0	0	0
+TOTAL_primary	primary	19	8	5	2	5	0	12	1	1	8	6	4	5	7	0	0	3	5	3
+TOTAL_negative-control	negative-control	3	2	0	3	0	3	0	0	0	2	0	0	0	3	0	0	0	0	0
+TOTAL_all	all	22	10	5	5	5	3	12	1	1	10	6	4	5	10	0	0	3	5	3

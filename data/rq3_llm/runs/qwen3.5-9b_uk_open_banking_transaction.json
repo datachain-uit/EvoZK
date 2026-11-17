@@ -1,0 +1,1610 @@
+{
+ "n_call_records": 5400,
+ "rescore_mismatches": 0,
+ "groups": {
+  "qwen3.5-9b-q8_0|constrained|ukob_txn|v1": {
+   "first_pass": {
+    "n": 1350,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 915,
+     "OK_carrier_error": 378,
+     "E4_statement_wrong": 57
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "accepted": {
+     "k": 1350,
+     "n": 1350,
+     "rate": 1.0,
+     "ci95": [
+      0.9972,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 915,
+     "n": 1350,
+     "rate": 0.6778,
+     "ci95": [
+      0.6524,
+      0.7022
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 57,
+     "n": 1350,
+     "rate": 0.0422,
+     "ci95": [
+      0.0327,
+      0.0543
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 57,
+     "n": 1350,
+     "rate": 0.0422,
+     "ci95": [
+      0.0327,
+      0.0543
+     ]
+    },
+    "carrier_only_error": {
+     "k": 378,
+     "n": 1350,
+     "rate": 0.28,
+     "ci95": [
+      0.2567,
+      0.3045
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "field_accuracy_accepted": 0.9767,
+    "statement_field_accuracy_accepted": 0.9993,
+    "carrier_field_accuracy_accepted": 0.9567,
+    "top_field_errors": [
+     [
+      "transaction_information:missing",
+      195
+     ],
+     [
+      "value_date_time:missing",
+      159
+     ],
+     [
+      "balance.credit_debit_indicator:spurious",
+      75
+     ],
+     [
+      "balance.type:spurious",
+      75
+     ],
+     [
+      "balance.amount.amount:spurious",
+      75
+     ],
+     [
+      "balance.amount.currency:spurious",
+      75
+     ],
+     [
+      "transaction_information:spurious",
+      66
+     ],
+     [
+      "merchant_details.merchant_category_code:spurious",
+      51
+     ],
+     [
+      "merchant_details.merchant_name:spurious",
+      42
+     ],
+     [
+      "merchant_details.merchant_name:missing",
+      24
+     ]
+    ],
+    "latency_s": {
+     "median": 13.3673,
+     "p90": 15.4031,
+     "sum": 17812.2787
+    },
+    "tokens_out_median": 236.5,
+    "tokens_in_median": 1983.0,
+    "out_tokens_per_s_end_to_end_median": 17.7162,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3457748992,
+    "peak_sys_mem_used_bytes": 6377299968,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|constrained|ukob_txn|v2": {
+   "first_pass": {
+    "n": 1350,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 909,
+     "OK_carrier_error": 393,
+     "E4_statement_wrong": 48
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "accepted": {
+     "k": 1350,
+     "n": 1350,
+     "rate": 1.0,
+     "ci95": [
+      0.9972,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 909,
+     "n": 1350,
+     "rate": 0.6733,
+     "ci95": [
+      0.6479,
+      0.6978
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 48,
+     "n": 1350,
+     "rate": 0.0356,
+     "ci95": [
+      0.0269,
+      0.0468
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 48,
+     "n": 1350,
+     "rate": 0.0356,
+     "ci95": [
+      0.0269,
+      0.0468
+     ]
+    },
+    "carrier_only_error": {
+     "k": 393,
+     "n": 1350,
+     "rate": 0.2911,
+     "ci95": [
+      0.2675,
+      0.3159
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "field_accuracy_accepted": 0.9744,
+    "statement_field_accuracy_accepted": 0.9993,
+    "carrier_field_accuracy_accepted": 0.9523,
+    "top_field_errors": [
+     [
+      "transaction_information:missing",
+      204
+     ],
+     [
+      "value_date_time:missing",
+      162
+     ],
+     [
+      "balance.credit_debit_indicator:spurious",
+      75
+     ],
+     [
+      "balance.type:spurious",
+      75
+     ],
+     [
+      "balance.amount.amount:spurious",
+      75
+     ],
+     [
+      "balance.amount.currency:spurious",
+      75
+     ],
+     [
+      "transaction_information:spurious",
+      60
+     ],
+     [
+      "merchant_details.merchant_name:spurious",
+      45
+     ],
+     [
+      "merchant_details.merchant_category_code:spurious",
+      42
+     ],
+     [
+      "merchant_details.merchant_name:missing",
+      30
+     ]
+    ],
+    "latency_s": {
+     "median": 13.3124,
+     "p90": 15.4078,
+     "sum": 17724.4998
+    },
+    "tokens_out_median": 234.0,
+    "tokens_in_median": 1999.0,
+    "out_tokens_per_s_end_to_end_median": 17.6292,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3458654208,
+    "peak_sys_mem_used_bytes": 6359810048,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|ukob_txn|v1": {
+   "first_pass": {
+    "n": 1350,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 108,
+     "E3_canon": 0,
+     "OK_correct": 855,
+     "OK_carrier_error": 357,
+     "E4_statement_wrong": 30
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 108,
+     "n": 1350,
+     "rate": 0.08,
+     "ci95": [
+      0.0667,
+      0.0957
+     ]
+    },
+    "E2_invalid": {
+     "k": 108,
+     "n": 1350,
+     "rate": 0.08,
+     "ci95": [
+      0.0667,
+      0.0957
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "accepted": {
+     "k": 1242,
+     "n": 1350,
+     "rate": 0.92,
+     "ci95": [
+      0.9043,
+      0.9333
+     ]
+    },
+    "fully_correct": {
+     "k": 855,
+     "n": 1350,
+     "rate": 0.6333,
+     "ci95": [
+      0.6073,
+      0.6586
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 30,
+     "n": 1350,
+     "rate": 0.0222,
+     "ci95": [
+      0.0156,
+      0.0315
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 30,
+     "n": 1242,
+     "rate": 0.0242,
+     "ci95": [
+      0.017,
+      0.0343
+     ]
+    },
+    "carrier_only_error": {
+     "k": 357,
+     "n": 1350,
+     "rate": 0.2644,
+     "ci95": [
+      0.2416,
+      0.2886
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1242,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0031
+     ]
+    },
+    "field_accuracy_accepted": 0.9955,
+    "statement_field_accuracy_accepted": 0.9992,
+    "carrier_field_accuracy_accepted": 0.9921,
+    "top_field_errors": [
+     [
+      "value_date_time:spurious",
+      279
+     ],
+     [
+      "transaction_information:spurious",
+      69
+     ],
+     [
+      "merchant_details.merchant_name:missing",
+      57
+     ],
+     [
+      "merchant_details.merchant_category_code:spurious",
+      24
+     ],
+     [
+      "balance.credit_debit_indicator:spurious",
+      18
+     ],
+     [
+      "balance.type:spurious",
+      18
+     ],
+     [
+      "balance.amount.amount:spurious",
+      18
+     ],
+     [
+      "balance.amount.currency:spurious",
+      18
+     ],
+     [
+      "transaction_information:missing",
+      9
+     ],
+     [
+      "booking_date_time:wrong",
+      6
+     ]
+    ],
+    "latency_s": {
+     "median": 13.9025,
+     "p90": 15.715,
+     "sum": 18391.4264
+    },
+    "tokens_out_median": 251.0,
+    "tokens_in_median": 1983.0,
+    "out_tokens_per_s_end_to_end_median": 18.0466,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3455991808,
+    "peak_sys_mem_used_bytes": 6291578880,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|ukob_txn|v2": {
+   "first_pass": {
+    "n": 1350,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 105,
+     "E3_canon": 0,
+     "OK_correct": 819,
+     "OK_carrier_error": 399,
+     "E4_statement_wrong": 27
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 105,
+     "n": 1350,
+     "rate": 0.0778,
+     "ci95": [
+      0.0647,
+      0.0933
+     ]
+    },
+    "E2_invalid": {
+     "k": 105,
+     "n": 1350,
+     "rate": 0.0778,
+     "ci95": [
+      0.0647,
+      0.0933
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1350,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0028
+     ]
+    },
+    "accepted": {
+     "k": 1245,
+     "n": 1350,
+     "rate": 0.9222,
+     "ci95": [
+      0.9067,
+      0.9353
+     ]
+    },
+    "fully_correct": {
+     "k": 819,
+     "n": 1350,
+     "rate": 0.6067,
+     "ci95": [
+      0.5803,
+      0.6324
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 27,
+     "n": 1350,
+     "rate": 0.02,
+     "ci95": [
+      0.0138,
+      0.0289
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 27,
+     "n": 1245,
+     "rate": 0.0217,
+     "ci95": [
+      0.0149,
+      0.0314
+     ]
+    },
+    "carrier_only_error": {
+     "k": 399,
+     "n": 1350,
+     "rate": 0.2956,
+     "ci95": [
+      0.2718,
+      0.3204
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1245,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0031
+     ]
+    },
+    "field_accuracy_accepted": 0.9946,
+    "statement_field_accuracy_accepted": 0.9992,
+    "carrier_field_accuracy_accepted": 0.9904,
+    "top_field_errors": [
+     [
+      "value_date_time:spurious",
+      336
+     ],
+     [
+      "transaction_information:spurious",
+      75
+     ],
+     [
+      "merchant_details.merchant_name:missing",
+      60
+     ],
+     [
+      "merchant_details.merchant_category_code:spurious",
+      21
+     ],
+     [
+      "transaction_information:missing",
+      6
+     ],
+     [
+      "balance.credit_debit_indicator:spurious",
+      6
+     ],
+     [
+      "balance.type:spurious",
+      6
+     ],
+     [
+      "balance.amount.amount:spurious",
+      6
+     ],
+     [
+      "balance.amount.currency:spurious",
+      6
+     ],
+     [
+      "booking_date_time:wrong",
+      6
+     ]
+    ],
+    "latency_s": {
+     "median": 13.8569,
+     "p90": 15.6835,
+     "sum": 18390.5999
+    },
+    "tokens_out_median": 250.0,
+    "tokens_in_median": 1999.0,
+    "out_tokens_per_s_end_to_end_median": 17.9662,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3460358144,
+    "peak_sys_mem_used_bytes": 6283833344,
+    "http_errors": 0,
+    "simulated": false
+   }
+  }
+ },
+ "pooled": {
+  "qwen3.5-9b-q8_0|constrained": {
+   "first_pass": {
+    "n": 2700,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 1824,
+     "OK_carrier_error": 771,
+     "E4_statement_wrong": 105
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "accepted": {
+     "k": 2700,
+     "n": 2700,
+     "rate": 1.0,
+     "ci95": [
+      0.9986,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 1824,
+     "n": 2700,
+     "rate": 0.6756,
+     "ci95": [
+      0.6577,
+      0.693
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 105,
+     "n": 2700,
+     "rate": 0.0389,
+     "ci95": [
+      0.0322,
+      0.0469
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 105,
+     "n": 2700,
+     "rate": 0.0389,
+     "ci95": [
+      0.0322,
+      0.0469
+     ]
+    },
+    "carrier_only_error": {
+     "k": 771,
+     "n": 2700,
+     "rate": 0.2856,
+     "ci95": [
+      0.2688,
+      0.3029
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "field_accuracy_accepted": 0.9756,
+    "statement_field_accuracy_accepted": 0.9993,
+    "carrier_field_accuracy_accepted": 0.9545,
+    "top_field_errors": [
+     [
+      "transaction_information:missing",
+      399
+     ],
+     [
+      "value_date_time:missing",
+      321
+     ],
+     [
+      "balance.credit_debit_indicator:spurious",
+      150
+     ],
+     [
+      "balance.type:spurious",
+      150
+     ],
+     [
+      "balance.amount.amount:spurious",
+      150
+     ],
+     [
+      "balance.amount.currency:spurious",
+      150
+     ],
+     [
+      "transaction_information:spurious",
+      126
+     ],
+     [
+      "merchant_details.merchant_category_code:spurious",
+      93
+     ],
+     [
+      "merchant_details.merchant_name:spurious",
+      87
+     ],
+     [
+      "merchant_details.merchant_name:missing",
+      54
+     ]
+    ],
+    "latency_s": {
+     "median": 13.3578,
+     "p90": 15.4067,
+     "sum": 35536.7786
+    },
+    "tokens_out_median": 236.0,
+    "tokens_in_median": 1990.5,
+    "out_tokens_per_s_end_to_end_median": 17.6833,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3458654208,
+    "peak_sys_mem_used_bytes": 6377299968,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "first_pass": {
+    "n": 2700,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 213,
+     "E3_canon": 0,
+     "OK_correct": 1674,
+     "OK_carrier_error": 756,
+     "E4_statement_wrong": 57
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 213,
+     "n": 2700,
+     "rate": 0.0789,
+     "ci95": [
+      0.0693,
+      0.0897
+     ]
+    },
+    "E2_invalid": {
+     "k": 213,
+     "n": 2700,
+     "rate": 0.0789,
+     "ci95": [
+      0.0693,
+      0.0897
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 2700,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0014
+     ]
+    },
+    "accepted": {
+     "k": 2487,
+     "n": 2700,
+     "rate": 0.9211,
+     "ci95": [
+      0.9103,
+      0.9307
+     ]
+    },
+    "fully_correct": {
+     "k": 1674,
+     "n": 2700,
+     "rate": 0.62,
+     "ci95": [
+      0.6015,
+      0.6381
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 57,
+     "n": 2700,
+     "rate": 0.0211,
+     "ci95": [
+      0.0163,
+      0.0273
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 57,
+     "n": 2487,
+     "rate": 0.0229,
+     "ci95": [
+      0.0177,
+      0.0296
+     ]
+    },
+    "carrier_only_error": {
+     "k": 756,
+     "n": 2700,
+     "rate": 0.28,
+     "ci95": [
+      0.2634,
+      0.2972
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 2487,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0015
+     ]
+    },
+    "field_accuracy_accepted": 0.995,
+    "statement_field_accuracy_accepted": 0.9992,
+    "carrier_field_accuracy_accepted": 0.9913,
+    "top_field_errors": [
+     [
+      "value_date_time:spurious",
+      615
+     ],
+     [
+      "transaction_information:spurious",
+      144
+     ],
+     [
+      "merchant_details.merchant_name:missing",
+      117
+     ],
+     [
+      "merchant_details.merchant_category_code:spurious",
+      45
+     ],
+     [
+      "balance.credit_debit_indicator:spurious",
+      24
+     ],
+     [
+      "balance.type:spurious",
+      24
+     ],
+     [
+      "balance.amount.amount:spurious",
+      24
+     ],
+     [
+      "balance.amount.currency:spurious",
+      24
+     ],
+     [
+      "transaction_information:missing",
+      15
+     ],
+     [
+      "booking_date_time:wrong",
+      12
+     ]
+    ],
+    "latency_s": {
+     "median": 13.8822,
+     "p90": 15.6957,
+     "sum": 36782.0263
+    },
+    "tokens_out_median": 250.0,
+    "tokens_in_median": 1990.5,
+    "out_tokens_per_s_end_to_end_median": 18.0144,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3460358144,
+    "peak_sys_mem_used_bytes": 6291578880,
+    "http_errors": 0,
+    "simulated": false
+   }
+  }
+ },
+ "stability": {
+  "qwen3.5-9b-q8_0|constrained|ukob_txn|v1": {
+   "runs": 3,
+   "docs": 450,
+   "raw_identical": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "stable_and_correct": {
+    "k": 305,
+    "n": 450,
+    "rate": 0.6778,
+    "ci95": [
+     0.6333,
+     0.7193
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 450,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0085
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 450,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0085
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 450
+   }
+  },
+  "qwen3.5-9b-q8_0|constrained|ukob_txn|v2": {
+   "runs": 3,
+   "docs": 450,
+   "raw_identical": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "stable_and_correct": {
+    "k": 303,
+    "n": 450,
+    "rate": 0.6733,
+    "ci95": [
+     0.6287,
+     0.715
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 450,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0085
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 450,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0085
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 450
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|ukob_txn|v1": {
+   "runs": 3,
+   "docs": 450,
+   "raw_identical": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 414,
+    "n": 450,
+    "rate": 0.92,
+    "ci95": [
+     0.8912,
+     0.9417
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 414,
+    "n": 450,
+    "rate": 0.92,
+    "ci95": [
+     0.8912,
+     0.9417
+    ]
+   },
+   "stable_and_correct": {
+    "k": 285,
+    "n": 450,
+    "rate": 0.6333,
+    "ci95": [
+     0.5879,
+     0.6766
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 414,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0092
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 450,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0085
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 414
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|ukob_txn|v2": {
+   "runs": 3,
+   "docs": 450,
+   "raw_identical": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 450,
+    "n": 450,
+    "rate": 1.0,
+    "ci95": [
+     0.9915,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 415,
+    "n": 450,
+    "rate": 0.9222,
+    "ci95": [
+     0.8937,
+     0.9435
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 415,
+    "n": 450,
+    "rate": 0.9222,
+    "ci95": [
+     0.8937,
+     0.9435
+    ]
+   },
+   "stable_and_correct": {
+    "k": 273,
+    "n": 450,
+    "rate": 0.6067,
+    "ci95": [
+     0.5608,
+     0.6507
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 415,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0092
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 450,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0085
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 415
+   }
+  }
+ },
+ "latency_pairs": {
+  "qwen3.5-9b-q8_0": {
+   "pairs": 2700,
+   "median_latency_ratio_constrained_over_unconstrained": 0.9953,
+   "p10": 0.8669,
+   "p90": 1.0263,
+   "median_tokens_out_diff": 0.0
+  }
+ },
+ "repair": {
+  "qwen3.5-9b-q8_0|constrained": {
+   "repair_calls": 0,
+   "repair_success": 0
+  },
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "repair_calls": 0,
+   "repair_success": 0
+  }
+ },
+ "stability_pooled": {
+  "qwen3.5-9b-q8_0|constrained": {
+   "raw_identical": {
+    "k": 900,
+    "n": 900,
+    "rate": 1.0,
+    "ci95": [
+     0.9957,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 900,
+    "n": 900,
+    "rate": 1.0,
+    "ci95": [
+     0.9957,
+     1.0
+    ]
+   },
+   "stable_and_correct": {
+    "k": 608,
+    "n": 900,
+    "rate": 0.6756,
+    "ci95": [
+     0.6443,
+     0.7053
+    ]
+   },
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 900,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0043
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 900,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0043
+    ]
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "raw_identical": {
+    "k": 900,
+    "n": 900,
+    "rate": 1.0,
+    "ci95": [
+     0.9957,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 829,
+    "n": 900,
+    "rate": 0.9211,
+    "ci95": [
+     0.9017,
+     0.937
+    ]
+   },
+   "stable_and_correct": {
+    "k": 558,
+    "n": 900,
+    "rate": 0.62,
+    "ci95": [
+     0.5878,
+     0.6511
+    ]
+   },
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 829,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0046
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 900,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0043
+    ]
+   }
+  }
+ },
+ "maintenance": {
+  "ob3": {
+   "deterministic_mapping_loc_v1": 9,
+   "deterministic_mapping_loc_v2": 11,
+   "deterministic_mapping_lines_changed": 14,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [
+    "results[*].result_type",
+    "results[*].value",
+    "valid_from",
+    "valid_until"
+   ],
+   "schema_paths_removed": [
+    "expiration_date",
+    "issuance_date",
+    "result.grade",
+    "result.score_percent"
+   ],
+   "schema_paths_retyped": []
+  },
+  "fhir_imm": {
+   "deterministic_mapping_loc_v1": 8,
+   "deterministic_mapping_loc_v2": 8,
+   "deterministic_mapping_lines_changed": 10,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [
+    "reason[*].concept.code",
+    "reason[*].concept.system"
+   ],
+   "schema_paths_removed": [
+    "reason_code"
+   ],
+   "schema_paths_retyped": [
+    "protocol_applied.dose_number",
+    "protocol_applied.series_doses"
+   ]
+  },
+  "ukob_txn": {
+   "deterministic_mapping_loc_v1": 7,
+   "deterministic_mapping_loc_v2": 7,
+   "deterministic_mapping_lines_changed": 8,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [],
+   "schema_paths_removed": [],
+   "schema_paths_retyped": []
+  }
+ },
+ "planning": {
+  "qwen3.5-9b-q8_0": {
+   "unconstrained": {
+    "E4_rate": 0.0211,
+    "n_extractions_for_E4_ci_halfwidth_0.03": 89,
+    "n_extractions_for_E4_ci_halfwidth_0.05": 32,
+    "accepted_rate": 0.9211
+   },
+   "constrained": {
+    "E4_rate": 0.0389,
+    "n_extractions_for_E4_ci_halfwidth_0.03": 160,
+    "n_extractions_for_E4_ci_halfwidth_0.05": 58,
+    "accepted_rate": 1.0
+   },
+   "n_per_condition_to_detect_E4_difference": 1441,
+   "n_per_condition_to_detect_accepted_difference": 95,
+   "note": "independent-groups approximation; extractions are clustered by document and the conditions are paired, so treat as an upper bound and confirm with a paired/clustered analysis (e.g. McNemar per document) before registering n."
+  }
+ }
+}

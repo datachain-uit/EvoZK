@@ -1,0 +1,4424 @@
+{
+ "B_primary": 1,
+ "B_sensitivity": 4,
+ "histories": {
+  "datacite": {
+   "W4_history": false,
+   "capacity": {
+    "structural-step": {
+     "K_initial": 128,
+     "K_trace": [
+      128,
+      128,
+      128,
+      128
+     ],
+     "beyond_ladder": false
+    },
+    "tight-refit": {
+     "K_initial": 128,
+     "K_trace": [
+      128,
+      128,
+      128,
+      128
+     ],
+     "beyond_ladder": false
+    }
+   },
+   "domain": "datacite",
+   "history": "datacite",
+   "regenerations": {
+    "A0_pad[structural-step]": 0,
+    "A0_pad[tight-refit]": 0,
+    "A0_tight": 2,
+    "A1": 0,
+    "PX": 0,
+    "PX_strict": 3
+   },
+   "role": "negative-control",
+   "transitions": [
+    {
+     "delta_sigma": 3,
+     "delta_sigma_B4": 3,
+     "from_version": "4.4",
+     "n_paths_from": 114,
+     "n_paths_to": 117,
+     "path_diff": {
+      "added": [
+       "publisher.@publisherIdentifier",
+       "publisher.@publisherIdentifierScheme",
+       "publisher.@schemeURI"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 3,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W1",
+        "W6x"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W1",
+        "W6x"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": true,
+     "sigma_from": 114,
+     "sigma_from_B4": 993,
+     "sigma_to": 117,
+     "sigma_to_B4": 996,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [
+       "resourceType.@resourceTypeGeneral"
+      ],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "4.5"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "4.5",
+     "n_paths_from": 117,
+     "n_paths_to": 117,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0",
+        "W6x"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0",
+        "W6x"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": true,
+     "sigma_from": 117,
+     "sigma_from_B4": 996,
+     "sigma_to": 117,
+     "sigma_to_B4": 996,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [
+       "resourceType.@resourceTypeGeneral"
+      ],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "4.6"
+    },
+    {
+     "delta_sigma": 2,
+     "delta_sigma_B4": 8,
+     "from_version": "4.6",
+     "n_paths_from": 117,
+     "n_paths_to": 119,
+     "path_diff": {
+      "added": [
+       "relatedIdentifiers.relatedIdentifier[].@relationTypeInformation",
+       "relatedItems.relatedItem[].@relationTypeInformation"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 2,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W1",
+        "W6x"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W1",
+        "W6x"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": true,
+     "sigma_from": 117,
+     "sigma_from_B4": 996,
+     "sigma_to": 119,
+     "sigma_to_B4": 1004,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [
+       "resourceType.@resourceTypeGeneral"
+      ],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "4.7"
+    }
+   ],
+   "versions": [
+    {
+     "max_array_depth": 3,
+     "n_array_paths": 105,
+     "n_carrier": 112,
+     "n_choice_groups": 0,
+     "n_counted_paths": 114,
+     "n_excluded": 1,
+     "n_leaf_paths": 114,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 105,
+     "n_uncertainties": 7,
+     "release_date": "2021-03-30",
+     "sigma_B1": 114,
+     "sigma_B4": 993,
+     "sigma_carrier_B1": 112,
+     "statement_paths": [
+      "publicationYear",
+      "resourceType.@resourceTypeGeneral"
+     ],
+     "statement_types": {
+      "publicationYear": "integer",
+      "resourceType.@resourceTypeGeneral": "code"
+     },
+     "status": "normative",
+     "version": "4.4"
+    },
+    {
+     "max_array_depth": 3,
+     "n_array_paths": 105,
+     "n_carrier": 115,
+     "n_choice_groups": 0,
+     "n_counted_paths": 117,
+     "n_excluded": 1,
+     "n_leaf_paths": 117,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 105,
+     "n_uncertainties": 7,
+     "release_date": "2024-01-22",
+     "sigma_B1": 117,
+     "sigma_B4": 996,
+     "sigma_carrier_B1": 115,
+     "statement_paths": [
+      "publicationYear",
+      "resourceType.@resourceTypeGeneral"
+     ],
+     "statement_types": {
+      "publicationYear": "integer",
+      "resourceType.@resourceTypeGeneral": "code"
+     },
+     "status": "normative",
+     "version": "4.5"
+    },
+    {
+     "max_array_depth": 3,
+     "n_array_paths": 105,
+     "n_carrier": 115,
+     "n_choice_groups": 0,
+     "n_counted_paths": 117,
+     "n_excluded": 1,
+     "n_leaf_paths": 117,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 105,
+     "n_uncertainties": 7,
+     "release_date": "2024-12-05",
+     "sigma_B1": 117,
+     "sigma_B4": 996,
+     "sigma_carrier_B1": 115,
+     "statement_paths": [
+      "publicationYear",
+      "resourceType.@resourceTypeGeneral"
+     ],
+     "statement_types": {
+      "publicationYear": "integer",
+      "resourceType.@resourceTypeGeneral": "code"
+     },
+     "status": "normative",
+     "version": "4.6"
+    },
+    {
+     "max_array_depth": 3,
+     "n_array_paths": 107,
+     "n_carrier": 117,
+     "n_choice_groups": 0,
+     "n_counted_paths": 119,
+     "n_excluded": 1,
+     "n_leaf_paths": 119,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 107,
+     "n_uncertainties": 7,
+     "release_date": "2026-03-03",
+     "sigma_B1": 119,
+     "sigma_B4": 1004,
+     "sigma_carrier_B1": 117,
+     "statement_paths": [
+      "publicationYear",
+      "resourceType.@resourceTypeGeneral"
+     ],
+     "statement_types": {
+      "publicationYear": "integer",
+      "resourceType.@resourceTypeGeneral": "code"
+     },
+     "status": "normative",
+     "version": "4.7"
+    }
+   ]
+  },
+  "epcis": {
+   "W4_history": false,
+   "capacity": {
+    "structural-step": {
+     "K_initial": 31,
+     "K_trace": [
+      31,
+      64,
+      64
+     ],
+     "beyond_ladder": false
+    },
+    "tight-refit": {
+     "K_initial": 31,
+     "K_trace": [
+      31,
+      58,
+      58
+     ],
+     "beyond_ladder": false
+    }
+   },
+   "domain": "epcis",
+   "history": "epcis",
+   "regenerations": {
+    "A0_pad[structural-step]": 1,
+    "A0_pad[tight-refit]": 1,
+    "A0_tight": 1,
+    "A1": 0,
+    "PX": 1,
+    "PX_strict": 1
+   },
+   "role": "primary",
+   "transitions": [
+    {
+     "delta_sigma": 36,
+     "delta_sigma_B4": 429,
+     "from_version": "1.2",
+     "n_paths_from": 22,
+     "n_paths_to": 58,
+     "path_diff": {
+      "added": [
+       "certificationInfo",
+       "destinationList.destination[].#value",
+       "destinationList.destination[].@type",
+       "errorDeclaration.correctiveEventIDs.correctiveEventID[]",
+       "errorDeclaration.declarationTime",
+       "errorDeclaration.reason",
+       "eventID",
+       "persistentDisposition.set[]",
+       "persistentDisposition.unset[]",
+       "quantityList.quantityElement[].epcClass",
+       "quantityList.quantityElement[].quantity",
+       "quantityList.quantityElement[].uom",
+       "sensorElementList.sensorElement[].sensorMetadata.#value",
+       "sensorElementList.sensorElement[].sensorMetadata.@bizRules",
+       "sensorElementList.sensorElement[].sensorMetadata.@dataProcessingMethod",
+       "sensorElementList.sensorElement[].sensorMetadata.@deviceID",
+       "sensorElementList.sensorElement[].sensorMetadata.@deviceMetadata",
+       "sensorElementList.sensorElement[].sensorMetadata.@endTime",
+       "sensorElementList.sensorElement[].sensorMetadata.@rawData",
+       "sensorElementList.sensorElement[].sensorMetadata.@startTime",
+       "sensorElementList.sensorElement[].sensorMetadata.@time",
+       "sensorElementList.sensorElement[].sensorReport[].#value",
+       "sensorElementList.sensorElement[].sensorReport[].@booleanValue",
+       "sensorElementList.sensorElement[].sensorReport[].@chemicalSubstance",
+       "sensorElementList.sensorElement[].sensorReport[].@component",
+       "sensorElementList.sensorElement[].sensorReport[].@coordinateReferenceSystem",
+       "sensorElementList.sensorElement[].sensorReport[].@dataProcessingMethod",
+       "sensorElementList.sensorElement[].sensorReport[].@deviceID",
+       "sensorElementList.sensorElement[].sensorReport[].@deviceMetadata",
+       "sensorElementList.sensorElement[].sensorReport[].@exception",
+       "sensorElementList.sensorElement[].sensorReport[].@hexBinaryValue",
+       "sensorElementList.sensorElement[].sensorReport[].@maxValue",
+       "sensorElementList.sensorElement[].sensorReport[].@meanValue",
+       "sensorElementList.sensorElement[].sensorReport[].@microorganism",
+       "sensorElementList.sensorElement[].sensorReport[].@minValue",
+       "sensorElementList.sensorElement[].sensorReport[].@percRank",
+       "sensorElementList.sensorElement[].sensorReport[].@percValue",
+       "sensorElementList.sensorElement[].sensorReport[].@rawData",
+       "sensorElementList.sensorElement[].sensorReport[].@sDev",
+       "sensorElementList.sensorElement[].sensorReport[].@stringValue",
+       "sensorElementList.sensorElement[].sensorReport[].@time",
+       "sensorElementList.sensorElement[].sensorReport[].@type",
+       "sensorElementList.sensorElement[].sensorReport[].@uom",
+       "sensorElementList.sensorElement[].sensorReport[].@uriValue",
+       "sensorElementList.sensorElement[].sensorReport[].@value",
+       "sourceList.source[].#value",
+       "sourceList.source[].@type"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [
+       "baseExtension.errorDeclaration.correctiveEventIDs.correctiveEventID[]",
+       "baseExtension.errorDeclaration.declarationTime",
+       "baseExtension.errorDeclaration.reason",
+       "baseExtension.eventID",
+       "extension.destinationList.destination[].#value",
+       "extension.destinationList.destination[].@type",
+       "extension.quantityList.quantityElement[].epcClass",
+       "extension.quantityList.quantityElement[].quantity",
+       "extension.quantityList.quantityElement[].uom",
+       "extension.sourceList.source[].#value",
+       "extension.sourceList.source[].@type"
+      ],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 47,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 11,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 64,
+       "K_before": 31,
+       "exhausted": true,
+       "labels": [
+        "W2",
+        "W6"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 58,
+       "K_before": 31,
+       "exhausted": true,
+       "labels": [
+        "W2",
+        "W6"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": true,
+     "regen_PX_strict": true,
+     "sigma_from": 22,
+     "sigma_from_B4": 55,
+     "sigma_to": 58,
+     "sigma_to_B4": 484,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [
+       "eventTime"
+      ],
+      "removed": []
+     },
+     "to_version": "2.0"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "2.0",
+     "n_paths_from": 58,
+     "n_paths_to": 58,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 64,
+       "K_before": 64,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 58,
+       "K_before": 58,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 58,
+     "sigma_from_B4": 484,
+     "sigma_to": 58,
+     "sigma_to_B4": 484,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "2.0.1"
+    }
+   ],
+   "versions": [
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 11,
+     "n_carrier": 20,
+     "n_choice_groups": 0,
+     "n_counted_paths": 22,
+     "n_excluded": 18,
+     "n_leaf_paths": 22,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 11,
+     "n_uncertainties": 3,
+     "release_date": "2016-09-29",
+     "sigma_B1": 22,
+     "sigma_B4": 55,
+     "sigma_carrier_B1": 20,
+     "statement_paths": [
+      "bizStep",
+      "eventTime"
+     ],
+     "statement_types": {
+      "bizStep": "uri",
+      "eventTime": "datetime"
+     },
+     "status": "normative",
+     "version": "1.2"
+    },
+    {
+     "max_array_depth": 2,
+     "n_array_paths": 46,
+     "n_carrier": 56,
+     "n_choice_groups": 0,
+     "n_counted_paths": 58,
+     "n_excluded": 21,
+     "n_leaf_paths": 58,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 46,
+     "n_uncertainties": 4,
+     "release_date": "2022-06-22",
+     "sigma_B1": 58,
+     "sigma_B4": 484,
+     "sigma_carrier_B1": 56,
+     "statement_paths": [
+      "bizStep",
+      "eventTime"
+     ],
+     "statement_types": {
+      "bizStep": "uri",
+      "eventTime": "datetime"
+     },
+     "status": "normative",
+     "version": "2.0"
+    },
+    {
+     "max_array_depth": 2,
+     "n_array_paths": 46,
+     "n_carrier": 56,
+     "n_choice_groups": 0,
+     "n_counted_paths": 58,
+     "n_excluded": 21,
+     "n_leaf_paths": 58,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 46,
+     "n_uncertainties": 3,
+     "release_date": "2025-07-01",
+     "sigma_B1": 58,
+     "sigma_B4": 484,
+     "sigma_carrier_B1": 56,
+     "statement_paths": [
+      "bizStep",
+      "eventTime"
+     ],
+     "statement_types": {
+      "bizStep": "uri",
+      "eventTime": "datetime"
+     },
+     "status": "normative",
+     "version": "2.0.1"
+    }
+   ]
+  },
+  "fhir": {
+   "W4_history": false,
+   "capacity": {
+    "structural-step": {
+     "K_initial": 512,
+     "K_trace": [
+      512,
+      512,
+      512
+     ],
+     "beyond_ladder": false
+    },
+    "tight-refit": {
+     "K_initial": 512,
+     "K_trace": [
+      512,
+      512,
+      512
+     ],
+     "beyond_ladder": false
+    }
+   },
+   "domain": "fhir",
+   "history": "fhir",
+   "regenerations": {
+    "A0_pad[structural-step]": 0,
+    "A0_pad[tight-refit]": 0,
+    "A0_tight": 2,
+    "A1": 0,
+    "PX": 0,
+    "PX_strict": 0
+   },
+   "role": "primary",
+   "transitions": [
+    {
+     "delta_sigma": 64,
+     "delta_sigma_B4": 642,
+     "from_version": "4.0.1",
+     "n_paths_from": 418,
+     "n_paths_to": 533,
+     "path_diff": {
+      "added": [
+       "bodyStructure.display",
+       "bodyStructure.identifier.period.end",
+       "bodyStructure.identifier.period.start",
+       "bodyStructure.identifier.system",
+       "bodyStructure.identifier.type.coding[].code",
+       "bodyStructure.identifier.type.coding[].display",
+       "bodyStructure.identifier.type.coding[].system",
+       "bodyStructure.identifier.type.coding[].userSelected",
+       "bodyStructure.identifier.type.coding[].version",
+       "bodyStructure.identifier.type.text",
+       "bodyStructure.identifier.use",
+       "bodyStructure.identifier.value",
+       "bodyStructure.reference",
+       "bodyStructure.type",
+       "component[].referenceRange[].normalValue.coding[].code",
+       "component[].referenceRange[].normalValue.coding[].display",
+       "component[].referenceRange[].normalValue.coding[].system",
+       "component[].referenceRange[].normalValue.coding[].userSelected",
+       "component[].referenceRange[].normalValue.coding[].version",
+       "component[].referenceRange[].normalValue.text",
+       "component[].valueAttachment.contentType",
+       "component[].valueAttachment.creation",
+       "component[].valueAttachment.data",
+       "component[].valueAttachment.duration",
+       "component[].valueAttachment.frames",
+       "component[].valueAttachment.hash",
+       "component[].valueAttachment.height",
+       "component[].valueAttachment.language",
+       "component[].valueAttachment.pages",
+       "component[].valueAttachment.size",
+       "component[].valueAttachment.title",
+       "component[].valueAttachment.url",
+       "component[].valueAttachment.width",
+       "component[].valueReference.display",
+       "component[].valueReference.identifier.period.end",
+       "component[].valueReference.identifier.period.start",
+       "component[].valueReference.identifier.system",
+       "component[].valueReference.identifier.type.coding[].code",
+       "component[].valueReference.identifier.type.coding[].display",
+       "component[].valueReference.identifier.type.coding[].system",
+       "component[].valueReference.identifier.type.coding[].userSelected",
+       "component[].valueReference.identifier.type.coding[].version",
+       "component[].valueReference.identifier.type.text",
+       "component[].valueReference.identifier.use",
+       "component[].valueReference.identifier.value",
+       "component[].valueReference.reference",
+       "component[].valueReference.type",
+       "component[].valueSampledData.codeMap",
+       "component[].valueSampledData.interval",
+       "component[].valueSampledData.intervalUnit",
+       "component[].valueSampledData.offsets",
+       "instantiatesCanonical",
+       "instantiatesReference.display",
+       "instantiatesReference.identifier.period.end",
+       "instantiatesReference.identifier.period.start",
+       "instantiatesReference.identifier.system",
+       "instantiatesReference.identifier.type.coding[].code",
+       "instantiatesReference.identifier.type.coding[].display",
+       "instantiatesReference.identifier.type.coding[].system",
+       "instantiatesReference.identifier.type.coding[].userSelected",
+       "instantiatesReference.identifier.type.coding[].version",
+       "instantiatesReference.identifier.type.text",
+       "instantiatesReference.identifier.use",
+       "instantiatesReference.identifier.value",
+       "instantiatesReference.reference",
+       "instantiatesReference.type",
+       "referenceRange[].normalValue.coding[].code",
+       "referenceRange[].normalValue.coding[].display",
+       "referenceRange[].normalValue.coding[].system",
+       "referenceRange[].normalValue.coding[].userSelected",
+       "referenceRange[].normalValue.coding[].version",
+       "referenceRange[].normalValue.text",
+       "triggeredBy[].observation.display",
+       "triggeredBy[].observation.identifier.period.end",
+       "triggeredBy[].observation.identifier.period.start",
+       "triggeredBy[].observation.identifier.system",
+       "triggeredBy[].observation.identifier.type.coding[].code",
+       "triggeredBy[].observation.identifier.type.coding[].display",
+       "triggeredBy[].observation.identifier.type.coding[].system",
+       "triggeredBy[].observation.identifier.type.coding[].userSelected",
+       "triggeredBy[].observation.identifier.type.coding[].version",
+       "triggeredBy[].observation.identifier.type.text",
+       "triggeredBy[].observation.identifier.use",
+       "triggeredBy[].observation.identifier.value",
+       "triggeredBy[].observation.reference",
+       "triggeredBy[].observation.type",
+       "triggeredBy[].reason",
+       "triggeredBy[].type",
+       "valueAttachment.contentType",
+       "valueAttachment.creation",
+       "valueAttachment.data",
+       "valueAttachment.duration",
+       "valueAttachment.frames",
+       "valueAttachment.hash",
+       "valueAttachment.height",
+       "valueAttachment.language",
+       "valueAttachment.pages",
+       "valueAttachment.size",
+       "valueAttachment.title",
+       "valueAttachment.url",
+       "valueAttachment.width",
+       "valueReference.display",
+       "valueReference.identifier.period.end",
+       "valueReference.identifier.period.start",
+       "valueReference.identifier.system",
+       "valueReference.identifier.type.coding[].code",
+       "valueReference.identifier.type.coding[].display",
+       "valueReference.identifier.type.coding[].system",
+       "valueReference.identifier.type.coding[].userSelected",
+       "valueReference.identifier.type.coding[].version",
+       "valueReference.identifier.type.text",
+       "valueReference.identifier.use",
+       "valueReference.identifier.value",
+       "valueReference.reference",
+       "valueReference.type",
+       "valueSampledData.codeMap",
+       "valueSampledData.interval",
+       "valueSampledData.intervalUnit",
+       "valueSampledData.offsets"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [
+       "component[].valueRatio.denominator.comparator",
+       "component[].valueSampledData.period",
+       "valueRatio.denominator.comparator",
+       "valueSampledData.period"
+      ],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 119,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 4,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 512,
+       "K_before": 512,
+       "exhausted": false,
+       "labels": [
+        "W1"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 512,
+       "K_before": 512,
+       "exhausted": false,
+       "labels": [
+        "W1"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 334,
+     "sigma_from_B4": 4412,
+     "sigma_to": 398,
+     "sigma_to_B4": 5054,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "5.0.0"
+    },
+    {
+     "delta_sigma": 23,
+     "delta_sigma_B4": 201,
+     "from_version": "5.0.0",
+     "n_paths_from": 533,
+     "n_paths_to": 529,
+     "path_diff": {
+      "added": [
+       "bodyStructure.concept.coding[].code",
+       "bodyStructure.concept.coding[].display",
+       "bodyStructure.concept.coding[].system",
+       "bodyStructure.concept.coding[].userSelected",
+       "bodyStructure.concept.coding[].version",
+       "bodyStructure.concept.text",
+       "bodyStructure.reference.display",
+       "bodyStructure.reference.identifier.period.end",
+       "bodyStructure.reference.identifier.period.start",
+       "bodyStructure.reference.identifier.system",
+       "bodyStructure.reference.identifier.type.coding[].code",
+       "bodyStructure.reference.identifier.type.coding[].display",
+       "bodyStructure.reference.identifier.type.coding[].system",
+       "bodyStructure.reference.identifier.type.coding[].userSelected",
+       "bodyStructure.reference.identifier.type.coding[].version",
+       "bodyStructure.reference.identifier.type.text",
+       "bodyStructure.reference.identifier.use",
+       "bodyStructure.reference.identifier.value",
+       "bodyStructure.reference.reference",
+       "bodyStructure.reference.type",
+       "component[].referenceRange[].high.comparator",
+       "component[].referenceRange[].low.comparator",
+       "effectiveTiming.repeat.endOffset.code",
+       "effectiveTiming.repeat.endOffset.system",
+       "effectiveTiming.repeat.endOffset.unit",
+       "effectiveTiming.repeat.endOffset.value",
+       "effectiveTiming.repeat.startOffset.code",
+       "effectiveTiming.repeat.startOffset.system",
+       "effectiveTiming.repeat.startOffset.unit",
+       "effectiveTiming.repeat.startOffset.value",
+       "interpretationContext[].concept.coding[].code",
+       "interpretationContext[].concept.coding[].display",
+       "interpretationContext[].concept.coding[].system",
+       "interpretationContext[].concept.coding[].userSelected",
+       "interpretationContext[].concept.coding[].version",
+       "interpretationContext[].concept.text",
+       "interpretationContext[].reference.display",
+       "interpretationContext[].reference.identifier.period.end",
+       "interpretationContext[].reference.identifier.period.start",
+       "interpretationContext[].reference.identifier.system",
+       "interpretationContext[].reference.identifier.type.coding[].code",
+       "interpretationContext[].reference.identifier.type.coding[].display",
+       "interpretationContext[].reference.identifier.type.coding[].system",
+       "interpretationContext[].reference.identifier.type.coding[].userSelected",
+       "interpretationContext[].reference.identifier.type.coding[].version",
+       "interpretationContext[].reference.identifier.type.text",
+       "interpretationContext[].reference.identifier.use",
+       "interpretationContext[].reference.identifier.value",
+       "interpretationContext[].reference.reference",
+       "interpretationContext[].reference.type",
+       "organizer",
+       "referenceRange[].high.comparator",
+       "referenceRange[].low.comparator"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [
+       "bodyStructure.display",
+       "bodyStructure.identifier.period.end",
+       "bodyStructure.identifier.period.start",
+       "bodyStructure.identifier.system",
+       "bodyStructure.identifier.type.coding[].code",
+       "bodyStructure.identifier.type.coding[].display",
+       "bodyStructure.identifier.type.coding[].system",
+       "bodyStructure.identifier.type.coding[].userSelected",
+       "bodyStructure.identifier.type.coding[].version",
+       "bodyStructure.identifier.type.text",
+       "bodyStructure.identifier.use",
+       "bodyStructure.identifier.value",
+       "bodyStructure.reference",
+       "bodyStructure.type",
+       "component[].valueReference.display",
+       "component[].valueReference.identifier.period.end",
+       "component[].valueReference.identifier.period.start",
+       "component[].valueReference.identifier.system",
+       "component[].valueReference.identifier.type.coding[].code",
+       "component[].valueReference.identifier.type.coding[].display",
+       "component[].valueReference.identifier.type.coding[].system",
+       "component[].valueReference.identifier.type.coding[].userSelected",
+       "component[].valueReference.identifier.type.coding[].version",
+       "component[].valueReference.identifier.type.text",
+       "component[].valueReference.identifier.use",
+       "component[].valueReference.identifier.value",
+       "component[].valueReference.reference",
+       "component[].valueReference.type",
+       "instantiatesCanonical",
+       "instantiatesReference.display",
+       "instantiatesReference.identifier.period.end",
+       "instantiatesReference.identifier.period.start",
+       "instantiatesReference.identifier.system",
+       "instantiatesReference.identifier.type.coding[].code",
+       "instantiatesReference.identifier.type.coding[].display",
+       "instantiatesReference.identifier.type.coding[].system",
+       "instantiatesReference.identifier.type.coding[].userSelected",
+       "instantiatesReference.identifier.type.coding[].version",
+       "instantiatesReference.identifier.type.text",
+       "instantiatesReference.identifier.use",
+       "instantiatesReference.identifier.value",
+       "instantiatesReference.reference",
+       "instantiatesReference.type",
+       "valueReference.display",
+       "valueReference.identifier.period.end",
+       "valueReference.identifier.period.start",
+       "valueReference.identifier.system",
+       "valueReference.identifier.type.coding[].code",
+       "valueReference.identifier.type.coding[].display",
+       "valueReference.identifier.type.coding[].system",
+       "valueReference.identifier.type.coding[].userSelected",
+       "valueReference.identifier.type.coding[].version",
+       "valueReference.identifier.type.text",
+       "valueReference.identifier.use",
+       "valueReference.identifier.value",
+       "valueReference.reference",
+       "valueReference.type"
+      ],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 53,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 57,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 512,
+       "K_before": 512,
+       "exhausted": false,
+       "labels": [
+        "W1"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 512,
+       "K_before": 512,
+       "exhausted": false,
+       "labels": [
+        "W1"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 398,
+     "sigma_from_B4": 5054,
+     "sigma_to": 421,
+     "sigma_to_B4": 5255,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "6.0.0-ballot4"
+    }
+   ],
+   "versions": [
+    {
+     "max_array_depth": 4,
+     "n_array_paths": 303,
+     "n_carrier": 332,
+     "n_choice_groups": 4,
+     "n_counted_paths": 334,
+     "n_excluded": 307,
+     "n_leaf_paths": 418,
+     "n_statement": 6,
+     "n_unbounded_array_paths": 303,
+     "n_uncertainties": 5,
+     "release_date": "2019-10-30",
+     "sigma_B1": 334,
+     "sigma_B4": 4412,
+     "sigma_carrier_B1": 332,
+     "statement_paths": [
+      "code.coding[].code",
+      "code.coding[].system",
+      "effectiveDateTime",
+      "valueQuantity.code",
+      "valueQuantity.unit",
+      "valueQuantity.value"
+     ],
+     "statement_types": {
+      "code.coding[].code": "code",
+      "code.coding[].system": "uri",
+      "effectiveDateTime": "datetime",
+      "valueQuantity.code": "code",
+      "valueQuantity.unit": "string",
+      "valueQuantity.value": "number"
+     },
+     "status": "normative",
+     "version": "4.0.1"
+    },
+    {
+     "max_array_depth": 4,
+     "n_array_paths": 375,
+     "n_carrier": 396,
+     "n_choice_groups": 5,
+     "n_counted_paths": 398,
+     "n_excluded": 379,
+     "n_leaf_paths": 533,
+     "n_statement": 6,
+     "n_unbounded_array_paths": 375,
+     "n_uncertainties": 4,
+     "release_date": "2023-03-26",
+     "sigma_B1": 398,
+     "sigma_B4": 5054,
+     "sigma_carrier_B1": 396,
+     "statement_paths": [
+      "code.coding[].code",
+      "code.coding[].system",
+      "effectiveDateTime",
+      "valueQuantity.code",
+      "valueQuantity.unit",
+      "valueQuantity.value"
+     ],
+     "statement_types": {
+      "code.coding[].code": "code",
+      "code.coding[].system": "uri",
+      "effectiveDateTime": "datetime",
+      "valueQuantity.code": "code",
+      "valueQuantity.unit": "string",
+      "valueQuantity.value": "number"
+     },
+     "status": "normative",
+     "version": "5.0.0"
+    },
+    {
+     "max_array_depth": 4,
+     "n_array_paths": 380,
+     "n_carrier": 419,
+     "n_choice_groups": 4,
+     "n_counted_paths": 421,
+     "n_excluded": 371,
+     "n_leaf_paths": 529,
+     "n_statement": 6,
+     "n_unbounded_array_paths": 380,
+     "n_uncertainties": 3,
+     "release_date": "2025-12-18",
+     "sigma_B1": 421,
+     "sigma_B4": 5255,
+     "sigma_carrier_B1": 419,
+     "statement_paths": [
+      "code.coding[].code",
+      "code.coding[].system",
+      "effectiveDateTime",
+      "valueQuantity.code",
+      "valueQuantity.unit",
+      "valueQuantity.value"
+     ],
+     "statement_types": {
+      "code.coding[].code": "code",
+      "code.coding[].system": "uri",
+      "effectiveDateTime": "datetime",
+      "valueQuantity.code": "code",
+      "valueQuantity.unit": "string",
+      "valueQuantity.value": "number"
+     },
+     "status": "ballot",
+     "version": "6.0.0-ballot4"
+    }
+   ]
+  },
+  "open_badges": {
+   "W4_history": false,
+   "capacity": {
+    "structural-step": {
+     "K_initial": 256,
+     "K_trace": [
+      256,
+      512,
+      512
+     ],
+     "beyond_ladder": false
+    },
+    "tight-refit": {
+     "K_initial": 256,
+     "K_trace": [
+      256,
+      348,
+      379
+     ],
+     "beyond_ladder": false
+    }
+   },
+   "domain": "open_badges",
+   "history": "open_badges",
+   "regenerations": {
+    "A0_pad[structural-step]": 1,
+    "A0_pad[tight-refit]": 2,
+    "A0_tight": 2,
+    "A1": 0,
+    "PX": 2,
+    "PX_strict": 2
+   },
+   "role": "primary",
+   "transitions": [
+    {
+     "delta_sigma": 95,
+     "delta_sigma_B4": 1163,
+     "from_version": "2.0",
+     "n_paths_from": 253,
+     "n_paths_to": 348,
+     "path_diff": {
+      "added": [
+       "credentialSchema[].id",
+       "credentialSchema[].type",
+       "credentialStatus.id",
+       "credentialStatus.type",
+       "credentialSubject.achievement.@language",
+       "credentialSubject.achievement.achievementType",
+       "credentialSubject.achievement.alignment[].targetCode",
+       "credentialSubject.achievement.alignment[].targetDescription",
+       "credentialSubject.achievement.alignment[].targetFramework",
+       "credentialSubject.achievement.alignment[].targetName",
+       "credentialSubject.achievement.alignment[].targetType",
+       "credentialSubject.achievement.alignment[].targetUrl",
+       "credentialSubject.achievement.alignment[].type[]",
+       "credentialSubject.achievement.creator.additionalName",
+       "credentialSubject.achievement.creator.address.addressCountry",
+       "credentialSubject.achievement.creator.address.addressCountryCode",
+       "credentialSubject.achievement.creator.address.addressLocality",
+       "credentialSubject.achievement.creator.address.addressRegion",
+       "credentialSubject.achievement.creator.address.geo.latitude",
+       "credentialSubject.achievement.creator.address.geo.longitude",
+       "credentialSubject.achievement.creator.address.geo.type",
+       "credentialSubject.achievement.creator.address.postOfficeBoxNumber",
+       "credentialSubject.achievement.creator.address.postalCode",
+       "credentialSubject.achievement.creator.address.streetAddress",
+       "credentialSubject.achievement.creator.address.type[]",
+       "credentialSubject.achievement.creator.dateOfBirth",
+       "credentialSubject.achievement.creator.description",
+       "credentialSubject.achievement.creator.email",
+       "credentialSubject.achievement.creator.endorsementJwt[]",
+       "credentialSubject.achievement.creator.endorsement[].credentialSchema[].id",
+       "credentialSubject.achievement.creator.endorsement[].credentialSchema[].type",
+       "credentialSubject.achievement.creator.endorsement[].credentialStatus.id",
+       "credentialSubject.achievement.creator.endorsement[].credentialStatus.type",
+       "credentialSubject.achievement.creator.endorsement[].credentialSubject.endorsementComment",
+       "credentialSubject.achievement.creator.endorsement[].credentialSubject.id",
+       "credentialSubject.achievement.creator.endorsement[].credentialSubject.type[]",
+       "credentialSubject.achievement.creator.endorsement[].expirationDate",
+       "credentialSubject.achievement.creator.endorsement[].id",
+       "credentialSubject.achievement.creator.endorsement[].issuanceDate",
+       "credentialSubject.achievement.creator.endorsement[].refreshService.id",
+       "credentialSubject.achievement.creator.endorsement[].refreshService.type",
+       "credentialSubject.achievement.creator.endorsement[].type[]",
+       "credentialSubject.achievement.creator.familyName",
+       "credentialSubject.achievement.creator.familyNamePrefix",
+       "credentialSubject.achievement.creator.givenName",
+       "credentialSubject.achievement.creator.honorificPrefix",
+       "credentialSubject.achievement.creator.honorificSuffix",
+       "credentialSubject.achievement.creator.id",
+       "credentialSubject.achievement.creator.image.caption",
+       "credentialSubject.achievement.creator.image.id",
+       "credentialSubject.achievement.creator.image.type",
+       "credentialSubject.achievement.creator.name",
+       "credentialSubject.achievement.creator.official",
+       "credentialSubject.achievement.creator.otherIdentifier[].identifier",
+       "credentialSubject.achievement.creator.otherIdentifier[].identifierType",
+       "credentialSubject.achievement.creator.otherIdentifier[].type",
+       "credentialSubject.achievement.creator.patronymicName",
+       "credentialSubject.achievement.creator.phone",
+       "credentialSubject.achievement.creator.type[]",
+       "credentialSubject.achievement.creator.url",
+       "credentialSubject.achievement.creditsAvailable",
+       "credentialSubject.achievement.criteria.id",
+       "credentialSubject.achievement.criteria.narrative",
+       "credentialSubject.achievement.description",
+       "credentialSubject.achievement.endorsementJwt[]",
+       "credentialSubject.achievement.endorsement[].credentialSchema[].id",
+       "credentialSubject.achievement.endorsement[].credentialSchema[].type",
+       "credentialSubject.achievement.endorsement[].credentialStatus.id",
+       "credentialSubject.achievement.endorsement[].credentialStatus.type",
+       "credentialSubject.achievement.endorsement[].credentialSubject.endorsementComment",
+       "credentialSubject.achievement.endorsement[].credentialSubject.id",
+       "credentialSubject.achievement.endorsement[].credentialSubject.type[]",
+       "credentialSubject.achievement.endorsement[].expirationDate",
+       "credentialSubject.achievement.endorsement[].id",
+       "credentialSubject.achievement.endorsement[].issuanceDate",
+       "credentialSubject.achievement.endorsement[].issuer.additionalName",
+       "credentialSubject.achievement.endorsement[].issuer.address.addressCountry",
+       "credentialSubject.achievement.endorsement[].issuer.address.addressCountryCode",
+       "credentialSubject.achievement.endorsement[].issuer.address.addressLocality",
+       "credentialSubject.achievement.endorsement[].issuer.address.addressRegion",
+       "credentialSubject.achievement.endorsement[].issuer.address.geo.latitude",
+       "credentialSubject.achievement.endorsement[].issuer.address.geo.longitude",
+       "credentialSubject.achievement.endorsement[].issuer.address.geo.type",
+       "credentialSubject.achievement.endorsement[].issuer.address.postOfficeBoxNumber",
+       "credentialSubject.achievement.endorsement[].issuer.address.postalCode",
+       "credentialSubject.achievement.endorsement[].issuer.address.streetAddress",
+       "credentialSubject.achievement.endorsement[].issuer.address.type[]",
+       "credentialSubject.achievement.endorsement[].issuer.dateOfBirth",
+       "credentialSubject.achievement.endorsement[].issuer.description",
+       "credentialSubject.achievement.endorsement[].issuer.email",
+       "credentialSubject.achievement.endorsement[].issuer.endorsementJwt[]",
+       "credentialSubject.achievement.endorsement[].issuer.familyName",
+       "credentialSubject.achievement.endorsement[].issuer.familyNamePrefix",
+       "credentialSubject.achievement.endorsement[].issuer.givenName",
+       "credentialSubject.achievement.endorsement[].issuer.honorificPrefix",
+       "credentialSubject.achievement.endorsement[].issuer.honorificSuffix",
+       "credentialSubject.achievement.endorsement[].issuer.id",
+       "credentialSubject.achievement.endorsement[].issuer.image.caption",
+       "credentialSubject.achievement.endorsement[].issuer.image.id",
+       "credentialSubject.achievement.endorsement[].issuer.image.type",
+       "credentialSubject.achievement.endorsement[].issuer.name",
+       "credentialSubject.achievement.endorsement[].issuer.official",
+       "credentialSubject.achievement.endorsement[].issuer.otherIdentifier[].identifier",
+       "credentialSubject.achievement.endorsement[].issuer.otherIdentifier[].identifierType",
+       "credentialSubject.achievement.endorsement[].issuer.otherIdentifier[].type",
+       "credentialSubject.achievement.endorsement[].issuer.patronymicName",
+       "credentialSubject.achievement.endorsement[].issuer.phone",
+       "credentialSubject.achievement.endorsement[].issuer.type[]",
+       "credentialSubject.achievement.endorsement[].issuer.url",
+       "credentialSubject.achievement.endorsement[].refreshService.id",
+       "credentialSubject.achievement.endorsement[].refreshService.type",
+       "credentialSubject.achievement.endorsement[].type[]",
+       "credentialSubject.achievement.fieldOfStudy",
+       "credentialSubject.achievement.humanCode",
+       "credentialSubject.achievement.id",
+       "credentialSubject.achievement.image.caption",
+       "credentialSubject.achievement.image.id",
+       "credentialSubject.achievement.image.type",
+       "credentialSubject.achievement.name",
+       "credentialSubject.achievement.otherIdentifier[].identifier",
+       "credentialSubject.achievement.otherIdentifier[].identifierType",
+       "credentialSubject.achievement.otherIdentifier[].type",
+       "credentialSubject.achievement.related[].@language",
+       "credentialSubject.achievement.related[].id",
+       "credentialSubject.achievement.related[].type[]",
+       "credentialSubject.achievement.related[].version",
+       "credentialSubject.achievement.resultDescription[].alignment[].targetCode",
+       "credentialSubject.achievement.resultDescription[].alignment[].targetDescription",
+       "credentialSubject.achievement.resultDescription[].alignment[].targetFramework",
+       "credentialSubject.achievement.resultDescription[].alignment[].targetName",
+       "credentialSubject.achievement.resultDescription[].alignment[].targetType",
+       "credentialSubject.achievement.resultDescription[].alignment[].targetUrl",
+       "credentialSubject.achievement.resultDescription[].alignment[].type[]",
+       "credentialSubject.achievement.resultDescription[].allowedValue[]",
+       "credentialSubject.achievement.resultDescription[].id",
+       "credentialSubject.achievement.resultDescription[].name",
+       "credentialSubject.achievement.resultDescription[].requiredLevel",
+       "credentialSubject.achievement.resultDescription[].requiredValue",
+       "credentialSubject.achievement.resultDescription[].resultType",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetCode",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetDescription",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetFramework",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetName",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetType",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetUrl",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].type[]",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].description",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].id",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].level",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].name",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].points",
+       "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].type[]",
+       "credentialSubject.achievement.resultDescription[].type[]",
+       "credentialSubject.achievement.resultDescription[].valueMax",
+       "credentialSubject.achievement.resultDescription[].valueMin",
+       "credentialSubject.achievement.specialization",
+       "credentialSubject.achievement.tag[]",
+       "credentialSubject.achievement.type[]",
+       "credentialSubject.achievement.version",
+       "credentialSubject.activityEndDate",
+       "credentialSubject.activityStartDate",
+       "credentialSubject.creditsEarned",
+       "credentialSubject.id",
+       "credentialSubject.identifier[].hashed",
+       "credentialSubject.identifier[].identityHash",
+       "credentialSubject.identifier[].identityType",
+       "credentialSubject.identifier[].salt",
+       "credentialSubject.identifier[].type",
+       "credentialSubject.image.caption",
+       "credentialSubject.image.id",
+       "credentialSubject.image.type",
+       "credentialSubject.licenseNumber",
+       "credentialSubject.narrative",
+       "credentialSubject.result[].achievedLevel",
+       "credentialSubject.result[].alignment[].targetCode",
+       "credentialSubject.result[].alignment[].targetDescription",
+       "credentialSubject.result[].alignment[].targetFramework",
+       "credentialSubject.result[].alignment[].targetName",
+       "credentialSubject.result[].alignment[].targetType",
+       "credentialSubject.result[].alignment[].targetUrl",
+       "credentialSubject.result[].alignment[].type[]",
+       "credentialSubject.result[].resultDescription",
+       "credentialSubject.result[].status",
+       "credentialSubject.result[].type[]",
+       "credentialSubject.result[].value",
+       "credentialSubject.role",
+       "credentialSubject.source.additionalName",
+       "credentialSubject.source.address.addressCountry",
+       "credentialSubject.source.address.addressCountryCode",
+       "credentialSubject.source.address.addressLocality",
+       "credentialSubject.source.address.addressRegion",
+       "credentialSubject.source.address.geo.latitude",
+       "credentialSubject.source.address.geo.longitude",
+       "credentialSubject.source.address.geo.type",
+       "credentialSubject.source.address.postOfficeBoxNumber",
+       "credentialSubject.source.address.postalCode",
+       "credentialSubject.source.address.streetAddress",
+       "credentialSubject.source.address.type[]",
+       "credentialSubject.source.dateOfBirth",
+       "credentialSubject.source.description",
+       "credentialSubject.source.email",
+       "credentialSubject.source.endorsementJwt[]",
+       "credentialSubject.source.endorsement[].credentialSchema[].id",
+       "credentialSubject.source.endorsement[].credentialSchema[].type",
+       "credentialSubject.source.endorsement[].credentialStatus.id",
+       "credentialSubject.source.endorsement[].credentialStatus.type",
+       "credentialSubject.source.endorsement[].credentialSubject.endorsementComment",
+       "credentialSubject.source.endorsement[].credentialSubject.id",
+       "credentialSubject.source.endorsement[].credentialSubject.type[]",
+       "credentialSubject.source.endorsement[].expirationDate",
+       "credentialSubject.source.endorsement[].id",
+       "credentialSubject.source.endorsement[].issuanceDate",
+       "credentialSubject.source.endorsement[].refreshService.id",
+       "credentialSubject.source.endorsement[].refreshService.type",
+       "credentialSubject.source.endorsement[].type[]",
+       "credentialSubject.source.familyName",
+       "credentialSubject.source.familyNamePrefix",
+       "credentialSubject.source.givenName",
+       "credentialSubject.source.honorificPrefix",
+       "credentialSubject.source.honorificSuffix",
+       "credentialSubject.source.id",
+       "credentialSubject.source.image.caption",
+       "credentialSubject.source.image.id",
+       "credentialSubject.source.image.type",
+       "credentialSubject.source.name",
+       "credentialSubject.source.official",
+       "credentialSubject.source.otherIdentifier[].identifier",
+       "credentialSubject.source.otherIdentifier[].identifierType",
+       "credentialSubject.source.otherIdentifier[].type",
+       "credentialSubject.source.patronymicName",
+       "credentialSubject.source.phone",
+       "credentialSubject.source.type[]",
+       "credentialSubject.source.url",
+       "credentialSubject.term",
+       "credentialSubject.type[]",
+       "description",
+       "endorsementJwt[]",
+       "endorsement[].credentialSchema[].id",
+       "endorsement[].credentialSchema[].type",
+       "endorsement[].credentialStatus.id",
+       "endorsement[].credentialStatus.type",
+       "endorsement[].credentialSubject.endorsementComment",
+       "endorsement[].credentialSubject.id",
+       "endorsement[].credentialSubject.type[]",
+       "endorsement[].expirationDate",
+       "endorsement[].issuanceDate",
+       "endorsement[].issuer.additionalName",
+       "endorsement[].issuer.address.addressCountry",
+       "endorsement[].issuer.address.addressCountryCode",
+       "endorsement[].issuer.address.addressLocality",
+       "endorsement[].issuer.address.addressRegion",
+       "endorsement[].issuer.address.geo.latitude",
+       "endorsement[].issuer.address.geo.longitude",
+       "endorsement[].issuer.address.geo.type",
+       "endorsement[].issuer.address.postOfficeBoxNumber",
+       "endorsement[].issuer.address.postalCode",
+       "endorsement[].issuer.address.streetAddress",
+       "endorsement[].issuer.address.type[]",
+       "endorsement[].issuer.dateOfBirth",
+       "endorsement[].issuer.endorsementJwt[]",
+       "endorsement[].issuer.familyName",
+       "endorsement[].issuer.familyNamePrefix",
+       "endorsement[].issuer.givenName",
+       "endorsement[].issuer.honorificPrefix",
+       "endorsement[].issuer.honorificSuffix",
+       "endorsement[].issuer.image.type",
+       "endorsement[].issuer.official",
+       "endorsement[].issuer.otherIdentifier[].identifier",
+       "endorsement[].issuer.otherIdentifier[].identifierType",
+       "endorsement[].issuer.otherIdentifier[].type",
+       "endorsement[].issuer.patronymicName",
+       "endorsement[].issuer.phone",
+       "endorsement[].refreshService.id",
+       "endorsement[].refreshService.type",
+       "expirationDate",
+       "image.type",
+       "issuanceDate",
+       "issuer.additionalName",
+       "issuer.address.addressCountry",
+       "issuer.address.addressCountryCode",
+       "issuer.address.addressLocality",
+       "issuer.address.addressRegion",
+       "issuer.address.geo.latitude",
+       "issuer.address.geo.longitude",
+       "issuer.address.geo.type",
+       "issuer.address.postOfficeBoxNumber",
+       "issuer.address.postalCode",
+       "issuer.address.streetAddress",
+       "issuer.address.type[]",
+       "issuer.dateOfBirth",
+       "issuer.description",
+       "issuer.email",
+       "issuer.endorsementJwt[]",
+       "issuer.endorsement[].credentialSchema[].id",
+       "issuer.endorsement[].credentialSchema[].type",
+       "issuer.endorsement[].credentialStatus.id",
+       "issuer.endorsement[].credentialStatus.type",
+       "issuer.endorsement[].credentialSubject.endorsementComment",
+       "issuer.endorsement[].credentialSubject.id",
+       "issuer.endorsement[].credentialSubject.type[]",
+       "issuer.endorsement[].expirationDate",
+       "issuer.endorsement[].id",
+       "issuer.endorsement[].issuanceDate",
+       "issuer.endorsement[].refreshService.id",
+       "issuer.endorsement[].refreshService.type",
+       "issuer.endorsement[].type[]",
+       "issuer.familyName",
+       "issuer.familyNamePrefix",
+       "issuer.givenName",
+       "issuer.honorificPrefix",
+       "issuer.honorificSuffix",
+       "issuer.id",
+       "issuer.image.caption",
+       "issuer.image.id",
+       "issuer.image.type",
+       "issuer.name",
+       "issuer.official",
+       "issuer.otherIdentifier[].identifier",
+       "issuer.otherIdentifier[].identifierType",
+       "issuer.otherIdentifier[].type",
+       "issuer.patronymicName",
+       "issuer.phone",
+       "issuer.type[]",
+       "issuer.url",
+       "name",
+       "refreshService.id",
+       "refreshService.type"
+      ],
+      "arrayness_changed": [
+       "endorsement.issuer.image.type",
+       "image.type"
+      ],
+      "bound_changed": [],
+      "removed": [
+       "badge.alignment[].targetCode",
+       "badge.alignment[].targetDescription",
+       "badge.alignment[].targetFramework",
+       "badge.alignment[].targetName",
+       "badge.alignment[].targetUrl",
+       "badge.criteria.id",
+       "badge.criteria.narrative",
+       "badge.criteria.type[]",
+       "badge.description",
+       "badge.endorsement[].claim.endorsementComment",
+       "badge.endorsement[].claim.id",
+       "badge.endorsement[].id",
+       "badge.endorsement[].issuedOn",
+       "badge.endorsement[].issuer.description",
+       "badge.endorsement[].issuer.email",
+       "badge.endorsement[].issuer.endorsement[]",
+       "badge.endorsement[].issuer.id",
+       "badge.endorsement[].issuer.image.author",
+       "badge.endorsement[].issuer.image.caption",
+       "badge.endorsement[].issuer.image.id",
+       "badge.endorsement[].issuer.image.type[]",
+       "badge.endorsement[].issuer.name",
+       "badge.endorsement[].issuer.publicKey.id",
+       "badge.endorsement[].issuer.publicKey.owner",
+       "badge.endorsement[].issuer.publicKey.publicKeyPem",
+       "badge.endorsement[].issuer.publicKey.type[]",
+       "badge.endorsement[].issuer.related[]",
+       "badge.endorsement[].issuer.revocationList",
+       "badge.endorsement[].issuer.telephone",
+       "badge.endorsement[].issuer.type[]",
+       "badge.endorsement[].issuer.url",
+       "badge.endorsement[].issuer.verification.allowedOrigins[]",
+       "badge.endorsement[].issuer.verification.creator.id",
+       "badge.endorsement[].issuer.verification.creator.owner",
+       "badge.endorsement[].issuer.verification.creator.publicKeyPem",
+       "badge.endorsement[].issuer.verification.creator.type[]",
+       "badge.endorsement[].issuer.verification.startsWith[]",
+       "badge.endorsement[].issuer.verification.type[]",
+       "badge.endorsement[].issuer.verification.verificationProperty",
+       "badge.endorsement[].issuer.version",
+       "badge.endorsement[].revocationReason",
+       "badge.endorsement[].revoked",
+       "badge.endorsement[].type[]",
+       "badge.endorsement[].verification.allowedOrigins[]",
+       "badge.endorsement[].verification.creator.id",
+       "badge.endorsement[].verification.creator.owner",
+       "badge.endorsement[].verification.creator.publicKeyPem",
+       "badge.endorsement[].verification.creator.type[]",
+       "badge.endorsement[].verification.startsWith[]",
+       "badge.endorsement[].verification.type[]",
+       "badge.endorsement[].verification.verificationProperty",
+       "badge.id",
+       "badge.image.author.description",
+       "badge.image.author.email",
+       "badge.image.author.endorsement[].claim.endorsementComment",
+       "badge.image.author.endorsement[].claim.id",
+       "badge.image.author.endorsement[].id",
+       "badge.image.author.endorsement[].issuedOn",
+       "badge.image.author.endorsement[].issuer",
+       "badge.image.author.endorsement[].revocationReason",
+       "badge.image.author.endorsement[].revoked",
+       "badge.image.author.endorsement[].type[]",
+       "badge.image.author.endorsement[].verification.allowedOrigins[]",
+       "badge.image.author.endorsement[].verification.creator.id",
+       "badge.image.author.endorsement[].verification.creator.owner",
+       "badge.image.author.endorsement[].verification.creator.publicKeyPem",
+       "badge.image.author.endorsement[].verification.creator.type[]",
+       "badge.image.author.endorsement[].verification.startsWith[]",
+       "badge.image.author.endorsement[].verification.type[]",
+       "badge.image.author.endorsement[].verification.verificationProperty",
+       "badge.image.author.id",
+       "badge.image.author.image",
+       "badge.image.author.name",
+       "badge.image.author.publicKey.id",
+       "badge.image.author.publicKey.owner",
+       "badge.image.author.publicKey.publicKeyPem",
+       "badge.image.author.publicKey.type[]",
+       "badge.image.author.related[]",
+       "badge.image.author.revocationList",
+       "badge.image.author.telephone",
+       "badge.image.author.type[]",
+       "badge.image.author.url",
+       "badge.image.author.verification.allowedOrigins[]",
+       "badge.image.author.verification.creator.id",
+       "badge.image.author.verification.creator.owner",
+       "badge.image.author.verification.creator.publicKeyPem",
+       "badge.image.author.verification.creator.type[]",
+       "badge.image.author.verification.startsWith[]",
+       "badge.image.author.verification.type[]",
+       "badge.image.author.verification.verificationProperty",
+       "badge.image.author.version",
+       "badge.image.caption",
+       "badge.image.id",
+       "badge.image.type[]",
+       "badge.issuer.description",
+       "badge.issuer.email",
+       "badge.issuer.endorsement[].claim.endorsementComment",
+       "badge.issuer.endorsement[].claim.id",
+       "badge.issuer.endorsement[].id",
+       "badge.issuer.endorsement[].issuedOn",
+       "badge.issuer.endorsement[].issuer",
+       "badge.issuer.endorsement[].revocationReason",
+       "badge.issuer.endorsement[].revoked",
+       "badge.issuer.endorsement[].type[]",
+       "badge.issuer.endorsement[].verification.allowedOrigins[]",
+       "badge.issuer.endorsement[].verification.creator.id",
+       "badge.issuer.endorsement[].verification.creator.owner",
+       "badge.issuer.endorsement[].verification.creator.publicKeyPem",
+       "badge.issuer.endorsement[].verification.creator.type[]",
+       "badge.issuer.endorsement[].verification.startsWith[]",
+       "badge.issuer.endorsement[].verification.type[]",
+       "badge.issuer.endorsement[].verification.verificationProperty",
+       "badge.issuer.id",
+       "badge.issuer.image.author",
+       "badge.issuer.image.caption",
+       "badge.issuer.image.id",
+       "badge.issuer.image.type[]",
+       "badge.issuer.name",
+       "badge.issuer.publicKey.id",
+       "badge.issuer.publicKey.owner",
+       "badge.issuer.publicKey.publicKeyPem",
+       "badge.issuer.publicKey.type[]",
+       "badge.issuer.related[]",
+       "badge.issuer.revocationList",
+       "badge.issuer.telephone",
+       "badge.issuer.type[]",
+       "badge.issuer.url",
+       "badge.issuer.verification.allowedOrigins[]",
+       "badge.issuer.verification.creator.id",
+       "badge.issuer.verification.creator.owner",
+       "badge.issuer.verification.creator.publicKeyPem",
+       "badge.issuer.verification.creator.type[]",
+       "badge.issuer.verification.startsWith[]",
+       "badge.issuer.verification.type[]",
+       "badge.issuer.verification.verificationProperty",
+       "badge.issuer.version",
+       "badge.name",
+       "badge.related[]",
+       "badge.tags[]",
+       "badge.type[]",
+       "badge.version",
+       "endorsement[].claim.endorsementComment",
+       "endorsement[].claim.id",
+       "endorsement[].issuedOn",
+       "endorsement[].issuer.endorsement[]",
+       "endorsement[].issuer.image.author",
+       "endorsement[].issuer.image.type[]",
+       "endorsement[].issuer.publicKey.id",
+       "endorsement[].issuer.publicKey.owner",
+       "endorsement[].issuer.publicKey.publicKeyPem",
+       "endorsement[].issuer.publicKey.type[]",
+       "endorsement[].issuer.related[]",
+       "endorsement[].issuer.revocationList",
+       "endorsement[].issuer.telephone",
+       "endorsement[].issuer.verification.allowedOrigins[]",
+       "endorsement[].issuer.verification.creator.id",
+       "endorsement[].issuer.verification.creator.owner",
+       "endorsement[].issuer.verification.creator.publicKeyPem",
+       "endorsement[].issuer.verification.creator.type[]",
+       "endorsement[].issuer.verification.startsWith[]",
+       "endorsement[].issuer.verification.type[]",
+       "endorsement[].issuer.verification.verificationProperty",
+       "endorsement[].issuer.version",
+       "endorsement[].revocationReason",
+       "endorsement[].revoked",
+       "endorsement[].verification.allowedOrigins[]",
+       "endorsement[].verification.creator.id",
+       "endorsement[].verification.creator.owner",
+       "endorsement[].verification.creator.publicKeyPem",
+       "endorsement[].verification.creator.type[]",
+       "endorsement[].verification.startsWith[]",
+       "endorsement[].verification.type[]",
+       "endorsement[].verification.verificationProperty",
+       "expires",
+       "image.author.description",
+       "image.author.email",
+       "image.author.endorsement[].claim.endorsementComment",
+       "image.author.endorsement[].claim.id",
+       "image.author.endorsement[].id",
+       "image.author.endorsement[].issuedOn",
+       "image.author.endorsement[].issuer",
+       "image.author.endorsement[].revocationReason",
+       "image.author.endorsement[].revoked",
+       "image.author.endorsement[].type[]",
+       "image.author.endorsement[].verification.allowedOrigins[]",
+       "image.author.endorsement[].verification.creator.id",
+       "image.author.endorsement[].verification.creator.owner",
+       "image.author.endorsement[].verification.creator.publicKeyPem",
+       "image.author.endorsement[].verification.creator.type[]",
+       "image.author.endorsement[].verification.startsWith[]",
+       "image.author.endorsement[].verification.type[]",
+       "image.author.endorsement[].verification.verificationProperty",
+       "image.author.id",
+       "image.author.image",
+       "image.author.name",
+       "image.author.publicKey.id",
+       "image.author.publicKey.owner",
+       "image.author.publicKey.publicKeyPem",
+       "image.author.publicKey.type[]",
+       "image.author.related[]",
+       "image.author.revocationList",
+       "image.author.telephone",
+       "image.author.type[]",
+       "image.author.url",
+       "image.author.verification.allowedOrigins[]",
+       "image.author.verification.creator.id",
+       "image.author.verification.creator.owner",
+       "image.author.verification.creator.publicKeyPem",
+       "image.author.verification.creator.type[]",
+       "image.author.verification.startsWith[]",
+       "image.author.verification.type[]",
+       "image.author.verification.verificationProperty",
+       "image.author.version",
+       "image.type[]",
+       "issuedOn",
+       "narrative",
+       "recipient.hashed",
+       "recipient.identity",
+       "recipient.salt",
+       "recipient.type",
+       "related[]",
+       "revocationReason",
+       "revoked",
+       "verification.allowedOrigins[]",
+       "verification.creator.id",
+       "verification.creator.owner",
+       "verification.creator.publicKeyPem",
+       "verification.creator.type[]",
+       "verification.startsWith[]",
+       "verification.type[]",
+       "verification.verificationProperty",
+       "version"
+      ],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 327,
+      "arrayness_changed": 2,
+      "bound_changed": 0,
+      "removed": 232,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 512,
+       "K_before": 256,
+       "exhausted": true,
+       "labels": [
+        "W2",
+        "W5",
+        "W6"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 348,
+       "K_before": 256,
+       "exhausted": true,
+       "labels": [
+        "W2",
+        "W5",
+        "W6"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": true,
+     "regen_PX_strict": true,
+     "sigma_from": 253,
+     "sigma_from_B4": 1315,
+     "sigma_to": 348,
+     "sigma_to_B4": 2478,
+     "statement_change": {
+      "added": [
+       "credentialSubject.achievement.achievementType",
+       "issuanceDate"
+      ],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": [
+       "issuedOn"
+      ]
+     },
+     "to_version": "3.0-vcdm1.1"
+    },
+    {
+     "delta_sigma": 31,
+     "delta_sigma_B4": 241,
+     "from_version": "3.0-vcdm1.1",
+     "n_paths_from": 348,
+     "n_paths_to": 379,
+     "path_diff": {
+      "added": [
+       "awardedDate",
+       "credentialSubject.achievement.creator.endorsement[].awardedDate",
+       "credentialSubject.achievement.creator.endorsement[].description",
+       "credentialSubject.achievement.creator.endorsement[].issuer",
+       "credentialSubject.achievement.creator.endorsement[].name",
+       "credentialSubject.achievement.creator.endorsement[].termsOfUse[].id",
+       "credentialSubject.achievement.creator.endorsement[].termsOfUse[].type",
+       "credentialSubject.achievement.creator.endorsement[].validFrom",
+       "credentialSubject.achievement.creator.endorsement[].validUntil",
+       "credentialSubject.achievement.endorsement[].awardedDate",
+       "credentialSubject.achievement.endorsement[].description",
+       "credentialSubject.achievement.endorsement[].name",
+       "credentialSubject.achievement.endorsement[].termsOfUse[].id",
+       "credentialSubject.achievement.endorsement[].termsOfUse[].type",
+       "credentialSubject.achievement.endorsement[].validFrom",
+       "credentialSubject.achievement.endorsement[].validUntil",
+       "credentialSubject.achievement.inLanguage",
+       "credentialSubject.achievement.related[].inLanguage",
+       "credentialSubject.source.endorsement[].awardedDate",
+       "credentialSubject.source.endorsement[].description",
+       "credentialSubject.source.endorsement[].issuer",
+       "credentialSubject.source.endorsement[].name",
+       "credentialSubject.source.endorsement[].termsOfUse[].id",
+       "credentialSubject.source.endorsement[].termsOfUse[].type",
+       "credentialSubject.source.endorsement[].validFrom",
+       "credentialSubject.source.endorsement[].validUntil",
+       "endorsement[].awardedDate",
+       "endorsement[].description",
+       "endorsement[].name",
+       "endorsement[].termsOfUse[].id",
+       "endorsement[].termsOfUse[].type",
+       "endorsement[].validFrom",
+       "endorsement[].validUntil",
+       "issuer.endorsement[].awardedDate",
+       "issuer.endorsement[].description",
+       "issuer.endorsement[].issuer",
+       "issuer.endorsement[].name",
+       "issuer.endorsement[].termsOfUse[].id",
+       "issuer.endorsement[].termsOfUse[].type",
+       "issuer.endorsement[].validFrom",
+       "issuer.endorsement[].validUntil",
+       "termsOfUse[].id",
+       "termsOfUse[].type",
+       "validFrom",
+       "validUntil"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [
+       "credentialSubject.achievement.@language",
+       "credentialSubject.achievement.creator.endorsement[].expirationDate",
+       "credentialSubject.achievement.creator.endorsement[].issuanceDate",
+       "credentialSubject.achievement.endorsement[].expirationDate",
+       "credentialSubject.achievement.endorsement[].issuanceDate",
+       "credentialSubject.achievement.related[].@language",
+       "credentialSubject.source.endorsement[].expirationDate",
+       "credentialSubject.source.endorsement[].issuanceDate",
+       "endorsement[].expirationDate",
+       "endorsement[].issuanceDate",
+       "expirationDate",
+       "issuanceDate",
+       "issuer.endorsement[].expirationDate",
+       "issuer.endorsement[].issuanceDate"
+      ],
+      "retyped": [
+       "credentialSubject.achievement.creator.address.geo.type",
+       "credentialSubject.achievement.creator.image.type",
+       "credentialSubject.achievement.creator.otherIdentifier[].type",
+       "credentialSubject.achievement.endorsement[].issuer.address.geo.type",
+       "credentialSubject.achievement.endorsement[].issuer.image.type",
+       "credentialSubject.achievement.endorsement[].issuer.otherIdentifier[].type",
+       "credentialSubject.achievement.image.type",
+       "credentialSubject.achievement.otherIdentifier[].type",
+       "credentialSubject.identifier[].type",
+       "credentialSubject.image.type",
+       "credentialSubject.source.address.geo.type",
+       "credentialSubject.source.image.type",
+       "credentialSubject.source.otherIdentifier[].type",
+       "endorsement[].issuer.address.geo.type",
+       "endorsement[].issuer.image.type",
+       "endorsement[].issuer.otherIdentifier[].type",
+       "image.type",
+       "issuer.address.geo.type",
+       "issuer.image.type",
+       "issuer.otherIdentifier[].type"
+      ]
+     },
+     "path_diff_counts": {
+      "added": 45,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 14,
+      "retyped": 20
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 512,
+       "K_before": 512,
+       "exhausted": false,
+       "labels": [
+        "W1",
+        "W6"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 379,
+       "K_before": 348,
+       "exhausted": true,
+       "labels": [
+        "W3",
+        "W6"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": true,
+     "regen_PX_strict": true,
+     "sigma_from": 348,
+     "sigma_from_B4": 2478,
+     "sigma_to": 379,
+     "sigma_to_B4": 2719,
+     "statement_change": {
+      "added": [
+       "validFrom"
+      ],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": [
+       "issuanceDate"
+      ]
+     },
+     "to_version": "3.0-vcdm2.0"
+    }
+   ],
+   "versions": [
+    {
+     "max_array_depth": 2,
+     "n_array_paths": 178,
+     "n_carrier": 252,
+     "n_choice_groups": 0,
+     "n_counted_paths": 253,
+     "n_excluded": 148,
+     "n_leaf_paths": 253,
+     "n_statement": 1,
+     "n_unbounded_array_paths": 178,
+     "n_uncertainties": 9,
+     "release_date": "2018-04-12",
+     "sigma_B1": 253,
+     "sigma_B4": 1315,
+     "sigma_carrier_B1": 252,
+     "statement_paths": [
+      "issuedOn"
+     ],
+     "statement_types": {
+      "issuedOn": "datetime"
+     },
+     "status": "normative",
+     "version": "2.0"
+    },
+    {
+     "max_array_depth": 4,
+     "n_array_paths": 226,
+     "n_carrier": 346,
+     "n_choice_groups": 0,
+     "n_counted_paths": 348,
+     "n_excluded": 60,
+     "n_leaf_paths": 348,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 226,
+     "n_uncertainties": 6,
+     "release_date": "2023-02-09",
+     "sigma_B1": 348,
+     "sigma_B4": 2478,
+     "sigma_carrier_B1": 346,
+     "statement_paths": [
+      "credentialSubject.achievement.achievementType",
+      "issuanceDate"
+     ],
+     "statement_types": {
+      "credentialSubject.achievement.achievementType": "code",
+      "issuanceDate": "datetime"
+     },
+     "status": "candidate",
+     "version": "3.0-vcdm1.1"
+    },
+    {
+     "max_array_depth": 4,
+     "n_array_paths": 256,
+     "n_carrier": 377,
+     "n_choice_groups": 0,
+     "n_counted_paths": 379,
+     "n_excluded": 25,
+     "n_leaf_paths": 379,
+     "n_statement": 2,
+     "n_unbounded_array_paths": 256,
+     "n_uncertainties": 6,
+     "release_date": "2024-05-27",
+     "sigma_B1": 379,
+     "sigma_B4": 2719,
+     "sigma_carrier_B1": 377,
+     "statement_paths": [
+      "credentialSubject.achievement.achievementType",
+      "validFrom"
+     ],
+     "statement_types": {
+      "credentialSubject.achievement.achievementType": "code",
+      "validFrom": "datetime"
+     },
+     "status": "normative",
+     "version": "3.0-vcdm2.0"
+    }
+   ]
+  },
+  "ukob": {
+   "W4_history": false,
+   "capacity": {
+    "structural-step": {
+     "K_initial": 128,
+     "K_trace": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      256,
+      256
+     ],
+     "beyond_ladder": false
+    },
+    "tight-refit": {
+     "K_initial": 128,
+     "K_trace": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      168,
+      255
+     ],
+     "beyond_ladder": false
+    }
+   },
+   "domain": "ukob",
+   "history": "ukob",
+   "regenerations": {
+    "A0_pad[structural-step]": 1,
+    "A0_pad[tight-refit]": 2,
+    "A0_tight": 3,
+    "A1": 0,
+    "PX": 2,
+    "PX_strict": 4
+   },
+   "role": "primary",
+   "transitions": [
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.0",
+     "n_paths_from": 70,
+     "n_paths_to": 70,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 82,
+     "sigma_from_B4": 85,
+     "sigma_to": 82,
+     "sigma_to_B4": 85,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.1"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.1",
+     "n_paths_from": 70,
+     "n_paths_to": 70,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": [
+       "CreditorAccount.SchemeName",
+       "CreditorAgent.SchemeName",
+       "DebtorAccount.SchemeName",
+       "DebtorAgent.SchemeName"
+      ]
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 4
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 82,
+     "sigma_from_B4": 85,
+     "sigma_to": 82,
+     "sigma_to_B4": 85,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.2"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.2",
+     "n_paths_from": 70,
+     "n_paths_to": 70,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 82,
+     "sigma_from_B4": 85,
+     "sigma_to": 82,
+     "sigma_to_B4": 85,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.4"
+    },
+    {
+     "delta_sigma": 1,
+     "delta_sigma_B4": 1,
+     "from_version": "3.1.4",
+     "n_paths_from": 70,
+     "n_paths_to": 71,
+     "path_diff": {
+      "added": [
+       "TransactionMutability"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 1,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W1",
+        "W6"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W1",
+        "W6"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": true,
+     "regen_PX_strict": true,
+     "sigma_from": 82,
+     "sigma_from_B4": 85,
+     "sigma_to": 83,
+     "sigma_to_B4": 86,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [
+       "Amount.Amount"
+      ],
+      "removed": []
+     },
+     "to_version": "3.1.5"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.5",
+     "n_paths_from": 71,
+     "n_paths_to": 71,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 83,
+     "sigma_from_B4": 86,
+     "sigma_to": 83,
+     "sigma_to_B4": 86,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.6"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.6",
+     "n_paths_from": 71,
+     "n_paths_to": 71,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 83,
+     "sigma_from_B4": 86,
+     "sigma_to": 83,
+     "sigma_to_B4": 86,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.7"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.7",
+     "n_paths_from": 71,
+     "n_paths_to": 71,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0",
+        "W6x"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0",
+        "W6x"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": true,
+     "sigma_from": 83,
+     "sigma_from_B4": 86,
+     "sigma_to": 83,
+     "sigma_to_B4": 86,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [
+       "Status"
+      ],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.8"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.8",
+     "n_paths_from": 71,
+     "n_paths_to": 71,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 83,
+     "sigma_from_B4": 86,
+     "sigma_to": 83,
+     "sigma_to_B4": 86,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.9"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.9",
+     "n_paths_from": 71,
+     "n_paths_to": 71,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 83,
+     "sigma_from_B4": 86,
+     "sigma_to": 83,
+     "sigma_to_B4": 86,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.10"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "3.1.10",
+     "n_paths_from": 71,
+     "n_paths_to": 71,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 128,
+       "K_before": 128,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 83,
+     "sigma_from_B4": 86,
+     "sigma_to": 83,
+     "sigma_to_B4": 86,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "3.1.11"
+    },
+    {
+     "delta_sigma": 85,
+     "delta_sigma_B4": 94,
+     "from_version": "3.1.11",
+     "n_paths_from": 71,
+     "n_paths_to": 144,
+     "path_diff": {
+      "added": [
+       "CategoryPurposeCode",
+       "CreditorAccount.Proxy.Code",
+       "CreditorAccount.Proxy.Identification",
+       "CreditorAccount.Proxy.Type",
+       "CreditorAgent.LEI",
+       "CreditorAgent.PostalAddress.BuildingName",
+       "CreditorAgent.PostalAddress.CareOf",
+       "CreditorAgent.PostalAddress.DistrictName",
+       "CreditorAgent.PostalAddress.Floor",
+       "CreditorAgent.PostalAddress.PostBox",
+       "CreditorAgent.PostalAddress.Room",
+       "CreditorAgent.PostalAddress.TownLocationName",
+       "CreditorAgent.PostalAddress.UnitNumber",
+       "DebtorAccount.Proxy.Code",
+       "DebtorAccount.Proxy.Identification",
+       "DebtorAccount.Proxy.Type",
+       "DebtorAgent.LEI",
+       "DebtorAgent.PostalAddress.BuildingName",
+       "DebtorAgent.PostalAddress.CareOf",
+       "DebtorAgent.PostalAddress.DistrictName",
+       "DebtorAgent.PostalAddress.Floor",
+       "DebtorAgent.PostalAddress.PostBox",
+       "DebtorAgent.PostalAddress.Room",
+       "DebtorAgent.PostalAddress.TownLocationName",
+       "DebtorAgent.PostalAddress.UnitNumber",
+       "ExtendedProprietaryBankTransactionCodes[].Code",
+       "ExtendedProprietaryBankTransactionCodes[].Description",
+       "ExtendedProprietaryBankTransactionCodes[].Issuer",
+       "PaymentPurposeCode",
+       "UltimateCreditor.Identification",
+       "UltimateCreditor.LEI",
+       "UltimateCreditor.Name",
+       "UltimateCreditor.PostalAddress.AddressLine[]",
+       "UltimateCreditor.PostalAddress.AddressType",
+       "UltimateCreditor.PostalAddress.BuildingName",
+       "UltimateCreditor.PostalAddress.BuildingNumber",
+       "UltimateCreditor.PostalAddress.CareOf",
+       "UltimateCreditor.PostalAddress.Country",
+       "UltimateCreditor.PostalAddress.CountrySubDivision",
+       "UltimateCreditor.PostalAddress.Department",
+       "UltimateCreditor.PostalAddress.DistrictName",
+       "UltimateCreditor.PostalAddress.Floor",
+       "UltimateCreditor.PostalAddress.PostBox",
+       "UltimateCreditor.PostalAddress.PostCode",
+       "UltimateCreditor.PostalAddress.Room",
+       "UltimateCreditor.PostalAddress.StreetName",
+       "UltimateCreditor.PostalAddress.SubDepartment",
+       "UltimateCreditor.PostalAddress.TownLocationName",
+       "UltimateCreditor.PostalAddress.TownName",
+       "UltimateCreditor.PostalAddress.UnitNumber",
+       "UltimateCreditor.SchemeName",
+       "UltimateDebtor.Identification",
+       "UltimateDebtor.LEI",
+       "UltimateDebtor.Name",
+       "UltimateDebtor.PostalAddress.AddressLine[]",
+       "UltimateDebtor.PostalAddress.AddressType",
+       "UltimateDebtor.PostalAddress.BuildingName",
+       "UltimateDebtor.PostalAddress.BuildingNumber",
+       "UltimateDebtor.PostalAddress.CareOf",
+       "UltimateDebtor.PostalAddress.Country",
+       "UltimateDebtor.PostalAddress.CountrySubDivision",
+       "UltimateDebtor.PostalAddress.Department",
+       "UltimateDebtor.PostalAddress.DistrictName",
+       "UltimateDebtor.PostalAddress.Floor",
+       "UltimateDebtor.PostalAddress.PostBox",
+       "UltimateDebtor.PostalAddress.PostCode",
+       "UltimateDebtor.PostalAddress.Room",
+       "UltimateDebtor.PostalAddress.StreetName",
+       "UltimateDebtor.PostalAddress.SubDepartment",
+       "UltimateDebtor.PostalAddress.TownLocationName",
+       "UltimateDebtor.PostalAddress.TownName",
+       "UltimateDebtor.PostalAddress.UnitNumber",
+       "UltimateDebtor.SchemeName"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 73,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 256,
+       "K_before": 128,
+       "exhausted": true,
+       "labels": [
+        "W2",
+        "W6"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 168,
+       "K_before": 128,
+       "exhausted": true,
+       "labels": [
+        "W2",
+        "W6"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": true,
+     "regen_PX_strict": true,
+     "sigma_from": 83,
+     "sigma_from_B4": 86,
+     "sigma_to": 168,
+     "sigma_to_B4": 180,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [
+       "Status"
+      ],
+      "removed": []
+     },
+     "to_version": "4.0.0"
+    },
+    {
+     "delta_sigma": 87,
+     "delta_sigma_B4": 87,
+     "from_version": "4.0.0",
+     "n_paths_from": 144,
+     "n_paths_to": 213,
+     "path_diff": {
+      "added": [
+       "IntermediaryAgent1.Identification",
+       "IntermediaryAgent1.LEI",
+       "IntermediaryAgent1.Name",
+       "IntermediaryAgent1.PostalAddress.AddressLine[]",
+       "IntermediaryAgent1.PostalAddress.AddressType",
+       "IntermediaryAgent1.PostalAddress.BuildingName",
+       "IntermediaryAgent1.PostalAddress.BuildingNumber",
+       "IntermediaryAgent1.PostalAddress.CareOf",
+       "IntermediaryAgent1.PostalAddress.Country",
+       "IntermediaryAgent1.PostalAddress.CountrySubDivision",
+       "IntermediaryAgent1.PostalAddress.Department",
+       "IntermediaryAgent1.PostalAddress.DistrictName",
+       "IntermediaryAgent1.PostalAddress.Floor",
+       "IntermediaryAgent1.PostalAddress.PostBox",
+       "IntermediaryAgent1.PostalAddress.PostCode",
+       "IntermediaryAgent1.PostalAddress.Room",
+       "IntermediaryAgent1.PostalAddress.StreetName",
+       "IntermediaryAgent1.PostalAddress.SubDepartment",
+       "IntermediaryAgent1.PostalAddress.TownLocationName",
+       "IntermediaryAgent1.PostalAddress.TownName",
+       "IntermediaryAgent1.PostalAddress.UnitNumber",
+       "IntermediaryAgent1.ProcessingStatus",
+       "IntermediaryAgent1.SchemeName",
+       "IntermediaryAgent2.Identification",
+       "IntermediaryAgent2.LEI",
+       "IntermediaryAgent2.Name",
+       "IntermediaryAgent2.PostalAddress.AddressLine[]",
+       "IntermediaryAgent2.PostalAddress.AddressType",
+       "IntermediaryAgent2.PostalAddress.BuildingName",
+       "IntermediaryAgent2.PostalAddress.BuildingNumber",
+       "IntermediaryAgent2.PostalAddress.CareOf",
+       "IntermediaryAgent2.PostalAddress.Country",
+       "IntermediaryAgent2.PostalAddress.CountrySubDivision",
+       "IntermediaryAgent2.PostalAddress.Department",
+       "IntermediaryAgent2.PostalAddress.DistrictName",
+       "IntermediaryAgent2.PostalAddress.Floor",
+       "IntermediaryAgent2.PostalAddress.PostBox",
+       "IntermediaryAgent2.PostalAddress.PostCode",
+       "IntermediaryAgent2.PostalAddress.Room",
+       "IntermediaryAgent2.PostalAddress.StreetName",
+       "IntermediaryAgent2.PostalAddress.SubDepartment",
+       "IntermediaryAgent2.PostalAddress.TownLocationName",
+       "IntermediaryAgent2.PostalAddress.TownName",
+       "IntermediaryAgent2.PostalAddress.UnitNumber",
+       "IntermediaryAgent2.ProcessingStatus",
+       "IntermediaryAgent2.SchemeName",
+       "IntermediaryAgent3.Identification",
+       "IntermediaryAgent3.LEI",
+       "IntermediaryAgent3.Name",
+       "IntermediaryAgent3.PostalAddress.AddressLine[]",
+       "IntermediaryAgent3.PostalAddress.AddressType",
+       "IntermediaryAgent3.PostalAddress.BuildingName",
+       "IntermediaryAgent3.PostalAddress.BuildingNumber",
+       "IntermediaryAgent3.PostalAddress.CareOf",
+       "IntermediaryAgent3.PostalAddress.Country",
+       "IntermediaryAgent3.PostalAddress.CountrySubDivision",
+       "IntermediaryAgent3.PostalAddress.Department",
+       "IntermediaryAgent3.PostalAddress.DistrictName",
+       "IntermediaryAgent3.PostalAddress.Floor",
+       "IntermediaryAgent3.PostalAddress.PostBox",
+       "IntermediaryAgent3.PostalAddress.PostCode",
+       "IntermediaryAgent3.PostalAddress.Room",
+       "IntermediaryAgent3.PostalAddress.StreetName",
+       "IntermediaryAgent3.PostalAddress.SubDepartment",
+       "IntermediaryAgent3.PostalAddress.TownLocationName",
+       "IntermediaryAgent3.PostalAddress.TownName",
+       "IntermediaryAgent3.PostalAddress.UnitNumber",
+       "IntermediaryAgent3.ProcessingStatus",
+       "IntermediaryAgent3.SchemeName"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 69,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 256,
+       "K_before": 256,
+       "exhausted": false,
+       "labels": [
+        "W1",
+        "W6x"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 255,
+       "K_before": 168,
+       "exhausted": true,
+       "labels": [
+        "W3",
+        "W6x"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": true,
+     "sigma_from": 168,
+     "sigma_from_B4": 180,
+     "sigma_to": 255,
+     "sigma_to_B4": 267,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [
+       "Status"
+      ],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "4.0.1"
+    }
+   ],
+   "versions": [
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 65,
+     "n_choice_groups": 0,
+     "n_counted_paths": 70,
+     "n_excluded": 2,
+     "n_leaf_paths": 70,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 2,
+     "release_date": null,
+     "sigma_B1": 82,
+     "sigma_B4": 85,
+     "sigma_carrier_B1": 77,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.0"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 65,
+     "n_choice_groups": 0,
+     "n_counted_paths": 70,
+     "n_excluded": 2,
+     "n_leaf_paths": 70,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 82,
+     "sigma_B4": 85,
+     "sigma_carrier_B1": 77,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.1"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 65,
+     "n_choice_groups": 0,
+     "n_counted_paths": 70,
+     "n_excluded": 2,
+     "n_leaf_paths": 70,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 82,
+     "sigma_B4": 85,
+     "sigma_carrier_B1": 77,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.2"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 65,
+     "n_choice_groups": 0,
+     "n_counted_paths": 70,
+     "n_excluded": 2,
+     "n_leaf_paths": 70,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 82,
+     "sigma_B4": 85,
+     "sigma_carrier_B1": 77,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.4"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 66,
+     "n_choice_groups": 0,
+     "n_counted_paths": 71,
+     "n_excluded": 2,
+     "n_leaf_paths": 71,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 83,
+     "sigma_B4": 86,
+     "sigma_carrier_B1": 78,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.5"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 66,
+     "n_choice_groups": 0,
+     "n_counted_paths": 71,
+     "n_excluded": 1,
+     "n_leaf_paths": 71,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 83,
+     "sigma_B4": 86,
+     "sigma_carrier_B1": 78,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.6"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 66,
+     "n_choice_groups": 0,
+     "n_counted_paths": 71,
+     "n_excluded": 1,
+     "n_leaf_paths": 71,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 83,
+     "sigma_B4": 86,
+     "sigma_carrier_B1": 78,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.7"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 66,
+     "n_choice_groups": 0,
+     "n_counted_paths": 71,
+     "n_excluded": 1,
+     "n_leaf_paths": 71,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 83,
+     "sigma_B4": 86,
+     "sigma_carrier_B1": 78,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.8"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 66,
+     "n_choice_groups": 0,
+     "n_counted_paths": 71,
+     "n_excluded": 1,
+     "n_leaf_paths": 71,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 83,
+     "sigma_B4": 86,
+     "sigma_carrier_B1": 78,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.9"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 66,
+     "n_choice_groups": 0,
+     "n_counted_paths": 71,
+     "n_excluded": 1,
+     "n_leaf_paths": 71,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 83,
+     "sigma_B4": 86,
+     "sigma_carrier_B1": 78,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.10"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 3,
+     "n_carrier": 66,
+     "n_choice_groups": 0,
+     "n_counted_paths": 71,
+     "n_excluded": 1,
+     "n_leaf_paths": 71,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 1,
+     "release_date": null,
+     "sigma_B1": 83,
+     "sigma_B4": 86,
+     "sigma_carrier_B1": 78,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "3.1.11"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 8,
+     "n_carrier": 139,
+     "n_choice_groups": 0,
+     "n_counted_paths": 144,
+     "n_excluded": 1,
+     "n_leaf_paths": 144,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 4,
+     "n_uncertainties": 1,
+     "release_date": "2024-06-28",
+     "sigma_B1": 168,
+     "sigma_B4": 180,
+     "sigma_carrier_B1": 163,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "4.0.0"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 11,
+     "n_carrier": 208,
+     "n_choice_groups": 0,
+     "n_counted_paths": 213,
+     "n_excluded": 1,
+     "n_leaf_paths": 213,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 4,
+     "n_uncertainties": 1,
+     "release_date": "2026-04-01",
+     "sigma_B1": 255,
+     "sigma_B4": 267,
+     "sigma_carrier_B1": 250,
+     "statement_paths": [
+      "Amount.Amount",
+      "Amount.Currency",
+      "BookingDateTime",
+      "CreditDebitIndicator",
+      "Status"
+     ],
+     "statement_types": {
+      "Amount.Amount": "decimal-string",
+      "Amount.Currency": "code",
+      "BookingDateTime": "datetime",
+      "CreditDebitIndicator": "code",
+      "Status": "code"
+     },
+     "status": "normative",
+     "version": "4.0.1"
+    }
+   ]
+  },
+  "xbrl": {
+   "W4_history": false,
+   "capacity": {
+    "structural-step": {
+     "K_initial": 16,
+     "K_trace": [
+      16,
+      16
+     ],
+     "beyond_ladder": false
+    },
+    "tight-refit": {
+     "K_initial": 16,
+     "K_trace": [
+      16,
+      16
+     ],
+     "beyond_ladder": false
+    }
+   },
+   "domain": "xbrl",
+   "history": "xbrl",
+   "regenerations": {
+    "A0_pad[structural-step]": 0,
+    "A0_pad[tight-refit]": 0,
+    "A0_tight": 0,
+    "A1": 0,
+    "PX": 0,
+    "PX_strict": 0
+   },
+   "role": "primary",
+   "transitions": [
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "REC-2021-10-13",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 16,
+       "K_before": 16,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 16,
+       "K_before": 16,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "REC-2021-10-13+errata-2023-04-19"
+    }
+   ],
+   "versions": [
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 4,
+     "release_date": "2021-10-13",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "normative",
+     "version": "REC-2021-10-13"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 5,
+     "release_date": "2023-04-19",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "normative",
+     "version": "REC-2021-10-13+errata-2023-04-19"
+    }
+   ]
+  },
+  "xbrl_drafts": {
+   "W4_history": false,
+   "capacity": {
+    "structural-step": {
+     "K_initial": 31,
+     "K_trace": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31
+     ],
+     "beyond_ladder": false
+    },
+    "tight-refit": {
+     "K_initial": 31,
+     "K_trace": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31
+     ],
+     "beyond_ladder": false
+    }
+   },
+   "domain": "xbrl",
+   "history": "xbrl_drafts",
+   "regenerations": {
+    "A0_pad[structural-step]": 0,
+    "A0_pad[tight-refit]": 0,
+    "A0_tight": 1,
+    "A1": 0,
+    "PX": 2,
+    "PX_strict": 2
+   },
+   "role": "supplementary",
+   "transitions": [
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "CR-2016-12-14",
+     "n_paths_from": 17,
+     "n_paths_to": 17,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 17,
+     "sigma_from_B4": 35,
+     "sigma_to": 17,
+     "sigma_to_B4": 35,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "CR-2017-05-02"
+    },
+    {
+     "delta_sigma": -8,
+     "delta_sigma_B4": -23,
+     "from_version": "CR-2017-05-02",
+     "n_paths_from": 17,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [
+       "aspects.concept",
+       "aspects.entity",
+       "aspects.language",
+       "aspects.noteId",
+       "aspects.period",
+       "aspects.unit"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [
+       "aspects.xbrl:concept",
+       "aspects.xbrl:entity",
+       "aspects.xbrl:language",
+       "aspects.xbrl:periodEnd",
+       "aspects.xbrl:periodStart",
+       "aspects.xbrl:tupleOrder",
+       "aspects.xbrl:tupleParent",
+       "aspects.xbrl:unit",
+       "footnotes[].factRef",
+       "footnotes[].footnote",
+       "footnotes[].footnoteType",
+       "footnotes[].group",
+       "footnotes[].language",
+       "id"
+      ],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 6,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 14,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W6",
+        "shrink"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W6",
+        "shrink"
+       ]
+      }
+     },
+     "regen_A0_tight": true,
+     "regen_A1": false,
+     "regen_PX": true,
+     "regen_PX_strict": true,
+     "sigma_from": 17,
+     "sigma_from_B4": 35,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [
+       "aspects.concept",
+       "aspects.period",
+       "aspects.unit"
+      ],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": [
+       "aspects.xbrl:concept",
+       "aspects.xbrl:periodEnd",
+       "aspects.xbrl:periodStart",
+       "aspects.xbrl:unit"
+      ]
+     },
+     "to_version": "CR-2018-12-12"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "CR-2018-12-12",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [
+       "decimals",
+       "dimensions.concept",
+       "dimensions.entity",
+       "dimensions.language",
+       "dimensions.noteId",
+       "dimensions.period",
+       "dimensions.taxonomyDefined[]",
+       "dimensions.unit"
+      ],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [
+       "accuracy",
+       "aspects.concept",
+       "aspects.entity",
+       "aspects.language",
+       "aspects.noteId",
+       "aspects.period",
+       "aspects.taxonomyDefined[]",
+       "aspects.unit"
+      ],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 8,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 8,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W6"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W6"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": true,
+     "regen_PX_strict": true,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [
+       "dimensions.concept",
+       "dimensions.period",
+       "dimensions.unit"
+      ],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": [
+       "aspects.concept",
+       "aspects.period",
+       "aspects.unit"
+      ]
+     },
+     "to_version": "CR-2019-06-12"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "CR-2019-06-12",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "CR-2020-05-06"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "CR-2020-05-06",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "CR-2020-10-14"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "CR-2020-10-14",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "CR-2021-02-03"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "CR-2021-02-03",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "CR-2021-07-07"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "CR-2021-07-07",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "PR-2021-08-04"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "PR-2021-08-04",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "REC-2021-10-13"
+    },
+    {
+     "delta_sigma": 0,
+     "delta_sigma_B4": 0,
+     "from_version": "REC-2021-10-13",
+     "n_paths_from": 9,
+     "n_paths_to": 9,
+     "path_diff": {
+      "added": [],
+      "arrayness_changed": [],
+      "bound_changed": [],
+      "removed": [],
+      "retyped": []
+     },
+     "path_diff_counts": {
+      "added": 0,
+      "arrayness_changed": 0,
+      "bound_changed": 0,
+      "removed": 0,
+      "retyped": 0
+     },
+     "policies": {
+      "structural-step": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      },
+      "tight-refit": {
+       "K_after": 31,
+       "K_before": 31,
+       "exhausted": false,
+       "labels": [
+        "W0"
+       ]
+      }
+     },
+     "regen_A0_tight": false,
+     "regen_A1": false,
+     "regen_PX": false,
+     "regen_PX_strict": false,
+     "sigma_from": 9,
+     "sigma_from_B4": 12,
+     "sigma_to": 9,
+     "sigma_to_B4": 12,
+     "statement_change": {
+      "added": [],
+      "codelist_extended": [],
+      "format_changed": [],
+      "removed": []
+     },
+     "to_version": "REC-2021-10-13+errata-2023-04-19"
+    }
+   ],
+   "versions": [
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 6,
+     "n_carrier": 12,
+     "n_choice_groups": 0,
+     "n_counted_paths": 17,
+     "n_excluded": 2,
+     "n_leaf_paths": 17,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 6,
+     "n_uncertainties": 6,
+     "release_date": "2016-12-14",
+     "sigma_B1": 17,
+     "sigma_B4": 35,
+     "sigma_carrier_B1": 12,
+     "statement_paths": [
+      "aspects.xbrl:concept",
+      "aspects.xbrl:periodEnd",
+      "aspects.xbrl:periodStart",
+      "aspects.xbrl:unit",
+      "value"
+     ],
+     "statement_types": {
+      "aspects.xbrl:concept": "code",
+      "aspects.xbrl:periodEnd": "datetime",
+      "aspects.xbrl:periodStart": "datetime",
+      "aspects.xbrl:unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "CR-2016-12-14"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 6,
+     "n_carrier": 12,
+     "n_choice_groups": 0,
+     "n_counted_paths": 17,
+     "n_excluded": 2,
+     "n_leaf_paths": 17,
+     "n_statement": 5,
+     "n_unbounded_array_paths": 6,
+     "n_uncertainties": 5,
+     "release_date": "2017-05-02",
+     "sigma_B1": 17,
+     "sigma_B4": 35,
+     "sigma_carrier_B1": 12,
+     "statement_paths": [
+      "aspects.xbrl:concept",
+      "aspects.xbrl:periodEnd",
+      "aspects.xbrl:periodStart",
+      "aspects.xbrl:unit",
+      "value"
+     ],
+     "statement_types": {
+      "aspects.xbrl:concept": "code",
+      "aspects.xbrl:periodEnd": "datetime",
+      "aspects.xbrl:periodStart": "datetime",
+      "aspects.xbrl:unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "CR-2017-05-02"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 6,
+     "release_date": "2018-12-12",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "aspects.concept",
+      "aspects.period",
+      "aspects.unit",
+      "value"
+     ],
+     "statement_types": {
+      "aspects.concept": "code",
+      "aspects.period": "string",
+      "aspects.unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "CR-2018-12-12"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 6,
+     "release_date": "2019-06-12",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "CR-2019-06-12"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 5,
+     "release_date": "2020-05-06",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "CR-2020-05-06"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 5,
+     "release_date": "2020-10-14",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "CR-2020-10-14"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 4,
+     "release_date": "2021-02-03",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "CR-2021-02-03"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 5,
+     "release_date": "2021-07-07",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "CR-2021-07-07"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 5,
+     "release_date": "2021-08-04",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "candidate",
+     "version": "PR-2021-08-04"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 4,
+     "release_date": "2021-10-13",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "normative",
+     "version": "REC-2021-10-13"
+    },
+    {
+     "max_array_depth": 1,
+     "n_array_paths": 1,
+     "n_carrier": 5,
+     "n_choice_groups": 0,
+     "n_counted_paths": 9,
+     "n_excluded": 2,
+     "n_leaf_paths": 9,
+     "n_statement": 4,
+     "n_unbounded_array_paths": 1,
+     "n_uncertainties": 5,
+     "release_date": "2023-04-19",
+     "sigma_B1": 9,
+     "sigma_B4": 12,
+     "sigma_carrier_B1": 5,
+     "statement_paths": [
+      "dimensions.concept",
+      "dimensions.period",
+      "dimensions.unit",
+      "value"
+     ],
+     "statement_types": {
+      "dimensions.concept": "code",
+      "dimensions.period": "string",
+      "dimensions.unit": "string",
+      "value": "string"
+     },
+     "status": "normative",
+     "version": "REC-2021-10-13+errata-2023-04-19"
+    }
+   ]
+  }
+ },
+ "ladder": [
+  16,
+  31,
+  64,
+  128,
+  256,
+  512,
+  1024,
+  2048,
+  4096
+ ]
+}

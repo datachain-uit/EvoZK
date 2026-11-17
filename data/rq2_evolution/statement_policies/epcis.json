@@ -1,0 +1,12 @@
+{
+ "fields": [
+  {
+   "name": "eventTime",
+   "path": "eventTime"
+  },
+  {
+   "name": "bizStep",
+   "path": "bizStep"
+  }
+ ]
+}

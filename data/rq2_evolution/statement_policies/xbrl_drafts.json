@@ -1,0 +1,72 @@
+{
+ "fields": [
+  {
+   "name": "concept",
+   "paths": {
+    "CR-2016-12-14": "aspects.xbrl:concept",
+    "CR-2017-05-02": "aspects.xbrl:concept",
+    "CR-2018-12-12": "aspects.concept",
+    "CR-2019-06-12": "dimensions.concept",
+    "CR-2020-05-06": "dimensions.concept",
+    "CR-2020-10-14": "dimensions.concept",
+    "CR-2021-02-03": "dimensions.concept",
+    "CR-2021-07-07": "dimensions.concept",
+    "PR-2021-08-04": "dimensions.concept",
+    "REC-2021-10-13": "dimensions.concept",
+    "REC-2021-10-13+errata-2023-04-19": "dimensions.concept"
+   }
+  },
+  {
+   "name": "value",
+   "path": "value"
+  },
+  {
+   "name": "period",
+   "paths": {
+    "CR-2016-12-14": "aspects.xbrl:periodStart",
+    "CR-2017-05-02": "aspects.xbrl:periodStart",
+    "CR-2018-12-12": "aspects.period",
+    "CR-2019-06-12": "dimensions.period",
+    "CR-2020-05-06": "dimensions.period",
+    "CR-2020-10-14": "dimensions.period",
+    "CR-2021-02-03": "dimensions.period",
+    "CR-2021-07-07": "dimensions.period",
+    "PR-2021-08-04": "dimensions.period",
+    "REC-2021-10-13": "dimensions.period",
+    "REC-2021-10-13+errata-2023-04-19": "dimensions.period"
+   }
+  },
+  {
+   "name": "period_end",
+   "paths": {
+    "CR-2016-12-14": "aspects.xbrl:periodEnd",
+    "CR-2017-05-02": "aspects.xbrl:periodEnd",
+    "CR-2018-12-12": null,
+    "CR-2019-06-12": null,
+    "CR-2020-05-06": null,
+    "CR-2020-10-14": null,
+    "CR-2021-02-03": null,
+    "CR-2021-07-07": null,
+    "PR-2021-08-04": null,
+    "REC-2021-10-13": null,
+    "REC-2021-10-13+errata-2023-04-19": null
+   }
+  },
+  {
+   "name": "unit",
+   "paths": {
+    "CR-2016-12-14": "aspects.xbrl:unit",
+    "CR-2017-05-02": "aspects.xbrl:unit",
+    "CR-2018-12-12": "aspects.unit",
+    "CR-2019-06-12": "dimensions.unit",
+    "CR-2020-05-06": "dimensions.unit",
+    "CR-2020-10-14": "dimensions.unit",
+    "CR-2021-02-03": "dimensions.unit",
+    "CR-2021-07-07": "dimensions.unit",
+    "PR-2021-08-04": "dimensions.unit",
+    "REC-2021-10-13": "dimensions.unit",
+    "REC-2021-10-13+errata-2023-04-19": "dimensions.unit"
+   }
+  }
+ ]
+}

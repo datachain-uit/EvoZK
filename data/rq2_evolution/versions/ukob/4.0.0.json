@@ -1,0 +1,2400 @@
+{
+ "domain": "ukob",
+ "record_type": "UK Open Banking Account and Transaction API transaction (OBTransaction6), element of Data.Transaction[] in GET /transactions 200 response (OBReadTransaction6)",
+ "version": "4.0.0",
+ "release_date": "2024-06-28",
+ "status": "normative",
+ "source_ids": [
+  "ukob-v4.0",
+  "ukob-news-v4.0"
+ ],
+ "root": "#/components/schemas/OBReadDataTransaction6/properties/Transaction/items (OBTransaction6)",
+ "paths": [
+  {
+   "path": "AccountId",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "AccountId 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/AccountId",
+   "constraints": {
+    "maxLength": 40,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "AddressLine",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "AddressLine 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/AddressLine",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "Amount.Amount",
+   "type": "decimal-string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "Amount 1..1 / Amount 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBActiveCurrencyAndAmount_SimpleType",
+   "constraints": {
+    "pattern": "^\\d{1,13}$|^\\d{1,13}\\.\\d{1,5}$"
+   }
+  },
+  {
+   "path": "Amount.Currency",
+   "type": "code",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "Amount 1..1 / Currency 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ActiveOrHistoricCurrencyCode_1",
+   "constraints": {
+    "pattern": "^[A-Z]{3,3}$"
+   }
+  },
+  {
+   "path": "Balance.Amount.Amount",
+   "type": "decimal-string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "Balance 0..1 / Amount 1..1 / Amount 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBActiveCurrencyAndAmount_SimpleType",
+   "constraints": {
+    "pattern": "^\\d{1,13}$|^\\d{1,13}\\.\\d{1,5}$"
+   }
+  },
+  {
+   "path": "Balance.Amount.Currency",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "Balance 0..1 / Amount 1..1 / Currency 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ActiveOrHistoricCurrencyCode_1",
+   "constraints": {
+    "pattern": "^[A-Z]{3,3}$"
+   }
+  },
+  {
+   "path": "Balance.CreditDebitIndicator",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "Balance 0..1 / CreditDebitIndicator 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBCreditDebitCode_2",
+   "constraints": {
+    "enum": [
+     "Credit",
+     "Debit"
+    ]
+   }
+  },
+  {
+   "path": "Balance.Type",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "Balance 0..1 / Type 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBInternalAccountIdentification4Code",
+   "constraints": {
+    "enum": [
+     "CLAV",
+     "FWAV",
+     "INFO",
+     "ITAV",
+     "ITBD",
+     "OPAV",
+     "OPBD",
+     "PRCD",
+     "XPCH"
+    ]
+   }
+  },
+  {
+   "path": "BankTransactionCode.Code",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "BankTransactionCode 0..1 / Code 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBBankTransactionCodeStructure1/properties/Code",
+   "constraints": {}
+  },
+  {
+   "path": "BankTransactionCode.SubCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "BankTransactionCode 0..1 / SubCode 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBBankTransactionCodeStructure1/properties/SubCode",
+   "constraints": {}
+  },
+  {
+   "path": "BookingDateTime",
+   "type": "datetime",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "BookingDateTime 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BookingDateTime",
+   "constraints": {
+    "format": "date-time"
+   }
+  },
+  {
+   "path": "CardInstrument.AuthorisationType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CardInstrument 0..1 / AuthorisationType 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBTransactionCardInstrument1/properties/AuthorisationType",
+   "constraints": {
+    "enum": [
+     "ConsumerDevice",
+     "Contactless",
+     "None",
+     "PIN"
+    ]
+   }
+  },
+  {
+   "path": "CardInstrument.CardSchemeName",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CardInstrument 0..1 / CardSchemeName 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBTransactionCardInstrument1/properties/CardSchemeName",
+   "constraints": {
+    "enum": [
+     "AmericanExpress",
+     "Diners",
+     "Discover",
+     "MasterCard",
+     "VISA"
+    ]
+   }
+  },
+  {
+   "path": "CardInstrument.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CardInstrument 0..1 / Identification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBTransactionCardInstrument1/properties/Identification",
+   "constraints": {
+    "maxLength": 34,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CardInstrument.Name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CardInstrument 0..1 / Name 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBTransactionCardInstrument1/properties/Name",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CategoryPurposeCode",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CategoryPurposeCode 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ExternalCategoryPurpose1Code",
+   "constraints": {
+    "enum": [
+     "BONU",
+     "CASH",
+     "CBLK",
+     "CCRD",
+     "CGWV",
+     "CIPC",
+     "CONC",
+     "CORT",
+     "DCRD",
+     "DIVI",
+     "DVPM",
+     "EPAY",
+     "FCDT",
+     "FCIN",
+     "FCOL",
+     "GOVT",
+     "GP2P",
+     "HEDG",
+     "ICCP",
+     "IDCP",
+     "INTC",
+     "INTE",
+     "LBOX",
+     "LOAN",
+     "MP2B",
+     "MP2P",
+     "OTHR",
+     "PENS",
+     "RPRE",
+     "RRCT",
+     "RVPM",
+     "SALA",
+     "SECU",
+     "SSBE",
+     "SUPP",
+     "SWEP",
+     "TAXS",
+     "TOPG",
+     "TRAD",
+     "TREA",
+     "VATX",
+     "VOST",
+     "WHLD",
+     "ZABA"
+    ]
+   }
+  },
+  {
+   "path": "ChargeAmount.Amount",
+   "type": "decimal-string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "ChargeAmount 0..1 / Amount 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBActiveCurrencyAndAmount_SimpleType",
+   "constraints": {
+    "pattern": "^\\d{1,13}$|^\\d{1,13}\\.\\d{1,5}$"
+   }
+  },
+  {
+   "path": "ChargeAmount.Currency",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "ChargeAmount 0..1 / Currency 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ActiveOrHistoricCurrencyCode_1",
+   "constraints": {
+    "pattern": "^[A-Z]{3,3}$"
+   }
+  },
+  {
+   "path": "CreditDebitIndicator",
+   "type": "code",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "CreditDebitIndicator 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBCreditDebitCode_1",
+   "constraints": {
+    "enum": [
+     "Credit",
+     "Debit"
+    ]
+   }
+  },
+  {
+   "path": "CreditorAccount.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAccount 0..1 / Identification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Identification_0",
+   "constraints": {
+    "maxLength": 256,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAccount.Name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAccount 0..1 / Name 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Name_0",
+   "constraints": {
+    "maxLength": 350,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAccount.Proxy.Code",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAccount 0..1 / Proxy 0..1 / Code 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ExternalProxyAccountType1Code",
+   "constraints": {
+    "enum": [
+     "BIID",
+     "CCPT",
+     "CINC",
+     "COID",
+     "COTX",
+     "CUST",
+     "DNAM",
+     "DRLC",
+     "EIDN",
+     "EMAL",
+     "EWAL",
+     "LEIC",
+     "MBNO",
+     "NIDN",
+     "PVTX",
+     "SHID",
+     "SOSE",
+     "TELE",
+     "TOKN",
+     "UBIL",
+     "VIPN"
+    ]
+   }
+  },
+  {
+   "path": "CreditorAccount.Proxy.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAccount 0..1 / Proxy 0..1 / Identification 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBProxy1/properties/Identification",
+   "constraints": {
+    "maxLength": 2048,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAccount.Proxy.Type",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAccount 0..1 / Proxy 0..1 / Type 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBProxy1/properties/Type",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAccount.SchemeName",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAccount 0..1 / SchemeName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBInternalAccountIdentification4Code",
+   "constraints": {
+    "enum": [
+     "CLAV",
+     "FWAV",
+     "INFO",
+     "ITAV",
+     "ITBD",
+     "OPAV",
+     "OPBD",
+     "PRCD",
+     "XPCH"
+    ]
+   }
+  },
+  {
+   "path": "CreditorAccount.SecondaryIdentification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAccount 0..1 / SecondaryIdentification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/SecondaryIdentification",
+   "constraints": {
+    "maxLength": 34,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / Identification 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Identification_1",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.LEI",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / LEI 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/LEI",
+   "constraints": {
+    "pattern": "^[0-9]{4}[0]{2}[A-Z0-9]{12}[0-9]{2}",
+    "maxLength": 20,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.Name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / Name 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Name_1",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.AddressLine[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    7
+   ],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / AddressLine 0..7",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/AddressLine/items",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.AddressType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / AddressType 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBAddressType2Code",
+   "constraints": {
+    "enum": [
+     "ADDR",
+     "BIZZ",
+     "CORR",
+     "DLVY",
+     "HOME",
+     "MLTO",
+     "PBOX",
+     "STAT"
+    ]
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.BuildingName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / BuildingName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BuildingName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.BuildingNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / BuildingNumber 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BuildingNumber",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.CareOf",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / CareOf 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/CareOf",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.Country",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / Country 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/Country",
+   "constraints": {
+    "pattern": "^[A-Z]{2,2}$"
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.CountrySubDivision",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / CountrySubDivision 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/CountrySubDivision",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.Department",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / Department 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/Department",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.DistrictName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / DistrictName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/DistrictName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.Floor",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / Floor 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Floor",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.PostBox",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / PostBox 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/PostBox",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.PostCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / PostCode 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/PostCode",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.Room",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / Room 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Room",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.StreetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / StreetName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/StreetName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.SubDepartment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / SubDepartment 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/SubDepartment",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.TownLocationName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / TownLocationName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TownName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.TownName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / TownName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TownName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.PostalAddress.UnitNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / PostalAddress 0..1 / UnitNumber 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/UnitNumber",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CreditorAgent.SchemeName",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CreditorAgent 0..1 / SchemeName 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBInternalFinancialInstitutionIdentification4Code",
+   "constraints": {
+    "x-namespaced-enum": [
+     "UK.OBIE.BICFI"
+    ]
+   }
+  },
+  {
+   "path": "CurrencyExchange.ContractIdentification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CurrencyExchange 0..1 / ContractIdentification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBCurrencyExchange5/properties/ContractIdentification",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "CurrencyExchange.ExchangeRate",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CurrencyExchange 0..1 / ExchangeRate 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBCurrencyExchange5/properties/ExchangeRate",
+   "constraints": {}
+  },
+  {
+   "path": "CurrencyExchange.InstructedAmount.Amount",
+   "type": "decimal-string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CurrencyExchange 0..1 / InstructedAmount 0..1 / Amount 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBActiveCurrencyAndAmount_SimpleType",
+   "constraints": {
+    "pattern": "^\\d{1,13}$|^\\d{1,13}\\.\\d{1,5}$"
+   }
+  },
+  {
+   "path": "CurrencyExchange.InstructedAmount.Currency",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CurrencyExchange 0..1 / InstructedAmount 0..1 / Currency 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ActiveOrHistoricCurrencyCode_1",
+   "constraints": {
+    "pattern": "^[A-Z]{3,3}$"
+   }
+  },
+  {
+   "path": "CurrencyExchange.QuotationDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CurrencyExchange 0..1 / QuotationDate 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBCurrencyExchange5/properties/QuotationDate",
+   "constraints": {
+    "format": "date-time"
+   }
+  },
+  {
+   "path": "CurrencyExchange.SourceCurrency",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CurrencyExchange 0..1 / SourceCurrency 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBCurrencyExchange5/properties/SourceCurrency",
+   "constraints": {
+    "pattern": "^[A-Z]{3,3}$"
+   }
+  },
+  {
+   "path": "CurrencyExchange.TargetCurrency",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CurrencyExchange 0..1 / TargetCurrency 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBCurrencyExchange5/properties/TargetCurrency",
+   "constraints": {
+    "pattern": "^[A-Z]{3,3}$"
+   }
+  },
+  {
+   "path": "CurrencyExchange.UnitCurrency",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "CurrencyExchange 0..1 / UnitCurrency 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBCurrencyExchange5/properties/UnitCurrency",
+   "constraints": {
+    "pattern": "^[A-Z]{3,3}$"
+   }
+  },
+  {
+   "path": "DebtorAccount.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAccount 0..1 / Identification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Identification_0",
+   "constraints": {
+    "maxLength": 256,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAccount.Name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAccount 0..1 / Name 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Name_0",
+   "constraints": {
+    "maxLength": 350,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAccount.Proxy.Code",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAccount 0..1 / Proxy 0..1 / Code 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ExternalProxyAccountType1Code",
+   "constraints": {
+    "enum": [
+     "BIID",
+     "CCPT",
+     "CINC",
+     "COID",
+     "COTX",
+     "CUST",
+     "DNAM",
+     "DRLC",
+     "EIDN",
+     "EMAL",
+     "EWAL",
+     "LEIC",
+     "MBNO",
+     "NIDN",
+     "PVTX",
+     "SHID",
+     "SOSE",
+     "TELE",
+     "TOKN",
+     "UBIL",
+     "VIPN"
+    ]
+   }
+  },
+  {
+   "path": "DebtorAccount.Proxy.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAccount 0..1 / Proxy 0..1 / Identification 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBProxy1/properties/Identification",
+   "constraints": {
+    "maxLength": 2048,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAccount.Proxy.Type",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAccount 0..1 / Proxy 0..1 / Type 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBProxy1/properties/Type",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAccount.SchemeName",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAccount 0..1 / SchemeName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBInternalAccountIdentification4Code",
+   "constraints": {
+    "enum": [
+     "CLAV",
+     "FWAV",
+     "INFO",
+     "ITAV",
+     "ITBD",
+     "OPAV",
+     "OPBD",
+     "PRCD",
+     "XPCH"
+    ]
+   }
+  },
+  {
+   "path": "DebtorAccount.SecondaryIdentification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAccount 0..1 / SecondaryIdentification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/SecondaryIdentification",
+   "constraints": {
+    "maxLength": 34,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / Identification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Identification_2",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.LEI",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / LEI 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/LEI",
+   "constraints": {
+    "pattern": "^[0-9]{4}[0]{2}[A-Z0-9]{12}[0-9]{2}",
+    "maxLength": 20,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.Name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / Name 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Name_1",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.AddressLine[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    7
+   ],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / AddressLine 0..7",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/AddressLine/items",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.AddressType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / AddressType 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBAddressType2Code",
+   "constraints": {
+    "enum": [
+     "ADDR",
+     "BIZZ",
+     "CORR",
+     "DLVY",
+     "HOME",
+     "MLTO",
+     "PBOX",
+     "STAT"
+    ]
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.BuildingName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / BuildingName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BuildingName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.BuildingNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / BuildingNumber 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BuildingNumber",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.CareOf",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / CareOf 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/CareOf",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.Country",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / Country 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/Country",
+   "constraints": {
+    "pattern": "^[A-Z]{2,2}$"
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.CountrySubDivision",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / CountrySubDivision 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/CountrySubDivision",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.Department",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / Department 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/Department",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.DistrictName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / DistrictName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/DistrictName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.Floor",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / Floor 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Floor",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.PostBox",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / PostBox 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/PostBox",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.PostCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / PostCode 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/PostCode",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.Room",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / Room 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Room",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.StreetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / StreetName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/StreetName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.SubDepartment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / SubDepartment 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/SubDepartment",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.TownLocationName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / TownLocationName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TownName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.TownName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / TownName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TownName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.PostalAddress.UnitNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / PostalAddress 0..1 / UnitNumber 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/UnitNumber",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "DebtorAgent.SchemeName",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "DebtorAgent 0..1 / SchemeName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBInternalFinancialInstitutionIdentification4Code",
+   "constraints": {
+    "x-namespaced-enum": [
+     "UK.OBIE.BICFI"
+    ]
+   }
+  },
+  {
+   "path": "ExtendedProprietaryBankTransactionCodes[].Code",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "ExtendedProprietaryBankTransactionCodes 0..n / Code 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBExtendedProprietaryBankTransactionCode/properties/Code",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "ExtendedProprietaryBankTransactionCodes[].Description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "ExtendedProprietaryBankTransactionCodes 0..n / Description 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBExtendedProprietaryBankTransactionCode/properties/Description",
+   "constraints": {
+    "maxLength": 500,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "ExtendedProprietaryBankTransactionCodes[].Issuer",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "ExtendedProprietaryBankTransactionCodes 0..n / Issuer 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBExtendedProprietaryBankTransactionCode/properties/Issuer",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "MerchantDetails.MerchantCategoryCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "MerchantDetails 0..1 / MerchantCategoryCode 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBMerchantDetails1/properties/MerchantCategoryCode",
+   "constraints": {
+    "maxLength": 4,
+    "minLength": 3
+   }
+  },
+  {
+   "path": "MerchantDetails.MerchantName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "MerchantDetails 0..1 / MerchantName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBMerchantDetails1/properties/MerchantName",
+   "constraints": {
+    "maxLength": 350,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "PaymentPurposeCode",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "PaymentPurposeCode 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBExternalPurpose1Code",
+   "constraints": {
+    "enum": [
+     "ACCT",
+     "ADCS",
+     "ADMG",
+     "ADVA",
+     "AEMP",
+     "AGRT",
+     "AIRB",
+     "ALLW",
+     "ALMY",
+     "AMEX",
+     "ANNI",
+     "ANTS",
+     "AREN",
+     "AUCO",
+     "B112",
+     "BBSC",
+     "BCDM",
+     "BCFG",
+     "BECH",
+     "BENE",
+     "BEXP",
+     "BFWD",
+     "BKDF",
+     "BKFE",
+     "BKFM",
+     "BKIP",
+     "BKPP",
+     "BLDM",
+     "BNET",
+     "BOCE",
+     "BOND",
+     "BONU",
+     "BR12",
+     "BUSB",
+     "CABD",
+     "CAEQ",
+     "CAFI",
+     "CASH",
+     "CBCR",
+     "CBFF",
+     "CBFR",
+     "CBLK",
+     "CBTV",
+     "CCHD",
+     "CCIR",
+     "CCPC",
+     "CCPM",
+     "CCRD",
+     "CCSM",
+     "CDBL",
+     "CDCB",
+     "CDCD",
+     "CDCS",
+     "CDDP",
+     "CDEP",
+     "CDOC",
+     "CDQC",
+     "CFDI",
+     "CFEE",
+     "CGDD",
+     "CHAR",
+     "CLPR",
+     "CMDT",
+     "COLL",
+     "COMC",
+     "COMM",
+     "COMP",
+     "COMT",
+     "CORT",
+     "COST",
+     "CPEN",
+     "CPKC",
+     "CPYR",
+     "CRDS",
+     "CRPR",
+     "CRSP",
+     "CRTL",
+     "CSDB",
+     "CSLP",
+     "CVCF",
+     "DBCR",
+     "DBTC",
+     "DCRD",
+     "DEBT",
+     "DEPD",
+     "DEPT",
+     "DERI",
+     "DICL",
+     "DIVD",
+     "DMEQ",
+     "DNTS",
+     "DSMT",
+     "DVPM",
+     "ECPG",
+     "ECPR",
+     "ECPU",
+     "EDUC",
+     "EFTC",
+     "EFTD",
+     "ELEC",
+     "ENRG",
+     "EPAY",
+     "EQPT",
+     "EQTS",
+     "EQUS",
+     "ESTX",
+     "ETUP",
+     "EXPT",
+     "EXTD",
+     "FACT",
+     "FAND",
+     "FCOL",
+     "FCPM",
+     "FEES",
+     "FERB",
+     "FIXI",
+     "FLCR",
+     "FNET",
+     "FORW",
+     "FREX",
+     "FUTR",
+     "FWBC",
+     "FWCC",
+     "FWLV",
+     "FWSB",
+     "FWSC",
+     "FXNT",
+     "GAFA",
+     "GAHO",
+     "GAMB",
+     "GASB",
+     "GDDS",
+     "GDSV",
+     "GFRP",
+     "GIFT",
+     "GOVI",
+     "GOVT",
+     "GSCB",
+     "GSTX",
+     "GVEA",
+     "GVEB",
+     "GVEC",
+     "GVED",
+     "GWLT",
+     "HEDG",
+     "HLRP",
+     "HLST",
+     "HLTC",
+     "HLTI",
+     "HREC",
+     "HSPC",
+     "HSTX",
+     "ICCP",
+     "ICRF",
+     "IDCP",
+     "IHRP",
+     "INPC",
+     "INPR",
+     "INSC",
+     "INSM",
+     "INSU",
+     "INTC",
+     "INTE",
+     "INTP",
+     "INTX",
+     "INVS",
+     "IPAY",
+     "IPCA",
+     "IPDO",
+     "IPEA",
+     "IPEC",
+     "IPEW",
+     "IPPS",
+     "IPRT",
+     "IPU2",
+     "IPUW",
+     "IVPT",
+     "LBIN",
+     "LBRI",
+     "LCOL",
+     "LFEE",
+     "LICF",
+     "LIFI",
+     "LIMA",
+     "LMEQ",
+     "LMFI",
+     "LMRK",
+     "LOAN",
+     "LOAR",
+     "LOTT",
+     "LREB",
+     "LREV",
+     "LSFL",
+     "LTCF",
+     "MAFC",
+     "MARF",
+     "MARG",
+     "MBSB",
+     "MBSC",
+     "MCDM",
+     "MCFG",
+     "MDCS",
+     "MGCC",
+     "MGSC",
+     "MOMA",
+     "MP2B",
+     "MP2P",
+     "MSVC",
+     "MTUP",
+     "NETT",
+     "NITX",
+     "NOWS",
+     "NWCH",
+     "NWCM",
+     "OCCC",
+     "OCDM",
+     "OCFG",
+     "OFEE",
+     "OPBC",
+     "OPCC",
+     "OPSB",
+     "OPSC",
+     "OPTN",
+     "OTCD",
+     "OTHR",
+     "OTLC",
+     "PADD",
+     "PAYR",
+     "PCOM",
+     "PDEP",
+     "PEFC",
+     "PENO",
+     "PENS",
+     "PHON",
+     "PLDS",
+     "PLRF",
+     "POPE",
+     "PPTI",
+     "PRCP",
+     "PRME",
+     "PTSP",
+     "PTXP",
+     "RAPI",
+     "RCKE",
+     "RCPT",
+     "RDTX",
+     "REBT",
+     "REFU",
+     "RELG",
+     "RENT",
+     "REOD",
+     "REPO",
+     "RETL",
+     "RHBS",
+     "RIMB",
+     "RINP",
+     "RLWY",
+     "ROYA",
+     "RPBC",
+     "RPCC",
+     "RPNT",
+     "RPSB",
+     "RPSC",
+     "RRBN",
+     "RRCT",
+     "RRTP",
+     "RVPM",
+     "RVPO",
+     "SALA",
+     "SASW",
+     "SAVG",
+     "SBSC",
+     "SCIE",
+     "SCIR",
+     "SCRP",
+     "SCVE",
+     "SECU",
+     "SEPI",
+     "SERV",
+     "SHBC",
+     "SHCC",
+     "SHSL",
+     "SLEB",
+     "SLOA",
+     "SLPI",
+     "SPLT",
+     "SPSP",
+     "SSBE",
+     "STDY",
+     "SUBS",
+     "SUPP",
+     "SWBC",
+     "SWCC",
+     "SWFP",
+     "SWPP",
+     "SWPT",
+     "SWRS",
+     "SWSB",
+     "SWSC",
+     "SWUF",
+     "TAXR",
+     "TAXS",
+     "TBAN",
+     "TBAS",
+     "TBBC",
+     "TBCC",
+     "TBIL",
+     "TCSC",
+     "TELI",
+     "TLRF",
+     "TLRR",
+     "TMPG",
+     "TPRI",
+     "TPRP",
+     "TRAD",
+     "TRCP",
+     "TREA",
+     "TRFD",
+     "TRNC",
+     "TRPT",
+     "TRVC",
+     "UBIL",
+     "UNIT",
+     "VATX",
+     "VIEW",
+     "WEBI",
+     "WHLD",
+     "WTER"
+    ],
+    "maxLength": 4,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "ProprietaryBankTransactionCode.Code",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "ProprietaryBankTransactionCode 0..1 / Code 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ProprietaryBankTransactionCodeStructure1/properties/Code",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "ProprietaryBankTransactionCode.Issuer",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "ProprietaryBankTransactionCode 0..1 / Issuer 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ProprietaryBankTransactionCodeStructure1/properties/Issuer",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "StatementReference[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "StatementReference 0..n",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/StatementReference",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "Status",
+   "type": "code",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "Status 1..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ExternalEntryStatus1Code",
+   "constraints": {
+    "enum": [
+     "BOOK",
+     "FUTR",
+     "INFO",
+     "PDNG"
+    ]
+   }
+  },
+  {
+   "path": "TransactionId",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "TransactionId 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TransactionId",
+   "constraints": {
+    "maxLength": 210,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "TransactionInformation",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "TransactionInformation 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TransactionInformation",
+   "constraints": {
+    "maxLength": 500,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "TransactionMutability",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "TransactionMutability 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBInternalTransactionMutability1Code",
+   "constraints": {
+    "enum": [
+     "Immutable",
+     "Mutable"
+    ]
+   }
+  },
+  {
+   "path": "TransactionReference",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "TransactionReference 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TransactionReference",
+   "constraints": {
+    "maxLength": 210,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / Identification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBUltimateCreditor1/properties/Identification",
+   "constraints": {
+    "maxLength": 256,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.LEI",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / LEI 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/LEI",
+   "constraints": {
+    "pattern": "^[0-9]{4}[0]{2}[A-Z0-9]{12}[0-9]{2}",
+    "maxLength": 20,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.Name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / Name 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBUltimateCreditor1/properties/Name",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.AddressLine[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    7
+   ],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / AddressLine 0..7",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/AddressLine/items",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.AddressType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / AddressType 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBAddressType2Code",
+   "constraints": {
+    "enum": [
+     "ADDR",
+     "BIZZ",
+     "CORR",
+     "DLVY",
+     "HOME",
+     "MLTO",
+     "PBOX",
+     "STAT"
+    ]
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.BuildingName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / BuildingName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BuildingName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.BuildingNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / BuildingNumber 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BuildingNumber",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.CareOf",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / CareOf 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/CareOf",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.Country",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / Country 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/Country",
+   "constraints": {
+    "pattern": "^[A-Z]{2,2}$"
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.CountrySubDivision",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / CountrySubDivision 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/CountrySubDivision",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.Department",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / Department 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/Department",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.DistrictName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / DistrictName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/DistrictName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.Floor",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / Floor 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Floor",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.PostBox",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / PostBox 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/PostBox",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.PostCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / PostCode 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/PostCode",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.Room",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / Room 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Room",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.StreetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / StreetName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/StreetName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.SubDepartment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / SubDepartment 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/SubDepartment",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.TownLocationName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / TownLocationName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TownName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.TownName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / TownName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TownName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.PostalAddress.UnitNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / PostalAddress 0..1 / UnitNumber 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/UnitNumber",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateCreditor.SchemeName",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateCreditor 0..1 / SchemeName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBInternalAccountIdentification4Code",
+   "constraints": {
+    "enum": [
+     "CLAV",
+     "FWAV",
+     "INFO",
+     "ITAV",
+     "ITBD",
+     "OPAV",
+     "OPBD",
+     "PRCD",
+     "XPCH"
+    ]
+   }
+  },
+  {
+   "path": "UltimateDebtor.Identification",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / Identification 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBUltimateDebtor1/properties/Identification",
+   "constraints": {
+    "maxLength": 256,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.LEI",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / LEI 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/LEI",
+   "constraints": {
+    "pattern": "^[0-9]{4}[0]{2}[A-Z0-9]{12}[0-9]{2}",
+    "maxLength": 20,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.Name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / Name 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBUltimateDebtor1/properties/Name",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.AddressLine[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    7
+   ],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / AddressLine 0..7",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/AddressLine/items",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.AddressType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / AddressType 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBAddressType2Code",
+   "constraints": {
+    "enum": [
+     "ADDR",
+     "BIZZ",
+     "CORR",
+     "DLVY",
+     "HOME",
+     "MLTO",
+     "PBOX",
+     "STAT"
+    ]
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.BuildingName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / BuildingName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BuildingName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.BuildingNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / BuildingNumber 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/BuildingNumber",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.CareOf",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / CareOf 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/CareOf",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.Country",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / Country 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/Country",
+   "constraints": {
+    "pattern": "^[A-Z]{2,2}$"
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.CountrySubDivision",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / CountrySubDivision 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/CountrySubDivision",
+   "constraints": {
+    "maxLength": 35,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.Department",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / Department 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/Department",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.DistrictName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / DistrictName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/DistrictName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.Floor",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / Floor 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Floor",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.PostBox",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / PostBox 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/PostBox",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.PostCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / PostCode 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/PostCode",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.Room",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / Room 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/Room",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.StreetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / StreetName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/StreetName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.SubDepartment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / SubDepartment 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBPostalAddress7/properties/SubDepartment",
+   "constraints": {
+    "maxLength": 70,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.TownLocationName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / TownLocationName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TownName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.TownName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / TownName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/TownName",
+   "constraints": {
+    "maxLength": 140,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.PostalAddress.UnitNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / PostalAddress 0..1 / UnitNumber 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/UnitNumber",
+   "constraints": {
+    "maxLength": 16,
+    "minLength": 1
+   }
+  },
+  {
+   "path": "UltimateDebtor.SchemeName",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "UltimateDebtor 0..1 / SchemeName 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/OBInternalAccountIdentification4Code",
+   "constraints": {
+    "enum": [
+     "CLAV",
+     "FWAV",
+     "INFO",
+     "ITAV",
+     "ITBD",
+     "OPAV",
+     "OPBD",
+     "PRCD",
+     "XPCH"
+    ]
+   }
+  },
+  {
+   "path": "ValueDateTime",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "ValueDateTime 0..1",
+   "source_id": "ukob-v4.0",
+   "locator": "#/components/schemas/ValueDateTime",
+   "constraints": {
+    "format": "date-time"
+   }
+  }
+ ],
+ "statement_paths": [
+  "Amount.Amount",
+  "Amount.Currency",
+  "CreditDebitIndicator",
+  "BookingDateTime",
+  "Status"
+ ]
+}

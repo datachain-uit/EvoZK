@@ -1,0 +1,4940 @@
+{
+ "conventions": [
+  "B = 1 unless the case sets B. Pair cases without 'state' start from K = smallest rung >= sigma_old for both policies, with no earlier exhaustion.",
+  "labels given as a list apply to both A0-pad policies (tight-refit and structural-step); a dict gives them per policy. Canonical label order W0 W1 W2 W3 W4 W5 W6 W6x shrink.",
+  "adapter_lines given as an integer applies to every design (A0-tight, A0-pad, PX, MR, A1).",
+  "strict: the strict reading (W6x counted as W6) equals the primary reading unless a 'strict' block is given.",
+  "path_kinds keys: added leaf = new path; removed leaf = old path; matched leaf = its path, or 'old->new' when the path strings differ.",
+  "statement lists every policy field with a non-empty change list (class null when no W class applies).",
+  "A policy given as a list of paths names fields by their path and uses the same path in both versions.",
+  "regen true implies artefacts [circuit, keys, verifier]; false implies [].",
+  "Pair case: old = base, new = base with ops applied in order. History case: versions v1..vn; v1 = base with its ops, each later version = the previous version with its ops; a list policy holds for every version.",
+  "Ops: add (append leaf), remove (by path), set (top-level key of a leaf), setc (constraint key; value null deletes it), repath (change the path string; later ops use the new path).",
+  "A key absent from an expected block is not checked; every present key is checked exactly (kinds compared as sets, labels as sets).",
+  "'e' (bool) in an expected transition checks Algorithm 1's e; 'h' on a case sets MR's depth (default 32)."
+ ],
+ "bases": {
+  "B0": {
+   "version": "v1",
+   "paths": [
+    {
+     "path": "id",
+     "type": "string",
+     "array_bounds": []
+    },
+    {
+     "path": "issuer",
+     "type": "uri",
+     "array_bounds": [],
+     "required": false
+    },
+    {
+     "path": "subject.name",
+     "type": "string",
+     "array_bounds": []
+    },
+    {
+     "path": "subject.dob",
+     "type": "date",
+     "array_bounds": []
+    },
+    {
+     "path": "amount",
+     "type": "decimal-string",
+     "array_bounds": [],
+     "constraints": {
+      "pattern": "^\\d{1,13}\\.\\d{2}$"
+     }
+    },
+    {
+     "path": "currency",
+     "type": "code",
+     "array_bounds": [],
+     "constraints": {
+      "enum": [
+       "EUR",
+       "USD"
+      ]
+     }
+    },
+    {
+     "path": "status",
+     "type": "code",
+     "array_bounds": [],
+     "constraints": {
+      "enum": [
+       "A",
+       "B"
+      ]
+     }
+    },
+    {
+     "path": "issued",
+     "type": "datetime",
+     "array_bounds": [],
+     "constraints": {
+      "format": "date-time"
+     }
+    },
+    {
+     "path": "items[].sku",
+     "type": "string",
+     "array_bounds": [
+      3
+     ]
+    },
+    {
+     "path": "tags[]",
+     "type": "string",
+     "array_bounds": [
+      null
+     ]
+    },
+    {
+     "path": "created",
+     "type": "datetime",
+     "array_bounds": [],
+     "constraints": {
+      "format": "date-time"
+     }
+    },
+    {
+     "path": "ref",
+     "type": "string",
+     "array_bounds": [],
+     "constraints": {
+      "pattern": "^R[0-9]+$",
+      "maxLength": 20
+     }
+    }
+   ]
+  },
+  "X0": {
+   "version": "v1",
+   "paths": [
+    {
+     "path": "id",
+     "type": "string",
+     "array_bounds": []
+    },
+    {
+     "path": "valueQuantity.value",
+     "type": "number",
+     "array_bounds": [],
+     "choices": [
+      {
+       "group": "value[x]",
+       "alt": "Quantity"
+      }
+     ]
+    },
+    {
+     "path": "valueQuantity.unit",
+     "type": "string",
+     "array_bounds": [],
+     "choices": [
+      {
+       "group": "value[x]",
+       "alt": "Quantity"
+      }
+     ]
+    },
+    {
+     "path": "valueQuantity.code",
+     "type": "code",
+     "array_bounds": [],
+     "choices": [
+      {
+       "group": "value[x]",
+       "alt": "Quantity"
+      }
+     ]
+    },
+    {
+     "path": "valueString",
+     "type": "string",
+     "array_bounds": [],
+     "choices": [
+      {
+       "group": "value[x]",
+       "alt": "String"
+      }
+     ]
+    },
+    {
+     "path": "effectiveDateTime",
+     "type": "datetime",
+     "array_bounds": [],
+     "choices": [
+      {
+       "group": "effective[x]",
+       "alt": "dateTime"
+      }
+     ]
+    },
+    {
+     "path": "effectivePeriod.start",
+     "type": "datetime",
+     "array_bounds": [],
+     "choices": [
+      {
+       "group": "effective[x]",
+       "alt": "Period"
+      }
+     ]
+    },
+    {
+     "path": "effectivePeriod.end",
+     "type": "datetime",
+     "array_bounds": [],
+     "choices": [
+      {
+       "group": "effective[x]",
+       "alt": "Period"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "policies": {
+  "P0": [
+   "amount",
+   "status",
+   "issued"
+  ],
+  "PX0": [
+   "valueQuantity.value",
+   "effectiveDateTime"
+  ]
+ },
+ "cases": [
+  {
+   "id": "T01-add-carrier",
+   "matrix": {
+    "kind": "add",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "subject.email",
+      "type": "string",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     15
+    ],
+    "delta_sigma": 1,
+    "path_kinds": {
+     "subject.email": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W1"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T02-add-statement",
+   "matrix": {
+    "kind": "add",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "old": "amount",
+      "new": "amount"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "status"
+     },
+     {
+      "name": "issued",
+      "old": "issued",
+      "new": "issued"
+     },
+     {
+      "name": "score",
+      "old": null,
+      "new": "score"
+     }
+    ]
+   },
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "score",
+      "type": "integer",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     15
+    ],
+    "delta_sigma": 1,
+    "path_kinds": {
+     "score": [
+      "added"
+     ]
+    },
+    "statement": {
+     "score": {
+      "kinds": [
+       "added"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W1",
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T03-remove-carrier",
+   "matrix": {
+    "kind": "remove",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "remove",
+     "path": "subject.dob"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     13
+    ],
+    "delta_sigma": -1,
+    "path_kinds": {
+     "subject.dob": [
+      "removed"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "shrink"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T04-remove-statement",
+   "matrix": {
+    "kind": "remove",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "old": "amount",
+      "new": "amount"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "status"
+     },
+     {
+      "name": "issued",
+      "old": "issued",
+      "new": null
+     }
+    ]
+   },
+   "ops": [
+    {
+     "op": "remove",
+     "path": "issued"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     13
+    ],
+    "delta_sigma": -1,
+    "path_kinds": {
+     "issued": [
+      "removed"
+     ]
+    },
+    "statement": {
+     "issued": {
+      "kinds": [
+       "removed"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6",
+     "shrink"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T05-rename-carrier",
+   "matrix": {
+    "kind": "rename",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "repath",
+     "path": "subject.name",
+     "to": "subject.fullName"
+    }
+   ],
+   "renames": {
+    "subject.name": "subject.fullName"
+   },
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "subject.name->subject.fullName": [
+      "renamed"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T06-rename-statement",
+   "matrix": {
+    "kind": "rename",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "old": "amount",
+      "new": "amount"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "status"
+     },
+     {
+      "name": "issued",
+      "old": "issued",
+      "new": "validFrom"
+     }
+    ]
+   },
+   "ops": [
+    {
+     "op": "repath",
+     "path": "issued",
+     "to": "validFrom"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "issued->validFrom": [
+      "renamed"
+     ]
+    },
+    "statement": {
+     "issued": {
+      "kinds": [
+       "renamed"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T07-retype-carrier",
+   "matrix": {
+    "kind": "retype",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "set",
+     "path": "id",
+     "key": "type",
+     "value": "uri"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "id": [
+      "retyped"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T08-retype-statement",
+   "matrix": {
+    "kind": "retype",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "set",
+     "path": "amount",
+     "key": "type",
+     "value": "number"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "amount": [
+      "retyped"
+     ]
+    },
+    "statement": {
+     "amount": {
+      "kinds": [
+       "retyped"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T09-arrayness-carrier",
+   "matrix": {
+    "kind": "arrayness",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "repath",
+     "path": "subject.name",
+     "to": "subject.name[]"
+    },
+    {
+     "op": "set",
+     "path": "subject.name[]",
+     "key": "array_bounds",
+     "value": [
+      null
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "subject.name->subject.name[]": [
+      "arrayness"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0",
+     "W5"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T10-arrayness-statement",
+   "matrix": {
+    "kind": "arrayness",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "old": "amount",
+      "new": "amount"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "status"
+     },
+     {
+      "name": "issued",
+      "old": "issued",
+      "new": "issued[]"
+     }
+    ]
+   },
+   "ops": [
+    {
+     "op": "repath",
+     "path": "issued",
+     "to": "issued[]"
+    },
+    {
+     "op": "set",
+     "path": "issued[]",
+     "key": "array_bounds",
+     "value": [
+      null
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "issued->issued[]": [
+      "arrayness"
+     ]
+    },
+    "statement": {
+     "issued": {
+      "kinds": [
+       "arrayness"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W5",
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T11-pattern-carrier",
+   "matrix": {
+    "kind": "pattern",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "ref",
+     "key": "pattern",
+     "value": "^R[0-9]{1,8}$"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "ref": [
+      "pattern"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T12-pattern-statement",
+   "matrix": {
+    "kind": "pattern",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "amount",
+     "key": "pattern",
+     "value": "^\\d{1,13}$|^\\d{1,13}\\.\\d{2}$"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "amount": [
+      "pattern"
+     ]
+    },
+    "statement": {
+     "amount": {
+      "kinds": [
+       "pattern"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T13-codelist-extension-carrier",
+   "matrix": {
+    "kind": "codelist-extension",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "currency",
+     "key": "enum",
+     "value": [
+      "EUR",
+      "USD",
+      "GBP"
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "currency": [
+      "codelist-extension"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T14-codelist-extension-statement",
+   "matrix": {
+    "kind": "codelist-extension",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "status",
+     "key": "enum",
+     "value": [
+      "A",
+      "B",
+      "C"
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "status": [
+      "codelist-extension"
+     ]
+    },
+    "statement": {
+     "status": {
+      "kinds": [
+       "codelist-extension"
+      ],
+      "class": "W6x"
+     }
+    },
+    "labels": [
+     "W0",
+     "W6x"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "strict": {
+     "labels": [
+      "W6"
+     ],
+     "regen": {
+      "A0-tight": false,
+      "A0-pad:tight-refit": false,
+      "A0-pad:structural-step": false,
+      "PX": true,
+      "MR": false,
+      "A1": false
+     }
+    }
+   }
+  },
+  {
+   "id": "T15-codelist-change-carrier",
+   "matrix": {
+    "kind": "codelist-change",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "currency",
+     "key": "enum",
+     "value": [
+      "EUR",
+      "GBP"
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "currency": [
+      "codelist-change"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T16-codelist-change-statement",
+   "matrix": {
+    "kind": "codelist-change",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "status",
+     "key": "enum",
+     "value": [
+      "A",
+      "C"
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "status": [
+      "codelist-change"
+     ]
+    },
+    "statement": {
+     "status": {
+      "kinds": [
+       "codelist-change"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T17-format-carrier",
+   "matrix": {
+    "kind": "format",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "created",
+     "key": "format",
+     "value": "date"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "created": [
+      "format"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T18-format-statement",
+   "matrix": {
+    "kind": "format",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "issued",
+     "key": "format",
+     "value": "date"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "issued": [
+      "format"
+     ]
+    },
+    "statement": {
+     "issued": {
+      "kinds": [
+       "format"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T19-bounds-carrier",
+   "matrix": {
+    "kind": "bounds",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "set",
+     "path": "items[].sku",
+     "key": "array_bounds",
+     "value": [
+      5
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     16
+    ],
+    "delta_sigma": 2,
+    "path_kinds": {
+     "items[].sku": [
+      "bounds"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W1",
+     "W5"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T20-bounds-statement",
+   "matrix": {
+    "kind": "bounds",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": [
+    "amount",
+    "status",
+    "issued",
+    "items[].sku"
+   ],
+   "ops": [
+    {
+     "op": "set",
+     "path": "items[].sku",
+     "key": "array_bounds",
+     "value": [
+      2
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     13
+    ],
+    "delta_sigma": -1,
+    "path_kinds": {
+     "items[].sku": [
+      "bounds"
+     ]
+    },
+    "statement": {
+     "items[].sku": {
+      "kinds": [
+       "bounds"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W5",
+     "W6",
+     "shrink"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T21-arrayness-bounded-exhausts",
+   "matrix": {
+    "kind": "arrayness",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "repath",
+     "path": "ref",
+     "to": "ref[]"
+    },
+    {
+     "op": "set",
+     "path": "ref[]",
+     "key": "array_bounds",
+     "value": [
+      4
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     17
+    ],
+    "delta_sigma": 3,
+    "path_kinds": {
+     "ref->ref[]": [
+      "arrayness"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W2",
+     "W5"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 17,
+     "structural-step": 31
+    }
+   }
+  },
+  {
+   "id": "T22-bounds-to-unbounded-shrinks-at-B1",
+   "matrix": {
+    "kind": "bounds",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "set",
+     "path": "items[].sku",
+     "key": "array_bounds",
+     "value": [
+      null
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     12
+    ],
+    "delta_sigma": -2,
+    "path_kinds": {
+     "items[].sku": [
+      "bounds"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W5",
+     "shrink"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T23-undeclared-rename-carrier",
+   "matrix": {
+    "kind": "rename",
+    "role": "carrier"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "repath",
+     "path": "subject.name",
+     "to": "subject.fullName"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "subject.name": [
+      "removed"
+     ],
+     "subject.fullName": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 2,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T24-policy-adds-existing-field",
+   "matrix": {
+    "kind": "add",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "old": "amount",
+      "new": "amount"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "status"
+     },
+     {
+      "name": "issued",
+      "old": "issued",
+      "new": "issued"
+     },
+     {
+      "name": "currency",
+      "old": null,
+      "new": "currency"
+     }
+    ]
+   },
+   "ops": [],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {},
+    "statement": {
+     "currency": {
+      "kinds": [
+       "added"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": {
+     "A0-tight": 0,
+     "A0-pad": 0,
+     "PX": 1,
+     "MR": 0,
+     "A1": 0
+    },
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T25-policy-drops-field",
+   "matrix": {
+    "kind": "remove",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "old": "amount",
+      "new": "amount"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "status"
+     },
+     {
+      "name": "issued",
+      "old": "issued",
+      "new": null
+     }
+    ]
+   },
+   "ops": [],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {},
+    "statement": {
+     "issued": {
+      "kinds": [
+       "removed"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": {
+     "A0-tight": 0,
+     "A0-pad": 0,
+     "PX": 1,
+     "MR": 0,
+     "A1": 0
+    },
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T26-codelist-introduced-statement",
+   "matrix": {
+    "kind": "codelist-change",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "amount",
+     "key": "enum",
+     "value": [
+      "1.00",
+      "2.00"
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "amount": [
+      "codelist-change"
+     ]
+    },
+    "statement": {
+     "amount": {
+      "kinds": [
+       "codelist-change"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T27-codelist-dropped-statement",
+   "matrix": {
+    "kind": "codelist-extension",
+    "role": "statement"
+   },
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "status",
+     "key": "enum",
+     "value": null
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "status": [
+      "codelist-extension"
+     ]
+    },
+    "statement": {
+     "status": {
+      "kinds": [
+       "codelist-extension"
+      ],
+      "class": "W6x"
+     }
+    },
+    "labels": [
+     "W0",
+     "W6x"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "strict": {
+     "labels": [
+      "W6"
+     ],
+     "regen": {
+      "A0-tight": false,
+      "A0-pad:tight-refit": false,
+      "A0-pad:structural-step": false,
+      "PX": true,
+      "MR": false,
+      "A1": false
+     }
+    }
+   }
+  },
+  {
+   "id": "T28-required-only-carrier",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "set",
+     "path": "issuer",
+     "key": "required",
+     "value": true
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "issuer": [
+      "required"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 0,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T29-other-constraint-carrier",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "ref",
+     "key": "maxLength",
+     "value": 40
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "ref": [
+      "constraint-other"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 0,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T30-no-change",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "ops": [],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {},
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 0,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T31-other-constraint-statement",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "status",
+     "key": "maxLength",
+     "value": 4
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "status": [
+      "constraint-other"
+     ]
+    },
+    "statement": {
+     "status": {
+      "kinds": [
+       "constraint-other"
+      ],
+      "class": null
+     }
+    },
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 0,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T32-combo-carrier-add-statement-ext-carrier-retype",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "subject.email",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "setc",
+     "path": "status",
+     "key": "enum",
+     "value": [
+      "A",
+      "B",
+      "C"
+     ]
+    },
+    {
+     "op": "set",
+     "path": "id",
+     "key": "type",
+     "value": "uri"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     15
+    ],
+    "delta_sigma": 1,
+    "path_kinds": {
+     "subject.email": [
+      "added"
+     ],
+     "status": [
+      "codelist-extension"
+     ],
+     "id": [
+      "retyped"
+     ]
+    },
+    "statement": {
+     "status": {
+      "kinds": [
+       "codelist-extension"
+      ],
+      "class": "W6x"
+     }
+    },
+    "labels": [
+     "W1",
+     "W6x"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 3,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "strict": {
+     "labels": [
+      "W1",
+      "W6"
+     ],
+     "regen": {
+      "A0-tight": true,
+      "A0-pad:tight-refit": false,
+      "A0-pad:structural-step": false,
+      "PX": true,
+      "MR": false,
+      "A1": false
+     }
+    }
+   }
+  },
+  {
+   "id": "T33-rename-and-retype-statement",
+   "matrix": null,
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "old": "amount",
+      "new": "amount"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "status"
+     },
+     {
+      "name": "issued",
+      "old": "issued",
+      "new": "validFrom"
+     }
+    ]
+   },
+   "ops": [
+    {
+     "op": "repath",
+     "path": "issued",
+     "to": "validFrom"
+    },
+    {
+     "op": "set",
+     "path": "validFrom",
+     "key": "type",
+     "value": "date"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "issued->validFrom": [
+      "renamed",
+      "retyped"
+     ]
+    },
+    "statement": {
+     "issued": {
+      "kinds": [
+       "renamed",
+       "retyped"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T34-statement-removed-carrier-added-sigma-flat",
+   "matrix": null,
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "old": "amount",
+      "new": "amount"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "status"
+     },
+     {
+      "name": "issued",
+      "old": "issued",
+      "new": null
+     }
+    ]
+   },
+   "ops": [
+    {
+     "op": "remove",
+     "path": "issued"
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "subject.email",
+      "type": "string",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "issued": [
+      "removed"
+     ],
+     "subject.email": [
+      "added"
+     ]
+    },
+    "statement": {
+     "issued": {
+      "kinds": [
+       "removed"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 2,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T35-W5-same-path-count",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "remove",
+     "path": "subject.dob"
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "codes[]",
+      "type": "code",
+      "array_bounds": [
+       3
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     16
+    ],
+    "delta_sigma": 2,
+    "path_kinds": {
+     "subject.dob": [
+      "removed"
+     ],
+     "codes[]": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W1",
+     "W5"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 2,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T36-exhaustion-by-adds",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e1",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e2",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e3",
+      "type": "string",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     17
+    ],
+    "delta_sigma": 3,
+    "path_kinds": {
+     "ext.e1": [
+      "added"
+     ],
+     "ext.e2": [
+      "added"
+     ],
+     "ext.e3": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W2"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 3,
+    "K_after": {
+     "tight-refit": 17,
+     "structural-step": 31
+    }
+   }
+  },
+  {
+   "id": "T37-choice-add-narrow-alternative",
+   "matrix": null,
+   "base": "X0",
+   "policy": "PX0",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "valueBoolean",
+      "type": "boolean",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "value[x]",
+        "alt": "Boolean"
+       }
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     6,
+     6
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "valueBoolean": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T38-choice-add-wider-alternative",
+   "matrix": null,
+   "base": "X0",
+   "policy": "PX0",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "valueRange.low.value",
+      "type": "number",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "value[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "valueRange.low.unit",
+      "type": "string",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "value[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "valueRange.low.code",
+      "type": "code",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "value[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "valueRange.high.value",
+      "type": "number",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "value[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "valueRange.high.unit",
+      "type": "string",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "value[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     6,
+     8
+    ],
+    "delta_sigma": 2,
+    "path_kinds": {
+     "valueRange.low.value": [
+      "added"
+     ],
+     "valueRange.low.unit": [
+      "added"
+     ],
+     "valueRange.low.code": [
+      "added"
+     ],
+     "valueRange.high.value": [
+      "added"
+     ],
+     "valueRange.high.unit": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W1"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 5,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T39-choice-statement-retype-in-narrow-alternative",
+   "matrix": null,
+   "base": "X0",
+   "policy": "PX0",
+   "ops": [
+    {
+     "op": "set",
+     "path": "effectiveDateTime",
+     "key": "type",
+     "value": "date"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     6,
+     6
+    ],
+    "delta_sigma": 0,
+    "path_kinds": {
+     "effectiveDateTime": [
+      "retyped"
+     ]
+    },
+    "statement": {
+     "effectiveDateTime": {
+      "kinds": [
+       "retyped"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    },
+    "e": true
+   }
+  },
+  {
+   "id": "T40-choice-nested-group",
+   "matrix": null,
+   "base": "X0",
+   "policy": "PX0",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "effectiveTiming.code",
+      "type": "code",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "effective[x]",
+        "alt": "Timing"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "effectiveTiming.boundsDuration.value",
+      "type": "number",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "effective[x]",
+        "alt": "Timing"
+       },
+       {
+        "group": "effectiveTiming.bounds[x]",
+        "alt": "Duration"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "effectiveTiming.boundsDuration.unit",
+      "type": "string",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "effective[x]",
+        "alt": "Timing"
+       },
+       {
+        "group": "effectiveTiming.bounds[x]",
+        "alt": "Duration"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "effectiveTiming.boundsRange.low.value",
+      "type": "number",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "effective[x]",
+        "alt": "Timing"
+       },
+       {
+        "group": "effectiveTiming.bounds[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "effectiveTiming.boundsRange.low.unit",
+      "type": "string",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "effective[x]",
+        "alt": "Timing"
+       },
+       {
+        "group": "effectiveTiming.bounds[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "effectiveTiming.boundsRange.high.value",
+      "type": "number",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "effective[x]",
+        "alt": "Timing"
+       },
+       {
+        "group": "effectiveTiming.bounds[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "effectiveTiming.boundsRange.high.unit",
+      "type": "string",
+      "array_bounds": [],
+      "choices": [
+       {
+        "group": "effective[x]",
+        "alt": "Timing"
+       },
+       {
+        "group": "effectiveTiming.bounds[x]",
+        "alt": "Range"
+       }
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     6,
+     9
+    ],
+    "delta_sigma": 3,
+    "path_kinds": {
+     "effectiveTiming.code": [
+      "added"
+     ],
+     "effectiveTiming.boundsDuration.value": [
+      "added"
+     ],
+     "effectiveTiming.boundsDuration.unit": [
+      "added"
+     ],
+     "effectiveTiming.boundsRange.low.value": [
+      "added"
+     ],
+     "effectiveTiming.boundsRange.low.unit": [
+      "added"
+     ],
+     "effectiveTiming.boundsRange.high.value": [
+      "added"
+     ],
+     "effectiveTiming.boundsRange.high.unit": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W1"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 7,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T41-choice-remove-alternative",
+   "matrix": null,
+   "base": "X0",
+   "policy": "PX0",
+   "ops": [
+    {
+     "op": "remove",
+     "path": "effectivePeriod.start"
+    },
+    {
+     "op": "remove",
+     "path": "effectivePeriod.end"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     6,
+     5
+    ],
+    "delta_sigma": -1,
+    "path_kinds": {
+     "effectivePeriod.start": [
+      "removed"
+     ],
+     "effectivePeriod.end": [
+      "removed"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "shrink"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 2,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "T42-B4-bounds-shrink",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "B": 4,
+   "ops": [
+    {
+     "op": "set",
+     "path": "tags[]",
+     "key": "array_bounds",
+     "value": [
+      2
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     17,
+     15
+    ],
+    "delta_sigma": -2,
+    "path_kinds": {
+     "tags[]": [
+      "bounds"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W5",
+     "shrink"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 31,
+     "structural-step": 31
+    }
+   }
+  },
+  {
+   "id": "T43-B4-initial-rung",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "B": 4,
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e1",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e2",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e3",
+      "type": "string",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     17,
+     20
+    ],
+    "delta_sigma": 3,
+    "path_kinds": {
+     "ext.e1": [
+      "added"
+     ],
+     "ext.e2": [
+      "added"
+     ],
+     "ext.e3": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W1"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 3,
+    "K_after": {
+     "tight-refit": 31,
+     "structural-step": 31
+    }
+   }
+  },
+  {
+   "id": "T44-pair-with-explicit-state",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "state": {
+    "K": {
+     "tight-refit": 17,
+     "structural-step": 31
+    },
+    "exhaustions": {
+     "tight-refit": 1,
+     "structural-step": 1
+    }
+   },
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e1",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e2",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e3",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e4",
+      "type": "string",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     18
+    ],
+    "delta_sigma": 4,
+    "path_kinds": {
+     "ext.e1": [
+      "added"
+     ],
+     "ext.e2": [
+      "added"
+     ],
+     "ext.e3": [
+      "added"
+     ],
+     "ext.e4": [
+      "added"
+     ]
+    },
+    "statement": {},
+    "labels": {
+     "tight-refit": [
+      "W3"
+     ],
+     "structural-step": [
+      "W1"
+     ]
+    },
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 4,
+    "K_after": {
+     "tight-refit": 18,
+     "structural-step": 31
+    }
+   }
+  },
+  {
+   "id": "H01-exhaustion-policies",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "versions": [
+    {
+     "ops": []
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e1",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e2",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e3",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e4",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e5",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       14,
+       15
+      ],
+      "delta_sigma": 1,
+      "labels": [
+       "W1"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      }
+     },
+     {
+      "sigma": [
+       15,
+       18
+      ],
+      "delta_sigma": 3,
+      "labels": [
+       "W2"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 3,
+      "K_after": {
+       "tight-refit": 18,
+       "structural-step": 31
+      }
+     },
+     {
+      "sigma": [
+       18,
+       19
+      ],
+      "delta_sigma": 1,
+      "labels": {
+       "tight-refit": [
+        "W3"
+       ],
+       "structural-step": [
+        "W1"
+       ]
+      },
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 19,
+       "structural-step": 31
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 16,
+     "W4": false,
+     "regen_counts": {
+      "A0-tight": 3,
+      "A0-pad:tight-refit": 2,
+      "A0-pad:structural-step": 1,
+      "PX": 0,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "H02-W4-rise-fall-rise",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "versions": [
+    {
+     "ops": []
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e1",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "remove",
+       "path": "ext.e1"
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e1",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       14,
+       15
+      ],
+      "delta_sigma": 1,
+      "labels": [
+       "W1"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      }
+     },
+     {
+      "sigma": [
+       15,
+       14
+      ],
+      "delta_sigma": -1,
+      "labels": [
+       "shrink"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      }
+     },
+     {
+      "sigma": [
+       14,
+       15
+      ],
+      "delta_sigma": 1,
+      "labels": [
+       "W1"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 16,
+     "W4": true,
+     "regen_counts": {
+      "A0-tight": 3,
+      "A0-pad:tight-refit": 0,
+      "A0-pad:structural-step": 0,
+      "PX": 0,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "H03-rung-31-then-64",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "versions": [
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e1",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e2",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e3",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e4",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e5",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e6",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e7",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e8",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e9",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e10",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e11",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e12",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e13",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e14",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e15",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e16",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e17",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e18",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e19",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       20,
+       31
+      ],
+      "delta_sigma": 11,
+      "labels": [
+       "W1"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 11,
+      "K_after": {
+       "tight-refit": 31,
+       "structural-step": 31
+      }
+     },
+     {
+      "sigma": [
+       31,
+       32
+      ],
+      "delta_sigma": 1,
+      "labels": [
+       "W2"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 32,
+       "structural-step": 64
+      }
+     },
+     {
+      "sigma": [
+       32,
+       33
+      ],
+      "delta_sigma": 1,
+      "labels": {
+       "tight-refit": [
+        "W3"
+       ],
+       "structural-step": [
+        "W1"
+       ]
+      },
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 33,
+       "structural-step": 64
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 31,
+     "W4": false,
+     "regen_counts": {
+      "A0-tight": 3,
+      "A0-pad:tight-refit": 2,
+      "A0-pad:structural-step": 1,
+      "PX": 0,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "H04-ladder-beyond-512",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "versions": [
+    {
+     "ops": []
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "blob[]",
+        "type": "string",
+        "array_bounds": [
+         600
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       14,
+       614
+      ],
+      "delta_sigma": 600,
+      "labels": [
+       "W2"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 614,
+       "structural-step": 1024
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 16,
+     "W4": false,
+     "regen_counts": {
+      "A0-tight": 1,
+      "A0-pad:tight-refit": 1,
+      "A0-pad:structural-step": 1,
+      "PX": 0,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "H05-statement-codelist-history",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "versions": [
+    {
+     "ops": []
+    },
+    {
+     "ops": [
+      {
+       "op": "setc",
+       "path": "status",
+       "key": "enum",
+       "value": [
+        "A",
+        "B",
+        "C"
+       ]
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "setc",
+       "path": "status",
+       "key": "enum",
+       "value": [
+        "X",
+        "Y"
+       ]
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       14,
+       14
+      ],
+      "delta_sigma": 0,
+      "path_kinds": {
+       "status": [
+        "codelist-extension"
+       ]
+      },
+      "statement": {
+       "status": {
+        "kinds": [
+         "codelist-extension"
+        ],
+        "class": "W6x"
+       }
+      },
+      "labels": [
+       "W0",
+       "W6x"
+      ],
+      "regen": {
+       "A0-tight": false,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      },
+      "strict": {
+       "labels": [
+        "W6"
+       ],
+       "regen": {
+        "A0-tight": false,
+        "A0-pad:tight-refit": false,
+        "A0-pad:structural-step": false,
+        "PX": true,
+        "MR": false,
+        "A1": false
+       }
+      },
+      "e": false
+     },
+     {
+      "sigma": [
+       14,
+       14
+      ],
+      "delta_sigma": 0,
+      "path_kinds": {
+       "status": [
+        "codelist-change"
+       ]
+      },
+      "statement": {
+       "status": {
+        "kinds": [
+         "codelist-change"
+        ],
+        "class": "W6"
+       }
+      },
+      "labels": [
+       "W6"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": true,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      },
+      "e": true
+     }
+    ],
+    "summary": {
+     "K_initial": 16,
+     "W4": false,
+     "regen_counts": {
+      "A0-tight": 1,
+      "A0-pad:tight-refit": 1,
+      "A0-pad:structural-step": 1,
+      "PX": 1,
+      "MR": 0,
+      "A1": 0
+     },
+     "strict": {
+      "regen_counts": {
+       "A0-tight": 1,
+       "A0-pad:tight-refit": 1,
+       "A0-pad:structural-step": 1,
+       "PX": 2,
+       "MR": 0,
+       "A1": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "H06-shrink-keeps-slack",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "versions": [
+    {
+     "ops": []
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e1",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e2",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e3",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e4",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "remove",
+       "path": "ext.e1"
+      },
+      {
+       "op": "remove",
+       "path": "ext.e2"
+      },
+      {
+       "op": "remove",
+       "path": "ext.e3"
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e1",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e2",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e3",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       14,
+       18
+      ],
+      "delta_sigma": 4,
+      "labels": [
+       "W2"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 4,
+      "K_after": {
+       "tight-refit": 18,
+       "structural-step": 31
+      }
+     },
+     {
+      "sigma": [
+       18,
+       15
+      ],
+      "delta_sigma": -3,
+      "labels": [
+       "shrink"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 3,
+      "K_after": {
+       "tight-refit": 18,
+       "structural-step": 31
+      }
+     },
+     {
+      "sigma": [
+       15,
+       18
+      ],
+      "delta_sigma": 3,
+      "labels": [
+       "W1"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 3,
+      "K_after": {
+       "tight-refit": 18,
+       "structural-step": 31
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 16,
+     "W4": true,
+     "regen_counts": {
+      "A0-tight": 3,
+      "A0-pad:tight-refit": 1,
+      "A0-pad:structural-step": 1,
+      "PX": 0,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "N01-statement-encoding-and-exhaustion",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "rule": "Algorithm 1 l.16-17 take precedence over l.18: one A0-pad regeneration, K refitted",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "amount",
+     "key": "pattern",
+     "value": "^\\d{1,13}$|^\\d{1,13}\\.\\d{2}$"
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e1",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e2",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e3",
+      "type": "string",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     17
+    ],
+    "delta_sigma": 3,
+    "e": true,
+    "path_kinds": {
+     "amount": [
+      "pattern"
+     ],
+     "ext.e1": [
+      "added"
+     ],
+     "ext.e2": [
+      "added"
+     ],
+     "ext.e3": [
+      "added"
+     ]
+    },
+    "statement": {
+     "amount": {
+      "kinds": [
+       "pattern"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W2",
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 4,
+    "K_after": {
+     "tight-refit": 17,
+     "structural-step": 31
+    }
+   }
+  },
+  {
+   "id": "N02-e-only-regeneration-keeps-K",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "rule": "Algorithm 1 l.18: an e-only A0-pad regeneration leaves K unchanged and is not an exhaustion (the next exhaustion is W2)",
+   "versions": [
+    {
+     "ops": []
+    },
+    {
+     "ops": [
+      {
+       "op": "setc",
+       "path": "status",
+       "key": "enum",
+       "value": [
+        "A"
+       ]
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e1",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e2",
+        "type": "string",
+        "array_bounds": []
+       }
+      },
+      {
+       "op": "add",
+       "leaf": {
+        "path": "ext.e3",
+        "type": "string",
+        "array_bounds": []
+       }
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       14,
+       14
+      ],
+      "delta_sigma": 0,
+      "e": true,
+      "path_kinds": {
+       "status": [
+        "codelist-change"
+       ]
+      },
+      "statement": {
+       "status": {
+        "kinds": [
+         "codelist-change"
+        ],
+        "class": "W6"
+       }
+      },
+      "labels": [
+       "W6"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": true,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      }
+     },
+     {
+      "sigma": [
+       14,
+       17
+      ],
+      "delta_sigma": 3,
+      "e": false,
+      "path_kinds": {
+       "ext.e1": [
+        "added"
+       ],
+       "ext.e2": [
+        "added"
+       ],
+       "ext.e3": [
+        "added"
+       ]
+      },
+      "statement": {},
+      "labels": [
+       "W2"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 3,
+      "K_after": {
+       "tight-refit": 17,
+       "structural-step": 31
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 16,
+     "W4": false,
+     "regen_counts": {
+      "A0-tight": 2,
+      "A0-pad:tight-refit": 2,
+      "A0-pad:structural-step": 2,
+      "PX": 1,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "N03-carrier-encodings-trigger-nothing",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "rule": "Algorithm 1 l.3-13: only statement fields can set e; carrier retype, pattern, format and code-list loss regenerate nothing",
+   "ops": [
+    {
+     "op": "setc",
+     "path": "ref",
+     "key": "pattern",
+     "value": "^R[0-9]{1,8}$"
+    },
+    {
+     "op": "setc",
+     "path": "created",
+     "key": "format",
+     "value": "date"
+    },
+    {
+     "op": "setc",
+     "path": "currency",
+     "key": "enum",
+     "value": [
+      "EUR"
+     ]
+    },
+    {
+     "op": "set",
+     "path": "id",
+     "key": "type",
+     "value": "uri"
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "e": false,
+    "path_kinds": {
+     "ref": [
+      "pattern"
+     ],
+     "created": [
+      "format"
+     ],
+     "currency": [
+      "codelist-change"
+     ],
+     "id": [
+      "retyped"
+     ]
+    },
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 4,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "N04-MR-at-2h-does-not-regenerate",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "h": 4,
+   "rule": "Algorithm 1 l.20 boundary: sigma' = 2^h (h = 4) -> MR does not regenerate",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e1",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e2",
+      "type": "string",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     16
+    ],
+    "delta_sigma": 2,
+    "e": false,
+    "statement": {},
+    "labels": [
+     "W1"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 2,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "N05-MR-above-2h-regenerates",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "h": 4,
+   "rule": "Algorithm 1 l.20: sigma' = 17 > 2^4 -> MR regenerates (with A0-pad exhaustion, l.16-17)",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e1",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e2",
+      "type": "string",
+      "array_bounds": []
+     }
+    },
+    {
+     "op": "add",
+     "leaf": {
+      "path": "ext.e3",
+      "type": "string",
+      "array_bounds": []
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     17
+    ],
+    "delta_sigma": 3,
+    "e": false,
+    "statement": {},
+    "labels": [
+     "W2"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": false,
+     "MR": true,
+     "A1": false
+    },
+    "adapter_lines": 3,
+    "K_after": {
+     "tight-refit": 17,
+     "structural-step": 31
+    }
+   }
+  },
+  {
+   "id": "N06-MR-default-h32-above",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "rule": "Algorithm 1 l.20 with the default h = 32: sigma' = 14 + 65536*65537 > 2^32 -> MR; structural-step beyond the ladder: K := sigma' (l.17)",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "blob[].x[]",
+      "type": "string",
+      "array_bounds": [
+       65536,
+       65537
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     4295032846
+    ],
+    "delta_sigma": 4295032832,
+    "e": false,
+    "statement": {},
+    "labels": [
+     "W2"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": false,
+     "MR": true,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 4295032846,
+     "structural-step": 4295032846
+    }
+   }
+  },
+  {
+   "id": "N07-MR-default-h32-equal",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "rule": "Algorithm 1 l.20 boundary with h = 32: sigma' = 14 + 2*2147483641 = 2^32 -> MR does not regenerate",
+   "ops": [
+    {
+     "op": "add",
+     "leaf": {
+      "path": "blob[].x[]",
+      "type": "string",
+      "array_bounds": [
+       2,
+       2147483641
+      ]
+     }
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     4294967296
+    ],
+    "delta_sigma": 4294967282,
+    "e": false,
+    "statement": {},
+    "labels": [
+     "W2"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 4294967296,
+     "structural-step": 4294967296
+    }
+   }
+  },
+  {
+   "id": "N08-ladder-top-rung-then-beyond",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "rule": "Ladder L ends at 4096 (Algorithm 1 input L, macros \\KLadder): structural-step reaches the rung 4096, then sigma' = 4097 is beyond the ladder: K := sigma' (l.17 'or sigma' if no rung covers it')",
+   "versions": [
+    {
+     "ops": []
+    },
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "blob[]",
+        "type": "string",
+        "array_bounds": [
+         4082
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "ops": [
+      {
+       "op": "set",
+       "path": "blob[]",
+       "key": "array_bounds",
+       "value": [
+        4083
+       ]
+      }
+     ]
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       14,
+       4096
+      ],
+      "delta_sigma": 4082,
+      "e": false,
+      "path_kinds": {
+       "blob[]": [
+        "added"
+       ]
+      },
+      "labels": [
+       "W2"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 4096,
+       "structural-step": 4096
+      }
+     },
+     {
+      "sigma": [
+       4096,
+       4097
+      ],
+      "delta_sigma": 1,
+      "e": false,
+      "path_kinds": {
+       "blob[]": [
+        "bounds"
+       ]
+      },
+      "labels": [
+       "W3",
+       "W5"
+      ],
+      "regen": {
+       "A0-tight": true,
+       "A0-pad:tight-refit": true,
+       "A0-pad:structural-step": true,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 1,
+      "K_after": {
+       "tight-refit": 4097,
+       "structural-step": 4097
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 16,
+     "W4": false,
+     "regen_counts": {
+      "A0-tight": 2,
+      "A0-pad:tight-refit": 2,
+      "A0-pad:structural-step": 2,
+      "PX": 0,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "N09-initial-K-beyond-ladder",
+   "mode": "history",
+   "base": "B0",
+   "policy": "P0",
+   "rule": "Initial K beyond the ladder (sigma(v1) = 5014 > 4096): K := sigma(v1) (as l.17); an unchanged release regenerates nothing",
+   "versions": [
+    {
+     "ops": [
+      {
+       "op": "add",
+       "leaf": {
+        "path": "blob[]",
+        "type": "string",
+        "array_bounds": [
+         5000
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "ops": []
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       5014,
+       5014
+      ],
+      "delta_sigma": 0,
+      "e": false,
+      "path_kinds": {},
+      "statement": {},
+      "labels": [
+       "W0"
+      ],
+      "regen": {
+       "A0-tight": false,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 0,
+      "K_after": {
+       "tight-refit": 5014,
+       "structural-step": 5014
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 5014,
+     "W4": false,
+     "regen_counts": {
+      "A0-tight": 0,
+      "A0-pad:tight-refit": 0,
+      "A0-pad:structural-step": 0,
+      "PX": 0,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "N10-statement-field-undefined-in-both",
+   "matrix": null,
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "path": "amount"
+     },
+     {
+      "name": "ghost",
+      "old": null,
+      "new": null
+     }
+    ]
+   },
+   "rule": "Algorithm 1 l.3 (revised): a policy field with no path in either version is skipped, not W6",
+   "ops": [],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "e": false,
+    "path_kinds": {},
+    "statement": {},
+    "labels": [
+     "W0"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": false,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 0,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "N11-rename-and-code-loss-statement",
+   "matrix": null,
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "path": "amount"
+     },
+     {
+      "name": "issued",
+      "path": "issued"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "state"
+     }
+    ]
+   },
+   "rule": "Algorithm 1 l.8-9 (renamed) and, independently, l.10-11: codes(p) = {A,B} not a subset of {A} -> e",
+   "ops": [
+    {
+     "op": "repath",
+     "path": "status",
+     "to": "state"
+    },
+    {
+     "op": "setc",
+     "path": "state",
+     "key": "enum",
+     "value": [
+      "A"
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "e": true,
+    "path_kinds": {
+     "status->state": [
+      "renamed",
+      "codelist-change"
+     ]
+    },
+    "statement": {
+     "status": {
+      "kinds": [
+       "renamed",
+       "codelist-change"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "N12-rename-and-code-extension-statement",
+   "matrix": null,
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "path": "amount"
+     },
+     {
+      "name": "issued",
+      "path": "issued"
+     },
+     {
+      "name": "status",
+      "old": "status",
+      "new": "state"
+     }
+    ]
+   },
+   "rule": "Algorithm 1 l.8-9: renamed -> W6; l.12: f is in W6, so the code-list extension does not make it W6x; no e",
+   "ops": [
+    {
+     "op": "repath",
+     "path": "status",
+     "to": "state"
+    },
+    {
+     "op": "setc",
+     "path": "state",
+     "key": "enum",
+     "value": [
+      "A",
+      "B",
+      "C"
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "e": false,
+    "path_kinds": {
+     "status->state": [
+      "renamed",
+      "codelist-extension"
+     ]
+    },
+    "statement": {
+     "status": {
+      "kinds": [
+       "renamed",
+       "codelist-extension"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": false,
+     "A0-pad:tight-refit": false,
+     "A0-pad:structural-step": false,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "N13-arrayness-statement-list-policy",
+   "matrix": null,
+   "base": "B0",
+   "policy": "P0",
+   "rule": "Algorithm 1 l.4: the policy path issued resolves to the leaf issued[] of v'; l.8-9 the path strings differ -> W6; l.10-11 bounds [] -> [1] differ -> e (delta 0)",
+   "ops": [
+    {
+     "op": "repath",
+     "path": "issued",
+     "to": "issued[]"
+    },
+    {
+     "op": "set",
+     "path": "issued[]",
+     "key": "array_bounds",
+     "value": [
+      1
+     ]
+    }
+   ],
+   "expected": {
+    "sigma": [
+     14,
+     14
+    ],
+    "delta_sigma": 0,
+    "e": true,
+    "path_kinds": {
+     "issued->issued[]": [
+      "arrayness"
+     ]
+    },
+    "statement": {
+     "issued": {
+      "kinds": [
+       "arrayness"
+      ],
+      "class": "W6"
+     }
+    },
+    "labels": [
+     "W5",
+     "W6"
+    ],
+    "regen": {
+     "A0-tight": true,
+     "A0-pad:tight-refit": true,
+     "A0-pad:structural-step": true,
+     "PX": true,
+     "MR": false,
+     "A1": false
+    },
+    "adapter_lines": 1,
+    "K_after": {
+     "tight-refit": 16,
+     "structural-step": 16
+    }
+   }
+  },
+  {
+   "id": "N14-history-field-undefined-then-added",
+   "mode": "history",
+   "base": "B0",
+   "policy": {
+    "fields": [
+     {
+      "name": "amount",
+      "path": "amount"
+     },
+     {
+      "name": "ghost",
+      "paths": {
+       "v1": null,
+       "v2": null,
+       "v3": "subject.name"
+      }
+     }
+    ]
+   },
+   "rule": "Algorithm 1 l.3: ghost is undefined in v1 and v2, so it is skipped there; in v2 -> v3 it is added (l.5-6, W6, no e)",
+   "versions": [
+    {
+     "ops": []
+    },
+    {
+     "ops": []
+    },
+    {
+     "ops": []
+    }
+   ],
+   "expected": {
+    "transitions": [
+     {
+      "sigma": [
+       14,
+       14
+      ],
+      "delta_sigma": 0,
+      "e": false,
+      "path_kinds": {},
+      "statement": {},
+      "labels": [
+       "W0"
+      ],
+      "regen": {
+       "A0-tight": false,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": false,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": 0,
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      }
+     },
+     {
+      "sigma": [
+       14,
+       14
+      ],
+      "delta_sigma": 0,
+      "e": false,
+      "path_kinds": {},
+      "statement": {
+       "ghost": {
+        "kinds": [
+         "added"
+        ],
+        "class": "W6"
+       }
+      },
+      "labels": [
+       "W6"
+      ],
+      "regen": {
+       "A0-tight": false,
+       "A0-pad:tight-refit": false,
+       "A0-pad:structural-step": false,
+       "PX": true,
+       "MR": false,
+       "A1": false
+      },
+      "adapter_lines": {
+       "A0-tight": 0,
+       "A0-pad": 0,
+       "PX": 1,
+       "MR": 0,
+       "A1": 0
+      },
+      "K_after": {
+       "tight-refit": 16,
+       "structural-step": 16
+      }
+     }
+    ],
+    "summary": {
+     "K_initial": 16,
+     "W4": false,
+     "regen_counts": {
+      "A0-tight": 0,
+      "A0-pad:tight-refit": 0,
+      "A0-pad:structural-step": 0,
+      "PX": 1,
+      "MR": 0,
+      "A1": 0
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+quantity (unrounded least-squares fit)	O2 (circuit_sizes.tsv)	O1 (R1CS = total constraints, the generator's nConstraints field)	O1 (R1CS = non-linear constraints only)
+NumAzeroCells	23	23	23
+NumMRCells	3	3	3
+A0RicsIntercept	2880.133484	5969.381084	2916.464832
+A0RicsSlope	40.882617	139.951869	41.086667
+MRRicsIntercept	4020.000000	8564.000000	4574.000000
+MRRicsSlope	247.000000	534.000000	251.000000
+A0GatesIntercept	28857.934896	6346.433623	(same as O1 total: gates)
+A0GatesSlope	1129.582657	327.417230	(same as O1 total: gates)
+MRGatesIntercept	33947.000000	11349.000000	(same as O1 total: gates)
+MRGatesSlope	2508.071429	618.000000	(same as O1 total: gates)
+KappaRics	6.041688	3.815597	6.109038
+KappaGates	2.220352	1.887500	(same as O1 total: gates)
+SigmaStarRics	221.215451	140.638486	235.831617
+SigmaStarGates	75.556534	75.678871	(same as O1 total: gates)

@@ -1,0 +1,116 @@
+[
+ {
+  "id": "epcis-1.2-xsd-github",
+  "url": "https://raw.githubusercontent.com/gs1/EPCIS/6f71468231838e424bb5dfa836e006e8dc69615c/XSL/1.2/XSD/EPCglobal-epcis-1_2.xsd",
+  "title": "EPCIS 1.2 core XSD (schema version='1.2', (C) 2006-2016 GS1 AISBL), copy in gs1/EPCIS GitHub repo; local src/EPCglobal-epcis-1_2.xsd",
+  "publisher": "GS1 AISBL (github.com/gs1/EPCIS)",
+  "version": "1.2",
+  "date": "2016-09-29",
+  "kind": "machine-readable schema",
+  "sha256": "24768ad6a378f42803ba3a054eb09c679d62617db0126cb091c209c0255ae901"
+ },
+ {
+  "id": "epcis-1.2-epcglobal-xsd-github",
+  "url": "https://raw.githubusercontent.com/gs1/EPCIS/6f71468231838e424bb5dfa836e006e8dc69615c/XSL/1.2/XSD/EPCglobal.xsd",
+  "title": "EPCglobal.xsd (defines epcglobal:EPC) for 1.2; local src/EPCglobal-1_2.xsd (byte-identical to the 2.0 copy)",
+  "publisher": "GS1 AISBL (github.com/gs1/EPCIS)",
+  "version": "1.2",
+  "date": "2016-09-29",
+  "kind": "machine-readable schema",
+  "sha256": "54dd707213a23bb6e6ce4a6094caf4b35eba1024a5b03e052e06614dbafe32c8"
+ },
+ {
+  "id": "epcis-2.0-xsd-github",
+  "url": "https://raw.githubusercontent.com/gs1/EPCIS/6f71468231838e424bb5dfa836e006e8dc69615c/XSD/EPCglobal-epcis-2_0.xsd",
+  "title": "EPCIS 2.0 core XSD, gs1/EPCIS master (last schema change 2022-03-29); local src/EPCglobal-epcis-2_0.xsd",
+  "publisher": "GS1 AISBL (github.com/gs1/EPCIS)",
+  "version": "2.0",
+  "date": "2022-06-22",
+  "kind": "machine-readable schema",
+  "sha256": "790fb5d7e21b6b3210589af7f7258a26e2c1ddfeb73a39fe5f2ef0911719dce2"
+ },
+ {
+  "id": "epcis-2.0-epcglobal-xsd-github",
+  "url": "https://raw.githubusercontent.com/gs1/EPCIS/6f71468231838e424bb5dfa836e006e8dc69615c/XSD/EPCglobal.xsd",
+  "title": "EPCglobal.xsd for 2.0; local src/EPCglobal-2_0.xsd",
+  "publisher": "GS1 AISBL (github.com/gs1/EPCIS)",
+  "version": "2.0",
+  "date": "2022-06-22",
+  "kind": "machine-readable schema",
+  "sha256": "54dd707213a23bb6e6ce4a6094caf4b35eba1024a5b03e052e06614dbafe32c8"
+ },
+ {
+  "id": "epcis-2.0-jsonschema-github",
+  "url": "https://raw.githubusercontent.com/gs1/EPCIS/6f71468231838e424bb5dfa836e006e8dc69615c/JSON-Schema/schemas/ObjectEvent-JSON-Schema.json",
+  "title": "EPCIS 2.0 ObjectEvent JSON Schema (+ event-definitions-JSON-Schema.json, local src/) - used for binding cross-check only",
+  "publisher": "GS1 AISBL (github.com/gs1/EPCIS)",
+  "version": "2.0",
+  "date": "2022-06-22",
+  "kind": "machine-readable schema",
+  "sha256": "c98234a67a20dc808a6ba8de48eec163b02141cbbf4c86bc6c52f17da171d8b6"
+ },
+ {
+  "id": "epcis-xsl-1.2-to-2.0",
+  "url": "https://raw.githubusercontent.com/gs1/EPCIS/6f71468231838e424bb5dfa836e006e8dc69615c/XSL/convert-1.2-to-2.0.xsl",
+  "title": "gs1/EPCIS XSL converter named convert-1.2-to-2.0.xsl (NOT used as mapping evidence: its template wraps eventID/errorDeclaration INTO baseExtension, i.e. appears to emit the 1.2 layout; see NOTES)",
+  "publisher": "GS1 AISBL (github.com/gs1/EPCIS)",
+  "version": "1.2/2.0",
+  "date": "2021-08-27",
+  "kind": "example",
+  "sha256": "bd3d496a9e3e7d1427836d4c1aac3d72a0c1ef099c4858edb52675154242b240"
+ },
+ {
+  "id": "epcis-1.2-xsd-official",
+  "url": "https://ref.gs1.org/standards/epcis/1.2.0/EPCglobal-epcis-1_2.xsd",
+  "title": "Official EPCIS 1.2.0 XSD artefact (structural transcription)",
+  "publisher": "GS1 AISBL",
+  "version": "1.2.0",
+  "date": "2016-09-29",
+  "kind": "machine-readable schema"
+ },
+ {
+  "id": "epcis-2.0.0-xsd-official",
+  "url": "https://ref.gs1.org/standards/epcis/2.0.0/epcglobal-epcis-2_0.xsd",
+  "title": "Official EPCIS 2.0.0 XSD artefact (structural transcription)",
+  "publisher": "GS1 AISBL",
+  "version": "2.0.0",
+  "date": "2022-06-22",
+  "kind": "machine-readable schema"
+ },
+ {
+  "id": "epcis-2.0.1-xsd-official",
+  "url": "https://ref.gs1.org/standards/epcis/2.0.1/epcglobal-epcis-2_0.xsd",
+  "title": "Official EPCIS 2.0.1 XSD artefact (schema version attr '2.0'; structural transcription)",
+  "publisher": "GS1 AISBL",
+  "version": "2.0.1",
+  "date": "2025-07-01",
+  "kind": "machine-readable schema"
+ },
+ {
+  "id": "epcis-2.0.1-artefacts",
+  "url": "https://ref.gs1.org/standards/epcis/2.0.1/artefacts",
+  "title": "EPCIS 2.0.1 artefact list (XSD, JSON Schema, JSON-LD context, SHACL, OpenAPI); no release notes",
+  "publisher": "GS1 AISBL",
+  "version": "2.0.1",
+  "date": "2025-07-01",
+  "kind": "release notes"
+ },
+ {
+  "id": "epcis-archive",
+  "url": "https://ref.gs1.org/standards/epcis/archive",
+  "title": "EPCIS archive: 1.2.0 29 Sep 2016; 2.0.0 22 Jun 2022; 2.0.1 1 Jul 2025 (latest)",
+  "publisher": "GS1 AISBL",
+  "version": "-",
+  "date": "2025-07-01",
+  "kind": "release notes"
+ },
+ {
+  "id": "epcis-2.0-standard",
+  "url": "https://ref.gs1.org/standards/epcis/",
+  "title": "EPCIS Standard, Release 2.0, Ratified, Jun 2022 (normative text; change log 1.0-2.0)",
+  "publisher": "GS1 AISBL",
+  "version": "2.0",
+  "date": "2022-06",
+  "kind": "normative text"
+ }
+]

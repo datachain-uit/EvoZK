@@ -1,0 +1,20 @@
+{
+ "fields": [
+  {
+   "name": "concept",
+   "path": "dimensions.concept"
+  },
+  {
+   "name": "value",
+   "path": "value"
+  },
+  {
+   "name": "period",
+   "path": "dimensions.period"
+  },
+  {
+   "name": "unit",
+   "path": "dimensions.unit"
+  }
+ ]
+}

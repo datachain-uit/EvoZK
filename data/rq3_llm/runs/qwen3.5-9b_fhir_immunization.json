@@ -1,0 +1,1594 @@
+{
+ "n_call_records": 7200,
+ "rescore_mismatches": 0,
+ "groups": {
+  "qwen3.5-9b-q8_0|constrained|fhir_imm|v1": {
+   "first_pass": {
+    "n": 1800,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 1362,
+     "OK_carrier_error": 222,
+     "E4_statement_wrong": 216
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "accepted": {
+     "k": 1800,
+     "n": 1800,
+     "rate": 1.0,
+     "ci95": [
+      0.9979,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 1362,
+     "n": 1800,
+     "rate": 0.7567,
+     "ci95": [
+      0.7363,
+      0.7759
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 216,
+     "n": 1800,
+     "rate": 0.12,
+     "ci95": [
+      0.1058,
+      0.1358
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 216,
+     "n": 1800,
+     "rate": 0.12,
+     "ci95": [
+      0.1058,
+      0.1358
+     ]
+    },
+    "carrier_only_error": {
+     "k": 222,
+     "n": 1800,
+     "rate": 0.1233,
+     "ci95": [
+      0.1089,
+      0.1393
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "field_accuracy_accepted": 0.9961,
+    "statement_field_accuracy_accepted": 0.9998,
+    "carrier_field_accuracy_accepted": 0.9918,
+    "top_field_errors": [
+     [
+      "protocol_applied.series_doses:spurious",
+      216
+     ],
+     [
+      "site:spurious",
+      198
+     ],
+     [
+      "reason_code:spurious",
+      54
+     ],
+     [
+      "lot_number:spurious",
+      42
+     ],
+     [
+      "performer_name:missing",
+      33
+     ],
+     [
+      "site:missing",
+      24
+     ],
+     [
+      "lot_number:missing",
+      21
+     ],
+     [
+      "vaccine_code.display:wrong",
+      3
+     ],
+     [
+      "occurrence_date:wrong",
+      3
+     ],
+     [
+      "performer_name:wrong",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 10.4355,
+     "p90": 11.2039,
+     "sum": 18644.874
+    },
+    "tokens_out_median": 194.0,
+    "tokens_in_median": 1294.0,
+    "out_tokens_per_s_end_to_end_median": 18.5911,
+    "peak_gpu_mem_used_mib": 8904,
+    "peak_engine_rss_bytes": 3161337856,
+    "peak_sys_mem_used_bytes": 5938655232,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|constrained|fhir_imm|v2": {
+   "first_pass": {
+    "n": 1800,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 1245,
+     "OK_carrier_error": 489,
+     "E4_statement_wrong": 66
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "accepted": {
+     "k": 1800,
+     "n": 1800,
+     "rate": 1.0,
+     "ci95": [
+      0.9979,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 1245,
+     "n": 1800,
+     "rate": 0.6917,
+     "ci95": [
+      0.6699,
+      0.7126
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 66,
+     "n": 1800,
+     "rate": 0.0367,
+     "ci95": [
+      0.0289,
+      0.0464
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 66,
+     "n": 1800,
+     "rate": 0.0367,
+     "ci95": [
+      0.0289,
+      0.0464
+     ]
+    },
+    "carrier_only_error": {
+     "k": 489,
+     "n": 1800,
+     "rate": 0.2717,
+     "ci95": [
+      0.2516,
+      0.2927
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "field_accuracy_accepted": 0.9986,
+    "statement_field_accuracy_accepted": 0.9998,
+    "carrier_field_accuracy_accepted": 0.9974,
+    "top_field_errors": [
+     [
+      "reason[*].concept.system:spurious",
+      306
+     ],
+     [
+      "reason[*].concept.code:spurious",
+      306
+     ],
+     [
+      "site:spurious",
+      240
+     ],
+     [
+      "protocol_applied.series_doses:spurious",
+      63
+     ],
+     [
+      "lot_number:spurious",
+      57
+     ],
+     [
+      "performer_name:missing",
+      9
+     ],
+     [
+      "lot_number:missing",
+      9
+     ],
+     [
+      "site:missing",
+      6
+     ],
+     [
+      "reason[*].concept.system:missing",
+      3
+     ],
+     [
+      "reason[*].concept.code:missing",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 12.5885,
+     "p90": 13.3362,
+     "sum": 22063.7531
+    },
+    "tokens_out_median": 238.0,
+    "tokens_in_median": 1480.0,
+    "out_tokens_per_s_end_to_end_median": 18.8827,
+    "peak_gpu_mem_used_mib": 8904,
+    "peak_engine_rss_bytes": 3159900160,
+    "peak_sys_mem_used_bytes": 5930864640,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|fhir_imm|v1": {
+   "first_pass": {
+    "n": 1800,
+    "landing_counts": {
+     "E1_parse": 3,
+     "E2_invalid": 297,
+     "E3_canon": 0,
+     "OK_correct": 1113,
+     "OK_carrier_error": 207,
+     "E4_statement_wrong": 180
+    },
+    "E1_parse_fail": {
+     "k": 3,
+     "n": 1800,
+     "rate": 0.0017,
+     "ci95": [
+      0.0006,
+      0.0049
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 3,
+     "n": 1800,
+     "rate": 0.0017,
+     "ci95": [
+      0.0006,
+      0.0049
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 297,
+     "n": 1797,
+     "rate": 0.1653,
+     "ci95": [
+      0.1488,
+      0.1832
+     ]
+    },
+    "E2_invalid": {
+     "k": 297,
+     "n": 1800,
+     "rate": 0.165,
+     "ci95": [
+      0.1486,
+      0.1829
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "accepted": {
+     "k": 1500,
+     "n": 1800,
+     "rate": 0.8333,
+     "ci95": [
+      0.8154,
+      0.8498
+     ]
+    },
+    "fully_correct": {
+     "k": 1113,
+     "n": 1800,
+     "rate": 0.6183,
+     "ci95": [
+      0.5957,
+      0.6405
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 180,
+     "n": 1800,
+     "rate": 0.1,
+     "ci95": [
+      0.087,
+      0.1147
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 180,
+     "n": 1500,
+     "rate": 0.12,
+     "ci95": [
+      0.1045,
+      0.1374
+     ]
+    },
+    "carrier_only_error": {
+     "k": 207,
+     "n": 1800,
+     "rate": 0.115,
+     "ci95": [
+      0.1011,
+      0.1306
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1500,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0026
+     ]
+    },
+    "field_accuracy_accepted": 0.9994,
+    "statement_field_accuracy_accepted": 0.9997,
+    "carrier_field_accuracy_accepted": 0.999,
+    "top_field_errors": [
+     [
+      "site:spurious",
+      249
+     ],
+     [
+      "protocol_applied.series_doses:spurious",
+      177
+     ],
+     [
+      "lot_number:spurious",
+      42
+     ],
+     [
+      "reason_code:spurious",
+      9
+     ],
+     [
+      "performer_name:missing",
+      6
+     ],
+     [
+      "vaccine_code.display:wrong",
+      3
+     ],
+     [
+      "occurrence_date:wrong",
+      3
+     ],
+     [
+      "performer_name:spurious",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 10.5546,
+     "p90": 11.2009,
+     "sum": 18815.1309
+    },
+    "tokens_out_median": 198.0,
+    "tokens_in_median": 1294.0,
+    "out_tokens_per_s_end_to_end_median": 18.7126,
+    "peak_gpu_mem_used_mib": 8904,
+    "peak_engine_rss_bytes": 3159646208,
+    "peak_sys_mem_used_bytes": 5917773824,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|fhir_imm|v2": {
+   "first_pass": {
+    "n": 1800,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 276,
+     "E3_canon": 0,
+     "OK_correct": 885,
+     "OK_carrier_error": 594,
+     "E4_statement_wrong": 45
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 276,
+     "n": 1800,
+     "rate": 0.1533,
+     "ci95": [
+      0.1374,
+      0.1707
+     ]
+    },
+    "E2_invalid": {
+     "k": 276,
+     "n": 1800,
+     "rate": 0.1533,
+     "ci95": [
+      0.1374,
+      0.1707
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "accepted": {
+     "k": 1524,
+     "n": 1800,
+     "rate": 0.8467,
+     "ci95": [
+      0.8293,
+      0.8626
+     ]
+    },
+    "fully_correct": {
+     "k": 885,
+     "n": 1800,
+     "rate": 0.4917,
+     "ci95": [
+      0.4686,
+      0.5148
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 45,
+     "n": 1800,
+     "rate": 0.025,
+     "ci95": [
+      0.0187,
+      0.0333
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 45,
+     "n": 1524,
+     "rate": 0.0295,
+     "ci95": [
+      0.0221,
+      0.0393
+     ]
+    },
+    "carrier_only_error": {
+     "k": 594,
+     "n": 1800,
+     "rate": 0.33,
+     "ci95": [
+      0.3087,
+      0.3521
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 1524,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0025
+     ]
+    },
+    "field_accuracy_accepted": 0.9994,
+    "statement_field_accuracy_accepted": 0.9997,
+    "carrier_field_accuracy_accepted": 0.9991,
+    "top_field_errors": [
+     [
+      "reason[*].concept.system:spurious",
+      396
+     ],
+     [
+      "reason[*].concept.code:spurious",
+      396
+     ],
+     [
+      "site:spurious",
+      309
+     ],
+     [
+      "lot_number:spurious",
+      81
+     ],
+     [
+      "protocol_applied.series_doses:spurious",
+      42
+     ],
+     [
+      "performer_name:spurious",
+      12
+     ],
+     [
+      "performer_name:missing",
+      9
+     ],
+     [
+      "occurrence_date:wrong",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 12.7263,
+     "p90": 13.326,
+     "sum": 22550.4274
+    },
+    "tokens_out_median": 243.0,
+    "tokens_in_median": 1480.0,
+    "out_tokens_per_s_end_to_end_median": 19.0491,
+    "peak_gpu_mem_used_mib": 8904,
+    "peak_engine_rss_bytes": 3159633920,
+    "peak_sys_mem_used_bytes": 5929066496,
+    "http_errors": 0,
+    "simulated": false
+   }
+  }
+ },
+ "pooled": {
+  "qwen3.5-9b-q8_0|constrained": {
+   "first_pass": {
+    "n": 3600,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 2607,
+     "OK_carrier_error": 711,
+     "E4_statement_wrong": 282
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "accepted": {
+     "k": 3600,
+     "n": 3600,
+     "rate": 1.0,
+     "ci95": [
+      0.9989,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 2607,
+     "n": 3600,
+     "rate": 0.7242,
+     "ci95": [
+      0.7093,
+      0.7385
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 282,
+     "n": 3600,
+     "rate": 0.0783,
+     "ci95": [
+      0.07,
+      0.0876
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 282,
+     "n": 3600,
+     "rate": 0.0783,
+     "ci95": [
+      0.07,
+      0.0876
+     ]
+    },
+    "carrier_only_error": {
+     "k": 711,
+     "n": 3600,
+     "rate": 0.1975,
+     "ci95": [
+      0.1848,
+      0.2108
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "field_accuracy_accepted": 0.9974,
+    "statement_field_accuracy_accepted": 0.9998,
+    "carrier_field_accuracy_accepted": 0.9948,
+    "top_field_errors": [
+     [
+      "site:spurious",
+      438
+     ],
+     [
+      "reason[*].concept.system:spurious",
+      306
+     ],
+     [
+      "reason[*].concept.code:spurious",
+      306
+     ],
+     [
+      "protocol_applied.series_doses:spurious",
+      279
+     ],
+     [
+      "lot_number:spurious",
+      99
+     ],
+     [
+      "reason_code:spurious",
+      54
+     ],
+     [
+      "performer_name:missing",
+      42
+     ],
+     [
+      "site:missing",
+      30
+     ],
+     [
+      "lot_number:missing",
+      30
+     ],
+     [
+      "occurrence_date:wrong",
+      6
+     ]
+    ],
+    "latency_s": {
+     "median": 11.0863,
+     "p90": 13.1305,
+     "sum": 40708.6271
+    },
+    "tokens_out_median": 207.0,
+    "tokens_in_median": 1392.0,
+    "out_tokens_per_s_end_to_end_median": 18.7417,
+    "peak_gpu_mem_used_mib": 8904,
+    "peak_engine_rss_bytes": 3161337856,
+    "peak_sys_mem_used_bytes": 5938655232,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "first_pass": {
+    "n": 3600,
+    "landing_counts": {
+     "E1_parse": 3,
+     "E2_invalid": 573,
+     "E3_canon": 0,
+     "OK_correct": 1998,
+     "OK_carrier_error": 801,
+     "E4_statement_wrong": 225
+    },
+    "E1_parse_fail": {
+     "k": 3,
+     "n": 3600,
+     "rate": 0.0008,
+     "ci95": [
+      0.0003,
+      0.0024
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 3,
+     "n": 3600,
+     "rate": 0.0008,
+     "ci95": [
+      0.0003,
+      0.0024
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 573,
+     "n": 3597,
+     "rate": 0.1593,
+     "ci95": [
+      0.1477,
+      0.1716
+     ]
+    },
+    "E2_invalid": {
+     "k": 573,
+     "n": 3600,
+     "rate": 0.1592,
+     "ci95": [
+      0.1476,
+      0.1715
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 3600,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0011
+     ]
+    },
+    "accepted": {
+     "k": 3024,
+     "n": 3600,
+     "rate": 0.84,
+     "ci95": [
+      0.8277,
+      0.8516
+     ]
+    },
+    "fully_correct": {
+     "k": 1998,
+     "n": 3600,
+     "rate": 0.555,
+     "ci95": [
+      0.5387,
+      0.5712
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 225,
+     "n": 3600,
+     "rate": 0.0625,
+     "ci95": [
+      0.055,
+      0.0709
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 225,
+     "n": 3024,
+     "rate": 0.0744,
+     "ci95": [
+      0.0656,
+      0.0843
+     ]
+    },
+    "carrier_only_error": {
+     "k": 801,
+     "n": 3600,
+     "rate": 0.2225,
+     "ci95": [
+      0.2092,
+      0.2364
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 3024,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0013
+     ]
+    },
+    "field_accuracy_accepted": 0.9994,
+    "statement_field_accuracy_accepted": 0.9997,
+    "carrier_field_accuracy_accepted": 0.999,
+    "top_field_errors": [
+     [
+      "site:spurious",
+      558
+     ],
+     [
+      "reason[*].concept.system:spurious",
+      396
+     ],
+     [
+      "reason[*].concept.code:spurious",
+      396
+     ],
+     [
+      "protocol_applied.series_doses:spurious",
+      219
+     ],
+     [
+      "lot_number:spurious",
+      123
+     ],
+     [
+      "performer_name:missing",
+      15
+     ],
+     [
+      "performer_name:spurious",
+      15
+     ],
+     [
+      "reason_code:spurious",
+      9
+     ],
+     [
+      "occurrence_date:wrong",
+      6
+     ],
+     [
+      "vaccine_code.display:wrong",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 11.2735,
+     "p90": 13.1365,
+     "sum": 41365.5583
+    },
+    "tokens_out_median": 213.0,
+    "tokens_in_median": 1392.0,
+    "out_tokens_per_s_end_to_end_median": 18.8902,
+    "peak_gpu_mem_used_mib": 8904,
+    "peak_engine_rss_bytes": 3159646208,
+    "peak_sys_mem_used_bytes": 5929066496,
+    "http_errors": 0,
+    "simulated": false
+   }
+  }
+ },
+ "stability": {
+  "qwen3.5-9b-q8_0|constrained|fhir_imm|v1": {
+   "runs": 3,
+   "docs": 600,
+   "raw_identical": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "stable_and_correct": {
+    "k": 454,
+    "n": 600,
+    "rate": 0.7567,
+    "ci95": [
+     0.7208,
+     0.7893
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 600,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0064
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 600,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0064
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 600
+   }
+  },
+  "qwen3.5-9b-q8_0|constrained|fhir_imm|v2": {
+   "runs": 3,
+   "docs": 600,
+   "raw_identical": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "stable_and_correct": {
+    "k": 415,
+    "n": 600,
+    "rate": 0.6917,
+    "ci95": [
+     0.6536,
+     0.7273
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 600,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0064
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 600,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0064
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 600
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|fhir_imm|v1": {
+   "runs": 3,
+   "docs": 600,
+   "raw_identical": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 500,
+    "n": 600,
+    "rate": 0.8333,
+    "ci95": [
+     0.8014,
+     0.861
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 500,
+    "n": 600,
+    "rate": 0.8333,
+    "ci95": [
+     0.8014,
+     0.861
+    ]
+   },
+   "stable_and_correct": {
+    "k": 371,
+    "n": 600,
+    "rate": 0.6183,
+    "ci95": [
+     0.5788,
+     0.6563
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 500,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0076
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 600,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0064
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 500
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|fhir_imm|v2": {
+   "runs": 3,
+   "docs": 600,
+   "raw_identical": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 508,
+    "n": 600,
+    "rate": 0.8467,
+    "ci95": [
+     0.8156,
+     0.8733
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 508,
+    "n": 600,
+    "rate": 0.8467,
+    "ci95": [
+     0.8156,
+     0.8733
+    ]
+   },
+   "stable_and_correct": {
+    "k": 295,
+    "n": 600,
+    "rate": 0.4917,
+    "ci95": [
+     0.4518,
+     0.5316
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 508,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0075
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 600,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0064
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 508
+   }
+  }
+ },
+ "latency_pairs": {
+  "qwen3.5-9b-q8_0": {
+   "pairs": 3600,
+   "median_latency_ratio_constrained_over_unconstrained": 1.002,
+   "p10": 0.9249,
+   "p90": 1.0273,
+   "median_tokens_out_diff": 0.0
+  }
+ },
+ "repair": {
+  "qwen3.5-9b-q8_0|constrained": {
+   "repair_calls": 0,
+   "repair_success": 0
+  },
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "repair_calls": 0,
+   "repair_success": 0
+  }
+ },
+ "stability_pooled": {
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "raw_identical": {
+    "k": 1200,
+    "n": 1200,
+    "rate": 1.0,
+    "ci95": [
+     0.9968,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 1008,
+    "n": 1200,
+    "rate": 0.84,
+    "ci95": [
+     0.8182,
+     0.8597
+    ]
+   },
+   "stable_and_correct": {
+    "k": 666,
+    "n": 1200,
+    "rate": 0.555,
+    "ci95": [
+     0.5268,
+     0.5829
+    ]
+   },
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 1008,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0038
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 1200,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0032
+    ]
+   }
+  },
+  "qwen3.5-9b-q8_0|constrained": {
+   "raw_identical": {
+    "k": 1200,
+    "n": 1200,
+    "rate": 1.0,
+    "ci95": [
+     0.9968,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 1200,
+    "n": 1200,
+    "rate": 1.0,
+    "ci95": [
+     0.9968,
+     1.0
+    ]
+   },
+   "stable_and_correct": {
+    "k": 869,
+    "n": 1200,
+    "rate": 0.7242,
+    "ci95": [
+     0.6982,
+     0.7487
+    ]
+   },
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 1200,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0032
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 1200,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0032
+    ]
+   }
+  }
+ },
+ "maintenance": {
+  "ob3": {
+   "deterministic_mapping_loc_v1": 9,
+   "deterministic_mapping_loc_v2": 11,
+   "deterministic_mapping_lines_changed": 14,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [
+    "results[*].result_type",
+    "results[*].value",
+    "valid_from",
+    "valid_until"
+   ],
+   "schema_paths_removed": [
+    "expiration_date",
+    "issuance_date",
+    "result.grade",
+    "result.score_percent"
+   ],
+   "schema_paths_retyped": []
+  },
+  "fhir_imm": {
+   "deterministic_mapping_loc_v1": 8,
+   "deterministic_mapping_loc_v2": 8,
+   "deterministic_mapping_lines_changed": 10,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [
+    "reason[*].concept.code",
+    "reason[*].concept.system"
+   ],
+   "schema_paths_removed": [
+    "reason_code"
+   ],
+   "schema_paths_retyped": [
+    "protocol_applied.dose_number",
+    "protocol_applied.series_doses"
+   ]
+  },
+  "ukob_txn": {
+   "deterministic_mapping_loc_v1": 7,
+   "deterministic_mapping_loc_v2": 7,
+   "deterministic_mapping_lines_changed": 8,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [],
+   "schema_paths_removed": [],
+   "schema_paths_retyped": []
+  }
+ },
+ "planning": {
+  "qwen3.5-9b-q8_0": {
+   "unconstrained": {
+    "E4_rate": 0.0625,
+    "n_extractions_for_E4_ci_halfwidth_0.03": 251,
+    "n_extractions_for_E4_ci_halfwidth_0.05": 91,
+    "accepted_rate": 0.84
+   },
+   "constrained": {
+    "E4_rate": 0.0783,
+    "n_extractions_for_E4_ci_halfwidth_0.03": 309,
+    "n_extractions_for_E4_ci_halfwidth_0.05": 111,
+    "accepted_rate": 1.0
+   },
+   "n_per_condition_to_detect_E4_difference": 4115,
+   "n_per_condition_to_detect_accepted_difference": 44,
+   "note": "independent-groups approximation; extractions are clustered by document and the conditions are paired, so treat as an upper bound and confirm with a paired/clustered analysis (e.g. McNemar per document) before registering n."
+  }
+ }
+}

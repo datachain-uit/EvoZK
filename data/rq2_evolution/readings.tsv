@@ -1,0 +1,13 @@
+reading	design	count_all	count_primary	count_control	replay_count_all	delta_all	changed_transitions
+replay	A0_tight	10	8	2	10	0	-
+replay	A0_pad_TR	6	6	0	6	0	-
+replay	A0_pad_SS	4	4	0	4	0	-
+replay	PX	5	5	0	5	0	-
+replay	PX_strict	10	7	3	10	0	-
+replay	MR	0	0	0	0	0	-
+replay	A1	0	0	0	0	0	-
+data_contract	A0_pad_TR	5	5	0	6	-1	ukob:3.1.4->3.1.5(-)
+data_contract	A0_pad_SS	3	3	0	4	-1	ukob:3.1.4->3.1.5(-)
+sensitivity_B4	A0_tight	10	8	2	10	0	-
+sensitivity_B4	A0_pad_TR	8	8	0	6	2	fhir:4.0.1->5.0.0(+);fhir:5.0.0->6.0.0-ballot4(+)
+sensitivity_B4	A0_pad_SS	7	7	0	4	3	fhir:4.0.1->5.0.0(+);fhir:5.0.0->6.0.0-ballot4(+);ukob:4.0.0->4.0.1(+)

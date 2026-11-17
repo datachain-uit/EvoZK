@@ -1,0 +1,3990 @@
+{
+ "domain": "open_badges",
+ "record_type": "Open Badges 3.0 AchievementCredential (OpenBadgeCredential), Candidate Final Public schema, W3C VCDM 1.1 terms",
+ "version": "3.0-vcdm1.1",
+ "release_date": "2023-02-09",
+ "status": "candidate",
+ "source_ids": [
+  "ob-v3p0-schema-cfp",
+  "ob-v3p0-spec"
+ ],
+ "root": "AchievementCredential (schema root object)",
+ "paths": [
+  {
+   "path": "credentialSchema[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSchema 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/id"
+  },
+  {
+   "path": "credentialSchema[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSchema 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/type"
+  },
+  {
+   "path": "credentialStatus.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialStatus 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/id"
+  },
+  {
+   "path": "credentialStatus.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialStatus 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.@language",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > @language 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/@language",
+   "constraints": {
+    "pattern": "^[a-z]{2,4}(-[A-Z][a-z]{3})?(-([A-Z]{2}|[0-9]{3}))?$"
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.achievementType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > achievementType 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/achievementType",
+   "constraints": {
+    "enum": [
+     "Achievement",
+     "ApprenticeshipCertificate",
+     "Assessment",
+     "Assignment",
+     "AssociateDegree",
+     "Award",
+     "Badge",
+     "BachelorDegree",
+     "Certificate",
+     "CertificateOfCompletion",
+     "Certification",
+     "CommunityService",
+     "Competency",
+     "Course",
+     "CoCurricular",
+     "Degree",
+     "Diploma",
+     "DoctoralDegree",
+     "Fieldwork",
+     "GeneralEducationDevelopment",
+     "JourneymanCertificate",
+     "LearningProgram",
+     "License",
+     "Membership",
+     "ProfessionalDoctorate",
+     "QualityAssuranceCredential",
+     "MasterCertificate",
+     "MasterDegree",
+     "MicroCredential",
+     "ResearchDoctorate",
+     "SecondarySchoolDiploma"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.alignment[].targetCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > alignment 0..1[0..*] > targetCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetCode"
+  },
+  {
+   "path": "credentialSubject.achievement.alignment[].targetDescription",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > alignment 0..1[0..*] > targetDescription 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetDescription"
+  },
+  {
+   "path": "credentialSubject.achievement.alignment[].targetFramework",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > alignment 0..1[0..*] > targetFramework 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetFramework"
+  },
+  {
+   "path": "credentialSubject.achievement.alignment[].targetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > alignment 0..1[0..*] > targetName 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetName"
+  },
+  {
+   "path": "credentialSubject.achievement.alignment[].targetType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > alignment 0..1[0..*] > targetType 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetType",
+   "constraints": {
+    "enum": [
+     "ceasn:Competency",
+     "ceterms:Credential",
+     "CFItem",
+     "CFRubric",
+     "CFRubricCriterion",
+     "CFRubricCriterionLevel",
+     "CTDL"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.alignment[].targetUrl",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > alignment 0..1[0..*] > targetUrl 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetUrl"
+  },
+  {
+   "path": "credentialSubject.achievement.alignment[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > alignment 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.additionalName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > additionalName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/additionalName"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.addressCountry",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > addressCountry 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountry"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.addressCountryCode",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > addressCountryCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountryCode"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.addressLocality",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > addressLocality 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressLocality"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.addressRegion",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > addressRegion 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressRegion"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.geo.latitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > geo 0..1 > latitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/latitude"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.geo.longitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > geo 0..1 > longitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/longitude"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.geo.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > geo 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.postOfficeBoxNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > postOfficeBoxNumber 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postOfficeBoxNumber"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.postalCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > postalCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postalCode"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.streetAddress",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > streetAddress 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/streetAddress"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.address.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > address 0..1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.dateOfBirth",
+   "type": "date",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > dateOfBirth 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/dateOfBirth"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > description 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/description"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > email 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/email"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsementJwt[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsementJwt 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/endorsementJwt",
+   "constraints": {
+    "pattern": "^[a-zA-Z0-9_-]+\\.[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]+$"
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].credentialSchema[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].credentialSchema[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].credentialStatus.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > credentialStatus 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].credentialStatus.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > credentialStatus 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].credentialSubject.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > credentialSubject 1 > endorsementComment 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/endorsementComment"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].credentialSubject.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > credentialSubject 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].credentialSubject.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > credentialSubject 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].expirationDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > expirationDate 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/expirationDate"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].issuanceDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > issuanceDate 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/issuanceDate"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].refreshService.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > refreshService 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].refreshService.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > refreshService 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > endorsement 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > familyName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyName"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.familyNamePrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > familyNamePrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyNamePrefix"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > givenName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/givenName"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.honorificPrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > honorificPrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificPrefix"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.honorificSuffix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > honorificSuffix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificSuffix"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/caption"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > image 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.image.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > image 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > name 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/name"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.official",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > official 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/official"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.otherIdentifier[].identifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > otherIdentifier 0..1[0..*] > identifier 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifier"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.otherIdentifier[].identifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > otherIdentifier 0..1[0..*] > identifierType 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifierType",
+   "constraints": {
+    "enum": [
+     "sourcedId",
+     "systemId",
+     "productId",
+     "userName",
+     "accountId",
+     "emailAddress",
+     "nationalIdentityNumber",
+     "isbn",
+     "issn",
+     "lisSourcedId",
+     "oneRosterSourcedId",
+     "sisSourcedId",
+     "ltiContextId",
+     "ltiDeploymentId",
+     "ltiToolId",
+     "ltiPlatformId",
+     "ltiUserId",
+     "identifier"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.creator.otherIdentifier[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > otherIdentifier 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.patronymicName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > patronymicName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/patronymicName"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.phone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > phone 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/phone"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.creator.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creator 0..1 > url 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/url"
+  },
+  {
+   "path": "credentialSubject.achievement.creditsAvailable",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > creditsAvailable 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/creditsAvailable"
+  },
+  {
+   "path": "credentialSubject.achievement.criteria.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > criteria 1 > id 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Criteria/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.criteria.narrative",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > criteria 1 > narrative 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Criteria/properties/narrative"
+  },
+  {
+   "path": "credentialSubject.achievement.description",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > description 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/description"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsementJwt[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsementJwt 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/endorsementJwt",
+   "constraints": {
+    "pattern": "^[a-zA-Z0-9_-]+\\.[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]+$"
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].credentialSchema[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].credentialSchema[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].credentialStatus.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > credentialStatus 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].credentialStatus.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > credentialStatus 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].credentialSubject.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > credentialSubject 1 > endorsementComment 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/endorsementComment"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].credentialSubject.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > credentialSubject 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].credentialSubject.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > credentialSubject 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].expirationDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > expirationDate 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/expirationDate"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuanceDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuanceDate 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/issuanceDate"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.additionalName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > additionalName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/additionalName"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.addressCountry",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > addressCountry 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountry"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.addressCountryCode",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > addressCountryCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountryCode"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.addressLocality",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > addressLocality 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressLocality"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.addressRegion",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > addressRegion 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressRegion"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.geo.latitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > geo 0..1 > latitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/latitude"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.geo.longitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > geo 0..1 > longitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/longitude"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.geo.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > geo 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.postOfficeBoxNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > postOfficeBoxNumber 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postOfficeBoxNumber"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.postalCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > postalCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postalCode"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.streetAddress",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > streetAddress 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/streetAddress"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.address.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > address 0..1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.dateOfBirth",
+   "type": "date",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > dateOfBirth 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/dateOfBirth"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > description 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/description"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > email 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/email"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.endorsementJwt[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > endorsementJwt 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/endorsementJwt",
+   "constraints": {
+    "pattern": "^[a-zA-Z0-9_-]+\\.[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]+$"
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > familyName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyName"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.familyNamePrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > familyNamePrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyNamePrefix"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > givenName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/givenName"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.honorificPrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > honorificPrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificPrefix"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.honorificSuffix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > honorificSuffix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificSuffix"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/caption"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > image 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.image.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > image 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > name 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/name"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.official",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > official 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/official"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.otherIdentifier[].identifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > otherIdentifier 0..1[0..*] > identifier 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifier"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.otherIdentifier[].identifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > otherIdentifier 0..1[0..*] > identifierType 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifierType",
+   "constraints": {
+    "enum": [
+     "sourcedId",
+     "systemId",
+     "productId",
+     "userName",
+     "accountId",
+     "emailAddress",
+     "nationalIdentityNumber",
+     "isbn",
+     "issn",
+     "lisSourcedId",
+     "oneRosterSourcedId",
+     "sisSourcedId",
+     "ltiContextId",
+     "ltiDeploymentId",
+     "ltiToolId",
+     "ltiPlatformId",
+     "ltiUserId",
+     "identifier"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.otherIdentifier[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > otherIdentifier 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.patronymicName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > patronymicName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/patronymicName"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.phone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > phone 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/phone"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].issuer.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > issuer 1 > url 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/url"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].refreshService.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > refreshService 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].refreshService.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > refreshService 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > endorsement 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.fieldOfStudy",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > fieldOfStudy 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/fieldOfStudy"
+  },
+  {
+   "path": "credentialSubject.achievement.humanCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > humanCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/humanCode"
+  },
+  {
+   "path": "credentialSubject.achievement.id",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/caption"
+  },
+  {
+   "path": "credentialSubject.achievement.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > image 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.image.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > image 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.name",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > name 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/name"
+  },
+  {
+   "path": "credentialSubject.achievement.otherIdentifier[].identifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > otherIdentifier 0..1[0..*] > identifier 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifier"
+  },
+  {
+   "path": "credentialSubject.achievement.otherIdentifier[].identifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > otherIdentifier 0..1[0..*] > identifierType 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifierType",
+   "constraints": {
+    "enum": [
+     "sourcedId",
+     "systemId",
+     "productId",
+     "userName",
+     "accountId",
+     "emailAddress",
+     "nationalIdentityNumber",
+     "isbn",
+     "issn",
+     "lisSourcedId",
+     "oneRosterSourcedId",
+     "sisSourcedId",
+     "ltiContextId",
+     "ltiDeploymentId",
+     "ltiToolId",
+     "ltiPlatformId",
+     "ltiUserId",
+     "identifier"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.otherIdentifier[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > otherIdentifier 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.related[].@language",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > related 0..1[0..*] > @language 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Related/properties/@language",
+   "constraints": {
+    "pattern": "^[a-z]{2,4}(-[A-Z][a-z]{3})?(-([A-Z]{2}|[0-9]{3}))?$"
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.related[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > related 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Related/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.related[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > related 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Related/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.related[].version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > related 0..1[0..*] > version 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Related/properties/version"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].alignment[].targetCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > alignment 0..1[0..*] > targetCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetCode"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].alignment[].targetDescription",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > alignment 0..1[0..*] > targetDescription 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetDescription"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].alignment[].targetFramework",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > alignment 0..1[0..*] > targetFramework 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetFramework"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].alignment[].targetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > alignment 0..1[0..*] > targetName 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetName"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].alignment[].targetType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > alignment 0..1[0..*] > targetType 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetType",
+   "constraints": {
+    "enum": [
+     "ceasn:Competency",
+     "ceterms:Credential",
+     "CFItem",
+     "CFRubric",
+     "CFRubricCriterion",
+     "CFRubricCriterionLevel",
+     "CTDL"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].alignment[].targetUrl",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > alignment 0..1[0..*] > targetUrl 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetUrl"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].alignment[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > alignment 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].allowedValue[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > allowedValue 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/allowedValue"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > name 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/name"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].requiredLevel",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > requiredLevel 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/requiredLevel"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].requiredValue",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > requiredValue 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/requiredValue"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].resultType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > resultType 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/resultType",
+   "constraints": {
+    "enum": [
+     "GradePointAverage",
+     "LetterGrade",
+     "Percent",
+     "PerformanceLevel",
+     "PredictedScore",
+     "RawScore",
+     "Result",
+     "RubricCriterion",
+     "RubricCriterionLevel",
+     "RubricScore",
+     "ScaledScore",
+     "Status"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > alignment 0..1[0..*] > targetCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetCode"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetDescription",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > alignment 0..1[0..*] > targetDescription 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetDescription"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetFramework",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > alignment 0..1[0..*] > targetFramework 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetFramework"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > alignment 0..1[0..*] > targetName 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetName"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > alignment 0..1[0..*] > targetType 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetType",
+   "constraints": {
+    "enum": [
+     "ceasn:Competency",
+     "ceterms:Credential",
+     "CFItem",
+     "CFRubric",
+     "CFRubricCriterion",
+     "CFRubricCriterionLevel",
+     "CTDL"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].targetUrl",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > alignment 0..1[0..*] > targetUrl 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetUrl"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].alignment[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > alignment 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > description 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RubricCriterionLevel/properties/description"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RubricCriterionLevel/properties/id"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].level",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > level 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RubricCriterionLevel/properties/level"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > name 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RubricCriterionLevel/properties/name"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].points",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > points 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RubricCriterionLevel/properties/points"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].rubricCriterionLevel[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > rubricCriterionLevel 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RubricCriterionLevel/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].valueMax",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > valueMax 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/valueMax"
+  },
+  {
+   "path": "credentialSubject.achievement.resultDescription[].valueMin",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > resultDescription 0..1[0..*] > valueMin 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/ResultDescription/properties/valueMin"
+  },
+  {
+   "path": "credentialSubject.achievement.specialization",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > specialization 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/specialization"
+  },
+  {
+   "path": "credentialSubject.achievement.tag[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > tag 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/tag"
+  },
+  {
+   "path": "credentialSubject.achievement.type[]",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/type"
+  },
+  {
+   "path": "credentialSubject.achievement.version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > achievement 1 > version 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Achievement/properties/version"
+  },
+  {
+   "path": "credentialSubject.activityEndDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > activityEndDate 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/activityEndDate"
+  },
+  {
+   "path": "credentialSubject.activityStartDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > activityStartDate 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/activityStartDate"
+  },
+  {
+   "path": "credentialSubject.creditsEarned",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > creditsEarned 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/creditsEarned"
+  },
+  {
+   "path": "credentialSubject.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > id 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/id"
+  },
+  {
+   "path": "credentialSubject.identifier[].hashed",
+   "type": "boolean",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > identifier 0..1[0..*] > hashed 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentityObject/properties/hashed"
+  },
+  {
+   "path": "credentialSubject.identifier[].identityHash",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > identifier 0..1[0..*] > identityHash 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentityObject/properties/identityHash"
+  },
+  {
+   "path": "credentialSubject.identifier[].identityType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > identifier 0..1[0..*] > identityType 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentityObject/properties/identityType",
+   "constraints": {
+    "enum": [
+     "sourcedId",
+     "systemId",
+     "productId",
+     "userName",
+     "accountId",
+     "emailAddress",
+     "nationalIdentityNumber",
+     "isbn",
+     "issn",
+     "lisSourcedId",
+     "oneRosterSourcedId",
+     "sisSourcedId",
+     "ltiContextId",
+     "ltiDeploymentId",
+     "ltiToolId",
+     "ltiPlatformId",
+     "ltiUserId",
+     "identifier"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.identifier[].salt",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > identifier 0..1[0..*] > salt 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentityObject/properties/salt"
+  },
+  {
+   "path": "credentialSubject.identifier[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > identifier 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentityObject/properties/type"
+  },
+  {
+   "path": "credentialSubject.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/caption"
+  },
+  {
+   "path": "credentialSubject.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > image 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/id"
+  },
+  {
+   "path": "credentialSubject.image.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > image 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/type"
+  },
+  {
+   "path": "credentialSubject.licenseNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > licenseNumber 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/licenseNumber"
+  },
+  {
+   "path": "credentialSubject.narrative",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > narrative 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/narrative"
+  },
+  {
+   "path": "credentialSubject.result[].achievedLevel",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > achievedLevel 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Result/properties/achievedLevel"
+  },
+  {
+   "path": "credentialSubject.result[].alignment[].targetCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > alignment 0..1[0..*] > targetCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetCode"
+  },
+  {
+   "path": "credentialSubject.result[].alignment[].targetDescription",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > alignment 0..1[0..*] > targetDescription 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetDescription"
+  },
+  {
+   "path": "credentialSubject.result[].alignment[].targetFramework",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > alignment 0..1[0..*] > targetFramework 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetFramework"
+  },
+  {
+   "path": "credentialSubject.result[].alignment[].targetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > alignment 0..1[0..*] > targetName 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetName"
+  },
+  {
+   "path": "credentialSubject.result[].alignment[].targetType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > alignment 0..1[0..*] > targetType 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetType",
+   "constraints": {
+    "enum": [
+     "ceasn:Competency",
+     "ceterms:Credential",
+     "CFItem",
+     "CFRubric",
+     "CFRubricCriterion",
+     "CFRubricCriterionLevel",
+     "CTDL"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.result[].alignment[].targetUrl",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > alignment 0..1[0..*] > targetUrl 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/targetUrl"
+  },
+  {
+   "path": "credentialSubject.result[].alignment[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > alignment 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Alignment/properties/type"
+  },
+  {
+   "path": "credentialSubject.result[].resultDescription",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > resultDescription 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Result/properties/resultDescription"
+  },
+  {
+   "path": "credentialSubject.result[].status",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > status 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Result/properties/status",
+   "constraints": {
+    "enum": [
+     "Completed",
+     "Enrolled",
+     "Failed",
+     "InProgress",
+     "OnHold",
+     "Withdrew"
+    ]
+   }
+  },
+  {
+   "path": "credentialSubject.result[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Result/properties/type"
+  },
+  {
+   "path": "credentialSubject.result[].value",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > result 0..1[0..*] > value 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Result/properties/value"
+  },
+  {
+   "path": "credentialSubject.role",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > role 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/role"
+  },
+  {
+   "path": "credentialSubject.source.additionalName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > additionalName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/additionalName"
+  },
+  {
+   "path": "credentialSubject.source.address.addressCountry",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > addressCountry 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountry"
+  },
+  {
+   "path": "credentialSubject.source.address.addressCountryCode",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > addressCountryCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountryCode"
+  },
+  {
+   "path": "credentialSubject.source.address.addressLocality",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > addressLocality 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressLocality"
+  },
+  {
+   "path": "credentialSubject.source.address.addressRegion",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > addressRegion 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressRegion"
+  },
+  {
+   "path": "credentialSubject.source.address.geo.latitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > geo 0..1 > latitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/latitude"
+  },
+  {
+   "path": "credentialSubject.source.address.geo.longitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > geo 0..1 > longitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/longitude"
+  },
+  {
+   "path": "credentialSubject.source.address.geo.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > geo 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.address.postOfficeBoxNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > postOfficeBoxNumber 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postOfficeBoxNumber"
+  },
+  {
+   "path": "credentialSubject.source.address.postalCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > postalCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postalCode"
+  },
+  {
+   "path": "credentialSubject.source.address.streetAddress",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > streetAddress 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/streetAddress"
+  },
+  {
+   "path": "credentialSubject.source.address.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > address 0..1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.dateOfBirth",
+   "type": "date",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > dateOfBirth 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/dateOfBirth"
+  },
+  {
+   "path": "credentialSubject.source.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > description 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/description"
+  },
+  {
+   "path": "credentialSubject.source.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > email 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/email"
+  },
+  {
+   "path": "credentialSubject.source.endorsementJwt[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsementJwt 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/endorsementJwt",
+   "constraints": {
+    "pattern": "^[a-zA-Z0-9_-]+\\.[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]+$"
+   }
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].credentialSchema[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/id"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].credentialSchema[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].credentialStatus.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > credentialStatus 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/id"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].credentialStatus.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > credentialStatus 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].credentialSubject.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > credentialSubject 1 > endorsementComment 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/endorsementComment"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].credentialSubject.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > credentialSubject 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/id"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].credentialSubject.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > credentialSubject 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].expirationDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > expirationDate 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/expirationDate"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/id"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].issuanceDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > issuanceDate 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/issuanceDate"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].refreshService.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > refreshService 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/id"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].refreshService.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > refreshService 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > endorsement 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > familyName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyName"
+  },
+  {
+   "path": "credentialSubject.source.familyNamePrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > familyNamePrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyNamePrefix"
+  },
+  {
+   "path": "credentialSubject.source.givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > givenName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/givenName"
+  },
+  {
+   "path": "credentialSubject.source.honorificPrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > honorificPrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificPrefix"
+  },
+  {
+   "path": "credentialSubject.source.honorificSuffix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > honorificSuffix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificSuffix"
+  },
+  {
+   "path": "credentialSubject.source.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/id"
+  },
+  {
+   "path": "credentialSubject.source.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/caption"
+  },
+  {
+   "path": "credentialSubject.source.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > image 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/id"
+  },
+  {
+   "path": "credentialSubject.source.image.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > image 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > name 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/name"
+  },
+  {
+   "path": "credentialSubject.source.official",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > official 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/official"
+  },
+  {
+   "path": "credentialSubject.source.otherIdentifier[].identifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > otherIdentifier 0..1[0..*] > identifier 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifier"
+  },
+  {
+   "path": "credentialSubject.source.otherIdentifier[].identifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > otherIdentifier 0..1[0..*] > identifierType 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifierType",
+   "constraints": {
+    "enum": [
+     "sourcedId",
+     "systemId",
+     "productId",
+     "userName",
+     "accountId",
+     "emailAddress",
+     "nationalIdentityNumber",
+     "isbn",
+     "issn",
+     "lisSourcedId",
+     "oneRosterSourcedId",
+     "sisSourcedId",
+     "ltiContextId",
+     "ltiDeploymentId",
+     "ltiToolId",
+     "ltiPlatformId",
+     "ltiUserId",
+     "identifier"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "credentialSubject.source.otherIdentifier[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > otherIdentifier 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.patronymicName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > patronymicName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/patronymicName"
+  },
+  {
+   "path": "credentialSubject.source.phone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > phone 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/phone"
+  },
+  {
+   "path": "credentialSubject.source.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/type"
+  },
+  {
+   "path": "credentialSubject.source.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > source 0..1 > url 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/url"
+  },
+  {
+   "path": "credentialSubject.term",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "credentialSubject 1 > term 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/term"
+  },
+  {
+   "path": "credentialSubject.type[]",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "credentialSubject 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/AchievementSubject/properties/type"
+  },
+  {
+   "path": "description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "description 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/properties/description"
+  },
+  {
+   "path": "endorsementJwt[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsementJwt 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/properties/endorsementJwt",
+   "constraints": {
+    "pattern": "^[a-zA-Z0-9_-]+\\.[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]+$"
+   }
+  },
+  {
+   "path": "endorsement[].credentialSchema[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/id"
+  },
+  {
+   "path": "endorsement[].credentialSchema[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/type"
+  },
+  {
+   "path": "endorsement[].credentialStatus.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > credentialStatus 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/id"
+  },
+  {
+   "path": "endorsement[].credentialStatus.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > credentialStatus 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/type"
+  },
+  {
+   "path": "endorsement[].credentialSubject.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > credentialSubject 1 > endorsementComment 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/endorsementComment"
+  },
+  {
+   "path": "endorsement[].credentialSubject.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > credentialSubject 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/id"
+  },
+  {
+   "path": "endorsement[].credentialSubject.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > credentialSubject 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/type"
+  },
+  {
+   "path": "endorsement[].expirationDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > expirationDate 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/expirationDate"
+  },
+  {
+   "path": "endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/id"
+  },
+  {
+   "path": "endorsement[].issuanceDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuanceDate 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/issuanceDate"
+  },
+  {
+   "path": "endorsement[].issuer.additionalName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > additionalName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/additionalName"
+  },
+  {
+   "path": "endorsement[].issuer.address.addressCountry",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > addressCountry 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountry"
+  },
+  {
+   "path": "endorsement[].issuer.address.addressCountryCode",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > addressCountryCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountryCode"
+  },
+  {
+   "path": "endorsement[].issuer.address.addressLocality",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > addressLocality 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressLocality"
+  },
+  {
+   "path": "endorsement[].issuer.address.addressRegion",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > addressRegion 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressRegion"
+  },
+  {
+   "path": "endorsement[].issuer.address.geo.latitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > geo 0..1 > latitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/latitude"
+  },
+  {
+   "path": "endorsement[].issuer.address.geo.longitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > geo 0..1 > longitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/longitude"
+  },
+  {
+   "path": "endorsement[].issuer.address.geo.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > geo 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/type"
+  },
+  {
+   "path": "endorsement[].issuer.address.postOfficeBoxNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > postOfficeBoxNumber 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postOfficeBoxNumber"
+  },
+  {
+   "path": "endorsement[].issuer.address.postalCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > postalCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postalCode"
+  },
+  {
+   "path": "endorsement[].issuer.address.streetAddress",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > streetAddress 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/streetAddress"
+  },
+  {
+   "path": "endorsement[].issuer.address.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > address 0..1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/type"
+  },
+  {
+   "path": "endorsement[].issuer.dateOfBirth",
+   "type": "date",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > dateOfBirth 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/dateOfBirth"
+  },
+  {
+   "path": "endorsement[].issuer.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > description 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/description"
+  },
+  {
+   "path": "endorsement[].issuer.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > email 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/email"
+  },
+  {
+   "path": "endorsement[].issuer.endorsementJwt[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > endorsementJwt 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/endorsementJwt",
+   "constraints": {
+    "pattern": "^[a-zA-Z0-9_-]+\\.[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]+$"
+   }
+  },
+  {
+   "path": "endorsement[].issuer.familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > familyName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyName"
+  },
+  {
+   "path": "endorsement[].issuer.familyNamePrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > familyNamePrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyNamePrefix"
+  },
+  {
+   "path": "endorsement[].issuer.givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > givenName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/givenName"
+  },
+  {
+   "path": "endorsement[].issuer.honorificPrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > honorificPrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificPrefix"
+  },
+  {
+   "path": "endorsement[].issuer.honorificSuffix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > honorificSuffix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificSuffix"
+  },
+  {
+   "path": "endorsement[].issuer.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/id"
+  },
+  {
+   "path": "endorsement[].issuer.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/caption"
+  },
+  {
+   "path": "endorsement[].issuer.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > image 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/id"
+  },
+  {
+   "path": "endorsement[].issuer.image.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > image 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/type"
+  },
+  {
+   "path": "endorsement[].issuer.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > name 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/name"
+  },
+  {
+   "path": "endorsement[].issuer.official",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > official 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/official"
+  },
+  {
+   "path": "endorsement[].issuer.otherIdentifier[].identifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > otherIdentifier 0..1[0..*] > identifier 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifier"
+  },
+  {
+   "path": "endorsement[].issuer.otherIdentifier[].identifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > otherIdentifier 0..1[0..*] > identifierType 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifierType",
+   "constraints": {
+    "enum": [
+     "sourcedId",
+     "systemId",
+     "productId",
+     "userName",
+     "accountId",
+     "emailAddress",
+     "nationalIdentityNumber",
+     "isbn",
+     "issn",
+     "lisSourcedId",
+     "oneRosterSourcedId",
+     "sisSourcedId",
+     "ltiContextId",
+     "ltiDeploymentId",
+     "ltiToolId",
+     "ltiPlatformId",
+     "ltiUserId",
+     "identifier"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "endorsement[].issuer.otherIdentifier[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > otherIdentifier 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/type"
+  },
+  {
+   "path": "endorsement[].issuer.patronymicName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > patronymicName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/patronymicName"
+  },
+  {
+   "path": "endorsement[].issuer.phone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > phone 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/phone"
+  },
+  {
+   "path": "endorsement[].issuer.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/type"
+  },
+  {
+   "path": "endorsement[].issuer.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > url 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/url"
+  },
+  {
+   "path": "endorsement[].refreshService.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > refreshService 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/id"
+  },
+  {
+   "path": "endorsement[].refreshService.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > refreshService 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/type"
+  },
+  {
+   "path": "endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/type"
+  },
+  {
+   "path": "evidence[].audience",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > audience 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Evidence/properties/audience"
+  },
+  {
+   "path": "evidence[].description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > description 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Evidence/properties/description"
+  },
+  {
+   "path": "evidence[].genre",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > genre 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Evidence/properties/genre"
+  },
+  {
+   "path": "evidence[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > id 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Evidence/properties/id"
+  },
+  {
+   "path": "evidence[].name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > name 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Evidence/properties/name"
+  },
+  {
+   "path": "evidence[].narrative",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > narrative 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Evidence/properties/narrative"
+  },
+  {
+   "path": "evidence[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Evidence/properties/type"
+  },
+  {
+   "path": "expirationDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "expirationDate 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/properties/expirationDate"
+  },
+  {
+   "path": "id",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/properties/id"
+  },
+  {
+   "path": "image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > caption 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/caption"
+  },
+  {
+   "path": "image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/id"
+  },
+  {
+   "path": "image.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/type"
+  },
+  {
+   "path": "issuanceDate",
+   "type": "datetime",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "issuanceDate 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/properties/issuanceDate"
+  },
+  {
+   "path": "issuer.additionalName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > additionalName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/additionalName"
+  },
+  {
+   "path": "issuer.address.addressCountry",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > addressCountry 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountry"
+  },
+  {
+   "path": "issuer.address.addressCountryCode",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > addressCountryCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressCountryCode"
+  },
+  {
+   "path": "issuer.address.addressLocality",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > addressLocality 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressLocality"
+  },
+  {
+   "path": "issuer.address.addressRegion",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > addressRegion 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/addressRegion"
+  },
+  {
+   "path": "issuer.address.geo.latitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > geo 0..1 > latitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/latitude"
+  },
+  {
+   "path": "issuer.address.geo.longitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > geo 0..1 > longitude 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/longitude"
+  },
+  {
+   "path": "issuer.address.geo.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > geo 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/GeoCoordinates/properties/type"
+  },
+  {
+   "path": "issuer.address.postOfficeBoxNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > postOfficeBoxNumber 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postOfficeBoxNumber"
+  },
+  {
+   "path": "issuer.address.postalCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > postalCode 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/postalCode"
+  },
+  {
+   "path": "issuer.address.streetAddress",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > address 0..1 > streetAddress 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/streetAddress"
+  },
+  {
+   "path": "issuer.address.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > address 0..1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Address/properties/type"
+  },
+  {
+   "path": "issuer.dateOfBirth",
+   "type": "date",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > dateOfBirth 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/dateOfBirth"
+  },
+  {
+   "path": "issuer.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > description 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/description"
+  },
+  {
+   "path": "issuer.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > email 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/email"
+  },
+  {
+   "path": "issuer.endorsementJwt[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsementJwt 0..1[0..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/endorsementJwt",
+   "constraints": {
+    "pattern": "^[a-zA-Z0-9_-]+\\.[a-zA-Z0-9_-]*\\.[a-zA-Z0-9_-]+$"
+   }
+  },
+  {
+   "path": "issuer.endorsement[].credentialSchema[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/id"
+  },
+  {
+   "path": "issuer.endorsement[].credentialSchema[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > credentialSchema 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialSchema/properties/type"
+  },
+  {
+   "path": "issuer.endorsement[].credentialStatus.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > credentialStatus 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/id"
+  },
+  {
+   "path": "issuer.endorsement[].credentialStatus.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > credentialStatus 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/CredentialStatus/properties/type"
+  },
+  {
+   "path": "issuer.endorsement[].credentialSubject.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > credentialSubject 1 > endorsementComment 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/endorsementComment"
+  },
+  {
+   "path": "issuer.endorsement[].credentialSubject.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > credentialSubject 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/id"
+  },
+  {
+   "path": "issuer.endorsement[].credentialSubject.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > credentialSubject 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementSubject/properties/type"
+  },
+  {
+   "path": "issuer.endorsement[].expirationDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > expirationDate 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/expirationDate"
+  },
+  {
+   "path": "issuer.endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/id"
+  },
+  {
+   "path": "issuer.endorsement[].issuanceDate",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > issuanceDate 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/issuanceDate"
+  },
+  {
+   "path": "issuer.endorsement[].refreshService.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > refreshService 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/id"
+  },
+  {
+   "path": "issuer.endorsement[].refreshService.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > refreshService 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/type"
+  },
+  {
+   "path": "issuer.endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "issuer 1 > endorsement 0..1[0..*] > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/EndorsementCredential/properties/type"
+  },
+  {
+   "path": "issuer.familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > familyName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyName"
+  },
+  {
+   "path": "issuer.familyNamePrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > familyNamePrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/familyNamePrefix"
+  },
+  {
+   "path": "issuer.givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > givenName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/givenName"
+  },
+  {
+   "path": "issuer.honorificPrefix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > honorificPrefix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificPrefix"
+  },
+  {
+   "path": "issuer.honorificSuffix",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > honorificSuffix 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/honorificSuffix"
+  },
+  {
+   "path": "issuer.id",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/id"
+  },
+  {
+   "path": "issuer.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/caption"
+  },
+  {
+   "path": "issuer.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > image 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/id"
+  },
+  {
+   "path": "issuer.image.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > image 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Image/properties/type"
+  },
+  {
+   "path": "issuer.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > name 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/name"
+  },
+  {
+   "path": "issuer.official",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > official 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/official"
+  },
+  {
+   "path": "issuer.otherIdentifier[].identifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > otherIdentifier 0..1[0..*] > identifier 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifier"
+  },
+  {
+   "path": "issuer.otherIdentifier[].identifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > otherIdentifier 0..1[0..*] > identifierType 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/identifierType",
+   "constraints": {
+    "enum": [
+     "sourcedId",
+     "systemId",
+     "productId",
+     "userName",
+     "accountId",
+     "emailAddress",
+     "nationalIdentityNumber",
+     "isbn",
+     "issn",
+     "lisSourcedId",
+     "oneRosterSourcedId",
+     "sisSourcedId",
+     "ltiContextId",
+     "ltiDeploymentId",
+     "ltiToolId",
+     "ltiPlatformId",
+     "ltiUserId",
+     "identifier"
+    ],
+    "pattern": "(ext:)[a-z|A-Z|0-9|.|-|_]+",
+    "extensible": true
+   }
+  },
+  {
+   "path": "issuer.otherIdentifier[].type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > otherIdentifier 0..1[0..*] > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/IdentifierEntry/properties/type"
+  },
+  {
+   "path": "issuer.patronymicName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > patronymicName 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/patronymicName"
+  },
+  {
+   "path": "issuer.phone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > phone 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/phone"
+  },
+  {
+   "path": "issuer.type[]",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "issuer 1 > type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/type"
+  },
+  {
+   "path": "issuer.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "issuer 1 > url 0..1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/Profile/properties/url"
+  },
+  {
+   "path": "name",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "name 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/properties/name"
+  },
+  {
+   "path": "refreshService.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "refreshService 0..1 > id 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/id"
+  },
+  {
+   "path": "refreshService.type",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "refreshService 0..1 > type 1",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/$defs/RefreshService/properties/type"
+  },
+  {
+   "path": "type[]",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "type 1[1..*]",
+   "source_id": "ob-v3p0-schema-cfp",
+   "locator": "src/ob_v3p0_achievementcredential_cfp_8a41b9a.json #/properties/type"
+  }
+ ],
+ "statement_paths": [
+  "credentialSubject.achievement.achievementType",
+  "issuanceDate"
+ ]
+}

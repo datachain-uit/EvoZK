@@ -1,0 +1,20 @@
+{
+ "fields": [
+  {
+   "name": "achievement_type",
+   "paths": {
+    "2.0": null,
+    "3.0-vcdm1.1": "credentialSubject.achievement.achievementType",
+    "3.0-vcdm2.0": "credentialSubject.achievement.achievementType"
+   }
+  },
+  {
+   "name": "issuance_date",
+   "paths": {
+    "2.0": "issuedOn",
+    "3.0-vcdm1.1": "issuanceDate",
+    "3.0-vcdm2.0": "validFrom"
+   }
+  }
+ ]
+}

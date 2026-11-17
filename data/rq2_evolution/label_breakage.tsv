@@ -1,0 +1,46 @@
+label_step	design	n_transitions	n_regen	n_no_regen	n_disagree	prediction
+major	A0_tight	5	5	0	0	incompatible (regeneration expected)
+major	A0_pad_TR	5	3	2	2	incompatible (regeneration expected)
+major	A0_pad_SS	5	3	2	2	incompatible (regeneration expected)
+major	PX	5	3	2	2	incompatible (regeneration expected)
+major	PX_strict	5	3	2	2	incompatible (regeneration expected)
+major	MR	5	0	5	5	incompatible (regeneration expected)
+major	A1	5	0	5	5	incompatible (regeneration expected)
+major	A0_pad_TR_contract	5	3	2	2	incompatible (regeneration expected)
+major	A0_pad_SS_contract	5	3	2	2	incompatible (regeneration expected)
+minor	A0_tight	3	2	1	2	compatible
+minor	A0_pad_TR	3	0	3	0	compatible
+minor	A0_pad_SS	3	0	3	0	compatible
+minor	PX	3	0	3	0	compatible
+minor	PX_strict	3	3	0	3	compatible
+minor	MR	3	0	3	0	compatible
+minor	A1	3	0	3	0	compatible
+minor	A0_pad_TR_contract	3	0	3	0	compatible
+minor	A0_pad_SS_contract	3	0	3	0	compatible
+patch	A0_tight	12	2	10	2	compatible
+patch	A0_pad_TR	12	2	10	2	compatible
+patch	A0_pad_SS	12	1	11	1	compatible
+patch	PX	12	1	11	1	compatible
+patch	PX_strict	12	3	9	3	compatible
+patch	MR	12	0	12	0	compatible
+patch	A1	12	0	12	0	compatible
+patch	A0_pad_TR_contract	12	1	11	1	compatible
+patch	A0_pad_SS_contract	12	0	12	0	compatible
+variant	A0_tight	1	1	0	0	no SemVer promise
+variant	A0_pad_TR	1	1	0	0	no SemVer promise
+variant	A0_pad_SS	1	0	1	0	no SemVer promise
+variant	PX	1	1	0	0	no SemVer promise
+variant	PX_strict	1	1	0	0	no SemVer promise
+variant	MR	1	0	1	0	no SemVer promise
+variant	A1	1	0	1	0	no SemVer promise
+variant	A0_pad_TR_contract	1	1	0	0	no SemVer promise
+variant	A0_pad_SS_contract	1	0	1	0	no SemVer promise
+non-SemVer	A0_tight	1	0	1	0	no SemVer promise
+non-SemVer	A0_pad_TR	1	0	1	0	no SemVer promise
+non-SemVer	A0_pad_SS	1	0	1	0	no SemVer promise
+non-SemVer	PX	1	0	1	0	no SemVer promise
+non-SemVer	PX_strict	1	0	1	0	no SemVer promise
+non-SemVer	MR	1	0	1	0	no SemVer promise
+non-SemVer	A1	1	0	1	0	no SemVer promise
+non-SemVer	A0_pad_TR_contract	1	0	1	0	no SemVer promise
+non-SemVer	A0_pad_SS_contract	1	0	1	0	no SemVer promise

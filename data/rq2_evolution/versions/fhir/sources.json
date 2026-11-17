@@ -1,0 +1,133 @@
+[
+ {
+  "id": "fhir-r4-pkg",
+  "url": "https://registry.npmjs.org/@hl7/hl7.fhir.r4.core/-/hl7.fhir.r4.core-4.0.1.tgz",
+  "title": "FHIR R4 package : Core (hl7.fhir.r4.core#4.0.1), npm scope @hl7, published by grahamegrieve (HL7 FHIR Product Director); local file pkg/hl7.fhir.r4.core-4.0.1.tgz",
+  "publisher": "HL7 International",
+  "version": "4.0.1",
+  "date": "2019-10-30",
+  "kind": "machine-readable schema",
+  "sha256": "161db3c1a47ab07961c799fc3b016af438a507f579b3bb7002deaeaf66affc2c"
+ },
+ {
+  "id": "fhir-r5-pkg",
+  "url": "https://registry.npmjs.org/hl7.fhir.r5.core/-/hl7.fhir.r5.core-5.0.0.tgz",
+  "title": "FHIR Core package hl7.fhir.r5.core#5.0.0 (npm, publisher grahamegrieve); local file pkg/hl7.fhir.r5.core-5.0.0.tgz",
+  "publisher": "HL7 International",
+  "version": "5.0.0",
+  "date": "2023-03-26",
+  "kind": "machine-readable schema",
+  "sha256": "09f22107bef64313545a50d2c127d20f81173c499a395672fae089bc23e72fab"
+ },
+ {
+  "id": "fhir-r6b4-pkg",
+  "url": "https://registry.npmjs.org/hl7.fhir.r6.core/-/hl7.fhir.r6.core-6.0.0-ballot4.tgz",
+  "title": "FHIR Core package hl7.fhir.r6.core#6.0.0-ballot4 (npm, publisher grahamegrieve); local file pkg/hl7.fhir.r6.core-6.0.0-ballot4.tgz; used only for datatype StructureDefinitions of 6.0.0-ballot5",
+  "publisher": "HL7 International",
+  "version": "6.0.0-ballot4",
+  "date": "2025-12-18",
+  "kind": "machine-readable schema",
+  "sha256": "3ca072bb32efd561a35f88f6d5be920fae9fedaee141a54b7dd246a42fc0cd58"
+ },
+ {
+  "id": "fhir-r6b5-observation-source",
+  "url": "https://raw.githubusercontent.com/HL7/fhir/3118a7ee9d25f73b2fa3578e035608159469e7e7/source/observation/structuredefinition-Observation.xml",
+  "title": "HL7/fhir build source, Observation StructureDefinition (differential), commit 3118a7ee (2026-07-17 13:43 +1000, 'Merge pull request #4284 from HL7/ballot-notes'); local file src/Observation-source-3118a7e-ballot5.xml",
+  "publisher": "HL7 International (official FHIR build repository github.com/HL7/fhir)",
+  "version": "6.0.0-ballot5 (inferred commit)",
+  "date": "2026-07-17",
+  "kind": "machine-readable schema",
+  "sha256": "40fefe2f97f5ad6534f7001d4e876072b4f214955b8645dec82f1e59409ee748"
+ },
+ {
+  "id": "fhir-r6b4-observation-source",
+  "url": "https://raw.githubusercontent.com/HL7/fhir/5d67a34a13a58961296ccac9dd9d63e1fe4fdbdd/source/observation/structuredefinition-Observation.xml",
+  "title": "HL7/fhir build source, Observation StructureDefinition, commit 5d67a34 ('bump version for publication', 2025-12-18) - validation input for the overlay method; local file src/Observation-source-5d67a34-ballot4.xml",
+  "publisher": "HL7 International (github.com/HL7/fhir)",
+  "version": "6.0.0-ballot4",
+  "date": "2025-12-18",
+  "kind": "machine-readable schema",
+  "sha256": "e269bab060ad55267b5ccaa5400d59203855e4e34aa142930a0ca3a87319213d"
+ },
+ {
+  "id": "fhir-r4-index",
+  "url": "https://hl7.org/fhir/R4/",
+  "title": "FHIR Release 4 (Technical Correction #1) (v4.0.1) index; '4.0.1, Oct-30 2019'",
+  "publisher": "HL7 International",
+  "version": "4.0.1",
+  "date": "2019-10-30",
+  "kind": "normative text"
+ },
+ {
+  "id": "fhir-r4-observation-page",
+  "url": "https://hl7.org/fhir/R4/observation.html",
+  "title": "Observation (R4) - Normative",
+  "publisher": "HL7 International",
+  "version": "4.0.1",
+  "date": "2019-10-30",
+  "kind": "normative text"
+ },
+ {
+  "id": "fhir-r5-index",
+  "url": "https://hl7.org/fhir/R5/",
+  "title": "FHIR v5.0.0: R5 (STU), generated Sun, Mar 26, 2023",
+  "publisher": "HL7 International",
+  "version": "5.0.0",
+  "date": "2023-03-26",
+  "kind": "normative text"
+ },
+ {
+  "id": "fhir-r5-observation-page",
+  "url": "https://hl7.org/fhir/R5/observation.html",
+  "title": "Observation (R5) - Normative (from v4.0.0)",
+  "publisher": "HL7 International",
+  "version": "5.0.0",
+  "date": "2023-03-26",
+  "kind": "normative text"
+ },
+ {
+  "id": "fhir-r6b5-index",
+  "url": "https://hl7.org/fhir/6.0.0-ballot5/",
+  "title": "FHIR v6.0.0-ballot5 - 'R6 Ballot (2nd Full Ballot)', generated Fri, Jul 17, 2026 17:27+1000",
+  "publisher": "HL7 International",
+  "version": "6.0.0-ballot5",
+  "date": "2026-07-17",
+  "kind": "normative text"
+ },
+ {
+  "id": "fhir-r6b5-observation-page",
+  "url": "https://hl7.org/fhir/6.0.0-ballot5/observation.html",
+  "title": "Observation (6.0.0-ballot5) resource content table - used to cross-check the source element list",
+  "publisher": "HL7 International",
+  "version": "6.0.0-ballot5",
+  "date": "2026-07-17",
+  "kind": "normative text"
+ },
+ {
+  "id": "fhir-r6-package-listing",
+  "url": "https://packages2.fhir.org/packages/hl7.fhir.r6.core",
+  "title": "FHIR package registry listing for hl7.fhir.r6.core: ballot1..ballot5, snapshot1 (2026-09-10, latest tag)",
+  "publisher": "HL7 International / FHIR Foundation package registry",
+  "version": "6.0.0-*",
+  "date": "2026-09-10",
+  "kind": "release notes"
+ },
+ {
+  "id": "fhir-r6-snapshot1-index",
+  "url": "https://hl7.org/fhir/6.0.0-snapshot1/",
+  "title": "FHIR 6.0.0-snapshot1 - 'R6 Snapshot (Sept 2026)' (NOT a ballot; not used)",
+  "publisher": "HL7 International",
+  "version": "6.0.0-snapshot1",
+  "date": "2026-09-10",
+  "kind": "release notes"
+ },
+ {
+  "id": "fhir-history",
+  "url": "https://hl7.org/fhir/history.html",
+  "title": "FHIR version history (current published = 5.0.0)",
+  "publisher": "HL7 International",
+  "version": "-",
+  "date": "-",
+  "kind": "release notes"
+ }
+]

@@ -1,0 +1,196 @@
+[
+ {
+  "id": "ukob-v3.1.0",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.0/dist/account-info-openapi.yaml",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.0)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.0",
+  "date": "2019-01-10",
+  "kind": "machine-readable schema",
+  "sha256": "58321c0dc02181277e5d16f31f8274e065dbb4502da820d7279145a491228980",
+  "git_commit": "efac2349d64867b87cb475db6943544c267183dc"
+ },
+ {
+  "id": "ukob-v3.1.1",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.1/dist/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.1)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.1",
+  "date": "2019-03-15",
+  "kind": "machine-readable schema",
+  "sha256": "cdf68481169a24ff0dd576d2ceef58372051783a4d373800a98881c4072dd9a6",
+  "git_commit": "1f1cefceb1a98d57d7a17797ceb0e0b0260737ad"
+ },
+ {
+  "id": "ukob-v3.1.2",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.2/dist/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.2)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.2",
+  "date": "2019-05-29",
+  "kind": "machine-readable schema",
+  "sha256": "33406df6069fe87891480742104499250143ff6b17c445698081a80dc69180bd",
+  "git_commit": "7bd6a97bd9bad1f6be4a75b7b633945232fb298c"
+ },
+ {
+  "id": "ukob-v3.1.4",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.4/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.4)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.4",
+  "date": "2020-04-09",
+  "kind": "machine-readable schema",
+  "sha256": "9db4840874c36abecfce769b91253c328b0d899d737ce939b75f7ad3bdc0d578",
+  "git_commit": "ab62f5b179ed3e6d4879d92a203c8cd47f537cee"
+ },
+ {
+  "id": "ukob-v3.1.5",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.5/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.5)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.5",
+  "date": "2020-04-09",
+  "kind": "machine-readable schema",
+  "sha256": "4bb1946e92655bf93a97a48ebc5c1ee279026f3bfee445710bc2ef27c7849362",
+  "git_commit": "07e0afccc6043f76be53b183acf932ad61b3c78e"
+ },
+ {
+  "id": "ukob-v3.1.6",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.6/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.6)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.6",
+  "date": "2020-07-23",
+  "kind": "machine-readable schema",
+  "sha256": "208a7ca769285548e8fa1db12bba9679ab18cf1c0c02bb1f9d34c3d18cdb9bfd",
+  "git_commit": "8cd98a037cceb83ff85ef57d11d2dc7ac14f496e"
+ },
+ {
+  "id": "ukob-v3.1.7",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.7/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.7)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.7",
+  "date": "2021-02-16",
+  "kind": "machine-readable schema",
+  "sha256": "d01b1bf8b443e70f8367298d5a5847bf17601bd8e4527911f66f79c3f38c1d98",
+  "git_commit": "bf4adba8c5d3fa5655e29e4cd9ab1fda2f00117c"
+ },
+ {
+  "id": "ukob-v3.1.8",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.8/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.8)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.8",
+  "date": "2021-03-26",
+  "kind": "machine-readable schema",
+  "sha256": "6065acde2d5a3c433e85fe8691eeb88eb712b35882c27922307cc8563fd50947",
+  "git_commit": "c6a779beff83168a9eb4e71ecf0ccbc1eaf552f9"
+ },
+ {
+  "id": "ukob-v3.1.9",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.9/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.9)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.9",
+  "date": "2021-10-20",
+  "kind": "machine-readable schema",
+  "sha256": "3047fa0b90fe1391c8c96210596558e86fa30a3304bdcba239e9219f3a956002",
+  "git_commit": "b82dcaf1d8b0c922a871c37c7cec120ce675a30d"
+ },
+ {
+  "id": "ukob-v3.1.10",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.10/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.10)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.10",
+  "date": "2022-04-05",
+  "kind": "machine-readable schema",
+  "sha256": "d3955181fd5f2f9a94fc59966058c16007c181957d3a897feda87ac6ad040989",
+  "git_commit": "3abc6df7e35576c1b71bdc91fada669af2420a96"
+ },
+ {
+  "id": "ukob-v3.1.11",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v3.1.11/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v3.1.11)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v3.1.11",
+  "date": "2023-06-19",
+  "kind": "machine-readable schema",
+  "sha256": "36afb5a9a76a79c74fe523e6a84ccfc002cf7f6b74f1c304ea22af27510c442f",
+  "git_commit": "a2e935d8bcf4728214ad516fd914b808573c91b6"
+ },
+ {
+  "id": "ukob-v4.0",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v4.0/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v4.0)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v4.0",
+  "date": "2024-06-28",
+  "kind": "machine-readable schema",
+  "sha256": "2128574a4c53f8de173b878cb6b4a91751418bec76dccca7a885b8b21fcc4b78",
+  "git_commit": "37b77536a7955065d57ca7f9dbd7466918a063e2"
+ },
+ {
+  "id": "ukob-v4.0.1",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v4.0.1/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v4.0.1)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v4.0.1",
+  "date": "2026-04-01",
+  "kind": "machine-readable schema",
+  "sha256": "85e871128c87af44baf611177ccf072126aeacd513ba9558da18342be1b4e42b",
+  "git_commit": "2011fb5ec95e90df2e23143e8c6db643f03a1c2a"
+ },
+ {
+  "id": "ukob-v4.0.1-Update-1",
+  "url": "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/v4.0.1-Update-1/dist/openapi/account-info-openapi.json",
+  "title": "OBIE Read/Write API - Account and Transaction API Specification OpenAPI (v4.0.1-Update-1)",
+  "publisher": "Open Banking Limited (OpenBankingUK GitHub organisation)",
+  "version": "v4.0.1-Update-1",
+  "date": "2026-09-18",
+  "kind": "machine-readable schema",
+  "sha256": "51afc7e4ff3ea1e9f216c17b11860e2cd34b49a46883959a77497c57e0d23c16",
+  "git_commit": "484a1795680d9852600247878b9fd2bfe584c0aa"
+ },
+ {
+  "id": "ukob-news-v4.0",
+  "url": "https://www.openbanking.org.uk/news/obl-publishes-open-banking-standard-v4-0-to-assure-future-ecosystem-growth/",
+  "title": "OBL publishes Open Banking Standard v4.0",
+  "publisher": "Open Banking Limited",
+  "version": "4.0",
+  "date": "2024-06-28",
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "ukob-news-v4.0.1",
+  "url": "https://www.openbanking.org.uk/news/obl-publishes-open-banking-standard-v4-0-1/",
+  "title": "OBL publishes Open Banking Standard v4.0.1",
+  "publisher": "Open Banking Limited",
+  "version": "4.0.1",
+  "date": "2026-04-01",
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "ukob-vc-v4.0.1",
+  "url": "https://openbankinguk.github.io/read-write-api-site3/v4.0.1/version-control.html",
+  "title": "Read/Write API v4.0.1 Version Control (change log)",
+  "publisher": "Open Banking Limited",
+  "version": "4.0.1",
+  "date": "2026-04-01",
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "ukob-doc-v3.1.8-transactions",
+  "url": "https://openbankinguk.github.io/read-write-api-site3/v3.1.8/resources-and-data-models/aisp/Transactions.html",
+  "title": "Transactions - v3.1.8 (Mutability section: 'Since Version 3.1.5, the mutability for a transaction has been made explicit')",
+  "publisher": "Open Banking Limited",
+  "version": "3.1.8",
+  "date": null,
+  "kind": "normative text",
+  "sha256": null
+ }
+]

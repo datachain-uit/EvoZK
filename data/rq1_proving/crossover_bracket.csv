@@ -1,0 +1,4 @@
+backend,timed_sigmas,largest_sigma_below,smallest_sigma_above,ordered,equivalent_sigmas,inconclusive_sigmas
+groth16,9 16 22 31 58 64 82 83 128 168 253 255 256 341 348 379 405 428 512,83,128,yes,,
+rapidsnark,9 16 22 31 58 64 82 83 128 168 253 255 256 341 348 379 405 428 512,128,253,yes,,168
+plonk,31 64 82 128,31,128,yes,64 82,

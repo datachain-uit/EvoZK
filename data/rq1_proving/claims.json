@@ -1,0 +1,145 @@
+{
+ "H-PX": {
+  "status": "SUPPORTED",
+  "per_backend": {
+   "S_MR_h32_range1/S_PX_m1_range1": {
+    "groth16": "DIFFERENT+",
+    "rapidsnark": "DIFFERENT+",
+    "plonk": "DIFFERENT+",
+    "fflonk": "DIFFERENT+"
+   },
+   "S_MR_h32_range1/S_PX_m4_range1": {
+    "groth16": "DIFFERENT+",
+    "rapidsnark": "DIFFERENT+",
+    "plonk": "DIFFERENT+",
+    "fflonk": "DIFFERENT+"
+   }
+  }
+ },
+ "H-sigma": {
+  "status": "SUPPORTED",
+  "per_backend": {
+   "A0_K64_d11/A1_d11": {
+    "groth16": "DIFFERENT+",
+    "rapidsnark": "DIFFERENT+",
+    "plonk": "DIFFERENT+",
+    "fflonk": "DIFFERENT+"
+   },
+   "A0_K256_d11/A0_K64_d11": {
+    "groth16": "DIFFERENT+",
+    "rapidsnark": "DIFFERENT+",
+    "plonk": "DIFFERENT+",
+    "fflonk": "DIFFERENT+"
+   },
+   "A0_K256_d11/A1_d11": {
+    "groth16": "DIFFERENT+",
+    "rapidsnark": "DIFFERENT+",
+    "plonk": "DIFFERENT+",
+    "fflonk": "DIFFERENT+"
+   }
+  }
+ },
+ "H-eq": {
+  "status": "SUPPORTED",
+  "per_backend": {
+   "S_PX_m4_range1/S_A0_K4_range1": {
+    "groth16": "EQUIVALENT+",
+    "rapidsnark": "EQUIVALENT+",
+    "plonk": "EQUIVALENT-",
+    "fflonk": "EQUIVALENT-"
+   }
+  }
+ },
+ "H-cap": {
+  "status": "no direction pre-specified",
+  "per_backend": {
+   "A0_K16/A0_K4": {
+    "groth16": "DIFFERENT+",
+    "rapidsnark": "EQUIVALENT+",
+    "plonk": "EQUIVALENT+",
+    "fflonk": "EQUIVALENT+"
+   },
+   "A0_K31/A0_K4": {
+    "groth16": "DIFFERENT+",
+    "rapidsnark": "DIFFERENT+",
+    "plonk": "EQUIVALENT+",
+    "fflonk": "EQUIVALENT+"
+   }
+  }
+ },
+ "H-exp": {
+  "status": "no direction pre-specified",
+  "per_backend": {
+   "PX1/A1": {
+    "groth16": "INCONCLUSIVE+",
+    "rapidsnark": "EQUIVALENT+",
+    "plonk": "EQUIVALENT+",
+    "fflonk": "EQUIVALENT+"
+   },
+   "PX4/A1": {
+    "groth16": "DIFFERENT+",
+    "rapidsnark": "EQUIVALENT+",
+    "plonk": "DIFFERENT+",
+    "fflonk": "DIFFERENT+"
+   }
+  }
+ },
+ "H-X1": {
+  "status": "NOT SUPPORTED",
+  "per_backend": {
+   "groth16": {
+    "9": "below",
+    "16": "below",
+    "22": "below",
+    "31": "below",
+    "58": "below",
+    "64": "below",
+    "82": "below",
+    "83": "below",
+    "128": "above",
+    "168": "above",
+    "253": "above",
+    "255": "above",
+    "256": "above",
+    "341": "above",
+    "348": "above",
+    "379": "above",
+    "405": "above",
+    "428": "above",
+    "512": "above"
+   },
+   "rapidsnark": {
+    "9": "below",
+    "16": "below",
+    "22": "below",
+    "31": "below",
+    "58": "below",
+    "64": "below",
+    "82": "below",
+    "83": "below",
+    "128": "below",
+    "168": "INCONCLUSIVE",
+    "253": "above",
+    "255": "above",
+    "256": "above",
+    "341": "above",
+    "348": "above",
+    "379": "above",
+    "405": "above",
+    "428": "above",
+    "512": "above"
+   }
+  }
+ },
+ "H-X2": {
+  "status": "DOMAIN",
+  "per_backend": {
+   "plonk": {
+    "31": "below",
+    "64": "EQUIVALENT",
+    "82": "EQUIVALENT",
+    "128": "above"
+   }
+  }
+ }
+}

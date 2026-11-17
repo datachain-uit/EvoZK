@@ -1,0 +1,15 @@
+source,family,numerator,denominator,backend,psi_vs_poseidon,ci90_lo,ci90_hi
+contrasts,mimc,H_mimc_A0256_d11,H_mimc_A1_d11,groth16,0.686501,0.67082,0.704002
+contrasts,mimc,H_mimc_A0256_d11,H_mimc_A1_d11,rapidsnark,1.31847,1.295422,1.334193
+contrasts,mimc,H_mimc_A04_d11,H_mimc_A1_d11,groth16,0.211734,0.196016,0.23625
+contrasts,mimc,H_mimc_A04_d11,H_mimc_A1_d11,rapidsnark,0.172255,0.149316,0.194343
+contrasts,mimc,H_mimc_A064_d11,H_mimc_A1_d11,groth16,0.4274,0.411497,0.447169
+contrasts,mimc,H_mimc_A064_d11,H_mimc_A1_d11,rapidsnark,0.687745,0.670379,0.709179
+contrasts,mimc,H_mimc_MR32_d11,H_mimc_PX2_d11,groth16,0.153409,0.139568,0.168496
+contrasts,mimc,H_mimc_MR32_d11,H_mimc_PX2_d11,rapidsnark,0.39663,0.368798,0.419547
+contrasts,mimc,H_mimc_PX2_d11,H_mimc_A1_d11,groth16,0.016551,-0.00346,0.038467
+contrasts,mimc,H_mimc_PX2_d11,H_mimc_A1_d11,rapidsnark,0.031222,0.009127,0.057218
+contrasts,sha256,H_sha256_A04_d11,H_sha256_A1_d11,groth16,-0.054907,-0.070928,-0.034288
+contrasts,sha256,H_sha256_A04_d11,H_sha256_A1_d11,rapidsnark,0.011148,-0.007611,0.025268
+contrasts,sha256,H_sha256_PX2_d11,H_sha256_A1_d11,groth16,-0.003115,-0.021229,0.012964
+contrasts,sha256,H_sha256_PX2_d11,H_sha256_A1_d11,rapidsnark,0.014586,-0.000255,0.028824

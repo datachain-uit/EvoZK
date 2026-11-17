@@ -1,0 +1,106 @@
+{
+ "domain": "xbrl",
+ "record_type": "xBRL-JSON fact object (simple fact; core structure + open taxonomy-defined dimensions)",
+ "version": "CR-2018-12-12",
+ "release_date": "2018-12-12",
+ "status": "candidate",
+ "source_ids": [
+  "xbrljson-CR-2018-12-12",
+  "xbrljson-history"
+ ],
+ "root": "fact object (member of Report.facts)",
+ "paths": [
+  {
+   "path": "accuracy",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5 JSON Object: Fact"
+  },
+  {
+   "path": "aspects.concept",
+   "type": "code",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "1..1 (SQName)",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5.1 JSON Object: Aspects"
+  },
+  {
+   "path": "aspects.entity",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (SQName)",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5.1 JSON Object: Aspects"
+  },
+  {
+   "path": "aspects.language",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5.1 JSON Object: Aspects"
+  },
+  {
+   "path": "aspects.noteId",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5.1 JSON Object: Aspects"
+  },
+  {
+   "path": "aspects.period",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (ISO 8601 instant, or start/end interval string)",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5.1 JSON Object: Aspects"
+  },
+  {
+   "path": "aspects.taxonomyDefined[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "0..n SQName-named members, one per taxonomy-defined aspect (open-ended)",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5.1 JSON Object: Aspects (Taxonomy-defined aspects)"
+  },
+  {
+   "path": "aspects.unit",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (unit string representation)",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5.1 JSON Object: Aspects"
+  },
+  {
+   "path": "value",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "1..1 (lexical value; JSON null for nil)",
+   "source_id": "xbrljson-CR-2018-12-12",
+   "locator": "§5 JSON Object: Fact",
+   "constraints": {
+    "nullable": true
+   }
+  }
+ ],
+ "statement_paths": [
+  "aspects.concept",
+  "value",
+  "aspects.period",
+  "aspects.unit"
+ ]
+}

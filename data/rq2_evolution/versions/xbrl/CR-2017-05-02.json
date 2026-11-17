@@ -1,0 +1,189 @@
+{
+ "domain": "xbrl",
+ "record_type": "xBRL-JSON fact object (simple fact; core structure + open taxonomy-defined dimensions)",
+ "version": "CR-2017-05-02",
+ "release_date": "2017-05-02",
+ "status": "candidate",
+ "source_ids": [
+  "xbrljson-CR-2017-05-02",
+  "xbrljson-history"
+ ],
+ "root": "fact object (member of Report.facts)",
+ "paths": [
+  {
+   "path": "accuracy",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (absent if infinite / not applicable)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5 JSON Object: Simple fact"
+  },
+  {
+   "path": "aspects.taxonomyDefined[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "0..n SQName-named members, one per taxonomy-defined aspect (open-ended)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Taxonomy-defined aspects)"
+  },
+  {
+   "path": "aspects.xbrl:concept",
+   "type": "code",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "1..1 (SQName)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Concept core aspect)"
+  },
+  {
+   "path": "aspects.xbrl:entity",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (SQName scheme:identifier)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Entity core aspect)"
+  },
+  {
+   "path": "aspects.xbrl:language",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Language core aspect)"
+  },
+  {
+   "path": "aspects.xbrl:periodEnd",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (xs:dateTime)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Period core aspect)"
+  },
+  {
+   "path": "aspects.xbrl:periodStart",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (xs:dateTime)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Period core aspect)"
+  },
+  {
+   "path": "aspects.xbrl:tupleOrder",
+   "type": "number",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Tuple order aspect; name cell typo 'xbrl:tupleParent' in table)"
+  },
+  {
+   "path": "aspects.xbrl:tupleParent",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (id of parent tuple)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Tuple parent aspect)"
+  },
+  {
+   "path": "aspects.xbrl:unit",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (unit string representation)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.1 JSON Object: Aspects (Unit core aspect)"
+  },
+  {
+   "path": "footnotes[].factRef",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "footnotes 0..n / factRef (fact footnotes only)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.2 JSON Object: Footnote"
+  },
+  {
+   "path": "footnotes[].footnote",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "footnotes 0..n / footnote (text footnotes only)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.2 JSON Object: Footnote"
+  },
+  {
+   "path": "footnotes[].footnoteType",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "footnotes 0..n / footnoteType",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.2 JSON Object: Footnote"
+  },
+  {
+   "path": "footnotes[].group",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "footnotes 0..n (absent if none) / group",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.2 JSON Object: Footnote"
+  },
+  {
+   "path": "footnotes[].language",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "footnotes 0..n / language (text footnotes only)",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5.2 JSON Object: Footnote"
+  },
+  {
+   "path": "id",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "0..1 (NCName; absent or generated if no {id})",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5 JSON Object: Simple fact"
+  },
+  {
+   "path": "value",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "1 (lexical value; JSON null for nil); required-ness not marked",
+   "source_id": "xbrljson-CR-2017-05-02",
+   "locator": "§5 JSON Object: Simple fact",
+   "constraints": {
+    "nullable": true
+   }
+  }
+ ],
+ "statement_paths": [
+  "aspects.xbrl:concept",
+  "value",
+  "aspects.xbrl:periodStart",
+  "aspects.xbrl:periodEnd",
+  "aspects.xbrl:unit"
+ ]
+}

@@ -1,0 +1,152 @@
+[
+ {
+  "id": "xbrljson-CR-2016-12-14",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/CR-2016-12-14/xbrl-json-CR-2016-12-14.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Candidate Recommendation, 2016-12-14)",
+  "publisher": "XBRL International Inc.",
+  "version": "CR-2016-12-14",
+  "date": "2016-12-14",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-CR-2017-05-02",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/CR-2017-05-02/xbrl-json-CR-2017-05-02.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Candidate Recommendation, 2017-05-02)",
+  "publisher": "XBRL International Inc.",
+  "version": "CR-2017-05-02",
+  "date": "2017-05-02",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-CR-2018-12-12",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/CR-2018-12-12/xbrl-json-CR-2018-12-12.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Candidate Recommendation, 2018-12-12)",
+  "publisher": "XBRL International Inc.",
+  "version": "CR-2018-12-12",
+  "date": "2018-12-12",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-CR-2019-06-12",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/CR-2019-06-12/xbrl-json-CR-2019-06-12.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Candidate Recommendation, 2019-06-12)",
+  "publisher": "XBRL International Inc.",
+  "version": "CR-2019-06-12",
+  "date": "2019-06-12",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-CR-2020-05-06",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/CR-2020-05-06/xbrl-json-CR-2020-05-06.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Candidate Recommendation, 2020-05-06)",
+  "publisher": "XBRL International Inc.",
+  "version": "CR-2020-05-06",
+  "date": "2020-05-06",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-CR-2020-10-14",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/CR-2020-10-14/xbrl-json-CR-2020-10-14.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Candidate Recommendation, 2020-10-14)",
+  "publisher": "XBRL International Inc.",
+  "version": "CR-2020-10-14",
+  "date": "2020-10-14",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-CR-2021-02-03",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/CR-2021-02-03/xbrl-json-CR-2021-02-03.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Candidate Recommendation, 2021-02-03)",
+  "publisher": "XBRL International Inc.",
+  "version": "CR-2021-02-03",
+  "date": "2021-02-03",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-CR-2021-07-07",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/CR-2021-07-07/xbrl-json-CR-2021-07-07.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Candidate Recommendation, 2021-07-07)",
+  "publisher": "XBRL International Inc.",
+  "version": "CR-2021-07-07",
+  "date": "2021-07-07",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-PR-2021-08-04",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/PR-2021-08-04/xbrl-json-PR-2021-08-04.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Proposed Recommendation, 2021-08-04)",
+  "publisher": "XBRL International Inc.",
+  "version": "PR-2021-08-04",
+  "date": "2021-08-04",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-REC-2021-10-13",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/REC-2021-10-13/xbrl-json-REC-2021-10-13.html",
+  "title": "xBRL-JSON: JSON representation of XBRL data (Recommendation, 2021-10-13)",
+  "publisher": "XBRL International Inc.",
+  "version": "REC-2021-10-13",
+  "date": "2021-10-13",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-REC-2021-10-13+errata-2023-04-19",
+  "url": "https://www.xbrl.org/Specification/xbrl-json/REC-2021-10-13+errata-2023-04-19/xbrl-json-REC-2021-10-13+corrected-errata-2023-04-19.html",
+  "title": "xBRL-JSON 1.0 Recommendation 13 October 2021 with errata corrections to 19 April 2023",
+  "publisher": "XBRL International Inc.",
+  "version": "REC-2021-10-13+errata-2023-04-19",
+  "date": "2023-04-19",
+  "kind": "normative text",
+  "sha256": null
+ },
+ {
+  "id": "xbrljson-history",
+  "url": "https://specifications.xbrl.org/release-history-open-information-model-xbrl-json.html",
+  "title": "Release history: xBRL-JSON (13 releases, PWD-2016-01-13 .. REC+errata 2023-04-19)",
+  "publisher": "XBRL International Inc.",
+  "version": "all",
+  "date": "2023-04-19",
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "xbrl-oim-index",
+  "url": "https://specifications.xbrl.org/work-product-index-open-information-model-open-information-model.html",
+  "title": "Open Information Model work product index (current xBRL-JSON = REC 2021-10-13 + errata 2023-04-19; no later version)",
+  "publisher": "XBRL International Inc.",
+  "version": "index",
+  "date": null,
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "fasb-grt-2026-release-notes",
+  "url": "https://xbrl.fasb.org/resources/annualrelease/2026/GAAP_Financial_Reporting_Taxonomy_Release_Notes.pdf",
+  "title": "2026 FASB GAAP Taxonomies Release Notes",
+  "publisher": "FASB",
+  "version": "2026",
+  "date": null,
+  "kind": "release notes",
+  "sha256": null
+ },
+ {
+  "id": "fasb-grt-2025-release-notes",
+  "url": "https://xbrl.fasb.org/resources/annualrelease/2025/GAAP_Financial_Reporting_Taxonomy_Release_Notes.pdf",
+  "title": "2025 FASB GAAP Taxonomies Release Notes",
+  "publisher": "FASB",
+  "version": "2025",
+  "date": null,
+  "kind": "release notes",
+  "sha256": null
+ }
+]

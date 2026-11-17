@@ -1,0 +1,1845 @@
+{
+ "domain": "datacite",
+ "record_type": "DataCite DOI metadata record (one <resource> element, kernel-4 namespace)",
+ "version": "4.7",
+ "release_date": "2026-03-03",
+ "status": "normative",
+ "source_ids": [
+  "dc-xsd-4.7",
+  "dc-doc-4.7"
+ ],
+ "root": "resource",
+ "paths": [
+  {
+   "path": "alternateIdentifiers.alternateIdentifier[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "alternateIdentifiers 0..1 > alternateIdentifier 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 230"
+  },
+  {
+   "path": "alternateIdentifiers.alternateIdentifier[].@alternateIdentifierType",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "alternateIdentifiers 0..1 > alternateIdentifier 0..*; @alternateIdentifierType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 231"
+  },
+  {
+   "path": "contributors.contributor[].@contributorType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..*; @contributorType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 190",
+   "constraints": {
+    "enum_count": 22,
+    "enum": [
+     "ContactPerson",
+     "DataCollector",
+     "DataCurator",
+     "DataManager",
+     "Distributor",
+     "Editor",
+     "HostingInstitution",
+     "Other",
+     "Producer",
+     "ProjectLeader",
+     "ProjectManager",
+     "ProjectMember",
+     "RegistrationAgency",
+     "RegistrationAuthority",
+     "RelatedPerson",
+     "ResearchGroup",
+     "RightsHolder",
+     "Researcher",
+     "Sponsor",
+     "Supervisor",
+     "Translator",
+     "WorkPackageLeader"
+    ],
+    "type": "contributorType"
+   }
+  },
+  {
+   "path": "contributors.contributor[].affiliation[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > affiliation 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 675",
+   "constraints": {
+    "type": "nonemptycontentStringType"
+   }
+  },
+  {
+   "path": "contributors.contributor[].affiliation[].@affiliationIdentifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > affiliation 0..*; @affiliationIdentifier use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 676"
+  },
+  {
+   "path": "contributors.contributor[].affiliation[].@affiliationIdentifierScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > affiliation 0..*; @affiliationIdentifierScheme use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 677"
+  },
+  {
+   "path": "contributors.contributor[].affiliation[].@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > affiliation 0..*; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 678"
+  },
+  {
+   "path": "contributors.contributor[].contributorName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > contributorName 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 178",
+   "constraints": {
+    "type": "nonemptycontentStringType"
+   }
+  },
+  {
+   "path": "contributors.contributor[].contributorName.@nameType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > contributorName 1..1; @nameType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 179",
+   "constraints": {
+    "enum_count": 2,
+    "enum": [
+     "Organizational",
+     "Personal"
+    ],
+    "type": "nameType"
+   }
+  },
+  {
+   "path": "contributors.contributor[].contributorName.@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > contributorName 1..1; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 180"
+  },
+  {
+   "path": "contributors.contributor[].familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > familyName 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 186"
+  },
+  {
+   "path": "contributors.contributor[].givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > givenName 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 185"
+  },
+  {
+   "path": "contributors.contributor[].nameIdentifier[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > nameIdentifier 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 632",
+   "constraints": {
+    "type": "nonemptycontentStringType"
+   }
+  },
+  {
+   "path": "contributors.contributor[].nameIdentifier[].@nameIdentifierScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > nameIdentifier 0..*; @nameIdentifierScheme use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 633"
+  },
+  {
+   "path": "contributors.contributor[].nameIdentifier[].@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "contributors 0..1 > contributor 0..* > nameIdentifier 0..*; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 634"
+  },
+  {
+   "path": "creators.creator[].affiliation[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > affiliation 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 675",
+   "constraints": {
+    "type": "nonemptycontentStringType"
+   }
+  },
+  {
+   "path": "creators.creator[].affiliation[].@affiliationIdentifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > affiliation 0..*; @affiliationIdentifier use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 676"
+  },
+  {
+   "path": "creators.creator[].affiliation[].@affiliationIdentifierScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > affiliation 0..*; @affiliationIdentifierScheme use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 677"
+  },
+  {
+   "path": "creators.creator[].affiliation[].@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > affiliation 0..*; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 678"
+  },
+  {
+   "path": "creators.creator[].creatorName",
+   "type": "string",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > creatorName 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 67"
+  },
+  {
+   "path": "creators.creator[].creatorName.@nameType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > creatorName 1..1; @nameType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 68",
+   "constraints": {
+    "enum_count": 2,
+    "enum": [
+     "Organizational",
+     "Personal"
+    ],
+    "type": "nameType"
+   }
+  },
+  {
+   "path": "creators.creator[].creatorName.@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > creatorName 1..1; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 69"
+  },
+  {
+   "path": "creators.creator[].familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > familyName 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 75"
+  },
+  {
+   "path": "creators.creator[].givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > givenName 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 74"
+  },
+  {
+   "path": "creators.creator[].nameIdentifier[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > nameIdentifier 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 632",
+   "constraints": {
+    "type": "nonemptycontentStringType"
+   }
+  },
+  {
+   "path": "creators.creator[].nameIdentifier[].@nameIdentifierScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > nameIdentifier 0..*; @nameIdentifierScheme use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 633"
+  },
+  {
+   "path": "creators.creator[].nameIdentifier[].@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "creators 1..1 > creator 1..* > nameIdentifier 0..*; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 634"
+  },
+  {
+   "path": "dates.date[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "dates 0..1 > date 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 206"
+  },
+  {
+   "path": "dates.date[].@dateInformation",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "dates 0..1 > date 0..*; @dateInformation use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 208"
+  },
+  {
+   "path": "dates.date[].@dateType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "dates 0..1 > date 0..*; @dateType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 207",
+   "constraints": {
+    "enum_count": 12,
+    "enum": [
+     "Accepted",
+     "Available",
+     "Collected",
+     "Copyrighted",
+     "Coverage",
+     "Created",
+     "Issued",
+     "Other",
+     "Submitted",
+     "Updated",
+     "Valid",
+     "Withdrawn"
+    ],
+    "type": "dateType"
+   }
+  },
+  {
+   "path": "descriptions.description[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "descriptions 0..1 > description 0..* (mixed content text)",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 322"
+  },
+  {
+   "path": "descriptions.description[].@descriptionType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "descriptions 0..1 > description 0..*; @descriptionType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 328",
+   "constraints": {
+    "enum_count": 6,
+    "enum": [
+     "Abstract",
+     "Methods",
+     "SeriesInformation",
+     "TableOfContents",
+     "TechnicalInfo",
+     "Other"
+    ],
+    "type": "descriptionType"
+   }
+  },
+  {
+   "path": "descriptions.description[].@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "descriptions 0..1 > description 0..*; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 329"
+  },
+  {
+   "path": "formats.format[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "formats 0..1 > format 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 277"
+  },
+  {
+   "path": "fundingReferences.fundingReference[].awardNumber",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "fundingReferences 0..1 > fundingReference 0..* > awardNumber 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 409"
+  },
+  {
+   "path": "fundingReferences.fundingReference[].awardNumber.@awardURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "fundingReferences 0..1 > fundingReference 0..* > awardNumber 0..1; @awardURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 410"
+  },
+  {
+   "path": "fundingReferences.fundingReference[].awardTitle",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "fundingReferences 0..1 > fundingReference 0..* > awardTitle 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 415"
+  },
+  {
+   "path": "fundingReferences.fundingReference[].funderIdentifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "fundingReferences 0..1 > fundingReference 0..* > funderIdentifier 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 396"
+  },
+  {
+   "path": "fundingReferences.fundingReference[].funderIdentifier.@funderIdentifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "fundingReferences 0..1 > fundingReference 0..* > funderIdentifier 0..1; @funderIdentifierType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 397",
+   "constraints": {
+    "enum_count": 5,
+    "enum": [
+     "ISNI",
+     "GRID",
+     "ROR",
+     "Crossref Funder ID",
+     "Other"
+    ],
+    "type": "funderIdentifierType"
+   }
+  },
+  {
+   "path": "fundingReferences.fundingReference[].funderIdentifier.@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "fundingReferences 0..1 > fundingReference 0..* > funderIdentifier 0..1; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 398"
+  },
+  {
+   "path": "fundingReferences.fundingReference[].funderName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "fundingReferences 0..1 > fundingReference 0..* > funderName 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 382",
+   "constraints": {
+    "type": "nonemptycontentStringType"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationBox[].eastBoundLongitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationBox 0..1 (in repeating choice) > eastBoundLongitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 698",
+   "constraints": {
+    "type": "longitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationBox[].northBoundLatitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationBox 0..1 (in repeating choice) > northBoundLatitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 700",
+   "constraints": {
+    "type": "latitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationBox[].southBoundLatitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationBox 0..1 (in repeating choice) > southBoundLatitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 699",
+   "constraints": {
+    "type": "latitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationBox[].westBoundLongitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationBox 0..1 (in repeating choice) > westBoundLongitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 697",
+   "constraints": {
+    "type": "longitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationPlace[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationPlace 0..1 (in repeating choice)",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 341"
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationPoint[].pointLatitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationPoint 0..1 (in repeating choice) > pointLatitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 692",
+   "constraints": {
+    "type": "latitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationPoint[].pointLongitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationPoint 0..1 (in repeating choice) > pointLongitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 691",
+   "constraints": {
+    "type": "longitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationPolygon[].inPolygonPoint.pointLatitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationPolygon 0..* (in repeating choice) > inPolygonPoint 0..1 > pointLatitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 692",
+   "constraints": {
+    "type": "latitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationPolygon[].inPolygonPoint.pointLongitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationPolygon 0..* (in repeating choice) > inPolygonPoint 0..1 > pointLongitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 691",
+   "constraints": {
+    "type": "longitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationPolygon[].polygonPoint[].pointLatitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationPolygon 0..* (in repeating choice) > polygonPoint 4..* > pointLatitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 692",
+   "constraints": {
+    "type": "latitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "geoLocations.geoLocation[].geoLocationPolygon[].polygonPoint[].pointLongitude",
+   "type": "number",
+   "required": false,
+   "array_bounds": [
+    null,
+    null,
+    null
+   ],
+   "cardinality_text": "geoLocations 0..1 > geoLocation 0..* > geoLocationPolygon 0..* (in repeating choice) > polygonPoint 4..* > pointLongitude 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 691",
+   "constraints": {
+    "type": "longitudeType",
+    "base": "xs:float"
+   }
+  },
+  {
+   "path": "identifier",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "identifier 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 47",
+   "constraints": {
+    "type": "nonemptycontentStringType"
+   }
+  },
+  {
+   "path": "identifier.@identifierType",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "identifier 1..1; @identifierType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 48"
+  },
+  {
+   "path": "language",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "language 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 216"
+  },
+  {
+   "path": "publicationYear",
+   "type": "integer",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "publicationYear 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 119",
+   "constraints": {
+    "pattern": "[\\d]{4}",
+    "type": "yearType",
+    "base": "xs:token"
+   }
+  },
+  {
+   "path": "publisher",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "publisher 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 110",
+   "constraints": {
+    "type": "nonemptycontentStringType"
+   }
+  },
+  {
+   "path": "publisher.@publisherIdentifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "publisher 1..1; @publisherIdentifier use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 111"
+  },
+  {
+   "path": "publisher.@publisherIdentifierScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "publisher 1..1; @publisherIdentifierScheme use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 112"
+  },
+  {
+   "path": "publisher.@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "publisher 1..1; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 113"
+  },
+  {
+   "path": "publisher.@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "publisher 1..1; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 114"
+  },
+  {
+   "path": "relatedIdentifiers.relatedIdentifier[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedIdentifiers 0..1 > relatedIdentifier 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 248"
+  },
+  {
+   "path": "relatedIdentifiers.relatedIdentifier[].@relatedIdentifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedIdentifiers 0..1 > relatedIdentifier 0..*; @relatedIdentifierType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 250",
+   "constraints": {
+    "enum_count": 23,
+    "enum": [
+     "ARK",
+     "arXiv",
+     "bibcode",
+     "CSTR",
+     "DOI",
+     "EAN13",
+     "EISSN",
+     "Handle",
+     "IGSN",
+     "ISBN",
+     "ISSN",
+     "ISTC",
+     "LISSN",
+     "LSID",
+     "PMID",
+     "PURL",
+     "RAiD",
+     "RRID",
+     "SWHID",
+     "UPC",
+     "URL",
+     "URN",
+     "w3id"
+    ],
+    "type": "relatedIdentifierType"
+   }
+  },
+  {
+   "path": "relatedIdentifiers.relatedIdentifier[].@relatedMetadataScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedIdentifiers 0..1 > relatedIdentifier 0..*; @relatedMetadataScheme use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 252"
+  },
+  {
+   "path": "relatedIdentifiers.relatedIdentifier[].@relationType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedIdentifiers 0..1 > relatedIdentifier 0..*; @relationType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 251",
+   "constraints": {
+    "enum_count": 39,
+    "enum": [
+     "IsCitedBy",
+     "Cites",
+     "IsSupplementTo",
+     "IsSupplementedBy",
+     "IsContinuedBy",
+     "Continues",
+     "IsNewVersionOf",
+     "IsPreviousVersionOf",
+     "IsPartOf",
+     "HasPart",
+     "IsPublishedIn",
+     "IsReferencedBy",
+     "References",
+     "IsDocumentedBy",
+     "Documents",
+     "IsCompiledBy",
+     "Compiles",
+     "IsVariantFormOf",
+     "IsOriginalFormOf",
+     "IsIdenticalTo",
+     "HasMetadata",
+     "IsMetadataFor",
+     "Reviews",
+     "IsReviewedBy",
+     "IsDerivedFrom",
+     "IsSourceOf",
+     "Describes",
+     "IsDescribedBy",
+     "HasVersion",
+     "IsVersionOf",
+     "Requires",
+     "IsRequiredBy",
+     "Obsoletes",
+     "IsObsoletedBy",
+     "Collects",
+     "IsCollectedBy",
+     "HasTranslation",
+     "IsTranslationOf",
+     "Other"
+    ],
+    "type": "relationType"
+   }
+  },
+  {
+   "path": "relatedIdentifiers.relatedIdentifier[].@relationTypeInformation",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedIdentifiers 0..1 > relatedIdentifier 0..*; @relationTypeInformation use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 255"
+  },
+  {
+   "path": "relatedIdentifiers.relatedIdentifier[].@resourceTypeGeneral",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedIdentifiers 0..1 > relatedIdentifier 0..*; @resourceTypeGeneral use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 249",
+   "constraints": {
+    "enum_count": 34,
+    "enum": [
+     "Audiovisual",
+     "Award",
+     "Book",
+     "BookChapter",
+     "Collection",
+     "ComputationalNotebook",
+     "ConferencePaper",
+     "ConferenceProceeding",
+     "DataPaper",
+     "Dataset",
+     "Dissertation",
+     "Event",
+     "Image",
+     "Instrument",
+     "InteractiveResource",
+     "Journal",
+     "JournalArticle",
+     "Model",
+     "OutputManagementPlan",
+     "PeerReview",
+     "PhysicalObject",
+     "Poster",
+     "Preprint",
+     "Presentation",
+     "Project",
+     "Report",
+     "Service",
+     "Software",
+     "Sound",
+     "Standard",
+     "StudyRegistration",
+     "Text",
+     "Workflow",
+     "Other"
+    ],
+    "type": "resourceType"
+   }
+  },
+  {
+   "path": "relatedIdentifiers.relatedIdentifier[].@schemeType",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedIdentifiers 0..1 > relatedIdentifier 0..*; @schemeType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 254"
+  },
+  {
+   "path": "relatedIdentifiers.relatedIdentifier[].@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedIdentifiers 0..1 > relatedIdentifier 0..*; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 253"
+  },
+  {
+   "path": "relatedItems.relatedItem[].@relatedItemType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..*; @relatedItemType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 599",
+   "constraints": {
+    "enum_count": 34,
+    "enum": [
+     "Audiovisual",
+     "Award",
+     "Book",
+     "BookChapter",
+     "Collection",
+     "ComputationalNotebook",
+     "ConferencePaper",
+     "ConferenceProceeding",
+     "DataPaper",
+     "Dataset",
+     "Dissertation",
+     "Event",
+     "Image",
+     "Instrument",
+     "InteractiveResource",
+     "Journal",
+     "JournalArticle",
+     "Model",
+     "OutputManagementPlan",
+     "PeerReview",
+     "PhysicalObject",
+     "Poster",
+     "Preprint",
+     "Presentation",
+     "Project",
+     "Report",
+     "Service",
+     "Software",
+     "Sound",
+     "Standard",
+     "StudyRegistration",
+     "Text",
+     "Workflow",
+     "Other"
+    ],
+    "type": "resourceType"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].@relationType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..*; @relationType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 604",
+   "constraints": {
+    "enum_count": 39,
+    "enum": [
+     "IsCitedBy",
+     "Cites",
+     "IsSupplementTo",
+     "IsSupplementedBy",
+     "IsContinuedBy",
+     "Continues",
+     "IsNewVersionOf",
+     "IsPreviousVersionOf",
+     "IsPartOf",
+     "HasPart",
+     "IsPublishedIn",
+     "IsReferencedBy",
+     "References",
+     "IsDocumentedBy",
+     "Documents",
+     "IsCompiledBy",
+     "Compiles",
+     "IsVariantFormOf",
+     "IsOriginalFormOf",
+     "IsIdenticalTo",
+     "HasMetadata",
+     "IsMetadataFor",
+     "Reviews",
+     "IsReviewedBy",
+     "IsDerivedFrom",
+     "IsSourceOf",
+     "Describes",
+     "IsDescribedBy",
+     "HasVersion",
+     "IsVersionOf",
+     "Requires",
+     "IsRequiredBy",
+     "Obsoletes",
+     "IsObsoletedBy",
+     "Collects",
+     "IsCollectedBy",
+     "HasTranslation",
+     "IsTranslationOf",
+     "Other"
+    ],
+    "type": "relationType"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].@relationTypeInformation",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..*; @relationTypeInformation use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 609"
+  },
+  {
+   "path": "relatedItems.relatedItem[].contributors.contributor[].@contributorType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > contributors 0..1 > contributor 0..*; @contributorType use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 588",
+   "constraints": {
+    "enum_count": 22,
+    "enum": [
+     "ContactPerson",
+     "DataCollector",
+     "DataCurator",
+     "DataManager",
+     "Distributor",
+     "Editor",
+     "HostingInstitution",
+     "Other",
+     "Producer",
+     "ProjectLeader",
+     "ProjectManager",
+     "ProjectMember",
+     "RegistrationAgency",
+     "RegistrationAuthority",
+     "RelatedPerson",
+     "ResearchGroup",
+     "RightsHolder",
+     "Researcher",
+     "Sponsor",
+     "Supervisor",
+     "Translator",
+     "WorkPackageLeader"
+    ],
+    "type": "contributorType"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].contributors.contributor[].contributorName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > contributors 0..1 > contributor 0..* > contributorName 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 578"
+  },
+  {
+   "path": "relatedItems.relatedItem[].contributors.contributor[].contributorName.@nameType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > contributors 0..1 > contributor 0..* > contributorName 1..1; @nameType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 579",
+   "constraints": {
+    "enum_count": 2,
+    "enum": [
+     "Organizational",
+     "Personal"
+    ],
+    "type": "nameType"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].contributors.contributor[].contributorName.@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > contributors 0..1 > contributor 0..* > contributorName 1..1; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 580"
+  },
+  {
+   "path": "relatedItems.relatedItem[].contributors.contributor[].familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > contributors 0..1 > contributor 0..* > familyName 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 586"
+  },
+  {
+   "path": "relatedItems.relatedItem[].contributors.contributor[].givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > contributors 0..1 > contributor 0..* > givenName 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 585"
+  },
+  {
+   "path": "relatedItems.relatedItem[].creators.creator[].creatorName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > creators 0..1 > creator 0..* > creatorName 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 480"
+  },
+  {
+   "path": "relatedItems.relatedItem[].creators.creator[].creatorName.@nameType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > creators 0..1 > creator 0..* > creatorName 1..1; @nameType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 481",
+   "constraints": {
+    "enum_count": 2,
+    "enum": [
+     "Organizational",
+     "Personal"
+    ],
+    "type": "nameType"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].creators.creator[].creatorName.@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > creators 0..1 > creator 0..* > creatorName 1..1; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 482"
+  },
+  {
+   "path": "relatedItems.relatedItem[].creators.creator[].familyName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > creators 0..1 > creator 0..* > familyName 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 488"
+  },
+  {
+   "path": "relatedItems.relatedItem[].creators.creator[].givenName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > creators 0..1 > creator 0..* > givenName 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 487"
+  },
+  {
+   "path": "relatedItems.relatedItem[].edition",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > edition 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 559"
+  },
+  {
+   "path": "relatedItems.relatedItem[].firstPage",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > firstPage 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 544"
+  },
+  {
+   "path": "relatedItems.relatedItem[].issue",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > issue 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 527"
+  },
+  {
+   "path": "relatedItems.relatedItem[].lastPage",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > lastPage 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 549"
+  },
+  {
+   "path": "relatedItems.relatedItem[].number",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > number 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 538"
+  },
+  {
+   "path": "relatedItems.relatedItem[].number.@numberType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > number 0..1; @numberType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 539",
+   "constraints": {
+    "enum_count": 4,
+    "enum": [
+     "Article",
+     "Chapter",
+     "Report",
+     "Other"
+    ],
+    "type": "numberType"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].publicationYear",
+   "type": "integer",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > publicationYear 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 514",
+   "constraints": {
+    "pattern": "[\\d]{4}",
+    "type": "yearType",
+    "base": "xs:token"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].publisher",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > publisher 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 554"
+  },
+  {
+   "path": "relatedItems.relatedItem[].relatedItemIdentifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > relatedItemIdentifier 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 441"
+  },
+  {
+   "path": "relatedItems.relatedItem[].relatedItemIdentifier.@relatedItemIdentifierType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > relatedItemIdentifier 0..1; @relatedItemIdentifierType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 442",
+   "constraints": {
+    "enum_count": 23,
+    "enum": [
+     "ARK",
+     "arXiv",
+     "bibcode",
+     "CSTR",
+     "DOI",
+     "EAN13",
+     "EISSN",
+     "Handle",
+     "IGSN",
+     "ISBN",
+     "ISSN",
+     "ISTC",
+     "LISSN",
+     "LSID",
+     "PMID",
+     "PURL",
+     "RAiD",
+     "RRID",
+     "SWHID",
+     "UPC",
+     "URL",
+     "URN",
+     "w3id"
+    ],
+    "type": "relatedIdentifierType"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].relatedItemIdentifier.@relatedMetadataScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > relatedItemIdentifier 0..1; @relatedMetadataScheme use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 447"
+  },
+  {
+   "path": "relatedItems.relatedItem[].relatedItemIdentifier.@schemeType",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > relatedItemIdentifier 0..1; @schemeType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 457"
+  },
+  {
+   "path": "relatedItems.relatedItem[].relatedItemIdentifier.@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > relatedItemIdentifier 0..1; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 452"
+  },
+  {
+   "path": "relatedItems.relatedItem[].titles.title[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > titles 0..1 > title 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 504"
+  },
+  {
+   "path": "relatedItems.relatedItem[].titles.title[].@titleType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > titles 0..1 > title 0..*; @titleType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 505",
+   "constraints": {
+    "enum_count": 4,
+    "enum": [
+     "AlternativeTitle",
+     "Subtitle",
+     "TranslatedTitle",
+     "Other"
+    ],
+    "type": "titleType"
+   }
+  },
+  {
+   "path": "relatedItems.relatedItem[].titles.title[].@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > titles 0..1 > title 0..*; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 506"
+  },
+  {
+   "path": "relatedItems.relatedItem[].volume",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "relatedItems 0..1 > relatedItem 0..* > volume 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 522"
+  },
+  {
+   "path": "resourceType",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "resourceType 1..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 136"
+  },
+  {
+   "path": "resourceType.@resourceTypeGeneral",
+   "type": "code",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "resourceType 1..1; @resourceTypeGeneral use=required",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 137",
+   "constraints": {
+    "enum_count": 34,
+    "enum": [
+     "Audiovisual",
+     "Award",
+     "Book",
+     "BookChapter",
+     "Collection",
+     "ComputationalNotebook",
+     "ConferencePaper",
+     "ConferenceProceeding",
+     "DataPaper",
+     "Dataset",
+     "Dissertation",
+     "Event",
+     "Image",
+     "Instrument",
+     "InteractiveResource",
+     "Journal",
+     "JournalArticle",
+     "Model",
+     "OutputManagementPlan",
+     "PeerReview",
+     "PhysicalObject",
+     "Poster",
+     "Preprint",
+     "Presentation",
+     "Project",
+     "Report",
+     "Service",
+     "Software",
+     "Sound",
+     "Standard",
+     "StudyRegistration",
+     "Text",
+     "Workflow",
+     "Other"
+    ],
+    "type": "resourceType"
+   }
+  },
+  {
+   "path": "rightsList.rights[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "rightsList 0..1 > rights 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 302"
+  },
+  {
+   "path": "rightsList.rights[].@rightsIdentifier",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "rightsList 0..1 > rights 0..*; @rightsIdentifier use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 304"
+  },
+  {
+   "path": "rightsList.rights[].@rightsIdentifierScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "rightsList 0..1 > rights 0..*; @rightsIdentifierScheme use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 305"
+  },
+  {
+   "path": "rightsList.rights[].@rightsURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "rightsList 0..1 > rights 0..*; @rightsURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 303"
+  },
+  {
+   "path": "rightsList.rights[].@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "rightsList 0..1 > rights 0..*; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 306"
+  },
+  {
+   "path": "rightsList.rights[].@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "rightsList 0..1 > rights 0..*; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 307"
+  },
+  {
+   "path": "sizes.size[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "sizes 0..1 > size 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 266"
+  },
+  {
+   "path": "subjects.subject[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "subjects 0..1 > subject 0..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 152"
+  },
+  {
+   "path": "subjects.subject[].@classificationCode",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "subjects 0..1 > subject 0..*; @classificationCode use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 156"
+  },
+  {
+   "path": "subjects.subject[].@schemeURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "subjects 0..1 > subject 0..*; @schemeURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 154"
+  },
+  {
+   "path": "subjects.subject[].@subjectScheme",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "subjects 0..1 > subject 0..*; @subjectScheme use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 153"
+  },
+  {
+   "path": "subjects.subject[].@valueURI",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "subjects 0..1 > subject 0..*; @valueURI use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 155"
+  },
+  {
+   "path": "subjects.subject[].@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "subjects 0..1 > subject 0..*; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 157"
+  },
+  {
+   "path": "titles.title[]",
+   "type": "string",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "titles 1..1 > title 1..*",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 93"
+  },
+  {
+   "path": "titles.title[].@titleType",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "titles 1..1 > title 1..*; @titleType use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 94",
+   "constraints": {
+    "enum_count": 4,
+    "enum": [
+     "AlternativeTitle",
+     "Subtitle",
+     "TranslatedTitle",
+     "Other"
+    ],
+    "type": "titleType"
+   }
+  },
+  {
+   "path": "titles.title[].@xml:lang",
+   "type": "code",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "titles 1..1 > title 1..*; @xml:lang use=optional",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 95"
+  },
+  {
+   "path": "version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "version 0..1",
+   "source_id": "dc-xsd-4.7",
+   "locator": "kernel-4.7/metadata.xsd line 286"
+  }
+ ],
+ "statement_paths": [
+  "publicationYear",
+  "resourceType.@resourceTypeGeneral"
+ ]
+}

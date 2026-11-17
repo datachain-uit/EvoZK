@@ -1,0 +1,1482 @@
+{
+ "n_call_records": 3600,
+ "rescore_mismatches": 0,
+ "groups": {
+  "qwen3.5-9b-q8_0|constrained|ob3|v1": {
+   "first_pass": {
+    "n": 900,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 0,
+     "E3_canon": 0,
+     "OK_correct": 672,
+     "OK_carrier_error": 204,
+     "E4_statement_wrong": 24
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E2_invalid": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "accepted": {
+     "k": 900,
+     "n": 900,
+     "rate": 1.0,
+     "ci95": [
+      0.9957,
+      1.0
+     ]
+    },
+    "fully_correct": {
+     "k": 672,
+     "n": 900,
+     "rate": 0.7467,
+     "ci95": [
+      0.7172,
+      0.774
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 24,
+     "n": 900,
+     "rate": 0.0267,
+     "ci95": [
+      0.018,
+      0.0394
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 24,
+     "n": 900,
+     "rate": 0.0267,
+     "ci95": [
+      0.018,
+      0.0394
+     ]
+    },
+    "carrier_only_error": {
+     "k": 204,
+     "n": 900,
+     "rate": 0.2267,
+     "ci95": [
+      0.2005,
+      0.2551
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "field_accuracy_accepted": 0.9815,
+    "statement_field_accuracy_accepted": 0.9989,
+    "carrier_field_accuracy_accepted": 0.9667,
+    "top_field_errors": [
+     [
+      "issuer.name:wrong",
+      210
+     ],
+     [
+      "result.score_percent:spurious",
+      18
+     ],
+     [
+      "achievement.achievement_type:wrong",
+      3
+     ],
+     [
+      "achievement.credits_awarded:missing",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 13.8045,
+     "p90": 14.3855,
+     "sum": 12368.9005
+    },
+    "tokens_out_median": 264.0,
+    "tokens_in_median": 1577.0,
+    "out_tokens_per_s_end_to_end_median": 19.121,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3152543744,
+    "peak_sys_mem_used_bytes": 5895901184,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|constrained|ob3|v2": {
+   "first_pass": {
+    "n": 900,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 42,
+     "E3_canon": 0,
+     "OK_correct": 669,
+     "OK_carrier_error": 177,
+     "E4_statement_wrong": 12
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 42,
+     "n": 900,
+     "rate": 0.0467,
+     "ci95": [
+      0.0347,
+      0.0625
+     ]
+    },
+    "E2_invalid": {
+     "k": 42,
+     "n": 900,
+     "rate": 0.0467,
+     "ci95": [
+      0.0347,
+      0.0625
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "accepted": {
+     "k": 858,
+     "n": 900,
+     "rate": 0.9533,
+     "ci95": [
+      0.9375,
+      0.9653
+     ]
+    },
+    "fully_correct": {
+     "k": 669,
+     "n": 900,
+     "rate": 0.7433,
+     "ci95": [
+      0.7138,
+      0.7708
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 12,
+     "n": 900,
+     "rate": 0.0133,
+     "ci95": [
+      0.0076,
+      0.0232
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 12,
+     "n": 858,
+     "rate": 0.014,
+     "ci95": [
+      0.008,
+      0.0243
+     ]
+    },
+    "carrier_only_error": {
+     "k": 177,
+     "n": 900,
+     "rate": 0.1967,
+     "ci95": [
+      0.172,
+      0.2239
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 42,
+     "n": 858,
+     "rate": 0.049,
+     "ci95": [
+      0.0364,
+      0.0655
+     ]
+    },
+    "field_accuracy_accepted": 0.9841,
+    "statement_field_accuracy_accepted": 0.9972,
+    "carrier_field_accuracy_accepted": 0.97,
+    "top_field_errors": [
+     [
+      "issuer.name:wrong",
+      180
+     ],
+     [
+      "results[*].result_type:missing",
+      9
+     ],
+     [
+      "results[*].value:missing",
+      9
+     ],
+     [
+      "achievement.credits_awarded:spurious",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 14.733,
+     "p90": 15.6929,
+     "sum": 13298.7809
+    },
+    "tokens_out_median": 282.5,
+    "tokens_in_median": 1656.0,
+    "out_tokens_per_s_end_to_end_median": 19.2522,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3153829888,
+    "peak_sys_mem_used_bytes": 5877932032,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|ob3|v1": {
+   "first_pass": {
+    "n": 900,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 15,
+     "E3_canon": 0,
+     "OK_correct": 672,
+     "OK_carrier_error": 204,
+     "E4_statement_wrong": 9
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 15,
+     "n": 900,
+     "rate": 0.0167,
+     "ci95": [
+      0.0101,
+      0.0273
+     ]
+    },
+    "E2_invalid": {
+     "k": 15,
+     "n": 900,
+     "rate": 0.0167,
+     "ci95": [
+      0.0101,
+      0.0273
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "accepted": {
+     "k": 885,
+     "n": 900,
+     "rate": 0.9833,
+     "ci95": [
+      0.9727,
+      0.9899
+     ]
+    },
+    "fully_correct": {
+     "k": 672,
+     "n": 900,
+     "rate": 0.7467,
+     "ci95": [
+      0.7172,
+      0.774
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 9,
+     "n": 900,
+     "rate": 0.01,
+     "ci95": [
+      0.0053,
+      0.0189
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 9,
+     "n": 885,
+     "rate": 0.0102,
+     "ci95": [
+      0.0054,
+      0.0192
+     ]
+    },
+    "carrier_only_error": {
+     "k": 204,
+     "n": 900,
+     "rate": 0.2267,
+     "ci95": [
+      0.2005,
+      0.2551
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 0,
+     "n": 885,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "field_accuracy_accepted": 0.9814,
+    "statement_field_accuracy_accepted": 0.9989,
+    "carrier_field_accuracy_accepted": 0.9666,
+    "top_field_errors": [
+     [
+      "issuer.name:wrong",
+      207
+     ],
+     [
+      "result.score_percent:spurious",
+      3
+     ],
+     [
+      "achievement.achievement_type:wrong",
+      3
+     ],
+     [
+      "achievement.credits_awarded:missing",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 13.7976,
+     "p90": 14.346,
+     "sum": 12356.0329
+    },
+    "tokens_out_median": 264.0,
+    "tokens_in_median": 1577.0,
+    "out_tokens_per_s_end_to_end_median": 19.135,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3151998976,
+    "peak_sys_mem_used_bytes": 5918953472,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|ob3|v2": {
+   "first_pass": {
+    "n": 900,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 45,
+     "E3_canon": 0,
+     "OK_correct": 669,
+     "OK_carrier_error": 177,
+     "E4_statement_wrong": 9
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 45,
+     "n": 900,
+     "rate": 0.05,
+     "ci95": [
+      0.0376,
+      0.0662
+     ]
+    },
+    "E2_invalid": {
+     "k": 45,
+     "n": 900,
+     "rate": 0.05,
+     "ci95": [
+      0.0376,
+      0.0662
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 900,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0043
+     ]
+    },
+    "accepted": {
+     "k": 855,
+     "n": 900,
+     "rate": 0.95,
+     "ci95": [
+      0.9338,
+      0.9624
+     ]
+    },
+    "fully_correct": {
+     "k": 669,
+     "n": 900,
+     "rate": 0.7433,
+     "ci95": [
+      0.7138,
+      0.7708
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 9,
+     "n": 900,
+     "rate": 0.01,
+     "ci95": [
+      0.0053,
+      0.0189
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 9,
+     "n": 855,
+     "rate": 0.0105,
+     "ci95": [
+      0.0055,
+      0.0199
+     ]
+    },
+    "carrier_only_error": {
+     "k": 177,
+     "n": 900,
+     "rate": 0.1967,
+     "ci95": [
+      0.172,
+      0.2239
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 42,
+     "n": 855,
+     "rate": 0.0491,
+     "ci95": [
+      0.0365,
+      0.0657
+     ]
+    },
+    "field_accuracy_accepted": 0.9843,
+    "statement_field_accuracy_accepted": 0.9972,
+    "carrier_field_accuracy_accepted": 0.9704,
+    "top_field_errors": [
+     [
+      "issuer.name:wrong",
+      177
+     ],
+     [
+      "results[*].result_type:missing",
+      9
+     ],
+     [
+      "results[*].value:missing",
+      9
+     ]
+    ],
+    "latency_s": {
+     "median": 14.7305,
+     "p90": 15.6655,
+     "sum": 13304.7747
+    },
+    "tokens_out_median": 282.5,
+    "tokens_in_median": 1656.0,
+    "out_tokens_per_s_end_to_end_median": 19.2481,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3152842752,
+    "peak_sys_mem_used_bytes": 5868621824,
+    "http_errors": 0,
+    "simulated": false
+   }
+  }
+ },
+ "pooled": {
+  "qwen3.5-9b-q8_0|constrained": {
+   "first_pass": {
+    "n": 1800,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 42,
+     "E3_canon": 0,
+     "OK_correct": 1341,
+     "OK_carrier_error": 381,
+     "E4_statement_wrong": 36
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 42,
+     "n": 1800,
+     "rate": 0.0233,
+     "ci95": [
+      0.0173,
+      0.0314
+     ]
+    },
+    "E2_invalid": {
+     "k": 42,
+     "n": 1800,
+     "rate": 0.0233,
+     "ci95": [
+      0.0173,
+      0.0314
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "accepted": {
+     "k": 1758,
+     "n": 1800,
+     "rate": 0.9767,
+     "ci95": [
+      0.9686,
+      0.9827
+     ]
+    },
+    "fully_correct": {
+     "k": 1341,
+     "n": 1800,
+     "rate": 0.745,
+     "ci95": [
+      0.7244,
+      0.7646
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 36,
+     "n": 1800,
+     "rate": 0.02,
+     "ci95": [
+      0.0145,
+      0.0276
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 36,
+     "n": 1758,
+     "rate": 0.0205,
+     "ci95": [
+      0.0148,
+      0.0282
+     ]
+    },
+    "carrier_only_error": {
+     "k": 381,
+     "n": 1800,
+     "rate": 0.2117,
+     "ci95": [
+      0.1934,
+      0.2311
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 42,
+     "n": 1758,
+     "rate": 0.0239,
+     "ci95": [
+      0.0177,
+      0.0321
+     ]
+    },
+    "field_accuracy_accepted": 0.9828,
+    "statement_field_accuracy_accepted": 0.998,
+    "carrier_field_accuracy_accepted": 0.9683,
+    "top_field_errors": [
+     [
+      "issuer.name:wrong",
+      390
+     ],
+     [
+      "result.score_percent:spurious",
+      18
+     ],
+     [
+      "results[*].result_type:missing",
+      9
+     ],
+     [
+      "results[*].value:missing",
+      9
+     ],
+     [
+      "achievement.credits_awarded:spurious",
+      3
+     ],
+     [
+      "achievement.achievement_type:wrong",
+      3
+     ],
+     [
+      "achievement.credits_awarded:missing",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 14.202,
+     "p90": 15.4921,
+     "sum": 25667.6815
+    },
+    "tokens_out_median": 272.0,
+    "tokens_in_median": 1635.5,
+    "out_tokens_per_s_end_to_end_median": 19.1865,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3153829888,
+    "peak_sys_mem_used_bytes": 5895901184,
+    "http_errors": 0,
+    "simulated": false
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "first_pass": {
+    "n": 1800,
+    "landing_counts": {
+     "E1_parse": 0,
+     "E2_invalid": 60,
+     "E3_canon": 0,
+     "OK_correct": 1341,
+     "OK_carrier_error": 381,
+     "E4_statement_wrong": 18
+    },
+    "E1_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E1_strict_parse_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "fenced_output": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "think_block": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "E2_invalid_of_parsed": {
+     "k": 60,
+     "n": 1800,
+     "rate": 0.0333,
+     "ci95": [
+      0.026,
+      0.0427
+     ]
+    },
+    "E2_invalid": {
+     "k": 60,
+     "n": 1800,
+     "rate": 0.0333,
+     "ci95": [
+      0.026,
+      0.0427
+     ]
+    },
+    "E3a_canon_fail": {
+     "k": 0,
+     "n": 1800,
+     "rate": 0.0,
+     "ci95": [
+      0.0,
+      0.0021
+     ]
+    },
+    "accepted": {
+     "k": 1740,
+     "n": 1800,
+     "rate": 0.9667,
+     "ci95": [
+      0.9573,
+      0.974
+     ]
+    },
+    "fully_correct": {
+     "k": 1341,
+     "n": 1800,
+     "rate": 0.745,
+     "ci95": [
+      0.7244,
+      0.7646
+     ]
+    },
+    "E4_statement_wrong": {
+     "k": 18,
+     "n": 1800,
+     "rate": 0.01,
+     "ci95": [
+      0.0063,
+      0.0158
+     ]
+    },
+    "E4_of_accepted": {
+     "k": 18,
+     "n": 1740,
+     "rate": 0.0103,
+     "ci95": [
+      0.0066,
+      0.0163
+     ]
+    },
+    "carrier_only_error": {
+     "k": 381,
+     "n": 1800,
+     "rate": 0.2117,
+     "ci95": [
+      0.1934,
+      0.2311
+     ]
+    },
+    "normalisation_changed_of_accepted": {
+     "k": 42,
+     "n": 1740,
+     "rate": 0.0241,
+     "ci95": [
+      0.0179,
+      0.0325
+     ]
+    },
+    "field_accuracy_accepted": 0.9829,
+    "statement_field_accuracy_accepted": 0.9979,
+    "carrier_field_accuracy_accepted": 0.9685,
+    "top_field_errors": [
+     [
+      "issuer.name:wrong",
+      384
+     ],
+     [
+      "results[*].result_type:missing",
+      9
+     ],
+     [
+      "results[*].value:missing",
+      9
+     ],
+     [
+      "result.score_percent:spurious",
+      3
+     ],
+     [
+      "achievement.achievement_type:wrong",
+      3
+     ],
+     [
+      "achievement.credits_awarded:missing",
+      3
+     ]
+    ],
+    "latency_s": {
+     "median": 14.1741,
+     "p90": 15.5156,
+     "sum": 25660.8076
+    },
+    "tokens_out_median": 272.0,
+    "tokens_in_median": 1635.5,
+    "out_tokens_per_s_end_to_end_median": 19.1927,
+    "peak_gpu_mem_used_mib": 8906,
+    "peak_engine_rss_bytes": 3152842752,
+    "peak_sys_mem_used_bytes": 5918953472,
+    "http_errors": 0,
+    "simulated": false
+   }
+  }
+ },
+ "stability": {
+  "qwen3.5-9b-q8_0|constrained|ob3|v1": {
+   "runs": 3,
+   "docs": 300,
+   "raw_identical": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "stable_and_correct": {
+    "k": 224,
+    "n": 300,
+    "rate": 0.7467,
+    "ci95": [
+     0.6945,
+     0.7926
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 300,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0126
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 300,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0126
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 300
+   }
+  },
+  "qwen3.5-9b-q8_0|constrained|ob3|v2": {
+   "runs": 3,
+   "docs": 300,
+   "raw_identical": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 286,
+    "n": 300,
+    "rate": 0.9533,
+    "ci95": [
+     0.9232,
+     0.972
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 286,
+    "n": 300,
+    "rate": 0.9533,
+    "ci95": [
+     0.9232,
+     0.972
+    ]
+   },
+   "stable_and_correct": {
+    "k": 223,
+    "n": 300,
+    "rate": 0.7433,
+    "ci95": [
+     0.691,
+     0.7895
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 286,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0133
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 300,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0126
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 286
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|ob3|v1": {
+   "runs": 3,
+   "docs": 300,
+   "raw_identical": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 295,
+    "n": 300,
+    "rate": 0.9833,
+    "ci95": [
+     0.9616,
+     0.9929
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 295,
+    "n": 300,
+    "rate": 0.9833,
+    "ci95": [
+     0.9616,
+     0.9929
+    ]
+   },
+   "stable_and_correct": {
+    "k": 224,
+    "n": 300,
+    "rate": 0.7467,
+    "ci95": [
+     0.6945,
+     0.7926
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 295,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0129
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 300,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0126
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 295
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained|ob3|v2": {
+   "runs": 3,
+   "docs": 300,
+   "raw_identical": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "same_landing": {
+    "k": 300,
+    "n": 300,
+    "rate": 1.0,
+    "ci95": [
+     0.9874,
+     1.0
+    ]
+   },
+   "all_runs_accepted": {
+    "k": 285,
+    "n": 300,
+    "rate": 0.95,
+    "ci95": [
+     0.9192,
+     0.9695
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 285,
+    "n": 300,
+    "rate": 0.95,
+    "ci95": [
+     0.9192,
+     0.9695
+    ]
+   },
+   "stable_and_correct": {
+    "k": 223,
+    "n": 300,
+    "rate": 0.7433,
+    "ci95": [
+     0.691,
+     0.7895
+    ]
+   },
+   "stable_but_raw_differs": 0,
+   "stable_only_after_normalisation": 0,
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 285,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0133
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 300,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0126
+    ]
+   },
+   "distinct_commitments_hist": {
+    "1": 285
+   }
+  }
+ },
+ "latency_pairs": {
+  "qwen3.5-9b-q8_0": {
+   "pairs": 1800,
+   "median_latency_ratio_constrained_over_unconstrained": 1.0004,
+   "p10": 0.9815,
+   "p90": 1.0196,
+   "median_tokens_out_diff": 0.0
+  }
+ },
+ "repair": {
+  "qwen3.5-9b-q8_0|constrained": {
+   "repair_calls": 0,
+   "repair_success": 0
+  },
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "repair_calls": 0,
+   "repair_success": 0
+  }
+ },
+ "stability_pooled": {
+  "qwen3.5-9b-q8_0|constrained": {
+   "raw_identical": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 586,
+    "n": 600,
+    "rate": 0.9767,
+    "ci95": [
+     0.9612,
+     0.9861
+    ]
+   },
+   "stable_and_correct": {
+    "k": 447,
+    "n": 600,
+    "rate": 0.745,
+    "ci95": [
+     0.7086,
+     0.7782
+    ]
+   },
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 586,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0065
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 600,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0064
+    ]
+   }
+  },
+  "qwen3.5-9b-q8_0|unconstrained": {
+   "raw_identical": {
+    "k": 600,
+    "n": 600,
+    "rate": 1.0,
+    "ci95": [
+     0.9936,
+     1.0
+    ]
+   },
+   "stable_commitment_all_runs": {
+    "k": 580,
+    "n": 600,
+    "rate": 0.9667,
+    "ci95": [
+     0.9491,
+     0.9783
+    ]
+   },
+   "stable_and_correct": {
+    "k": 447,
+    "n": 600,
+    "rate": 0.745,
+    "ci95": [
+     0.7086,
+     0.7782
+    ]
+   },
+   "E3b_commitment_unstable_of_ge2_accepted": {
+    "k": 0,
+    "n": 580,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0066
+    ]
+   },
+   "accept_reject_flip": {
+    "k": 0,
+    "n": 600,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.0064
+    ]
+   }
+  }
+ },
+ "maintenance": {
+  "ob3": {
+   "deterministic_mapping_loc_v1": 9,
+   "deterministic_mapping_loc_v2": 11,
+   "deterministic_mapping_lines_changed": 14,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [
+    "results[*].result_type",
+    "results[*].value",
+    "valid_from",
+    "valid_until"
+   ],
+   "schema_paths_removed": [
+    "expiration_date",
+    "issuance_date",
+    "result.grade",
+    "result.score_percent"
+   ],
+   "schema_paths_retyped": []
+  },
+  "fhir_imm": {
+   "deterministic_mapping_loc_v1": 8,
+   "deterministic_mapping_loc_v2": 8,
+   "deterministic_mapping_lines_changed": 10,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [
+    "reason[*].concept.code",
+    "reason[*].concept.system"
+   ],
+   "schema_paths_removed": [
+    "reason_code"
+   ],
+   "schema_paths_retyped": [
+    "protocol_applied.dose_number",
+    "protocol_applied.series_doses"
+   ]
+  },
+  "ukob_txn": {
+   "deterministic_mapping_loc_v1": 7,
+   "deterministic_mapping_loc_v2": 7,
+   "deterministic_mapping_lines_changed": 8,
+   "deterministic_parser_lines_changed": 0,
+   "llm_prompt_template_lines_changed": 0,
+   "schema_paths_added": [],
+   "schema_paths_removed": [],
+   "schema_paths_retyped": []
+  }
+ },
+ "planning": {
+  "qwen3.5-9b-q8_0": {
+   "unconstrained": {
+    "E4_rate": 0.01,
+    "n_extractions_for_E4_ci_halfwidth_0.03": 43,
+    "n_extractions_for_E4_ci_halfwidth_0.05": 16,
+    "accepted_rate": 0.9667
+   },
+   "constrained": {
+    "E4_rate": 0.02,
+    "n_extractions_for_E4_ci_halfwidth_0.03": 84,
+    "n_extractions_for_E4_ci_halfwidth_0.05": 31,
+    "accepted_rate": 0.9767
+   },
+   "n_per_condition_to_detect_E4_difference": 2319,
+   "n_per_condition_to_detect_accepted_difference": 4316,
+   "note": "independent-groups approximation; extractions are clustered by document and the conditions are paired, so treat as an upper bound and confirm with a paired/clustered analysis (e.g. McNemar per document) before registering n."
+  }
+ }
+}

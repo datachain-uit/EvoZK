@@ -1,0 +1,15 @@
+{
+ "1.2->2.0": {
+  "baseExtension.errorDeclaration.correctiveEventIDs.correctiveEventID[]": "errorDeclaration.correctiveEventIDs.correctiveEventID[]",
+  "baseExtension.errorDeclaration.declarationTime": "errorDeclaration.declarationTime",
+  "baseExtension.errorDeclaration.reason": "errorDeclaration.reason",
+  "baseExtension.eventID": "eventID",
+  "extension.destinationList.destination[].#value": "destinationList.destination[].#value",
+  "extension.destinationList.destination[].@type": "destinationList.destination[].@type",
+  "extension.quantityList.quantityElement[].epcClass": "quantityList.quantityElement[].epcClass",
+  "extension.quantityList.quantityElement[].quantity": "quantityList.quantityElement[].quantity",
+  "extension.quantityList.quantityElement[].uom": "quantityList.quantityElement[].uom",
+  "extension.sourceList.source[].#value": "sourceList.source[].#value",
+  "extension.sourceList.source[].@type": "sourceList.source[].@type"
+ }
+}

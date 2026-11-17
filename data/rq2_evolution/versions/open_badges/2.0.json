@@ -1,0 +1,2694 @@
+{
+ "domain": "open_badges",
+ "record_type": "Open Badges 2.0 earned badge: Assertion with embedded BadgeClass (badge) and issuer Profile (badge.issuer), all '@id' references expanded to the embedded-document form",
+ "version": "2.0",
+ "release_date": "2018-04-12",
+ "status": "normative",
+ "source_ids": [
+  "ob-v2p0-text",
+  "ob-v2p0-context"
+ ],
+ "root": "Assertion (OB 2.0 vocabulary, spec section 'Open Badges Vocabulary')",
+ "paths": [
+  {
+   "path": "badge.alignment[].targetCode",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > alignment 0..1[0..*] > targetCode 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L413"
+  },
+  {
+   "path": "badge.alignment[].targetDescription",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > alignment 0..1[0..*] > targetDescription 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L411"
+  },
+  {
+   "path": "badge.alignment[].targetFramework",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > alignment 0..1[0..*] > targetFramework 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L412"
+  },
+  {
+   "path": "badge.alignment[].targetName",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > alignment 0..1[0..*] > targetName 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L409"
+  },
+  {
+   "path": "badge.alignment[].targetUrl",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > alignment 0..1[0..*] > targetUrl 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L410"
+  },
+  {
+   "path": "badge.criteria.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > criteria 1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L394"
+  },
+  {
+   "path": "badge.criteria.narrative",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > criteria 1 > narrative 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L395"
+  },
+  {
+   "path": "badge.criteria.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > criteria 1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L393"
+  },
+  {
+   "path": "badge.description",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > description 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L265"
+  },
+  {
+   "path": "badge.endorsement[].claim.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > claim 1 > endorsementComment 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L591"
+  },
+  {
+   "path": "badge.endorsement[].claim.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > claim 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L574 ('identified by an id')"
+  },
+  {
+   "path": "badge.endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L572"
+  },
+  {
+   "path": "badge.endorsement[].issuedOn",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuedOn 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L576"
+  },
+  {
+   "path": "badge.endorsement[].issuer.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > description 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L287"
+  },
+  {
+   "path": "badge.endorsement[].issuer.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > email 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L289"
+  },
+  {
+   "path": "badge.endorsement[].issuer.endorsement[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > endorsement 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L479"
+  },
+  {
+   "path": "badge.endorsement[].issuer.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L282"
+  },
+  {
+   "path": "badge.endorsement[].issuer.image.author",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > image 0..1 > author 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L379 (@id: Profile)"
+  },
+  {
+   "path": "badge.endorsement[].issuer.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L378"
+  },
+  {
+   "path": "badge.endorsement[].issuer.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > image 0..1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L377"
+  },
+  {
+   "path": "badge.endorsement[].issuer.image.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > image 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L376"
+  },
+  {
+   "path": "badge.endorsement[].issuer.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > name 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L284"
+  },
+  {
+   "path": "badge.endorsement[].issuer.publicKey.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > publicKey 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.endorsement[].issuer.publicKey.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > publicKey 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.endorsement[].issuer.publicKey.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > publicKey 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.endorsement[].issuer.publicKey.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > publicKey 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.endorsement[].issuer.related[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > related 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L477"
+  },
+  {
+   "path": "badge.endorsement[].issuer.revocationList",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > revocationList 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L292 (IRI: RevocationList - IRI only)"
+  },
+  {
+   "path": "badge.endorsement[].issuer.telephone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > telephone 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L286"
+  },
+  {
+   "path": "badge.endorsement[].issuer.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L283"
+  },
+  {
+   "path": "badge.endorsement[].issuer.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > url 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L285"
+  },
+  {
+   "path": "badge.endorsement[].issuer.verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > verification 0..1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "badge.endorsement[].issuer.verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > verification 0..1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.endorsement[].issuer.verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > verification 0..1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.endorsement[].issuer.verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > verification 0..1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.endorsement[].issuer.verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > verification 0..1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.endorsement[].issuer.verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > verification 0..1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "badge.endorsement[].issuer.verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > verification 0..1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "badge.endorsement[].issuer.verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > verification 0..1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "badge.endorsement[].issuer.version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > issuer 1 > version 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L478"
+  },
+  {
+   "path": "badge.endorsement[].revocationReason",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > revocationReason 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L579"
+  },
+  {
+   "path": "badge.endorsement[].revoked",
+   "type": "boolean",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > revoked 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L578"
+  },
+  {
+   "path": "badge.endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L573"
+  },
+  {
+   "path": "badge.endorsement[].verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > verification 1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "badge.endorsement[].verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.endorsement[].verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.endorsement[].verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.endorsement[].verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.endorsement[].verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > verification 1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "badge.endorsement[].verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > verification 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "badge.endorsement[].verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > endorsement 0..1[0..*] > verification 1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "badge.id",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L262"
+  },
+  {
+   "path": "badge.image.author.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > description 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L287"
+  },
+  {
+   "path": "badge.image.author.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > email 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L289"
+  },
+  {
+   "path": "badge.image.author.endorsement[].claim.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > claim 1 > endorsementComment 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L591"
+  },
+  {
+   "path": "badge.image.author.endorsement[].claim.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > claim 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L574 ('identified by an id')"
+  },
+  {
+   "path": "badge.image.author.endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L572"
+  },
+  {
+   "path": "badge.image.author.endorsement[].issuedOn",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > issuedOn 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L576"
+  },
+  {
+   "path": "badge.image.author.endorsement[].issuer",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > issuer 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L575"
+  },
+  {
+   "path": "badge.image.author.endorsement[].revocationReason",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > revocationReason 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L579"
+  },
+  {
+   "path": "badge.image.author.endorsement[].revoked",
+   "type": "boolean",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > revoked 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L578"
+  },
+  {
+   "path": "badge.image.author.endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L573"
+  },
+  {
+   "path": "badge.image.author.endorsement[].verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "badge.image.author.endorsement[].verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.image.author.endorsement[].verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.image.author.endorsement[].verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.image.author.endorsement[].verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.image.author.endorsement[].verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "badge.image.author.endorsement[].verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "badge.image.author.endorsement[].verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "badge.image.author.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L282"
+  },
+  {
+   "path": "badge.image.author.image",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > image 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L288"
+  },
+  {
+   "path": "badge.image.author.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > name 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L284"
+  },
+  {
+   "path": "badge.image.author.publicKey.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > publicKey 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.image.author.publicKey.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > publicKey 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.image.author.publicKey.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > publicKey 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.image.author.publicKey.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > publicKey 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.image.author.related[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > related 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L477"
+  },
+  {
+   "path": "badge.image.author.revocationList",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > revocationList 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L292 (IRI: RevocationList - IRI only)"
+  },
+  {
+   "path": "badge.image.author.telephone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > telephone 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L286"
+  },
+  {
+   "path": "badge.image.author.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L283"
+  },
+  {
+   "path": "badge.image.author.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > url 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L285"
+  },
+  {
+   "path": "badge.image.author.verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > verification 0..1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "badge.image.author.verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > verification 0..1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.image.author.verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > verification 0..1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.image.author.verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > verification 0..1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.image.author.verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > verification 0..1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.image.author.verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > verification 0..1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "badge.image.author.verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > verification 0..1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "badge.image.author.verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > verification 0..1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "badge.image.author.version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > author 0..1 > version 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L478"
+  },
+  {
+   "path": "badge.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > caption 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L378"
+  },
+  {
+   "path": "badge.image.id",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > image 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L377"
+  },
+  {
+   "path": "badge.image.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > image 1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L376"
+  },
+  {
+   "path": "badge.issuer.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > description 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L287"
+  },
+  {
+   "path": "badge.issuer.email",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > email 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L289"
+  },
+  {
+   "path": "badge.issuer.endorsement[].claim.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > claim 1 > endorsementComment 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L591"
+  },
+  {
+   "path": "badge.issuer.endorsement[].claim.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > claim 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L574 ('identified by an id')"
+  },
+  {
+   "path": "badge.issuer.endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L572"
+  },
+  {
+   "path": "badge.issuer.endorsement[].issuedOn",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > issuedOn 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L576"
+  },
+  {
+   "path": "badge.issuer.endorsement[].issuer",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > issuer 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L575"
+  },
+  {
+   "path": "badge.issuer.endorsement[].revocationReason",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > revocationReason 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L579"
+  },
+  {
+   "path": "badge.issuer.endorsement[].revoked",
+   "type": "boolean",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > revoked 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L578"
+  },
+  {
+   "path": "badge.issuer.endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L573"
+  },
+  {
+   "path": "badge.issuer.endorsement[].verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > verification 1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "badge.issuer.endorsement[].verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.issuer.endorsement[].verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.issuer.endorsement[].verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.issuer.endorsement[].verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.issuer.endorsement[].verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > verification 1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "badge.issuer.endorsement[].verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > verification 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "badge.issuer.endorsement[].verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > endorsement 0..1[0..*] > verification 1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "badge.issuer.id",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L282"
+  },
+  {
+   "path": "badge.issuer.image.author",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > image 0..1 > author 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L379 (@id: Profile)"
+  },
+  {
+   "path": "badge.issuer.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L378"
+  },
+  {
+   "path": "badge.issuer.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > image 0..1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L377"
+  },
+  {
+   "path": "badge.issuer.image.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > image 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L376"
+  },
+  {
+   "path": "badge.issuer.name",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > name 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L284"
+  },
+  {
+   "path": "badge.issuer.publicKey.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > publicKey 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.issuer.publicKey.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > publicKey 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.issuer.publicKey.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > publicKey 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.issuer.publicKey.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > publicKey 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.issuer.related[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > related 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L477"
+  },
+  {
+   "path": "badge.issuer.revocationList",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > revocationList 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L292 (IRI: RevocationList - IRI only)"
+  },
+  {
+   "path": "badge.issuer.telephone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > telephone 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L286"
+  },
+  {
+   "path": "badge.issuer.type[]",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L283"
+  },
+  {
+   "path": "badge.issuer.url",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > url 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L285"
+  },
+  {
+   "path": "badge.issuer.verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > verification 0..1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "badge.issuer.verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > verification 0..1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "badge.issuer.verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > verification 0..1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "badge.issuer.verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > verification 0..1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "badge.issuer.verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > verification 0..1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "badge.issuer.verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > verification 0..1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "badge.issuer.verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > issuer 1 > verification 0..1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "badge.issuer.verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > verification 0..1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "badge.issuer.version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > issuer 1 > version 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L478"
+  },
+  {
+   "path": "badge.name",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > name 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L264"
+  },
+  {
+   "path": "badge.related[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > related 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L477"
+  },
+  {
+   "path": "badge.tags[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > tags 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L270"
+  },
+  {
+   "path": "badge.type[]",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "badge 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L263"
+  },
+  {
+   "path": "badge.version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "badge 1 > version 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L478"
+  },
+  {
+   "path": "endorsement[].claim.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > claim 1 > endorsementComment 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L591"
+  },
+  {
+   "path": "endorsement[].claim.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > claim 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L574 ('identified by an id')"
+  },
+  {
+   "path": "endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L572"
+  },
+  {
+   "path": "endorsement[].issuedOn",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuedOn 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L576"
+  },
+  {
+   "path": "endorsement[].issuer.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > description 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L287"
+  },
+  {
+   "path": "endorsement[].issuer.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > email 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L289"
+  },
+  {
+   "path": "endorsement[].issuer.endorsement[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > endorsement 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L479"
+  },
+  {
+   "path": "endorsement[].issuer.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L282"
+  },
+  {
+   "path": "endorsement[].issuer.image.author",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > image 0..1 > author 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L379 (@id: Profile)"
+  },
+  {
+   "path": "endorsement[].issuer.image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > image 0..1 > caption 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L378"
+  },
+  {
+   "path": "endorsement[].issuer.image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > image 0..1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L377"
+  },
+  {
+   "path": "endorsement[].issuer.image.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > image 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L376"
+  },
+  {
+   "path": "endorsement[].issuer.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > name 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L284"
+  },
+  {
+   "path": "endorsement[].issuer.publicKey.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > publicKey 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "endorsement[].issuer.publicKey.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > publicKey 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "endorsement[].issuer.publicKey.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > publicKey 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "endorsement[].issuer.publicKey.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > publicKey 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "endorsement[].issuer.related[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > related 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L477"
+  },
+  {
+   "path": "endorsement[].issuer.revocationList",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > revocationList 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L292 (IRI: RevocationList - IRI only)"
+  },
+  {
+   "path": "endorsement[].issuer.telephone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > telephone 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L286"
+  },
+  {
+   "path": "endorsement[].issuer.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L283"
+  },
+  {
+   "path": "endorsement[].issuer.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > url 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L285"
+  },
+  {
+   "path": "endorsement[].issuer.verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > verification 0..1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "endorsement[].issuer.verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > verification 0..1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "endorsement[].issuer.verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > verification 0..1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "endorsement[].issuer.verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > verification 0..1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "endorsement[].issuer.verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > verification 0..1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "endorsement[].issuer.verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > verification 0..1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "endorsement[].issuer.verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > verification 0..1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "endorsement[].issuer.verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > verification 0..1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "endorsement[].issuer.version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > issuer 1 > version 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L478"
+  },
+  {
+   "path": "endorsement[].revocationReason",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > revocationReason 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L579"
+  },
+  {
+   "path": "endorsement[].revoked",
+   "type": "boolean",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > revoked 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L578"
+  },
+  {
+   "path": "endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L573"
+  },
+  {
+   "path": "endorsement[].verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > verification 1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "endorsement[].verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > verification 1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "endorsement[].verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > verification 1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "endorsement[].verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > verification 1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "endorsement[].verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > verification 1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "endorsement[].verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > verification 1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "endorsement[].verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > verification 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "endorsement[].verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "endorsement 0..1[0..*] > verification 1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "evidence[].audience",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > audience 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L362"
+  },
+  {
+   "path": "evidence[].description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > description 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L360"
+  },
+  {
+   "path": "evidence[].genre",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > genre 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L361"
+  },
+  {
+   "path": "evidence[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L357"
+  },
+  {
+   "path": "evidence[].name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > name 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L359"
+  },
+  {
+   "path": "evidence[].narrative",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > narrative 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L358"
+  },
+  {
+   "path": "evidence[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "evidence 0..1[0..*] > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L356"
+  },
+  {
+   "path": "expires",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "expires 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L244"
+  },
+  {
+   "path": "id",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L235"
+  },
+  {
+   "path": "image.author.description",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > description 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L287"
+  },
+  {
+   "path": "image.author.email",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > email 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L289"
+  },
+  {
+   "path": "image.author.endorsement[].claim.endorsementComment",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > claim 1 > endorsementComment 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L591"
+  },
+  {
+   "path": "image.author.endorsement[].claim.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > claim 1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L574 ('identified by an id')"
+  },
+  {
+   "path": "image.author.endorsement[].id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L572"
+  },
+  {
+   "path": "image.author.endorsement[].issuedOn",
+   "type": "datetime",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > issuedOn 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L576"
+  },
+  {
+   "path": "image.author.endorsement[].issuer",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > issuer 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L575"
+  },
+  {
+   "path": "image.author.endorsement[].revocationReason",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > revocationReason 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L579"
+  },
+  {
+   "path": "image.author.endorsement[].revoked",
+   "type": "boolean",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > revoked 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L578"
+  },
+  {
+   "path": "image.author.endorsement[].type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L573"
+  },
+  {
+   "path": "image.author.endorsement[].verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "image.author.endorsement[].verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "image.author.endorsement[].verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "image.author.endorsement[].verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "image.author.endorsement[].verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "image.author.endorsement[].verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "image.author.endorsement[].verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null,
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "image.author.endorsement[].verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > endorsement 0..1[0..*] > verification 1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "image.author.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L282"
+  },
+  {
+   "path": "image.author.image",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > image 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L288"
+  },
+  {
+   "path": "image.author.name",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > name 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L284"
+  },
+  {
+   "path": "image.author.publicKey.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > publicKey 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "image.author.publicKey.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > publicKey 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "image.author.publicKey.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > publicKey 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "image.author.publicKey.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > publicKey 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "image.author.related[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > related 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L477"
+  },
+  {
+   "path": "image.author.revocationList",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > revocationList 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L292 (IRI: RevocationList - IRI only)"
+  },
+  {
+   "path": "image.author.telephone",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > telephone 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L286"
+  },
+  {
+   "path": "image.author.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L283"
+  },
+  {
+   "path": "image.author.url",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > url 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L285"
+  },
+  {
+   "path": "image.author.verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > verification 0..1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "image.author.verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > verification 0..1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "image.author.verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > verification 0..1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "image.author.verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > verification 0..1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "image.author.verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > verification 0..1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "image.author.verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > verification 0..1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "image.author.verification.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > author 0..1 > verification 0..1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "image.author.verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > verification 0..1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "image.author.version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > author 0..1 > version 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L478"
+  },
+  {
+   "path": "image.caption",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > caption 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L378"
+  },
+  {
+   "path": "image.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "image 0..1 > id 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L377"
+  },
+  {
+   "path": "image.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "image 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L376"
+  },
+  {
+   "path": "issuedOn",
+   "type": "datetime",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "issuedOn 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L240 (DateTime datatype L633)"
+  },
+  {
+   "path": "narrative",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "narrative 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L243"
+  },
+  {
+   "path": "recipient.hashed",
+   "type": "boolean",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "recipient 1 > hashed 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L313"
+  },
+  {
+   "path": "recipient.identity",
+   "type": "string",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "recipient 1 > identity 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L311 (IdentityHash or Text)"
+  },
+  {
+   "path": "recipient.salt",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "recipient 1 > salt 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L314"
+  },
+  {
+   "path": "recipient.type",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [],
+   "cardinality_text": "recipient 1 > type 1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L312 (property IRI)"
+  },
+  {
+   "path": "related[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "related 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L477 (Properties usable across several classes)"
+  },
+  {
+   "path": "revocationReason",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "revocationReason 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L246"
+  },
+  {
+   "path": "revoked",
+   "type": "boolean",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "revoked 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L245"
+  },
+  {
+   "path": "type[]",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L236"
+  },
+  {
+   "path": "verification.allowedOrigins[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "verification 1 > allowedOrigins 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L329"
+  },
+  {
+   "path": "verification.creator.id",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "verification 1 > creator 0..1 > id 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L458"
+  },
+  {
+   "path": "verification.creator.owner",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "verification 1 > creator 0..1 > owner 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L459 (IRI: Profile - IRI only)"
+  },
+  {
+   "path": "verification.creator.publicKeyPem",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "verification 1 > creator 0..1 > publicKeyPem 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L460"
+  },
+  {
+   "path": "verification.creator.type[]",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "verification 1 > creator 0..1 > type 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L457"
+  },
+  {
+   "path": "verification.startsWith[]",
+   "type": "string",
+   "required": false,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "verification 1 > startsWith 0..1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L328 ('Multiple values allowed' stated in description)"
+  },
+  {
+   "path": "verification.type[]",
+   "type": "uri",
+   "required": true,
+   "array_bounds": [
+    null
+   ],
+   "cardinality_text": "verification 1 > type 1[0..*]",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L326"
+  },
+  {
+   "path": "verification.verificationProperty",
+   "type": "uri",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "verification 1 > verificationProperty 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L327 (@id)"
+  },
+  {
+   "path": "version",
+   "type": "string",
+   "required": false,
+   "array_bounds": [],
+   "cardinality_text": "version 0..1",
+   "source_id": "ob-v2p0-text",
+   "locator": "src/ob_v2p0_index.md L478"
+  }
+ ],
+ "statement_paths": [
+  "issuedOn"
+ ]
+}

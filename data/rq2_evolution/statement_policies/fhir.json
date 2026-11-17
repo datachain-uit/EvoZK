@@ -1,0 +1,28 @@
+{
+ "fields": [
+  {
+   "name": "code_system",
+   "path": "code.coding[].system"
+  },
+  {
+   "name": "code_code",
+   "path": "code.coding[].code"
+  },
+  {
+   "name": "value",
+   "path": "valueQuantity.value"
+  },
+  {
+   "name": "value_unit",
+   "path": "valueQuantity.unit"
+  },
+  {
+   "name": "value_code",
+   "path": "valueQuantity.code"
+  },
+  {
+   "name": "effective_date",
+   "path": "effectiveDateTime"
+  }
+ ]
+}
